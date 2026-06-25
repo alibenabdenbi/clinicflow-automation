@@ -86,3 +86,6 @@ public/netlify-deploy/data/outreach-stats.json
 # Audio recordings (prospect voicemails)
 public/netlify-deploy/audio/
 public/audio/
+# Browser profiles and cache
+data/browser-profiles/
+data/browser-data/

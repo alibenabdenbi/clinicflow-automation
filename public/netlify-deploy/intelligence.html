@@ -467,7 +467,7 @@ async function loadOutreach() {
     if (diffMs > 0) {
       const d = Math.floor(diffMs / 86400000);
       const h = Math.floor((diffMs % 86400000) / 3600000);
-      document.getElementById('limbour-msg').textContent = 'Custom FU3 fires in ' + d + 'd ' + h + 'h — Centre Dentaire Limbour (gestion@limbour.ca) — pain score 2';
+      document.getElementById('limbour-msg').textContent = 'Custom FU3 fires in ' + d + 'd ' + h + 'h — Centre Dentaire Limbour ([email]) — pain score 2';
     } else {
       document.getElementById('limbour-card').style.background = 'rgba(57,217,138,.08)';
       document.getElementById('limbour-card').style.borderColor = 'rgba(57,217,138,.25)';
