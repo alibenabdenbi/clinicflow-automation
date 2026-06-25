@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dental Clinic Missed Call Calculator — How Much Revenue Are You Losing?</title>
+<meta name="description" content="Calculate exactly how much revenue your dental clinic loses from missed calls every month. Free calculator for Canadian dental practices. See your numbers in 30 seconds.">
+<meta name="keywords" content="dental clinic missed calls, dental practice revenue loss, missed call calculator, dental office phone calls, patient communication dental">
+<meta property="og:title" content="How Much Is Your Dental Clinic Losing to Missed Calls?">
+<meta property="og:description" content="Calculate your exact revenue loss from missed calls. Takes 30 seconds.">
+<meta property="og:url" content="https://clinicflowautomation.com/calculator">
+<link rel="canonical" href="https://clinicflowautomation.com/calculator">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dental Clinic Missed Call Revenue Calculator",
+  "description": "Calculate how much revenue your dental clinic loses from missed calls every month",
+  "url": "https://clinicflowautomation.com/calculator",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CAD" },
+  "provider": {
+    "@type": "Organization",
+    "name": "ClinicFlow Automation",
+    "url": "https://clinicflowautomation.com"
+  }
+}
+</script>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Syne',sans-serif;background:#0b0f17;color:#f1f5f9;min-height:100vh}
+.hero{padding:60px 20px 40px;text-align:center;max-width:800px;margin:0 auto}
+.badge{display:inline-block;background:rgba(249,115,22,.1);color:#f97316;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;border:1px solid rgba(249,115,22,.2)}
+h1{font-size:clamp(28px,5vw,48px);font-weight:800;line-height:1.15;margin-bottom:16px}
+h1 span{color:#f97316}
+.sub{font-size:16px;color:#94a3b8;line-height:1.7;max-width:560px;margin:0 auto 40px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 80px}
+.calc-card{background:#111827;border-radius:20px;padding:36px;margin-bottom:24px;border:1px solid rgba(255,255,255,.06)}
+.calc-title{font-size:18px;font-weight:700;margin-bottom:24px;color:#f1f5f9}
+.input-group{margin-bottom:22px}
+.input-label{font-size:13px;font-weight:600;color:#94a3b8;margin-bottom:6px;display:block}
+.input-sub{font-size:12px;color:#64748b;margin-bottom:8px;display:block}
+.slider-wrap{display:flex;gap:16px;align-items:center}
+input[type=range]{flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,.1);outline:none;-webkit-appearance:none;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#f97316;cursor:pointer;box-shadow:0 0 0 3px rgba(249,115,22,.2)}
+.slider-val{font-size:18px;font-weight:800;color:#f97316;min-width:70px;text-align:right}
+.results{display:none;background:linear-gradient(135deg,rgba(249,115,22,.08),rgba(239,68,68,.04));border:1px solid rgba(249,115,22,.2);border-radius:20px;padding:36px;margin-bottom:24px}
+.results.visible{display:block}
+.results-title{font-size:13px;font-weight:700;color:#f97316;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:24px}
+.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:20px}
+@media(max-width:480px){.result-grid{grid-template-columns:1fr}}
+.result-card{background:rgba(0,0,0,.35);border-radius:14px;padding:20px;text-align:center;border:1px solid rgba(255,255,255,.05)}
+.result-num{font-size:34px;font-weight:800;color:#f87171;line-height:1;margin-bottom:6px}
+.result-lbl{font-size:12px;color:#94a3b8;line-height:1.5}
+.result-insight{background:rgba(0,0,0,.2);border-radius:10px;padding:16px 18px;margin-bottom:20px;font-size:14px;color:#cbd5e1;line-height:1.75;border-left:3px solid #f97316}
+.recovery-box{background:rgba(57,217,138,.06);border:1px solid rgba(57,217,138,.18);border-radius:14px;padding:20px;text-align:center}
+.recovery-num{font-size:32px;font-weight:800;color:#4ade80;margin-bottom:4px}
+.recovery-sub{font-size:12px;color:#64748b}
+.cta-card{background:#111827;border-radius:20px;padding:36px;text-align:center;border:1px solid rgba(124,92,255,.2);display:none}
+.cta-card h2{font-size:24px;font-weight:800;margin-bottom:12px}
+.cta-card p{font-size:14px;color:#94a3b8;margin-bottom:28px;line-height:1.75}
+.btn-pill{display:block;padding:15px 32px;border-radius:12px;font-size:15px;font-weight:700;text-decoration:none;margin:0 auto 12px;max-width:380px;text-align:center;transition:opacity .15s}
+.btn-pill:active{opacity:.8}
+.btn-purple{background:#7c5cff;color:#fff}
+.btn-green{background:rgba(57,217,138,.1);color:#39d98a;border:1px solid rgba(57,217,138,.25)}
+.btn-outline{background:transparent;color:#94a3b8;border:1px solid rgba(255,255,255,.1)}
+.seo-content{max-width:760px;margin:0 auto;padding:0 20px 100px}
+.seo-content h2{font-size:26px;font-weight:800;margin-bottom:14px;color:#f1f5f9;margin-top:48px}
+.seo-content h3{font-size:18px;font-weight:700;margin-bottom:10px;color:#e2e8f0;margin-top:32px}
+.seo-content p{font-size:15px;color:#94a3b8;line-height:1.85;margin-bottom:16px}
+.seo-content ul{padding-left:22px;margin-bottom:16px}
+.seo-content li{font-size:15px;color:#94a3b8;line-height:1.85;margin-bottom:8px}
+.stat-box{background:#111827;border-radius:12px;padding:20px 22px;margin:24px 0;border-left:3px solid #7c5cff;font-size:15px;color:#cbd5e1;line-height:1.8}
+.footer-cta{background:linear-gradient(135deg,rgba(124,92,255,.12),rgba(57,217,138,.06));border:1px solid rgba(124,92,255,.2);border-radius:20px;padding:40px;text-align:center;margin:0 20px 80px;max-width:720px;margin-left:auto;margin-right:auto}
+.footer-cta h3{font-size:22px;font-weight:800;margin-bottom:10px}
+.footer-cta p{font-size:14px;color:#94a3b8;margin-bottom:24px;line-height:1.75}
+.cap-box{margin-top:20px;background:rgba(124,92,255,.06);border:1px solid rgba(124,92,255,.18);border-radius:16px;padding:24px;text-align:center;opacity:0;transform:translateY(8px);transition:opacity .4s ease,transform .4s ease}
+.cap-box.visible{opacity:1;transform:none}
+.cap-title{font-size:15px;font-weight:700;margin-bottom:6px}
+.cap-sub{font-size:13px;color:#94a3b8;margin-bottom:16px;line-height:1.6}
+.cap-fields{display:flex;flex-direction:column;gap:8px;max-width:380px;margin:0 auto}
+.cap-input{background:#0b0f17;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;font-size:14px;color:#f1f5f9;font-family:'Syne',sans-serif;outline:none;width:100%}
+.cap-input:focus{border-color:rgba(124,92,255,.5)}
+.cap-btn{background:#7c5cff;color:#fff;border:none;border-radius:10px;padding:14px;font-size:14px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif;width:100%;margin-top:4px}
+.cap-btn:hover{background:#6d4ef5}
+.cap-btn:disabled{opacity:.6;cursor:not-allowed}
+.cap-status{font-size:13px;color:#64748b;margin-top:10px;min-height:18px}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">Free Tool — Takes 30 Seconds</div>
+  <h1>How much is your clinic<br>losing to <span>missed calls</span>?</h1>
+  <p class="sub">Most Canadian dental clinics miss 15–30% of their incoming calls. See your exact revenue loss — and what you could recover automatically.</p>
+</div>
+
+<div class="wrap">
+  <div class="calc-card">
+    <div class="calc-title">Enter your clinic numbers</div>
+
+    <div class="input-group">
+      <label class="input-label">Daily patient calls received</label>
+      <span class="input-sub">Average number of calls your clinic receives on a typical day</span>
+      <div class="slider-wrap">
+        <input type="range" id="calls" min="5" max="80" value="25" oninput="calculate()">
+        <div class="slider-val" id="calls-val">25</div>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Estimated missed call rate</label>
+      <span class="input-sub">Industry average is 20–30% for busy dental offices during peak hours</span>
+      <div class="slider-wrap">
+        <input type="range" id="missed" min="5" max="50" value="20" oninput="calculate()">
+        <div class="slider-val" id="missed-val">20%</div>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Average patient visit value</label>
+      <span class="input-sub">Average revenue per appointment including hygiene, exams, and procedures</span>
+      <div class="slider-wrap">
+        <input type="range" id="value" min="100" max="600" step="25" value="250" oninput="calculate()">
+        <div class="slider-val" id="value-val">$250</div>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Working days per month</label>
+      <div class="slider-wrap">
+        <input type="range" id="days" min="15" max="26" value="22" oninput="calculate()">
+        <div class="slider-val" id="days-val">22</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="results-title">Your missed call impact</div>
+    <div class="result-grid">
+      <div class="result-card">
+        <div class="result-num" id="r-calls">0</div>
+        <div class="result-lbl">Calls missed<br>per month</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num" id="r-patients">0</div>
+        <div class="result-lbl">Patients lost<br><span style="font-size:11px;color:#64748b">70% don't leave a message</span></div>
+      </div>
+      <div class="result-card">
+        <div class="result-num" id="r-monthly">$0</div>
+        <div class="result-lbl">Revenue lost<br>per month</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num" id="r-annual">$0</div>
+        <div class="result-lbl">Revenue lost<br>per year</div>
+      </div>
+    </div>
+    <div class="result-insight" id="r-insight"></div>
+    <div class="recovery-box">
+      <div style="font-size:13px;color:#94a3b8;margin-bottom:8px">With ClinicFlow recovering <strong style="color:#4ade80">60% of missed callers</strong> automatically:</div>
+      <div class="recovery-num" id="r-recovered">$0</div>
+      <div class="recovery-sub">recovered per month — on autopilot</div>
+    </div>
+
+    <div class="cap-box" id="email-capture">
+      <div class="cap-title">Get your full report by email</div>
+      <div class="cap-sub">We'll send your personalized revenue loss breakdown<br>and a step-by-step recovery plan for your clinic.</div>
+      <div class="cap-fields">
+        <input class="cap-input" type="text" id="cap-name" placeholder="Your first name" autocomplete="given-name">
+        <input class="cap-input" type="text" id="cap-clinic" placeholder="Clinic name" autocomplete="organization">
+        <input class="cap-input" type="email" id="cap-email" placeholder="your@clinic.com" autocomplete="email">
+        <button class="cap-btn" id="cap-btn" onclick="submitCapture()">Send my report &#8594;</button>
+      </div>
+      <div class="cap-status" id="cap-status"></div>
+    </div>
+  </div>
+
+  <div class="cta-card" id="cta">
+    <h2>Stop losing this revenue</h2>
+    <p>ClinicFlow texts every missed caller within 60 seconds — automatically.<br>Most reply. Most book. One-time setup. No monthly fees.</p>
+    <a href="/intake" class="btn-pill btn-purple">Start free 30-day pilot →</a>
+    <a href="https://calendly.com/m-aliben432/clinicflow-15-min-intro" class="btn-pill btn-green" target="_blank">📅 Book a 15-min call first</a>
+    <a href="/live" class="btn-pill btn-outline">See it running live →</a>
+  </div>
+</div>
+
+<div class="seo-content">
+  <h2>How many calls does a dental clinic miss?</h2>
+  <p>Research across Canadian dental practices shows that the average clinic misses between 15% and 30% of incoming calls. During peak hours — typically 12pm to 2pm when front desk staff are occupied with in-person patients — missed call rates can climb to 40% or higher.</p>
+
+  <div class="stat-box">
+    Industry benchmark: A dental clinic receiving 25 calls per day and missing 20% loses approximately 5 patient opportunities daily. At an average visit value of $250, that's $1,250 per day — or over $27,000 per month in potential revenue walking out the door.
+  </div>
+
+  <h3>Why do dental clinics miss so many calls?</h3>
+  <p>The most common reasons dental offices miss patient calls:</p>
+  <ul>
+    <li>Front desk staff occupied with in-person patients during appointments</li>
+    <li>Lunch hour coverage gaps (12pm–2pm is peak missed call time)</li>
+    <li>After-hours calls with no automated follow-up system in place</li>
+    <li>High call volume during appointment reminder periods (Monday mornings)</li>
+    <li>Single-staff offices during busy chair time</li>
+    <li>Hold times too long — patients hang up and call the next clinic on Google</li>
+  </ul>
+
+  <h3>What happens when a patient can't reach your clinic?</h3>
+  <p>Studies show that 70% of patients who reach voicemail or get no answer do not leave a message. They search for the next available clinic and book there. A missed call is almost never a delayed call — it's a lost patient.</p>
+  <p>For a patient searching "dentist near me," your clinic competes against every other clinic within a few kilometres. The one that responds first wins the appointment. Response time — measured in minutes, not hours — determines who gets the booking.</p>
+
+  <h3>How do high-rated dental clinics handle missed calls?</h3>
+  <p>Clinics with 4.8+ star ratings consistently show fewer "couldn't reach them" complaints in Google reviews. The pattern is clear: they respond to missed calls within minutes. The most effective approach is automatic SMS follow-up — when a patient calls and no one answers, they receive a personalized text within 60 seconds. This keeps the patient engaged before they search for alternatives.</p>
+
+  <h3>How is missed call revenue loss calculated?</h3>
+  <p>The formula used in this calculator:</p>
+  <ul>
+    <li><strong>Missed calls per month</strong> = Daily calls × Missed rate % × Working days</li>
+    <li><strong>Patients lost</strong> = Missed calls × 70% (industry hang-up rate)</li>
+    <li><strong>Revenue lost</strong> = Patients lost × Average visit value</li>
+    <li><strong>Recoverable revenue</strong> = Revenue lost × 60% (ClinicFlow recovery rate)</li>
+  </ul>
+  <p>The 70% hang-up rate and 60% recovery rate are conservative estimates based on dental practice communication research and client data from active ClinicFlow installations.</p>
+
+  <h3>Is there a tool to automatically handle dental missed calls?</h3>
+  <p>ClinicFlow Automation sends an automatic text message to every missed caller within 60 seconds. The patient receives a personalized message from the clinic, can reply to book, and the conversation is logged for the front desk. Setup takes one afternoon. No monthly fees — one-time configuration.</p>
+</div>
+
+<div class="footer-cta">
+  <h3>See it in action before you decide</h3>
+  <p>Text anything to <strong>+1 (575) 573-5822</strong> — you'll experience exactly what your patients feel when they call and no one picks up. Takes 60 seconds.</p>
+  <a href="https://calendly.com/m-aliben432/clinicflow-15-min-intro" class="btn-pill btn-purple" style="margin-bottom:12px" target="_blank">Book a 15-min call →</a>
+  <a href="/demo" class="btn-pill btn-outline">Try the live demo →</a>
+</div>
+
+<script>
+let _scrolled = false;
+let _interacted = false;
+let _captureTimer = null;
+
+function calculate() {
+  const calls      = parseInt(document.getElementById('calls').value);
+  const missedPct  = parseInt(document.getElementById('missed').value);
+  const visitValue = parseInt(document.getElementById('value').value);
+  const days       = parseInt(document.getElementById('days').value);
+
+  document.getElementById('calls-val').textContent  = calls;
+  document.getElementById('missed-val').textContent = missedPct + '%';
+  document.getElementById('value-val').textContent  = '$' + visitValue;
+  document.getElementById('days-val').textContent   = days;
+
+  const missedPerMonth = Math.round(calls * missedPct / 100) * days;
+  const patientsLost   = Math.round(missedPerMonth * 0.70);
+  const revenueMonth   = patientsLost * visitValue;
+  const revenueYear    = revenueMonth * 12;
+  const recovered      = Math.round(revenueMonth * 0.60);
+
+  document.getElementById('r-calls').textContent     = missedPerMonth.toLocaleString();
+  document.getElementById('r-patients').textContent  = patientsLost.toLocaleString();
+  document.getElementById('r-monthly').textContent   = '$' + revenueMonth.toLocaleString();
+  document.getElementById('r-annual').textContent    = '$' + revenueYear.toLocaleString();
+  document.getElementById('r-recovered').textContent = '$' + recovered.toLocaleString() + '/mo';
+
+  const insight = revenueYear >= 100000
+    ? `At your current missed call rate, you're losing over $${Math.round(revenueYear / 1000)}k per year — that's ${Math.round(revenueYear / visitValue)} patients who called and booked elsewhere instead.`
+    : `Your clinic is losing approximately $${revenueMonth.toLocaleString()} per month — ${patientsLost} patients who called, got no answer, and found another clinic on Google.`;
+
+  document.getElementById('r-insight').textContent = insight;
+  document.getElementById('results').classList.add('visible');
+  document.getElementById('cta').style.display = 'block';
+
+  if (!_scrolled && revenueMonth > 0) {
+    document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    _scrolled = true;
+  }
+
+  // Show email capture 2.5s after first slider interaction
+  if (_interacted && !document.getElementById('email-capture').classList.contains('visible')) {
+    clearTimeout(_captureTimer);
+    _captureTimer = setTimeout(function() {
+      document.getElementById('email-capture').classList.add('visible');
+    }, 2500);
+  }
+}
+
+calculate();
+_scrolled = false;
+
+// Mark first real interaction (slider change, not page load)
+document.querySelectorAll('input[type=range]').forEach(function(el) {
+  el.addEventListener('input', function() { _interacted = true; });
+});
+
+async function submitCapture() {
+  var name   = document.getElementById('cap-name').value.trim();
+  var clinic = document.getElementById('cap-clinic').value.trim();
+  var email  = document.getElementById('cap-email').value.trim();
+  var status = document.getElementById('cap-status');
+  var btn    = document.getElementById('cap-btn');
+
+  if (!email || !email.includes('@')) {
+    status.textContent = 'Please enter a valid email address';
+    status.style.color = '#f87171';
+    return;
+  }
+
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  var calls      = parseInt(document.getElementById('calls').value);
+  var missedPct  = parseInt(document.getElementById('missed').value);
+  var visitValue = parseInt(document.getElementById('value').value);
+  var days       = parseInt(document.getElementById('days').value);
+  var missedPerMonth = Math.round(calls * missedPct / 100) * days;
+  var patientsLost   = Math.round(missedPerMonth * 0.70);
+  var revenueMonth   = patientsLost * visitValue;
+
+  try {
+    await fetch('/api/calculator-lead', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        firstName:      name || 'there',
+        clinicName:     clinic || 'your clinic',
+        email:          email,
+        lostPerMonth:   revenueMonth,
+        lostPerYear:    revenueMonth * 12,
+        missedPerMonth: missedPerMonth,
+      }),
+    });
+
+    btn.textContent = '&#10003; Report sent!';
+    status.textContent = 'Check your inbox — your personalized report is on its way.';
+    status.style.color = '#4ade80';
+
+    fetch('/api/track', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({page: '/calculator/capture', email: email, lostPerMonth: revenueMonth, ts: Date.now()}),
+      keepalive: true,
+    }).catch(function(){});
+
+  } catch(e) {
+    btn.textContent = 'Send my report →';
+    btn.disabled = false;
+    status.textContent = 'Something went wrong — try again';
+    status.style.color = '#f87171';
+  }
+}
+</script>
+
+<script>
+(function(){
+  fetch('/api/track',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      page:window.location.pathname,
+      ref:document.referrer,
+      utm_source:new URLSearchParams(window.location.search).get('utm_source'),
+      utm_campaign:new URLSearchParams(window.location.search).get('utm_campaign'),
+      ts:Date.now()
+    }),
+    keepalive:true
+  }).catch(()=>{});
+})();
+</script>
+
+<div style="max-width:760px;margin:0 auto;padding:0 20px 40px">
+  <div style="font-size:11px;font-weight:700;color:#4a5568;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px">Related resources</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+    <a href="/report" style="background:#111827;border-radius:12px;padding:16px;text-decoration:none;border:1px solid rgba(255,255,255,.06)">
+      <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:4px">Research Report</div>
+      <div style="font-size:12px;color:#64748b">Data from 4,314 Canadian clinics</div>
+    </a>
+    <a href="/faq/how-many-calls-does-dental-clinic-miss" style="background:#111827;border-radius:12px;padding:16px;text-decoration:none;border:1px solid rgba(255,255,255,.06)">
+      <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:4px">How many calls do clinics miss?</div>
+      <div style="font-size:12px;color:#64748b">Industry benchmarks</div>
+    </a>
+    <a href="/report-card" style="background:#111827;border-radius:12px;padding:16px;text-decoration:none;border:1px solid rgba(255,255,255,.06)">
+      <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:4px">Grade Your Clinic</div>
+      <div style="font-size:12px;color:#64748b">Free communication report card</div>
+    </a>
+    <a href="/dental" style="background:#111827;border-radius:12px;padding:16px;text-decoration:none;border:1px solid rgba(255,255,255,.06)">
+      <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:4px">Dental Clinic Solution</div>
+      <div style="font-size:12px;color:#64748b">How ClinicFlow works</div>
+    </a>
+  </div>
+</div>
+</body>
+</html>

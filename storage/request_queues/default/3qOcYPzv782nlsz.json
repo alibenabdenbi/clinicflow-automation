@@ -1,0 +1,9 @@
+{
+	"id": "3qOcYPzv782nlsz",
+	"json": "{\"id\":\"3qOcYPzv782nlsz\",\"url\":\"https://wordpress.org/plugins/jotform-ai-chatbot/reviews/\",\"loadedUrl\":\"https://wordpress.org/plugins/jotform-ai-chatbot/\",\"uniqueKey\":\"https://wordpress.org/plugins/jotform-ai-chatbot/reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"reviews\",\"kw\":\"chatbot\",\"pluginUrl\":\"https://wordpress.org/plugins/jotform-ai-chatbot/\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:56.312Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/jotform-ai-chatbot/reviews",
+	"url": "https://wordpress.org/plugins/jotform-ai-chatbot/reviews/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "rhPkdqBmd9FL4e3",
+	"json": "{\"id\":\"rhPkdqBmd9FL4e3\",\"url\":\"https://wordpress.org/plugins/booking-package/reviews/\",\"loadedUrl\":\"https://wordpress.org/plugins/booking-package/\",\"uniqueKey\":\"https://wordpress.org/plugins/booking-package/reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"reviews\",\"kw\":\"booking\",\"pluginUrl\":\"https://wordpress.org/plugins/booking-package/\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:59.658Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/booking-package/reviews",
+	"url": "https://wordpress.org/plugins/booking-package/reviews/"
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ClinicFlow — Automated patient follow-up for dental clinics</title>
+<meta name="description" content="Your dental clinic uses ClinicFlow to automatically follow up with every missed call. Is your clinic doing the same?"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#0b0f17;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.1);
+  --text:#e8eefc;--muted:#a7b0c5;--accent:#7c5cff;--accent2:#39d98a;
+  --gold:#f6b04d;--radius:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Syne',ui-sans-serif,system-ui,sans-serif;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;padding:40px 24px;
+  background-image:
+    radial-gradient(900px 600px at 50% 0%,rgba(124,92,255,.15),transparent 55%),
+    radial-gradient(500px 400px at 100% 80%,rgba(57,217,138,.07),transparent 55%);
+}
+.card{
+  max-width:560px;width:100%;text-align:center;
+  animation:fadeUp .5s ease both;
+}
+.logo{font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:32px;}
+.sms-bubble{
+  background:rgba(255,255,255,.06);border:1px solid var(--line);
+  border-radius:16px 16px 4px 16px;padding:16px 20px;text-align:left;
+  margin-bottom:32px;font-size:14px;line-height:1.6;color:var(--muted);
+  position:relative;
+}
+.sms-bubble::before{
+  content:'SMS received';position:absolute;top:-20px;left:0;
+  font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700;
+}
+.sms-bubble strong{color:var(--text);}
+.sms-bubble .ref-link{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(124,92,255,.4);}
+h1{font-size:clamp(26px,5vw,40px);font-weight:800;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px;}
+h1 em{font-style:normal;color:var(--accent);}
+.sub{font-size:16px;color:var(--muted);line-height:1.6;margin-bottom:40px;}
+.cta-main{
+  display:block;background:var(--accent);color:#fff;padding:18px 36px;
+  border-radius:12px;font-size:17px;font-weight:800;text-decoration:none;
+  margin:0 auto 16px;transition:all .2s;width:100%;
+}
+.cta-main:hover{background:#6d4fe8;transform:translateY(-2px);}
+.cta-sub{font-size:13px;color:var(--muted);}
+.proof-strip{
+  display:flex;align-items:center;justify-content:center;gap:32px;
+  margin-top:48px;flex-wrap:wrap;
+}
+.proof-item{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px;}
+.proof-item strong{color:var(--text);}
+.referring-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(57,217,138,.08);border:1px solid rgba(57,217,138,.2);
+  border-radius:8px;padding:8px 16px;font-size:12px;color:var(--accent2);
+  margin-bottom:24px;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">ClinicFlow Automation</div>
+
+  <div class="sms-bubble" id="sms-preview">
+    <strong>You called [Clinic Name].</strong> We missed your call — we'll follow up with you within 2 hours. Reply here to book an appointment.<br><br>
+    — Sent via ClinicFlow · <a class="ref-link" href="#">clinicflowautomation.com/ref/…</a>
+  </div>
+
+  <div class="referring-badge" id="ref-badge" style="display:none">
+    ✓ Referred by <span id="clinic-name-span" style="font-weight:700;margin-left:4px">your clinic</span>
+  </div>
+
+  <h1>Your dental clinic <em>never misses</em> a patient call.</h1>
+  <p class="sub">The text you received was sent automatically — within 60 seconds of a missed call. ClinicFlow does this for dental clinics across Canada. Is your clinic doing the same?</p>
+
+  <a class="cta-main" id="cta-link" href="/pilot">Get Free Setup for Your Clinic →</a>
+  <div class="cta-sub">Free to start. No credit card. Setup in 5 minutes.</div>
+
+  <div class="proof-strip">
+    <div class="proof-item">⚡ <strong>60-second</strong> response time</div>
+    <div class="proof-item">🇨🇦 <strong>Canadian</strong> clinics only</div>
+    <div class="proof-item">📵 <strong>No monthly</strong> fees</div>
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const refClinic = params.get('clinic') || params.get('ref') || '';
+
+// Track the click
+if (refClinic) {
+  fetch(`/.netlify/functions/ref-track?clinic=${encodeURIComponent(refClinic)}`)
+    .catch(() => {});
+
+  // Show the referring clinic badge
+  const badge = document.getElementById('ref-badge');
+  const nameSpan = document.getElementById('clinic-name-span');
+  if (badge && nameSpan) {
+    const display = refClinic.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    nameSpan.textContent = display;
+    badge.style.display = 'inline-flex';
+  }
+
+  // Pass ref to pilot CTA
+  const cta = document.getElementById('cta-link');
+  if (cta) cta.href = `/pilot?ref=${encodeURIComponent(refClinic)}`;
+}
+
+// Update SMS preview with the actual slug shown in the clinic's SMS
+const preview = document.getElementById('sms-preview');
+if (preview && refClinic) {
+  preview.querySelector('.ref-link').textContent = `clinicflowautomation.com/ref/${refClinic}`;
+}
+</script>
+</body>
+</html>

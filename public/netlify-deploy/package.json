@@ -1,0 +1,9 @@
+{
+  "name": "clinicflow-netlify",
+  "version": "1.0.0",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.85.0",
+    "@netlify/blobs": "^10.7.4",
+    "twilio": "^5.13.1"
+  }
+}

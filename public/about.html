@@ -1,0 +1,197 @@
+<!doctype html>
+<!-- ClinicFlow Automation — About page -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — ClinicFlow Automation</title>
+  <meta name="description" content="Who built ClinicFlow and why. Montreal-based automation for Canadian dental clinics." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #1a6bbd; --blue-dark: #114f93; --blue-light: #e8f1fb;
+      --accent: #0fa86e; --text: #1a2332; --muted: #5a6a80;
+      --border: #d0dcea; --bg: #f7fafd; --white: #ffffff; --radius: 10px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); background: var(--white); line-height: 1.7; font-size: 16px; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .wrap-sm { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 72px 0; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 14px 0; }
+    nav .inner { display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .brand { font-weight: 800; font-size: 17px; color: var(--blue-dark); text-decoration: none; letter-spacing: -.3px; display: flex; align-items: center; gap: 8px; }
+    .brand-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--blue), var(--accent)); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 14px; flex-shrink: 0; }
+    .brand span { color: var(--accent); }
+    .nav-links { display: flex; align-items: center; gap: 20px; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+    .nav-links a:hover { color: var(--text); }
+    nav a.cta-nav { background: var(--blue); color: #fff; padding: 9px 18px; border-radius: var(--radius); text-decoration: none; font-weight: 700; font-size: 14px; }
+    nav a.cta-nav:hover { background: var(--blue-dark); }
+    @media (max-width: 640px) { .nav-links { display: none; } }
+
+    /* Hero */
+    .hero { background: linear-gradient(160deg, #f0f6ff 0%, #e4f0fb 60%, #f7fafd 100%); padding: 72px 0 56px; }
+    .hero-inner { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; }
+    @media (max-width: 640px) { .hero-inner { grid-template-columns: 1fr; } }
+    .hero .badge { display: inline-block; background: #dbeeff; color: var(--blue-dark); border: 1px solid #b8d8f7; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(26px, 4vw, 42px); font-weight: 900; line-height: 1.1; margin-bottom: 16px; letter-spacing: -.5px; }
+    .hero p.lead { font-size: 17px; color: var(--muted); max-width: 520px; }
+
+    /* Photo placeholder */
+    .photo-placeholder { width: 160px; height: 160px; border-radius: 16px; background: linear-gradient(135deg, #dbeeff, #c8f5e4); border: 2px dashed var(--border); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; flex-shrink: 0; }
+    .photo-placeholder .icon { font-size: 36px; margin-bottom: 8px; }
+    .photo-placeholder p { font-size: 11px; color: var(--muted); line-height: 1.4; padding: 0 12px; }
+
+    /* Content */
+    .section-label { text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; font-weight: 700; color: var(--blue); margin-bottom: 10px; }
+    h2 { font-size: clamp(20px, 3.5vw, 30px); font-weight: 900; line-height: 1.15; letter-spacing: -.3px; margin-bottom: 16px; }
+    .section-intro { font-size: 17px; color: var(--muted); margin-bottom: 36px; }
+    p.body-text { font-size: 16px; color: var(--muted); margin-bottom: 18px; line-height: 1.7; }
+    p.body-text strong { color: var(--text); }
+
+    /* Mission box */
+    .mission-box { background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%); border-radius: 16px; padding: 40px 44px; color: #fff; margin-top: 16px; }
+    .mission-box .label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 14px; }
+    .mission-box p { font-size: 20px; font-weight: 700; line-height: 1.45; color: #fff; margin: 0; }
+    @media (max-width: 640px) { .mission-box { padding: 28px 24px; } .mission-box p { font-size: 17px; } }
+
+    /* Values grid */
+    .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 48px; }
+    .value-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 28px 24px; }
+    .value-card .icon { font-size: 24px; margin-bottom: 12px; }
+    .value-card h3 { font-size: 15px; font-weight: 800; margin-bottom: 8px; }
+    .value-card p { font-size: 14px; color: var(--muted); line-height: 1.55; }
+
+    /* CTA strip */
+    .cta-strip { background: var(--bg); border-top: 1px solid var(--border); padding: 60px 0; text-align: center; }
+    .cta-strip h2 { margin-bottom: 12px; }
+    .cta-strip p { color: var(--muted); font-size: 16px; margin-bottom: 24px; }
+    .btn-primary { background: var(--blue); color: #fff; padding: 14px 28px; border-radius: var(--radius); font-weight: 800; font-size: 15px; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: var(--blue-dark); }
+
+    footer { background: #f0f5fb; border-top: 1px solid var(--border); padding: 32px 0; text-align: center; font-size: 13px; color: var(--muted); }
+    footer a { color: var(--blue); text-decoration: none; }
+    @media (max-width: 640px) { section { padding: 52px 0; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <div class="brand-icon">CF</div>
+      ClinicFlow<span>.</span>
+    </a>
+    <div class="nav-links">
+      <a href="results.html">Results</a>
+      <a href="case-study.html">Case Study</a>
+      <a href="index.html#pricing">Pricing</a>
+    </div>
+    <a class="cta-nav" href="mailto:contact@clinicflowautomation.com?subject=ClinicFlow%20%E2%80%94%20Getting%20Started">Get started →</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <div class="badge">Montreal, QC · Canadian-built</div>
+        <h1>Hi, I'm Mohamed</h1>
+        <p class="lead">I'm a computer science student in Montreal who got frustrated watching Canadian dental clinics lose patients to avoidable problems — and built a fix.</p>
+      </div>
+      <div class="photo-placeholder">
+        <div class="icon">👤</div>
+        <p>Professional headshot coming soon</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- Story -->
+<section>
+  <div class="wrap-sm">
+    <p class="section-label">The story</p>
+    <h2>Why ClinicFlow exists</h2>
+
+    <p class="body-text">A few years ago, I was doing a summer research project on small business operations and spent a lot of time talking to dental clinic owners and office managers in the Montreal area. The problems they described were almost identical across every clinic I visited.</p>
+
+    <p class="body-text"><strong>Missed calls went unanswered.</strong> Not because nobody cared — but because the front desk was already handling a patient at the desk, and by the time they called back, the person had already booked at the clinic down the street.</p>
+
+    <p class="body-text"><strong>No-shows were a constant drain.</strong> Clinics knew reminders worked, but sending them manually was inconsistent. Patients slipped through.</p>
+
+    <p class="body-text"><strong>Recall lists sat untouched.</strong> Every clinic had hundreds of patients due for a cleaning. Nobody had the time to work through the list consistently. Patients drifted away.</p>
+
+    <p class="body-text">What made this strange was that <strong>software solutions existed</strong> — but they charged $200–$500 per month, required staff training, and often didn't fit the way a 2-chair clinic actually operates. The clinics I spoke with weren't looking for enterprise software. They wanted someone to just set it up and make it work.</p>
+
+    <p class="body-text">So I built ClinicFlow: a done-for-you automation setup with a one-time price, no monthly fees, and no new software for the front desk to learn. I configure everything on top of tools the clinic already uses (Gmail, Mailchimp, their existing phone line), and the automations run quietly in the background.</p>
+
+    <div class="mission-box">
+      <div class="label">Mission</div>
+      <p>"Make professional patient communication automation accessible to every independent clinic in Canada — without the SaaS price tag or the implementation headache."</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- Values -->
+<section style="background:var(--bg);">
+  <div class="wrap">
+    <p class="section-label">How I work</p>
+    <h2>What you can expect</h2>
+    <div class="values-grid">
+
+      <div class="value-card">
+        <div class="icon">🇨🇦</div>
+        <h3>Canadian-first</h3>
+        <p>Built specifically for Canadian clinics — PIPEDA compliant, priced in CAD, and designed for the Canadian healthcare context.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="icon">🔧</div>
+        <h3>Done for you</h3>
+        <p>I configure everything. Your team changes nothing. No training required, no new logins to remember. It runs in the background.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="icon">💬</div>
+        <h3>Direct communication</h3>
+        <p>You email me directly. No support ticket system, no chatbot. I reply within 4 business hours on weekdays.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="icon">📊</div>
+        <h3>Honest about results</h3>
+        <p>I share industry benchmarks, not cherry-picked numbers. If the system isn't working within 30 days, I fix it or refund you.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="wrap-sm">
+    <h2>Want to work together?</h2>
+    <p>Send me a message — I'll reply within one business day and let you know if ClinicFlow is a good fit for your practice.</p>
+    <a class="btn-primary" href="mailto:contact@clinicflowautomation.com?subject=ClinicFlow%20%E2%80%94%20Getting%20Started">Email Mohamed directly</a>
+    <p style="margin-top:14px;font-size:13px;color:var(--muted);">contact@clinicflowautomation.com · No obligation, no sales call required.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 ClinicFlow Automation &nbsp;·&nbsp; <a href="mailto:contact@clinicflowautomation.com">contact@clinicflowautomation.com</a></p>
+    <p style="margin-top:6px;">Built in Montreal for Canadian dental clinics. &nbsp;·&nbsp; <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="index.html">Home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

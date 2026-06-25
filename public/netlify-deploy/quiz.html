@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Your Plan — ClinicFlow Automation</title>
+  <meta name="description" content="Answer 3 quick questions and get a personalized ClinicFlow tier recommendation for your clinic or salon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #060d1a;
+      --bg2:     #0d1f38;
+      --card:    rgba(255,255,255,.06);
+      --card-hi: rgba(255,255,255,.1);
+      --line:    rgba(255,255,255,.09);
+      --text:    #f0ece3;
+      --muted:   #6b7a8d;
+      --accent:  #7c5cff;
+      --accent2: #6d4fe8;
+      --gold:    #c8a84b;
+      --green:   #3dbe8a;
+      --radius:  12px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124,92,255,.1), transparent 60%);
+    }
+
+    /* ── Nav ── */
+    nav {
+      background: rgba(6,13,26,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .nav-logo {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-back { font-size: 14px; color: var(--muted); text-decoration: none; transition: color .15s; }
+    .nav-back:hover { color: var(--text); }
+
+    /* ── Quiz shell ── */
+    .quiz-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+    }
+    .quiz-card {
+      background: rgba(13,31,56,0.6);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      width: 100%;
+      max-width: 600px;
+      padding: 44px 40px;
+    }
+
+    /* ── Progress ── */
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .progress-track {
+      flex: 1;
+      height: 3px;
+      background: var(--line);
+      border-radius: 9px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), #a78bfa);
+      border-radius: 9px;
+      transition: width .4s ease;
+    }
+    .progress-label { font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+    /* ── Step content ── */
+    .step { display: none; }
+    .step.active { display: block; }
+
+    .step-tag {
+      display: inline-block;
+      background: rgba(124,92,255,.15);
+      color: var(--accent);
+      border: 1px solid rgba(124,92,255,.25);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .step-sub {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+
+    /* ── Option cards ── */
+    .options { display: flex; flex-direction: column; gap: 10px; }
+    .option {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: border-color .15s, background .15s;
+      background: var(--card);
+    }
+    .option:hover { border-color: var(--accent); background: rgba(124,92,255,.08); }
+    .option.selected { border-color: var(--accent); background: rgba(124,92,255,.12); }
+    .option-icon {
+      font-size: 22px;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .option-text strong { display: block; font-size: 15px; font-weight: 700; margin-bottom: 2px; color: var(--text); }
+    .option-text span { font-size: 13px; color: var(--muted); }
+
+    /* ── Nav buttons ── */
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .btn-next {
+      flex: 1;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background .15s, opacity .15s;
+    }
+    .btn-next:hover:not(:disabled) { background: var(--accent2); }
+    .btn-next:disabled { opacity: .35; cursor: not-allowed; }
+    .btn-back {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      padding: 14px 18px;
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .btn-back:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── Result ── */
+    .result { display: none; }
+    .result.active { display: block; }
+    .result-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+    .badge-starter { background: rgba(57,190,138,.15); color: var(--green); border: 1px solid rgba(57,190,138,.3); }
+    .badge-growth  { background: rgba(124,92,255,.15); color: var(--accent); border: 1px solid rgba(124,92,255,.3); }
+    .badge-full    { background: rgba(200,168,75,.15); color: var(--gold); border: 1px solid rgba(200,168,75,.3); }
+
+    .result h2 { font-size: 28px; margin-bottom: 8px; }
+    .result-sub { font-size: 16px; color: var(--muted); margin-bottom: 28px; }
+
+    .result-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+      background: var(--card);
+    }
+    .result-card.starter { border-color: rgba(57,190,138,.35); }
+    .result-card.growth  { border-color: rgba(124,92,255,.35); }
+    .result-card.full    { border-color: rgba(200,168,75,.35); }
+
+    .result-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .result-price span { font-size: 14px; font-weight: 400; color: var(--muted); }
+    .result-tagline { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+
+    .result-features { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .result-features li { font-size: 14px; display: flex; align-items: flex-start; gap: 9px; color: var(--muted); }
+    .result-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+    .result-why {
+      background: rgba(124,92,255,.08);
+      border-left: 3px solid var(--accent);
+      padding: 16px 18px;
+      border-radius: 0 10px 10px 0;
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 20px;
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .result-why strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: var(--accent);
+    }
+
+    .cta-email {
+      display: block;
+      background: var(--gold);
+      color: #060d1a;
+      text-align: center;
+      padding: 16px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: background .15s;
+    }
+    .cta-email:hover { background: #e8c96a; }
+    .cta-restart {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      cursor: pointer;
+      margin-top: 14px;
+      text-decoration: underline;
+      transition: color .15s;
+    }
+    .cta-restart:hover { color: var(--text); }
+    .guarantee { font-size: 13px; color: var(--muted); text-align: center; margin-top: 10px; }
+
+    .calc-link-bar {
+      margin-top: 20px;
+      padding: 14px 18px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .calc-link-bar a { color: var(--gold); font-weight: 700; text-decoration: none; }
+    .calc-link-bar a:hover { color: #e8c96a; }
+
+    @media (max-width: 480px) {
+      .quiz-card { padding: 28px 20px; }
+      h2 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">Clinic<span>Flow</span></a>
+  <a class="nav-back" href="/">← Back to site</a>
+</nav>
+
+<div class="quiz-wrap">
+  <div class="quiz-card">
+
+    <!-- Progress bar -->
+    <div class="progress-row">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width: 33%"></div>
+      </div>
+      <div class="progress-label" id="progress-label">Question 1 of 3</div>
+    </div>
+
+    <!-- ── Step 1 ── -->
+    <div class="step active" id="step-1">
+      <div class="step-tag">Step 1</div>
+      <h2>What's the biggest challenge at your clinic right now?</h2>
+      <p class="step-sub">Pick the one that costs you the most.</p>
+      <div class="options" id="opts-1">
+        <div class="option" data-value="missed_calls" onclick="selectOption(1, this)">
+          <div class="option-icon">📞</div>
+          <div class="option-text">
+            <strong>Missed calls go unanswered</strong>
+            <span>Patients or clients call after hours or during busy periods and don't hear back</span>
+          </div>
+        </div>
+        <div class="option" data-value="no_shows" onclick="selectOption(1, this)">
+          <div class="option-icon">📅</div>
+          <div class="option-text">
+            <strong>Too many no-shows and cancellations</strong>
+            <span>Empty appointment slots are costing real revenue</span>
+          </div>
+        </div>
+        <div class="option" data-value="lost_patients" onclick="selectOption(1, this)">
+          <div class="option-icon">👤</div>
+          <div class="option-text">
+            <strong>Past patients aren't coming back</strong>
+            <span>We've lost touch with patients we haven't seen in 6–12 months</span>
+          </div>
+        </div>
+        <div class="option" data-value="reviews" onclick="selectOption(1, this)">
+          <div class="option-icon">⭐</div>
+          <div class="option-text">
+            <strong>We need more Google reviews</strong>
+            <span>Competitors have more reviews and we're losing new patients because of it</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-next" id="next-1" onclick="nextStep(1)" disabled>Next →</button>
+      </div>
+    </div>
+
+    <!-- ── Step 2 ── -->
+    <div class="step" id="step-2">
+      <div class="step-tag">Step 2</div>
+      <h2>How many active patients or clients does your clinic have?</h2>
+      <p class="step-sub">This helps us recommend the right scale of automation.</p>
+      <div class="options" id="opts-2">
+        <div class="option" data-value="small" onclick="selectOption(2, this)">
+          <div class="option-icon">🌱</div>
+          <div class="option-text">
+            <strong>Under 500</strong>
+            <span>A newer or smaller practice</span>
+          </div>
+        </div>
+        <div class="option" data-value="medium" onclick="selectOption(2, this)">
+          <div class="option-icon">🏥</div>
+          <div class="option-text">
+            <strong>500–1,500</strong>
+            <span>A solid established practice</span>
+          </div>
+        </div>
+        <div class="option" data-value="large" onclick="selectOption(2, this)">
+          <div class="option-icon">🏢</div>
+          <div class="option-text">
+            <strong>1,500+</strong>
+            <span>A high-volume clinic or multi-location operation</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-back" onclick="prevStep(2)">← Back</button>
+        <button class="btn-next" id="next-2" onclick="nextStep(2)" disabled>Next →</button>
+      </div>
+    </div>
+
+    <!-- ── Step 3 ── -->
+    <div class="step" id="step-3">
+      <div class="step-tag">Step 3</div>
+      <h2>How hands-on do you want to be with the setup?</h2>
+      <p class="step-sub">There's no wrong answer — we have an option for every preference.</p>
+      <div class="options" id="opts-3">
+        <div class="option" data-value="diy" onclick="selectOption(3, this)">
+          <div class="option-icon">🛠️</div>
+          <div class="option-text">
+            <strong>We'll set it up ourselves</strong>
+            <span>Give us the templates and a clear guide — our team will handle the tech</span>
+          </div>
+        </div>
+        <div class="option" data-value="help" onclick="selectOption(3, this)">
+          <div class="option-icon">🤝</div>
+          <div class="option-text">
+            <strong>A little help would be nice</strong>
+            <span>We'd like the option to have someone configure it for us</span>
+          </div>
+        </div>
+        <div class="option" data-value="done_for_you" onclick="selectOption(3, this)">
+          <div class="option-icon">✅</div>
+          <div class="option-text">
+            <strong>Done-for-us, please</strong>
+            <span>We're busy — we want everything configured and ready to go</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-back" onclick="prevStep(3)">← Back</button>
+        <button class="btn-next" id="next-3" onclick="showResult()" disabled>See my plan →</button>
+      </div>
+    </div>
+
+    <!-- ── Result ── -->
+    <div class="result" id="result">
+      <!-- filled by JS -->
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const answers = { 1: null, 2: null, 3: null };
+
+  function selectOption(step, el) {
+    document.querySelectorAll(`#opts-${step} .option`).forEach(o => o.classList.remove("selected"));
+    el.classList.add("selected");
+    answers[step] = el.dataset.value;
+    document.getElementById(`next-${step}`).disabled = false;
+  }
+
+  function nextStep(from) {
+    document.getElementById(`step-${from}`).classList.remove("active");
+    const to = from + 1;
+    document.getElementById(`step-${to}`).classList.add("active");
+    updateProgress(to);
+  }
+
+  function prevStep(from) {
+    document.getElementById(`step-${from}`).classList.remove("active");
+    const to = from - 1;
+    document.getElementById(`step-${to}`).classList.add("active");
+    updateProgress(to);
+  }
+
+  function updateProgress(step) {
+    const pct = Math.round((step / 3) * 100);
+    document.getElementById("progress-fill").style.width = pct + "%";
+    document.getElementById("progress-label").textContent = `Question ${step} of 3`;
+  }
+
+  function recommend() {
+    const challenge = answers[1];
+    const size      = answers[2];
+    const hands     = answers[3];
+    if (hands === "done_for_you" || size === "large") return "full";
+    if (size === "medium") return "growth";
+    if (challenge === "lost_patients" || challenge === "reviews") return "growth";
+    return "starter";
+  }
+
+  const TIERS = {
+    starter: {
+      name: "Starter",
+      price: "$397",
+      priceNote: "CAD one-time — no monthly fees",
+      tagline: "Plug the most immediate revenue leak — fast.",
+      badge: "badge-starter",
+      color: "starter",
+      features: [
+        "Missed call recovery — automatic SMS within 60 seconds",
+        "Appointment reminders — 72h + 24h SMS",
+        "Setup in 5 business days",
+        "30-day results report",
+        "Pay $200 now · $197 after results",
+      ],
+      whyTitle: "Why Starter fits your clinic",
+      why: {
+        missed_calls: "Your biggest pain is missed calls — Starter was built for exactly this. The follow-up fires automatically within 60 seconds of every missed call, 24/7.",
+        no_shows:     "Appointment reminders at 72h and 24h have the highest documented impact on no-show rates. Starter includes both.",
+        lost_patients:"Starter solves missed calls immediately. If re-engaging a larger list of inactive patients is the primary goal, Growth includes a full reactivation campaign.",
+        reviews:      "Starter gets your foundation in place. For Google reviews as a primary goal, Growth includes an automated review request sequence.",
+      },
+      emailSubject: "ClinicFlow%20Starter%20%E2%80%94%20Getting%20Started",
+    },
+    growth: {
+      name: "Growth",
+      price: "$997",
+      priceNote: "CAD one-time — no monthly fees",
+      tagline: "The complete automation suite for a growing practice.",
+      badge: "badge-growth",
+      color: "growth",
+      features: [
+        "Everything in Starter",
+        "Patient reactivation campaign (inactive 12+ months)",
+        "AI-powered intelligent responses — knows your clinic",
+        "Monthly performance reports",
+        "Pay $500 now · $497 after results",
+      ],
+      whyTitle: "Why Growth fits your clinic",
+      why: {
+        missed_calls: "Growth includes missed call recovery AND the full automation suite — so you stop losing calls and build a system that works while you're treating patients.",
+        no_shows:     "Growth includes appointment reminders plus a reactivation campaign — reducing no-shows and rebuilding your recall list simultaneously.",
+        lost_patients:"This is what Growth was built for. The reactivation campaign targets patients you haven't seen in 12+ months and has a direct, measurable impact on recall revenue.",
+        reviews:      "Growth includes the full automation suite plus AI-powered responses that naturally guide satisfied patients toward leaving reviews.",
+      },
+      emailSubject: "ClinicFlow%20Growth%20%E2%80%94%20Getting%20Started",
+    },
+    full: {
+      name: "Premium",
+      price: "$2,497",
+      priceNote: "CAD one-time — no monthly fees",
+      tagline: "A fully custom, done-for-you system with priority support.",
+      badge: "badge-full",
+      color: "full",
+      features: [
+        "Everything in Growth",
+        "Booking automation — patients book via SMS reply",
+        "AI intelligence layer — full clinic brain setup",
+        "Weekly intelligence digest to clinic owner",
+        "Priority support — same-day response",
+        "Pay $1,250 now · $1,247 after results",
+      ],
+      whyTitle: "Why Premium fits your clinic",
+      why: {
+        missed_calls: "Premium includes every automation plus done-for-you setup and the full AI intelligence layer — we configure everything and hand it off ready to run.",
+        no_shows:     "Premium gives you booking automation so patients can confirm and rebook via SMS, eliminating the friction that causes no-shows.",
+        lost_patients:"Premium includes the complete reactivation suite plus AI that personalizes every message to the specific patient's history and tone.",
+        reviews:      "Premium includes the full system — automated follow-ups, intelligent responses, and a dedicated weekly digest showing exactly what was recovered.",
+      },
+      emailSubject: "ClinicFlow%20Premium%20%E2%80%94%20Getting%20Started",
+    },
+  };
+
+  function showResult() {
+    document.querySelectorAll(".step").forEach(s => s.classList.remove("active"));
+    document.getElementById("progress-fill").style.width = "100%";
+    document.getElementById("progress-label").textContent = "Done!";
+
+    const tier = recommend();
+    const t = TIERS[tier];
+    const challenge = answers[1];
+    const whyText = t.why[challenge] || t.why.missed_calls;
+
+    const featuresHTML = t.features.map(f => `<li>${f}</li>`).join("");
+
+    document.getElementById("result").innerHTML = `
+      <span class="result-badge ${t.badge}">${t.name} — Recommended for you</span>
+      <h2>The ${t.name} Plan</h2>
+      <p class="result-sub">${t.tagline}</p>
+      <div class="result-card ${t.color}">
+        <div class="result-price">${t.price} <span>${t.priceNote}</span></div>
+        <div class="result-tagline">No monthly fees. No subscription. No ongoing charge.</div>
+        <ul class="result-features">${featuresHTML}</ul>
+      </div>
+      <div class="result-why">
+        <strong>${t.whyTitle}</strong>
+        ${whyText}
+      </div>
+      <a class="cta-email"
+         href="mailto:contact@clinicflowautomation.com?subject=Free%20audit%20request%20%E2%80%94%20${encodeURIComponent(t.name)}%20plan&body=Hi%2C%20I%20just%20completed%20the%20ClinicFlow%20quiz%20and%20I%27m%20interested%20in%20a%20free%20audit.%20My%20clinic%20is%3A%20">
+        Get your free audit →
+      </a>
+      <div class="guarantee">Free audit — no payment, no commitment</div>
+      <div class="calc-link-bar">
+        Want to see the exact revenue number? <a href="/calculator">Run the calculator →</a>
+      </div>
+      <div class="cta-restart" onclick="restart()">Take the quiz again</div>
+    `;
+
+    document.getElementById("result").classList.add("active");
+  }
+
+  function restart() {
+    answers[1] = answers[2] = answers[3] = null;
+    document.getElementById("result").classList.remove("active");
+    document.querySelectorAll(".option").forEach(o => o.classList.remove("selected"));
+    document.querySelectorAll(".btn-next").forEach(b => b.disabled = true);
+    document.getElementById("step-1").classList.add("active");
+    document.getElementById("progress-fill").style.width = "33%";
+    document.getElementById("progress-label").textContent = "Question 1 of 3";
+  }
+</script>
+</body>
+</html>

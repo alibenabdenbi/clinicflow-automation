@@ -1,0 +1,147 @@
+{
+  "byDate": {
+    "2026-04-09": 20
+  },
+  "byPhone": {
+    "+1-416-425-5144": [
+      {
+        "date": "2026-04-09",
+        "sid": "SMb7665f04d0f9346f0165bcd5a712f1f6",
+        "clinicName": "Dr. Norman Mack"
+      }
+    ],
+    "+1 647-749-0456": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM268a2934cf522233970c7192fb1dc336",
+        "clinicName": "Smyl"
+      }
+    ],
+    "+1-416-536-8863": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM4af3ab9d006694eb08233012aa8c1682",
+        "clinicName": "Lawrence Freedman"
+      }
+    ],
+    "+1-416-260-2001": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM8e537727a5d0730d43ad38196131d309",
+        "clinicName": "Harbourfront Dental"
+      }
+    ],
+    "+1-905-276-9991": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM394aaef47cac2ba119737cef726a3100",
+        "clinicName": "Colonnade Dental"
+      }
+    ],
+    "+1-416-324-8100": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM832b25139de49b93e89b38277c025ba5",
+        "clinicName": "Kerhoulas Dental Rosedale"
+      }
+    ],
+    "+1 9058963838": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM8139b1a6500b84872b1d5c2f7735d7f1",
+        "clinicName": "Castlemore Dental"
+      }
+    ],
+    "+1-416-977-6453": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM932cc32f8bf57b39b0364ff96d4636f4",
+        "clinicName": "Dr. I. Khan"
+      }
+    ],
+    "+1-416-599-9962": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM163c14463b7fc177a8e1a24a3d572983",
+        "clinicName": "Drs. Asadi, Lewis & Associates"
+      }
+    ],
+    "+1-416-483-2005": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM39bef92250fe8d8f6d9aa84869cf72b6",
+        "clinicName": "Dr. Peter Chilikoff"
+      }
+    ],
+    "+1-416-261-7269": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM079a1416971fcedfec251f02425e71ce",
+        "clinicName": "Dr Posen's Dental Centre"
+      }
+    ],
+    "+1-416-640-6400": [
+      {
+        "date": "2026-04-09",
+        "sid": "SMe7577749b3ab716cf9b84cbdfb09c757",
+        "clinicName": "Bay-College Dental Center"
+      }
+    ],
+    "+1-416-869-9888": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM18235f364c5ab950334dc9464ce10cc6",
+        "clinicName": "Toothworks Bay-Adelaide Dental"
+      }
+    ],
+    "+1-416-916-8811": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM2b980e3f4ac918bb0cfc31755c4e8ea9",
+        "clinicName": "Dental office"
+      }
+    ],
+    "+1 416-967-7673": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM29a582bbf68bc38bea3c1777d7098f6f",
+        "clinicName": "Rosedale Dental Centre"
+      }
+    ],
+    "+1-416-967-7463": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM2ffa718a07ce1d836807eaa6b5761ddd",
+        "clinicName": "Dentistry On Yorkville"
+      }
+    ],
+    "+1-416-975-0606": [
+      {
+        "date": "2026-04-09",
+        "sid": "SMe729f6b49bf35eaf0538ae89595bdef5",
+        "clinicName": "Lawton @ Yonge Dental Office"
+      }
+    ],
+    "+1-416-364-2444": [
+      {
+        "date": "2026-04-09",
+        "sid": "SMfdd10b4750408f7e81067a5c068e4ef0",
+        "clinicName": "Dr. Allan Horenfeldt"
+      }
+    ],
+    "+1-416-485-7121": [
+      {
+        "date": "2026-04-09",
+        "sid": "SMefe74a5e10de5fd29de9952c53011d06",
+        "clinicName": "Dental Emergency Service"
+      }
+    ],
+    "+1-416-968-3013": [
+      {
+        "date": "2026-04-09",
+        "sid": "SM795192f302fa614ff27ebad3e3abe6f0",
+        "clinicName": "Dentistry on Bay"
+      }
+    ]
+  }
+}

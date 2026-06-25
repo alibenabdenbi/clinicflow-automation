@@ -1,0 +1,58 @@
+{
+  "client": {
+    "name": "Bayview Village Dental",
+    "city": "Toronto",
+    "email": "test@bayviewvillagedental.com",
+    "tier": "growth",
+    "website": "bayviewvillagedental.com"
+  },
+  "tier": "growth",
+  "generatedAt": "2026-04-08T23:22:06.026Z",
+  "files": [
+    {
+      "name": "missed-call-followup.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\bayview_village_dental\\missed-call-followup.md",
+      "size": 1675
+    },
+    {
+      "name": "appointment-reminder.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\bayview_village_dental\\appointment-reminder.md",
+      "size": 1463
+    },
+    {
+      "name": "monthly-newsletter.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\bayview_village_dental\\monthly-newsletter.md",
+      "size": 2200
+    },
+    {
+      "name": "tracking-spreadsheet.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\bayview_village_dental\\tracking-spreadsheet.md",
+      "size": 3071
+    },
+    {
+      "name": "reactivation-campaign.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\bayview_village_dental\\reactivation-campaign.md",
+      "size": 3449
+    },
+    {
+      "name": "new-patient-welcome.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\bayview_village_dental\\new-patient-welcome.md",
+      "size": 3473
+    },
+    {
+      "name": "review-request.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\bayview_village_dental\\review-request.md",
+      "size": 2146
+    },
+    {
+      "name": "setup-summary.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\bayview_village_dental\\setup-summary.md",
+      "size": 3121
+    },
+    {
+      "name": "setup-guide.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\bayview_village_dental\\setup-guide.md",
+      "size": 6207
+    }
+  ]
+}

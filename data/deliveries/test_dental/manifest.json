@@ -1,0 +1,38 @@
+{
+  "client": {
+    "name": "Test Dental",
+    "city": "Toronto",
+    "email": "test@testdental.com",
+    "tier": "starter",
+    "website": ""
+  },
+  "tier": "starter",
+  "generatedAt": "2026-04-08T02:19:16.866Z",
+  "files": [
+    {
+      "name": "missed-call-followup.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\test_dental\\missed-call-followup.md",
+      "size": 839
+    },
+    {
+      "name": "appointment-reminder.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\test_dental\\appointment-reminder.md",
+      "size": 626
+    },
+    {
+      "name": "monthly-newsletter.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\test_dental\\monthly-newsletter.md",
+      "size": 663
+    },
+    {
+      "name": "tracking-spreadsheet.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\test_dental\\tracking-spreadsheet.md",
+      "size": 697
+    },
+    {
+      "name": "setup-summary.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\test_dental\\setup-summary.md",
+      "size": 1032
+    }
+  ]
+}

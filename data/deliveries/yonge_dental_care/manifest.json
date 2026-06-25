@@ -1,0 +1,58 @@
+{
+  "client": {
+    "name": "Yonge Dental Care",
+    "city": "Toronto",
+    "email": "test@yongedentalcare.com",
+    "tier": "growth",
+    "website": "yongedentalcare.com"
+  },
+  "tier": "growth",
+  "generatedAt": "2026-04-10T03:16:35.923Z",
+  "files": [
+    {
+      "name": "missed-call-followup.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\yonge_dental_care\\missed-call-followup.md",
+      "size": 1769
+    },
+    {
+      "name": "appointment-reminder.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\yonge_dental_care\\appointment-reminder.md",
+      "size": 1443
+    },
+    {
+      "name": "monthly-newsletter.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\yonge_dental_care\\monthly-newsletter.md",
+      "size": 2175
+    },
+    {
+      "name": "tracking-spreadsheet.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\yonge_dental_care\\tracking-spreadsheet.md",
+      "size": 3061
+    },
+    {
+      "name": "reactivation-campaign.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\yonge_dental_care\\reactivation-campaign.md",
+      "size": 3394
+    },
+    {
+      "name": "new-patient-welcome.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\yonge_dental_care\\new-patient-welcome.md",
+      "size": 3423
+    },
+    {
+      "name": "review-request.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\yonge_dental_care\\review-request.md",
+      "size": 2126
+    },
+    {
+      "name": "setup-summary.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\yonge_dental_care\\setup-summary.md",
+      "size": 3574
+    },
+    {
+      "name": "setup-guide.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\yonge_dental_care\\setup-guide.md",
+      "size": 6182
+    }
+  ]
+}

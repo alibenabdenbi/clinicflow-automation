@@ -1,0 +1,47 @@
+ORE-Engine — Daily Report
+Date: 2026-04-18
+Generated: 2026-04-18T05:48:01.691Z
+────────────────────────────────────────────────────
+
+DISCOVERY & CRM
+  Total CRM leads: 77                     
+  New leads today: 0                      
+  Tier A: 26                              
+  Tier B: 51                              
+  Tier C: 0                               
+  Confirmed / accepted: 1                 
+  Offer acceptance rate: 1% (1/77 confirmed)
+  Top theme today: AI & Tech News         
+  High-score signals (>=9): 0             
+  Validated offer packs: 0                
+
+EMAIL OUTREACH
+  Total clinics in queue: 1013            
+  Emails pending (todo): 264              
+  Initial emails sent (all time): 72      
+  Emails sent today: 0                    
+  Emails sent yesterday: 15               
+  Total sent all time (SMTP): 198         
+    → Initial sends (all time): 158       
+    → Follow-ups (all time): 40           
+  Clinics with no email: 633              
+  Open rate proxy: 56% (40/72 proceeded to FU1)
+
+FOLLOW-UPS (3-stage)
+  FU1 due now: 17                         
+  FU1 due in next 7 days: 15              
+  FU2 due now: 6                          
+  FU1 sent (total): 40                    
+  FU2 sent (total): 19                    
+  FU3 sent (total): 0                     
+  Sequences complete: 0                   
+
+SYSTEM HEALTH
+  Last health check: HEALTHY              
+  Scheduler errors today: 0               
+
+WARNINGS
+  ⚠ WARNING: No new CRM leads discovered today — check if main pipeline ran
+
+────────────────────────────────────────────────────
+End of report

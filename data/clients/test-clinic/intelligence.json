@@ -1,0 +1,167 @@
+{
+  "clinicSlug": "test-clinic",
+  "generatedAt": "2026-05-31T10:30:00.066Z",
+  "summary": "Revenue forecast for 2026-05: $200 (conservative) to $1,600 (optimistic). 2 patients are on track with no action needed. High-value patient to prioritize: Marie (estimated $600 in 3-year value).",
+  "forecast": {
+    "period": "2026-05",
+    "inactiveCount": 5,
+    "urgentCount": 0,
+    "healthyCount": 2,
+    "scenarios": {
+      "conservative": {
+        "recoveries": 1,
+        "revenue": 200,
+        "note": "Industry average baseline (12% reply rate)"
+      },
+      "expected": {
+        "recoveries": 6,
+        "revenue": 1200,
+        "note": "Based on your clinic's observed recovery rate"
+      },
+      "optimistic": {
+        "recoveries": 8,
+        "revenue": 1600,
+        "note": "Assumes improved wave timing and personalization"
+      }
+    },
+    "ltvAtRisk": 0,
+    "byWeek": [
+      {
+        "week": 1,
+        "expectedRecoveries": 2,
+        "expectedRevenue": 300
+      },
+      {
+        "week": 2,
+        "expectedRecoveries": 2,
+        "expectedRevenue": 300
+      },
+      {
+        "week": 3,
+        "expectedRecoveries": 2,
+        "expectedRevenue": 300
+      },
+      {
+        "week": 4,
+        "expectedRecoveries": 2,
+        "expectedRevenue": 300
+      }
+    ],
+    "generatedAt": "2026-05-31T10:30:00.047Z"
+  },
+  "heatmap": {
+    "0": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "1": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "2": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "3": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "4": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "5": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "6": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    }
+  },
+  "comparison": {
+    "thisMonth": {
+      "calls": 1,
+      "recovered": 1,
+      "recoveryRate": 100,
+      "revenue": 200
+    },
+    "lastMonth": {
+      "calls": 0,
+      "recovered": 0,
+      "recoveryRate": 0,
+      "revenue": 0
+    }
+  },
+  "patientsAtRisk": [],
+  "recovery": {
+    "total": 1,
+    "wave1Sent": 1,
+    "wave2Sent": 0,
+    "wave3Sent": 0,
+    "replied": 1,
+    "recovered": 1,
+    "optedOut": 0,
+    "exhausted": 0,
+    "waiting": 0,
+    "replyRate": 100,
+    "recoveryRate": 100
+  },
+  "topActions": []
+}

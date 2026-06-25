@@ -1,0 +1,447 @@
+<!doctype html>
+<!-- ClinicFlow LinkedIn Manual Outreach Tracker — password: clinicflow2026 -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LinkedIn Outreach Tracker — ClinicFlow</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue:      #1a6bbd;
+      --blue-dark: #114f93;
+      --blue-light:#e8f1fb;
+      --accent:    #0fa86e;
+      --warn:      #e67e22;
+      --danger:    #c0392b;
+      --text:      #1a2332;
+      --muted:     #5a6a80;
+      --border:    #d0dcea;
+      --bg:        #f7fafd;
+      --white:     #ffffff;
+      --radius:    10px;
+    }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+    /* ── Auth overlay ── */
+    #auth-overlay { position: fixed; inset: 0; background: var(--blue-dark); display: flex; align-items: center; justify-content: center; z-index: 999; }
+    .auth-box { background: #fff; border-radius: 16px; padding: 40px 48px; text-align: center; min-width: 320px; }
+    .auth-box h2 { font-size: 22px; font-weight: 900; color: var(--text); margin-bottom: 8px; }
+    .auth-box p  { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
+    #pw-input { width: 100%; padding: 11px 14px; border: 2px solid var(--border); border-radius: var(--radius); font-size: 15px; text-align: center; letter-spacing: 2px; }
+    #pw-input:focus { outline: none; border-color: var(--blue); }
+    #pw-btn { width: 100%; margin-top: 12px; background: var(--blue); color: #fff; border: none; padding: 13px; border-radius: var(--radius); font-size: 15px; font-weight: 800; cursor: pointer; }
+    #pw-btn:hover { background: var(--blue-dark); }
+    #pw-error { color: var(--danger); font-size: 13px; margin-top: 8px; min-height: 18px; }
+
+    /* ── Layout ── */
+    #app { display: none; }
+    header { background: var(--blue-dark); color: #fff; padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    header h1 { font-size: 18px; font-weight: 900; }
+    .header-nav { display: flex; gap: 12px; align-items: center; }
+    .header-nav a { color: rgba(255,255,255,0.75); font-size: 13px; text-decoration: none; }
+    .header-nav a:hover { color: #fff; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 24px; }
+
+    /* ── Dashboard strip ── */
+    .dash-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr) 2fr;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 860px) { .dash-strip { grid-template-columns: repeat(2, 1fr); } }
+    .dash-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+    .dash-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin-bottom: 4px; }
+    .dash-num { font-size: 30px; font-weight: 900; color: var(--text); line-height: 1.1; }
+    .dash-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    /* ── Daily goal bar ── */
+    .goal-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; display: flex; flex-direction: column; justify-content: center; }
+    .goal-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+    .goal-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); }
+    .goal-count { font-size: 18px; font-weight: 900; color: var(--text); }
+    .goal-track { height: 10px; background: var(--bg); border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+    .goal-fill { height: 100%; border-radius: 6px; background: var(--accent); transition: width .4s; }
+    .goal-fill.warn { background: var(--warn); }
+    .goal-fill.full { background: var(--accent); }
+    .goal-sub { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+    /* ── Toolbar ── */
+    .toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 18px; flex-wrap: wrap; }
+    .filter-btn { padding: 7px 16px; border-radius: 20px; border: 1.5px solid var(--border); background: #fff; font-size: 13px; font-weight: 600; color: var(--muted); cursor: pointer; transition: all .15s; }
+    .filter-btn.active, .filter-btn:hover { border-color: var(--blue); background: var(--blue-light); color: var(--blue); }
+    .toolbar-right { margin-left: auto; font-size: 13px; color: var(--muted); }
+
+    /* ── Notice banner ── */
+    #notice { display: none; background: #fff8e1; border: 1px solid #f0d070; border-radius: 10px; padding: 12px 18px; font-size: 13px; color: #7a6000; margin-bottom: 20px; }
+
+    /* ── Clinic cards grid ── */
+    #cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 16px; }
+    .clinic-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 12px; transition: box-shadow .15s; }
+    .clinic-card:hover { box-shadow: 0 4px 16px rgba(26,107,189,.10); }
+
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .contact-name { font-size: 15px; font-weight: 800; color: var(--text); }
+    .clinic-name { font-size: 12px; color: var(--muted); margin-top: 2px; line-height: 1.4; }
+    .city-tag { font-size: 11px; color: var(--muted); margin-top: 3px; }
+
+    /* ── Status badge (clickable) ── */
+    .status-badge {
+      display: inline-block; padding: 4px 10px; border-radius: 20px;
+      font-size: 11px; font-weight: 700; cursor: pointer; user-select: none;
+      white-space: nowrap; flex-shrink: 0; transition: opacity .15s;
+    }
+    .status-badge:hover { opacity: 0.8; }
+    .s-not_contacted   { background: #f0f4fa; color: var(--muted); }
+    .s-request_sent    { background: #fff8e1; color: #7a6000; }
+    .s-connected       { background: #e8f1fb; color: var(--blue-dark); }
+    .s-replied         { background: #f0fdf7; color: #1a5c41; }
+    .s-not_interested  { background: #fff5f5; color: var(--danger); }
+
+    /* ── Message box ── */
+    .msg-box { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 12px; color: var(--text); line-height: 1.6; white-space: pre-wrap; position: relative; }
+    .copy-btn {
+      position: absolute; top: 8px; right: 8px;
+      background: var(--blue); color: #fff; border: none;
+      padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700;
+      cursor: pointer; transition: background .15s;
+    }
+    .copy-btn:hover { background: var(--blue-dark); }
+    .copy-btn.copied { background: var(--accent); }
+
+    /* ── Action buttons ── */
+    .card-actions { display: flex; gap: 8px; }
+    .li-btn {
+      flex: 1; background: #0a66c2; color: #fff; border: none;
+      padding: 9px 12px; border-radius: 8px; font-size: 12px; font-weight: 700;
+      cursor: pointer; text-decoration: none; display: flex; align-items: center;
+      justify-content: center; gap: 5px; transition: background .15s;
+    }
+    .li-btn:hover { background: #004182; }
+    .li-icon { font-size: 14px; }
+
+    /* ── Empty state ── */
+    .empty-state { text-align: center; padding: 48px 24px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+
+    footer { text-align: center; font-size: 12px; color: var(--muted); padding: 24px; }
+  </style>
+</head>
+<body>
+
+<!-- ── Auth ── -->
+<div id="auth-overlay">
+  <div class="auth-box">
+    <h2>LinkedIn Tracker</h2>
+    <p>Enter password to access the outreach tracker</p>
+    <input id="pw-input" type="password" placeholder="Password" autocomplete="current-password" />
+    <button id="pw-btn" onclick="checkPw()">Unlock →</button>
+    <div id="pw-error"></div>
+  </div>
+</div>
+
+<!-- ── App ── -->
+<div id="app">
+  <header>
+    <h1>LinkedIn Outreach Tracker</h1>
+    <div class="header-nav">
+      <a href="/intelligence.html">← Intelligence</a>
+      <a href="/client-portal.html">Client Portal</a>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <!-- Dashboard strip -->
+    <div class="dash-strip">
+      <div class="dash-card">
+        <div class="dash-label">Sent Today</div>
+        <div class="dash-num" id="stat-today">0</div>
+        <div class="dash-sub">connection requests</div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-label">Total Connected</div>
+        <div class="dash-num" id="stat-connected">0</div>
+        <div class="dash-sub">accepted</div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-label">Replies</div>
+        <div class="dash-num" id="stat-replies">0</div>
+        <div class="dash-sub">responded</div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-label">Reply Rate</div>
+        <div class="dash-num" id="stat-rate">—</div>
+        <div class="dash-sub">connected → replied</div>
+      </div>
+      <div class="goal-card">
+        <div class="goal-header">
+          <div class="goal-title">Daily Goal</div>
+          <div class="goal-count"><span id="goal-sent">0</span> / 20 requests</div>
+        </div>
+        <div class="goal-track">
+          <div class="goal-fill" id="goal-bar" style="width:0%"></div>
+        </div>
+        <div class="goal-sub" id="goal-sub">0 more to reach today's goal</div>
+      </div>
+    </div>
+
+    <!-- Notice -->
+    <div id="notice"></div>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <button class="filter-btn active" onclick="setFilter('all', this)">All</button>
+      <button class="filter-btn" onclick="setFilter('not_contacted', this)">Not Contacted</button>
+      <button class="filter-btn" onclick="setFilter('request_sent', this)">Request Sent</button>
+      <button class="filter-btn" onclick="setFilter('connected', this)">Connected</button>
+      <button class="filter-btn" onclick="setFilter('replied', this)">Replied</button>
+      <button class="filter-btn" onclick="setFilter('not_interested', this)">Not Interested</button>
+      <div class="toolbar-right" id="count-label"></div>
+    </div>
+
+    <!-- Cards -->
+    <div id="cards-grid"></div>
+
+  </div>
+  <footer>ClinicFlow Automation — LinkedIn Tracker</footer>
+</div>
+
+<script>
+  // ── Auth ──────────────────────────────────────────────────────────────────
+  const PASS = 'clinicflow2026';
+  const AUTH_KEY = 'cf_auth_li';
+  const STORAGE_KEY = 'linkedin_outreach_v1';
+  const DAILY_GOAL = 20;
+
+  function checkPw() {
+    const val = document.getElementById('pw-input').value.trim();
+    if (val === PASS) {
+      sessionStorage.setItem(AUTH_KEY, '1');
+      document.getElementById('auth-overlay').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+      init();
+    } else {
+      document.getElementById('pw-error').textContent = 'Incorrect password.';
+    }
+  }
+
+  document.getElementById('pw-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') checkPw();
+  });
+
+  if (sessionStorage.getItem(AUTH_KEY)) {
+    document.getElementById('auth-overlay').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+  }
+
+  // ── Storage helpers ───────────────────────────────────────────────────────
+  function loadStatuses() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch { return {}; }
+  }
+  function saveStatuses(data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
+
+  const STATUS_CYCLE = ['not_contacted', 'request_sent', 'connected', 'replied', 'not_interested'];
+  const STATUS_LABELS = {
+    not_contacted:  'Not Contacted',
+    request_sent:   'Request Sent',
+    connected:      'Connected',
+    replied:        'Replied',
+    not_interested: 'Not Interested',
+  };
+
+  // ── State ─────────────────────────────────────────────────────────────────
+  let allContacts = [];
+  let currentFilter = 'all';
+
+  // ── Stats ─────────────────────────────────────────────────────────────────
+  function computeStats(statuses) {
+    const today = new Date().toISOString().slice(0, 10);
+    let sentToday = 0, connected = 0, replied = 0;
+    for (const [, v] of Object.entries(statuses)) {
+      if (v.status === 'request_sent' && (v.updatedAt || '').startsWith(today)) sentToday++;
+      if (v.status === 'connected' || v.status === 'replied') connected++;
+      if (v.status === 'replied') replied++;
+    }
+    return { sentToday, connected, replied };
+  }
+
+  function renderStats() {
+    const statuses = loadStatuses();
+    const { sentToday, connected, replied } = computeStats(statuses);
+    const rate = connected > 0 ? Math.round((replied / connected) * 100) + '%' : '—';
+    const pct = Math.min(100, Math.round((sentToday / DAILY_GOAL) * 100));
+
+    document.getElementById('stat-today').textContent = sentToday;
+    document.getElementById('stat-connected').textContent = connected;
+    document.getElementById('stat-replies').textContent = replied;
+    document.getElementById('stat-rate').textContent = rate;
+    document.getElementById('goal-sent').textContent = sentToday;
+    const bar = document.getElementById('goal-bar');
+    bar.style.width = pct + '%';
+    bar.className = 'goal-fill' + (sentToday >= DAILY_GOAL ? ' full' : '');
+    const remaining = Math.max(0, DAILY_GOAL - sentToday);
+    document.getElementById('goal-sub').textContent =
+      sentToday >= DAILY_GOAL ? '🎉 Daily goal reached!' : `${remaining} more to reach today's goal`;
+  }
+
+  // ── Filter ────────────────────────────────────────────────────────────────
+  function setFilter(f, btn) {
+    currentFilter = f;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderCards();
+  }
+
+  // ── Cards ─────────────────────────────────────────────────────────────────
+  function getFirstName(fullName) {
+    if (!fullName) return 'there';
+    const parts = fullName.trim().split(/\s+/);
+    // Skip "Dr." prefix
+    const first = parts[0].toLowerCase() === 'dr.' ? parts[1] : parts[0];
+    return first || 'there';
+  }
+
+  function buildLinkedInUrl(name, clinicName) {
+    const q = encodeURIComponent(`${name} ${clinicName}`.slice(0, 80));
+    return `https://www.linkedin.com/search/results/people/?keywords=${q}`;
+  }
+
+  function buildMessage(contact) {
+    const firstName = getFirstName(contact.contactName || contact.rcdsoName);
+    const clinic = (contact.clinicName || 'your clinic').slice(0, 40);
+    const long = `Hi ${firstName}, I noticed ${clinic} doesn't have automated follow-up for missed calls — patients who call and don't reach you often book elsewhere. I help dental clinics fix this in 5 days, no monthly fees. Worth a quick look?`;
+    if (long.length <= 300) return long;
+    return `Hi ${firstName}, patients who call ${clinic} and don't reach anyone often book elsewhere. I automate the follow-up — 5-day setup, no monthly fees. Worth connecting?`;
+  }
+
+  function renderCards() {
+    const statuses = loadStatuses();
+    const filtered = currentFilter === 'all'
+      ? allContacts
+      : allContacts.filter(c => (statuses[c._key]?.status || 'not_contacted') === currentFilter);
+
+    document.getElementById('count-label').textContent =
+      `${filtered.length} contact${filtered.length !== 1 ? 's' : ''}`;
+
+    const grid = document.getElementById('cards-grid');
+    if (filtered.length === 0) {
+      grid.innerHTML = `<div class="empty-state">No contacts match this filter.</div>`;
+      return;
+    }
+
+    grid.innerHTML = filtered.map(c => {
+      const status = statuses[c._key]?.status || 'not_contacted';
+      const label = STATUS_LABELS[status];
+      const msg = buildMessage(c);
+      const liUrl = buildLinkedInUrl(c.contactName || c.rcdsoName, c.clinicName || '');
+      const displayName = c.contactName || c.rcdsoName || 'Unknown';
+      const clinicDisplay = (c.clinicName || '').slice(0, 60);
+      const cityDisplay = c.city || '';
+
+      return `
+        <div class="clinic-card" data-key="${esc(c._key)}">
+          <div class="card-top">
+            <div>
+              <div class="contact-name">${esc(displayName)}</div>
+              <div class="clinic-name">${esc(clinicDisplay)}</div>
+              ${cityDisplay ? `<div class="city-tag">📍 ${esc(cityDisplay)}</div>` : ''}
+            </div>
+            <span class="status-badge s-${status}" onclick="cycleStatus('${esc(c._key)}')">${esc(label)}</span>
+          </div>
+
+          <div class="msg-box">
+            <button class="copy-btn" onclick="copyMsg(this, '${esc(msg.replace(/'/g, "\\'"))}')">Copy</button>
+            ${esc(msg)}
+          </div>
+
+          <div class="card-actions">
+            <a class="li-btn" href="${liUrl}" target="_blank" rel="noopener">
+              <span class="li-icon">in</span> Search LinkedIn
+            </a>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ── Interactions ──────────────────────────────────────────────────────────
+  function cycleStatus(key) {
+    const statuses = loadStatuses();
+    const current = statuses[key]?.status || 'not_contacted';
+    const idx = STATUS_CYCLE.indexOf(current);
+    const next = STATUS_CYCLE[(idx + 1) % STATUS_CYCLE.length];
+    statuses[key] = { status: next, updatedAt: new Date().toISOString() };
+    saveStatuses(statuses);
+    renderStats();
+    renderCards();
+  }
+
+  function copyMsg(btn, msg) {
+    navigator.clipboard.writeText(msg).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    }).catch(() => {
+      // Fallback for non-HTTPS or older browsers
+      const ta = document.createElement('textarea');
+      ta.value = msg;
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+
+  // ── Notice ────────────────────────────────────────────────────────────────
+  function showNotice(msg) {
+    const el = document.getElementById('notice');
+    el.textContent = msg;
+    el.style.display = 'block';
+  }
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+  function init() {
+    renderStats();
+
+    fetch('/data/outreach.localDentists.json')
+      .then(r => { if (!r.ok) throw new Error('not found'); return r.json(); })
+      .then(data => {
+        const contacts = data
+          .filter(l => l.contactName || l.rcdsoName)
+          .slice(0, 50)
+          .map((l, i) => ({ ...l, _key: l.clinicName || l.email || String(i) }));
+
+        allContacts = contacts;
+
+        if (contacts.length === 0) {
+          showNotice('No contacts with names found yet. Add contactName to records in outreach.localDentists.json.');
+          document.getElementById('cards-grid').innerHTML =
+            '<div class="empty-state">No named contacts in the outreach queue yet.</div>';
+          return;
+        }
+
+        document.getElementById('count-label').textContent = `${contacts.length} contacts`;
+        renderCards();
+      })
+      .catch(() => {
+        showNotice('⚠ Clinic data unavailable. Run this tracker locally via: npm run site — then open http://localhost:3000/linkedin-tracker.html');
+        document.getElementById('cards-grid').innerHTML =
+          `<div class="empty-state">Run locally to load clinic data.<br><code>npm run site</code></div>`;
+      });
+  }
+
+  // Auto-init if already authenticated
+  if (sessionStorage.getItem(AUTH_KEY)) init();
+</script>
+</body>
+</html>

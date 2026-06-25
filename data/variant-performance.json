@@ -1,0 +1,112 @@
+{
+  "F": {
+    "sends": 16,
+    "replies": 0,
+    "weight": 1
+  },
+  "A": {
+    "sends": 10,
+    "replies": 0,
+    "weight": 1
+  },
+  "C": {
+    "sends": 10,
+    "replies": 0,
+    "weight": 1
+  },
+  "G": {
+    "sends": 9,
+    "replies": 0,
+    "weight": 1
+  },
+  "H": {
+    "sends": 11,
+    "replies": 0,
+    "weight": 1
+  },
+  "J": {
+    "sends": 10,
+    "replies": 0,
+    "weight": 1
+  },
+  "L": {
+    "sends": 14,
+    "replies": 0,
+    "weight": 1
+  },
+  "R": {
+    "sends": 20,
+    "replies": 0,
+    "weight": 0.5
+  },
+  "M": {
+    "sends": 15,
+    "replies": 0,
+    "weight": 1
+  },
+  "E": {
+    "sends": 9,
+    "replies": 0,
+    "weight": 1
+  },
+  "D": {
+    "sends": 7,
+    "replies": 0,
+    "weight": 1
+  },
+  "K": {
+    "sends": 5,
+    "replies": 0,
+    "weight": 1
+  },
+  "N": {
+    "sends": 10,
+    "replies": 0,
+    "weight": 1
+  },
+  "I": {
+    "sends": 8,
+    "replies": 0,
+    "weight": 1
+  },
+  "O": {
+    "sends": 5,
+    "replies": 0,
+    "weight": 1
+  },
+  "Q": {
+    "sends": 8,
+    "replies": 0,
+    "weight": 1
+  },
+  "P": {
+    "sends": 7,
+    "replies": 0,
+    "weight": 1
+  },
+  "B": {
+    "sends": 4,
+    "replies": 0,
+    "weight": 1
+  },
+  "variant-a": {
+    "sends": 8,
+    "replies": 0,
+    "weight": 1
+  },
+  "variant-b": {
+    "sends": 6,
+    "replies": 0,
+    "weight": 1
+  },
+  "SIGNAL": {
+    "sends": 35,
+    "replies": 0,
+    "weight": 0.5
+  },
+  "SIGNAL-FR": {
+    "sends": 3,
+    "replies": 0,
+    "weight": 1
+  }
+}

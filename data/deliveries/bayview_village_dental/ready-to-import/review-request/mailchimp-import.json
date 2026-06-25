@@ -1,0 +1,49 @@
+{
+  "_note": "Mailchimp Customer Journey reference file. Use the data below when building your automation in Mailchimp: Automations → Customer Journeys → Create Journey.",
+  "automation_name": "Google Review Request",
+  "trigger": "Appointment marked completed in PMS",
+  "client": "Bayview Village Dental",
+  "city": "Toronto",
+  "from_name": "Bayview Village Dental",
+  "from_email": "contact@bayviewvillagedental.com",
+  "total_emails": 2,
+  "sequence_duration_days": 5,
+  "emails": [
+    {
+      "step": 1,
+      "timing": {
+        "label": "2 days after trigger",
+        "amount": 2,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 2 days after previous step"
+      },
+      "subject_line": "A quick favour, [PatientFirstName]",
+      "subject_char_count": 34,
+      "preview_text": "We hope your appointment went well and you're feeling good.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWe hope your appointment went well and you're feeling good.\n\nIf you have 60 seconds, would you mind leaving us a review on Google? It helps other people in Toronto find a dentist they can actually trust — and it means a lot to our team.\n\n→ [ReviewLink]\n\nIf anything about your visit wasn't quite right, please reply here instead. We'd rather hear it directly and have the chance to fix it.\n\nThank you either way.\n\nThe Bayview Village Dental Team",
+      "body_word_count": 83,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[ReviewLink]"
+      ]
+    },
+    {
+      "step": 2,
+      "timing": {
+        "label": "5 days after trigger",
+        "amount": 5,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 5 days after previous step"
+      },
+      "subject_line": "Still here, [PatientFirstName]",
+      "subject_char_count": 30,
+      "preview_text": "We sent a note a few days ago about a Google review — completely understand if the timing wasn't right.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWe sent a note a few days ago about a Google review — completely understand if the timing wasn't right.\n\nIf you have a minute, we'd still appreciate it: [ReviewLink]\n\nEither way, we're glad you came in, and we look forward to seeing you at your next visit.\n\nThe Bayview Village Dental Team",
+      "body_word_count": 55,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[ReviewLink]"
+      ]
+    }
+  ]
+}

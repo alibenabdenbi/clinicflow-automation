@@ -1,0 +1,88 @@
+﻿# Environment & Credentials — NEVER PUSH
+.env
+.env.*
+!.env.example
+.env.local
+.env.production
+*.env
+
+# API Keys & Secrets
+config/secrets.js
+config/credentials.js
+src/config/keys.js
+
+# Data files with real clinic/patient data
+data/outreach.localDentists.json
+data/outreach.physioClinics.json
+data/hitlist/
+data/audio/
+data/enrichment*.json
+data/fresh-*.json
+data/manual-*.json
+data/tomorrow-*.json
+data/send-config.json
+data/deliverability.json
+data/call-briefs.json
+data/linkedin/
+smtp.emaillog.json
+imap-seen.json
+reply-monitor-seen.json
+
+# Logs & Runtime
+logs/
+*.log
+pm2.log
+.pm2/
+pids/
+*.pid
+*.lock
+scheduler.lock
+followups.lock
+
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Netlify
+.netlify/
+netlify/.cache/
+
+# Playwright browsers
+playwright-report/
+test-results/
+.playwright/
+
+# Windows
+$RECYCLE.BIN/
+
+data/physio-email-template.json
+data/physio-website-targets.json
+data/enrichment-queue.json
+data/enrichment-targets.json
+start-scheduler.bat
+
+# Public dashboard runtime data (contains clinic PII)
+public/netlify-deploy/data/conversion-priority.json
+public/netlify-deploy/data/clients-stats.json
+public/netlify-deploy/data/inbound-summary.json
+public/netlify-deploy/data/outreach-stats.json
+
+# Audio recordings (prospect voicemails)
+public/netlify-deploy/audio/
+public/audio/

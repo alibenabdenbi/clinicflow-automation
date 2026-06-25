@@ -1,0 +1,64 @@
+
+╔═══════════════════════════════════════════════════════════════╗
+║           CLINICFLOW — OVERNIGHT INTELLIGENCE REPORT          ║
+║           Sunday, May 10, 2026
+║           Run: 03:21 a.m. → 11:36 a.m.
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║  WHAT HAPPENED WHILE YOU SLEPT:                              ║
+║                                                               ║
+║  JOB 1 — AI OPENERS                                         ║
+║  73   unique openers across dental/salon/physio         ║
+║  Every opener is clinic-specific — not a template.          ║
+║                                                               ║
+║  JOB 2 — EMAIL SCRAPING                                      ║
+║  11 new salon emails found from website scraping            ║
+║  Physio sites use JS rendering — needs Playwright next       ║
+║                                                               ║
+║  JOB 3 — LINKEDIN MESSAGES                                   ║
+║  981/981 prospects have personalized connection messages     ║
+║  Ready to send. Do 5-10 per day from LinkedIn directly.     ║
+║                                                               ║
+╠═══════════════════════════════════════════════════════════════╣
+║  PIPELINE STATUS                                              ║
+║                                                               ║
+║  DENTAL    53 ready to send  |   25 already sent    ║
+║  SALON     27 ready to send  |    0 already sent    ║
+║  PHYSIO     4 ready to send  |    5 already sent    ║
+║  TOTAL     84 businesses ready to receive email         ║
+║  LINKEDIN 832 ready with personalized connection msg  ║
+║                                                               ║
+╠═══════════════════════════════════════════════════════════════╣
+║  TODAY'S TOP 10 DENTAL SENDS (fires via: npm run send:batch)║
+║                                                               ║
+║   1. [ 55] Toronto Physiotherapy               ║
+║   2. [ 55] Physiomobility                      ║
+║   3. [ 55] Physio Santé: Physiothérapie Sporti ║
+║   4. [ 55] Township Dental Wellness            ║
+║   5. [ 40] Sharshar Dental Group               ║
+║   6. [ 40] Urgent Care Physiotherapy Clinic &  ║
+║   7. [ 40] Physio                              ║
+║   8. [ 30] Physiothérapie Solution Active Verd ║
+║   9. [ 30] Orthodontist Periodontist           ║
+║  10. [ 30] Kanata Lakes Dental Centre          ║
+║                                                               ║
+╠═══════════════════════════════════════════════════════════════╣
+║  TOP 5 LINKEDIN — DO THESE MANUALLY TODAY                    ║
+║                                                               ║
+║  1. lindsey — Cosmetic & Family Dentist                   ║
+║  2. ? — London Bridge Dental                              ║
+║  3. ? — Mason Denture Clinic                              ║
+║  4. ? — One Marine                                        ║
+║  5. ? — Davisville Family                                 ║
+║                                                               ║
+╠═══════════════════════════════════════════════════════════════╣
+║  YOUR MORNING CHECKLIST                                      ║
+║                                                               ║
+║  [ ] Run: npm run send:batch   (sends top 30 emails)        ║
+║  [ ] Run: npm run send:followups (follows up on pipeline)   ║
+║  [ ] Check Gmail sent folder — any bounces?                 ║
+║  [ ] Check email inbox — any replies?                       ║
+║  [ ] Do 5 LinkedIn connection requests from list above      ║
+║  [ ] Any reply → bring it here immediately                  ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝

@@ -1,0 +1,101 @@
+MIME-Version: 1.0
+Date: Wed, 08 Apr 2026 23:22:06 GMT
+From: "Bayview Village Dental" <contact@bayviewvillagedental.com>
+To: [PatientFirstName] <patient@example.com>
+Subject: A quick favour, [PatientFirstName]
+X-CF-Sequence: Google Review Request
+X-CF-Email-Number: 1
+X-CF-Send-Timing: 2 days after trigger
+Content-Type: multipart/alternative; boundary="_cfbound_mnqoaj6t_twad6q"
+
+--_cfbound_mnqoaj6t_twad6q
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Hi [PatientFirstName],
+
+We hope your appointment went well and you're feeling good.
+
+If you have 60 seconds, would you mind leaving us a review on Google? It helps other people in Toronto find a dentist they can actually trust — and it means a lot to our team.
+
+→ [ReviewLink]
+
+If anything about your visit wasn't quite right, please reply here instead. We'd rather hear it directly and have the chance to fix it.
+
+Thank you either way.
+
+The Bayview Village Dental Team
+
+--_cfbound_mnqoaj6t_twad6q
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>A quick favour, [PatientFirstName]</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f2f2;">
+
+<table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+  style="background-color:#f2f2f2;padding:28px 0;">
+<tr><td align="center">
+
+<table role="presentation" cellpadding="0" cellspacing="0" width="600"
+  style="max-width:600px;width:100%;background:#ffffff;border-radius:4px;overflow:hidden;">
+
+  <!-- Header bar -->
+  <tr>
+    <td style="background-color:#2c3e50;padding:18px 32px;">
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;
+         color:#ffffff;letter-spacing:0.4px;">Bayview Village Dental</p>
+    </td>
+  </tr>
+
+  <!-- Body -->
+  <tr>
+    <td style="padding:32px 32px 20px 32px;font-family:Arial,Helvetica,sans-serif;
+       font-size:15px;line-height:1.65;color:#333333;">
+      <p style="margin:0 0 14px 0;">Hi <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[PatientFirstName]</span>,</p>
+      <p style="margin:0 0 14px 0;">We hope your appointment went well and you're feeling good.</p>
+      <p style="margin:0 0 14px 0;">If you have 60 seconds, would you mind leaving us a review on Google? It helps other people in Toronto find a dentist they can actually trust — and it means a lot to our team.</p>
+      <p style="margin:0 0 14px 0;">→ <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[ReviewLink]</span></p>
+      <p style="margin:0 0 14px 0;">If anything about your visit wasn't quite right, please reply here instead. We'd rather hear it directly and have the chance to fix it.</p>
+      <p style="margin:0 0 14px 0;">Thank you either way.</p>
+      <p style="margin:0 0 14px 0;">The Bayview Village Dental Team</p>
+    </td>
+  </tr>
+
+  <!-- Footer -->
+  <tr>
+    <td style="background-color:#f9f9f9;padding:16px 32px;border-top:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#aaaaaa;">
+        Bayview Village Dental&nbsp;&middot;&nbsp;Toronto
+      </p>
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#cccccc;">
+        <em>To stop receiving messages, reply with &ldquo;unsubscribe&rdquo;.</em>
+      </p>
+    </td>
+  </tr>
+
+</table>
+
+<!-- Developer reference -->
+<!--
+  Sequence : Google Review Request
+  Email    : 1 of sequence
+  Subject  : A quick favour, [PatientFirstName]
+  Timing   : 2 days after trigger
+  Generated: ClinicFlow delivery engine
+-->
+
+</td></tr>
+</table>
+
+</body>
+</html>
+
+--_cfbound_mnqoaj6t_twad6q--

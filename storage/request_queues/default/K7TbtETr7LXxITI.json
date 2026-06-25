@@ -1,0 +1,9 @@
+{
+	"id": "K7TbtETr7LXxITI",
+	"json": "{\"id\":\"K7TbtETr7LXxITI\",\"url\":\"https://wordpress.org/plugins/omnisend-connect/reviews/\",\"loadedUrl\":\"https://wordpress.org/plugins/omnisend-connect/\",\"uniqueKey\":\"https://wordpress.org/plugins/omnisend-connect/reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"reviews\",\"kw\":\"email marketing\",\"pluginUrl\":\"https://wordpress.org/plugins/omnisend-connect/\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:03:00.372Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/omnisend-connect/reviews",
+	"url": "https://wordpress.org/plugins/omnisend-connect/reviews/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "e9T389MCar6kUIG",
+	"json": "{\"id\":\"e9T389MCar6kUIG\",\"url\":\"https://wordpress.org/plugins/search/live%20chat/page/1/\",\"loadedUrl\":\"https://wordpress.org/plugins/search/live%20chat/page/1/\",\"uniqueKey\":\"https://wordpress.org/plugins/search/live%20chat/page/1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"search\",\"kw\":\"live chat\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:55.236Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/search/live%20chat/page/1",
+	"url": "https://wordpress.org/plugins/search/live%20chat/page/1/"
+}

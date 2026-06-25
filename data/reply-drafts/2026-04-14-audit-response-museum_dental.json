@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-04-14T03:19:42.028Z",
+  "clinicName": "Museum Dental",
+  "email": "mary@museumdental.ca",
+  "type": "audit_response",
+  "auditMissedCalls": "Voicemail only, front desk calls back same day",
+  "auditReminders": "No automated reminders",
+  "auditReactivation": "Nothing in place",
+  "auditBiggest": "Missed call window — patients book elsewhere within 2 minutes",
+  "subject": "Your Museum Dental audit — here's what I found",
+  "body": "Hi Mary,\n\nBased on what you shared, here's what I'm seeing at Museum Dental:\n\nMissed calls: Voicemail only, front desk calls back same day\n\nAppointment reminders: No automated reminders\n\nPatient reactivation: Nothing in place\n\nThe biggest opportunity I see: Missed call window — patients book elsewhere within 2 minutes\n\nI can set all of this up for Museum Dental — done for you, no monthly fees, takes about 5 days.\n\nWant me to walk you through exactly what that looks like?\n\nMohamed\nClinicFlow Automation"
+}

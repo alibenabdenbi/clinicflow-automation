@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Refer a Clinic — ClinicFlow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Syne',sans-serif;background:#0b0f17;color:#f1f5f9;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;
+  background-image:radial-gradient(700px 400px at 50% -10%,rgba(57,217,138,.07),transparent 55%)}
+.card{background:#111827;border-radius:24px;padding:40px;max-width:520px;width:100%;border:1px solid rgba(255,255,255,.08);text-align:center}
+.badge{background:rgba(57,217,138,.1);color:#39d98a;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;display:inline-block;margin-bottom:20px;border:1px solid rgba(57,217,138,.2)}
+h1{font-size:30px;font-weight:800;margin-bottom:12px;line-height:1.2}
+h1 span{color:#39d98a}
+.sub{font-size:15px;color:#94a3b8;line-height:1.7;margin-bottom:32px;max-width:400px;margin-left:auto;margin-right:auto}
+.reward-card{background:rgba(57,217,138,.08);border:1px solid rgba(57,217,138,.2);border-radius:16px;padding:28px;margin-bottom:28px}
+.reward-amount{font-size:52px;font-weight:800;color:#39d98a;line-height:1}
+.reward-label{font-size:14px;color:#64748b;margin-top:8px}
+.link-box{background:#0b0f17;border-radius:12px;padding:16px 18px;margin-bottom:16px;border:1px solid rgba(255,255,255,.06);text-align:left}
+.link-label{font-size:11px;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.link-text{font-size:14px;color:#7c5cff;word-break:break-all;font-weight:600;line-height:1.4}
+.copy-btn{background:#7c5cff;color:#fff;border:none;padding:14px 0;border-radius:10px;font-size:16px;font-weight:700;width:100%;cursor:pointer;font-family:'Syne',sans-serif;margin-bottom:12px;transition:opacity .2s}
+.copy-btn:active{opacity:.85}
+.share-row{display:flex;gap:8px;margin-bottom:24px}
+.share-btn{flex:1;background:rgba(255,255,255,.05);color:#94a3b8;border:1px solid rgba(255,255,255,.08);padding:10px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:'Syne',sans-serif;transition:all .15s}
+.share-btn:hover{background:rgba(255,255,255,.09);color:#f1f5f9}
+.how{text-align:left;margin-top:4px}
+.how-title{font-size:11px;font-weight:700;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+.how-step{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.how-num{width:28px;height:28px;border-radius:50%;background:rgba(124,92,255,.15);color:#7c5cff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.how-text{font-size:14px;color:#94a3b8;line-height:1.6}
+.note{font-size:12px;color:#374151;margin-top:20px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="badge">Referral Program</div>
+  <h1>Know a clinic that needs <span>this</span>?</h1>
+  <p class="sub">Share your link. When they sign up, you get <strong style="color:#f1f5f9">$200 off your balance</strong> — automatically applied.</p>
+
+  <div class="reward-card">
+    <div class="reward-amount">$200</div>
+    <div class="reward-label">off your balance per successful referral · unlimited</div>
+  </div>
+
+  <div class="link-box">
+    <div class="link-label">Your referral link</div>
+    <div class="link-text" id="ref-link">Loading...</div>
+  </div>
+
+  <button class="copy-btn" id="copy-btn" onclick="copyLink()">Copy Link</button>
+
+  <div class="share-row">
+    <button class="share-btn" onclick="shareEmail()">✉ Email</button>
+    <button class="share-btn" onclick="shareWhatsApp()">💬 WhatsApp</button>
+    <button class="share-btn" onclick="shareSMS()">📱 SMS</button>
+  </div>
+
+  <div class="how">
+    <div class="how-title">How it works</div>
+    <div class="how-step">
+      <div class="how-num">1</div>
+      <div class="how-text">Share your link with any dental clinic, physio, or appointment business you know</div>
+    </div>
+    <div class="how-step">
+      <div class="how-num">2</div>
+      <div class="how-text">They sign up and complete their setup</div>
+    </div>
+    <div class="how-step">
+      <div class="how-num">3</div>
+      <div class="how-text">$200 is deducted from your balance — or refunded if you've already paid in full</div>
+    </div>
+  </div>
+
+  <p class="note">Questions? Contact Mohamed directly: 438-544-0442</p>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const clinic = params.get('clinic') || 'your-clinic';
+const refLink = 'https://clinicflowautomation.com/ref?code=' + clinic;
+document.getElementById('ref-link').textContent = refLink;
+
+function copyLink() {
+  navigator.clipboard.writeText(refLink).then(() => {
+    const btn = document.getElementById('copy-btn');
+    btn.textContent = '✓ Copied!';
+    btn.style.background = '#39d98a';
+    btn.style.color = '#0b0f17';
+    setTimeout(() => { btn.textContent = 'Copy Link'; btn.style.background = '#7c5cff'; btn.style.color = '#fff'; }, 2000);
+  });
+}
+
+const msgText = encodeURIComponent('Hey — I use this system at my clinic for missed-call recovery and it actually works. They offer a free 30-day pilot: ' + refLink);
+function shareEmail() { window.location.href = 'mailto:?subject=' + encodeURIComponent('You should check this out') + '&body=' + msgText; }
+function shareWhatsApp() { window.open('https://wa.me/?text=' + msgText); }
+function shareSMS() { window.location.href = 'sms:?body=' + msgText; }
+</script>
+</body>
+</html>

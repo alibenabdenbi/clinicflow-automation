@@ -1,0 +1,443 @@
+[
+  {
+    "id": "58ae3955-2834-4db2-acea-42eb4b4b2f37",
+    "clinicSlug": "test-clinic",
+    "type": "clinic_brain_answer",
+    "patientPhone": "+15145618268",
+    "patientName": "John Smith",
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Test event from Phase 1 integration test",
+    "sentiment": null,
+    "intent": null,
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {},
+    "timestamp": "2026-05-09T03:03:40.581Z"
+  },
+  {
+    "id": "899e2294-5ac7-461d-bce1-8aeb672b0b3f",
+    "clinicSlug": "test-clinic",
+    "type": "patient_replied",
+    "patientPhone": "+15149617077",
+    "patientName": null,
+    "direction": "inbound",
+    "channel": "sms",
+    "content": "What time do you close today?",
+    "sentiment": "urgent",
+    "intent": "ASK_HOURS",
+    "outcome": "received",
+    "revenueAttributed": 0,
+    "metadata": {},
+    "timestamp": "2026-05-09T03:04:16.107Z"
+  },
+  {
+    "id": "6052814c-62b8-431a-8ad8-b21a91bd8b78",
+    "clinicSlug": "test-clinic",
+    "type": "clinic_brain_answer",
+    "patientPhone": "+15149617077",
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "We're closed today, but we'll be open tomorrow from 10:00am to 2:00pm. Happy to help you book — just reply with a preferred time.\n\n— The Test Dental Clinic team",
+    "sentiment": "neutral",
+    "intent": "ASK_HOURS",
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "intent": "ASK_HOURS",
+      "emotion": "urgent",
+      "withinHours": false
+    },
+    "timestamp": "2026-05-09T03:04:19.624Z"
+  },
+  {
+    "id": "eb422905-c1f4-4af1-9797-91707fe24ab0",
+    "clinicSlug": "test-clinic",
+    "type": "patient_replied",
+    "patientPhone": "+15149617077",
+    "patientName": null,
+    "direction": "inbound",
+    "channel": "sms",
+    "content": "I'm really nervous about my appointment, I haven't been to the dentist in 3 years",
+    "sentiment": "neutral",
+    "intent": "OTHER",
+    "outcome": "received",
+    "revenueAttributed": 0,
+    "metadata": {},
+    "timestamp": "2026-05-09T03:04:21.152Z"
+  },
+  {
+    "id": "b9d676d7-74b7-47fd-a94f-309188b21f76",
+    "clinicSlug": "test-clinic",
+    "type": "clinic_brain_answer",
+    "patientPhone": "+15149617077",
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Totally understandable — many of our patients feel the same, and we'll take great care of you. Dr. Chen has a special interest in helping anxious patients feel at ease. Want us to book you a gentle catch-up visit? Reply with a day/time that works.\n\n— The Test Dental Clinic team",
+    "sentiment": "neutral",
+    "intent": "OTHER",
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "intent": "OTHER",
+      "emotion": "neutral",
+      "withinHours": false
+    },
+    "timestamp": "2026-05-09T03:04:24.788Z"
+  },
+  {
+    "id": "6e7a9ff4-8c38-4989-b4a6-07cfb1fa7bf1",
+    "clinicSlug": "test-clinic",
+    "type": "patient_replied",
+    "patientPhone": "+15149617077",
+    "patientName": null,
+    "direction": "inbound",
+    "channel": "sms",
+    "content": "I have severe tooth pain and my face is swelling up",
+    "sentiment": "emergency",
+    "intent": "EMERGENCY",
+    "outcome": "received",
+    "revenueAttributed": 0,
+    "metadata": {},
+    "timestamp": "2026-05-09T03:04:26.298Z"
+  },
+  {
+    "id": "719a50c3-7d16-4a2e-9bca-5c98cb2fb08a",
+    "clinicSlug": "test-clinic",
+    "type": "escalation",
+    "patientPhone": "+15149617077",
+    "patientName": null,
+    "direction": "system",
+    "channel": "sms",
+    "content": "Escalated: emergency | Patient said: \"I have severe tooth pain and my face is swelling up\"",
+    "sentiment": "urgent",
+    "intent": null,
+    "outcome": "escalated",
+    "revenueAttributed": 0,
+    "metadata": {
+      "reason": "emergency"
+    },
+    "timestamp": "2026-05-09T03:04:26.693Z"
+  },
+  {
+    "id": "227ec69c-aae5-4be8-ab10-569b2bec7cab",
+    "clinicSlug": "test-clinic",
+    "type": "patient_replied",
+    "patientPhone": "+15143330001",
+    "patientName": null,
+    "direction": "inbound",
+    "channel": "sms",
+    "content": "I would like to book a cleaning appointment",
+    "sentiment": "neutral",
+    "intent": "BOOK_APPOINTMENT",
+    "outcome": "received",
+    "revenueAttributed": 0,
+    "metadata": {},
+    "timestamp": "2026-05-09T16:43:15.231Z"
+  },
+  {
+    "id": "93d831db-89be-47bc-bda0-bd3ebdfbaf3d",
+    "clinicSlug": "test-clinic",
+    "type": "opportunity_detected",
+    "patientPhone": "+15143330001",
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Hi! Happy to book your Cleaning & Exam at Test Dental Clinic (subject to confirmation)!\n\nReply 1, 2, or 3:\n1) Monday, May 11 at 9:00 a.m.\n2) Monday, May 11 at 9:30 a.m.\n3) Monday, May 11 at 10:00 a.m.\n\n— Test Dental Clinic",
+    "sentiment": null,
+    "intent": "BOOK_APPOINTMENT",
+    "outcome": "slots_offered",
+    "revenueAttributed": 0,
+    "metadata": {
+      "bookingId": "f39201bf-0286-45a4-95e5-05fe19fa22e7",
+      "serviceType": "Cleaning & Exam",
+      "slotCount": 3
+    },
+    "timestamp": "2026-05-09T16:43:15.274Z"
+  },
+  {
+    "id": "20170fe9-1455-41f5-998e-10b64e74e7eb",
+    "clinicSlug": "test-clinic",
+    "type": "clinic_brain_answer",
+    "patientPhone": "+15143330001",
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Hi! Happy to book your Cleaning & Exam at Test Dental Clinic (subject to confirmation)!\n\nReply 1, 2, or 3:\n1) Monday, May 11 at 9:00 a.m.\n2) Monday, May 11 at 9:30 a.m.\n3) Monday, May 11 at 10:00 a.m.\n\n— Test Dental Clinic",
+    "sentiment": null,
+    "intent": "BOOK_APPOINTMENT",
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "action": "slots_offered",
+      "bookingId": "f39201bf-0286-45a4-95e5-05fe19fa22e7"
+    },
+    "timestamp": "2026-05-09T16:43:16.269Z"
+  },
+  {
+    "id": "337ae6ff-4050-4b53-93ae-60b08591ba8c",
+    "clinicSlug": "test-clinic",
+    "type": "patient_replied",
+    "patientPhone": "+15143330001",
+    "patientName": null,
+    "direction": "inbound",
+    "channel": "sms",
+    "content": "Option 2 works for me",
+    "sentiment": "neutral",
+    "intent": "OTHER",
+    "outcome": "received",
+    "revenueAttributed": 0,
+    "metadata": {},
+    "timestamp": "2026-05-09T16:43:16.289Z"
+  },
+  {
+    "id": "2d421266-c218-426a-8901-991fb62eea0d",
+    "clinicSlug": "test-clinic",
+    "type": "patient_booked",
+    "patientPhone": "+15143330001",
+    "patientName": null,
+    "direction": "system",
+    "channel": "sms",
+    "content": "Booking confirmed: Monday, May 11 at 9:30 a.m. | Cleaning & Exam",
+    "sentiment": null,
+    "intent": null,
+    "outcome": "booked",
+    "revenueAttributed": 200,
+    "metadata": {
+      "bookingId": "f39201bf-0286-45a4-95e5-05fe19fa22e7",
+      "eventId": "booking_1778344996295_9d5t4h",
+      "slot": "2026-05-11T13:30:00.000Z",
+      "serviceType": "Cleaning & Exam",
+      "calendarLinked": false
+    },
+    "timestamp": "2026-05-09T16:43:16.295Z"
+  },
+  {
+    "id": "f11ba93e-311d-407d-9b4d-e2db251c6f47",
+    "clinicSlug": "test-clinic",
+    "type": "clinic_brain_answer",
+    "patientPhone": "+15143330001",
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Perfect! You're booked for Monday, May 11 at 9:30 a.m. at Test Dental Clinic. We'll send you a reminder the day before. Questions? Call +15145618268. (Your appointment has been noted — our team will confirm shortly.) See you then! — Test Dental Clinic",
+    "sentiment": null,
+    "intent": "BOOK_APPOINTMENT",
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "action": "booking_confirmed"
+    },
+    "timestamp": "2026-05-09T16:43:16.514Z"
+  },
+  {
+    "id": "70e18169-31db-4934-b186-f6a1136b58a6",
+    "clinicSlug": "test-clinic",
+    "type": "patient_replied",
+    "patientPhone": "+15143330002",
+    "patientName": null,
+    "direction": "inbound",
+    "channel": "sms",
+    "content": "book an exam appointment",
+    "sentiment": "neutral",
+    "intent": "BOOK_APPOINTMENT",
+    "outcome": "received",
+    "revenueAttributed": 0,
+    "metadata": {},
+    "timestamp": "2026-05-09T16:43:16.518Z"
+  },
+  {
+    "id": "8499ed5f-58da-4b77-a6c2-a0ef55da96ee",
+    "clinicSlug": "test-clinic",
+    "type": "opportunity_detected",
+    "patientPhone": "+15143330002",
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Hi! Happy to book your appointment at Test Dental Clinic (subject to confirmation)!\n\nReply 1, 2, or 3:\n1) Monday, May 11 at 9:00 a.m.\n2) Monday, May 11 at 9:30 a.m.\n3) Monday, May 11 at 10:00 a.m.\n\n— Test Dental Clinic",
+    "sentiment": null,
+    "intent": "BOOK_APPOINTMENT",
+    "outcome": "slots_offered",
+    "revenueAttributed": 0,
+    "metadata": {
+      "bookingId": "066cdbaa-0e22-41c9-a1a0-6d0c4edc6c4f",
+      "serviceType": "appointment",
+      "slotCount": 3
+    },
+    "timestamp": "2026-05-09T16:43:16.542Z"
+  },
+  {
+    "id": "06de38e9-8870-4193-9110-9863f356e0b5",
+    "clinicSlug": "test-clinic",
+    "type": "clinic_brain_answer",
+    "patientPhone": "+15143330002",
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Hi! Happy to book your appointment at Test Dental Clinic (subject to confirmation)!\n\nReply 1, 2, or 3:\n1) Monday, May 11 at 9:00 a.m.\n2) Monday, May 11 at 9:30 a.m.\n3) Monday, May 11 at 10:00 a.m.\n\n— Test Dental Clinic",
+    "sentiment": null,
+    "intent": "BOOK_APPOINTMENT",
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "action": "slots_offered",
+      "bookingId": "066cdbaa-0e22-41c9-a1a0-6d0c4edc6c4f"
+    },
+    "timestamp": "2026-05-09T16:43:16.718Z"
+  },
+  {
+    "id": "d59c5a65-1a28-4665-913e-eed5847fd3c1",
+    "clinicSlug": "test-clinic",
+    "type": "patient_replied",
+    "patientPhone": "+15143330002",
+    "patientName": null,
+    "direction": "inbound",
+    "channel": "sms",
+    "content": "Actually I need to cancel",
+    "sentiment": "neutral",
+    "intent": "CANCEL",
+    "outcome": "received",
+    "revenueAttributed": 0,
+    "metadata": {},
+    "timestamp": "2026-05-09T16:43:16.721Z"
+  },
+  {
+    "id": "6da45617-9d4e-4e93-b621-519725b4371d",
+    "clinicSlug": "test-clinic",
+    "type": "appointment_reminder_24h",
+    "patientPhone": "+15143330001",
+    "patientName": "Sophie Lavoie",
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "24h appointment reminder sent",
+    "sentiment": null,
+    "intent": null,
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "appointmentDate": "2026-05-11 11:00"
+    },
+    "timestamp": "2026-05-10T12:31:01.134Z"
+  },
+  {
+    "id": "e7ee97d4-ef8e-4873-b8a8-b0be9d47d044",
+    "clinicSlug": "test-clinic",
+    "type": "weekly_digest_sent",
+    "patientPhone": null,
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Good morning! This week I handled 18 patient interactions for Test Dental Clinic. I caught 1 missed call — 1 patient booked. 1 appointment reminder went out automatically. Revenue forecast for the next 30 days: $600. Have a great week!",
+    "sentiment": null,
+    "intent": null,
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "smsSent": true,
+      "emailSent": false,
+      "weekSummary": {
+        "interactions": 18,
+        "recovered": 1,
+        "revenue": 400,
+        "opportunities": 0
+      }
+    },
+    "timestamp": "2026-05-11T11:00:15.487Z"
+  },
+  {
+    "id": "c770787c-68f1-445a-aa89-a52e689c7b0a",
+    "clinicSlug": "test-clinic",
+    "type": "weekly_digest_sent",
+    "patientPhone": null,
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Good morning — quiet week on our end, just one patient interaction came through and nothing else moved across the board. I didn't see any missed calls to recover or replies to chase, which either means phones were calm or traffic isn't reaching us yet, so I'd lean toward the latter given the volume. Worth a quick gut-check on whether call forwarding and reminder automations are actually firing on your side — happy to help verify if you want. Looking ahead, the 30-day pipeline pencils out to roughly $200–$1,200 depending on how the next two weeks shape up, but we'll need more inbound activity to hit the upper end. Let's get the funnel flowing this week.",
+    "sentiment": null,
+    "intent": null,
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "smsSent": true,
+      "emailSent": true,
+      "weekSummary": {
+        "interactions": 1,
+        "recovered": 0,
+        "revenue": 0,
+        "opportunities": 0
+      }
+    },
+    "timestamp": "2026-05-18T11:00:11.868Z"
+  },
+  {
+    "id": "3c74a9df-dcee-4e7a-9c2a-fb4e0c093cfd",
+    "clinicSlug": "test-clinic",
+    "type": "opportunity_detected",
+    "patientPhone": "+15143330002",
+    "patientName": "Omar Diallo",
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Hi Omar, we noticed you had to cancel recently. Whenever you're ready, we'd love to get you back in — just reply with a day that works and we'll find you a spot. — Test Dental Clinic",
+    "sentiment": null,
+    "intent": null,
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "opportunityType": "cancelled_no_rebook",
+      "value": "high"
+    },
+    "timestamp": "2026-05-24T10:00:01.296Z"
+  },
+  {
+    "id": "28667578-a17f-40cf-b3d6-d4af239fb5dc",
+    "clinicSlug": "test-clinic",
+    "type": "weekly_digest_sent",
+    "patientPhone": null,
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Good morning. Quiet week on the board — only two patient interactions came through, but I caught a cancelled appointment that never got rebooked and reached out to win that slot back. No missed calls or emergencies to clean up, which is the good news, though it also means we're not seeing much inbound flow to work with right now. Based on current pacing, the next 30 days look like a $200–$1,200 range depending on how that rebook and any new inquiries land. Worth thinking about whether we nudge a recall list this week to get the pipeline moving again.",
+    "sentiment": null,
+    "intent": null,
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "smsSent": true,
+      "emailSent": true,
+      "weekSummary": {
+        "interactions": 2,
+        "recovered": 0,
+        "revenue": 0,
+        "opportunities": 1
+      }
+    },
+    "timestamp": "2026-05-25T11:00:08.328Z"
+  },
+  {
+    "id": "a31e88d3-b85c-4d1e-ad81-47489d78b166",
+    "clinicSlug": "test-clinic",
+    "type": "weekly_digest_sent",
+    "patientPhone": null,
+    "patientName": null,
+    "direction": "outbound",
+    "channel": "sms",
+    "content": "Good morning — quiet week on the ClinicFlow side, with just one patient interaction logged and no missed calls to recover. Honestly, that tells me the system isn't seeing much traffic yet, so I'd want to double-check that call forwarding and reminder automations are actually wired up on your end. If they are, then it's just a slow stretch and we'll catch the next wave. Looking ahead, the next 30 days are projected somewhere between $200 and $1,200 depending on volume, so even a small bump in inbound activity should move the needle quickly.",
+    "sentiment": null,
+    "intent": null,
+    "outcome": "sent",
+    "revenueAttributed": 0,
+    "metadata": {
+      "smsSent": false,
+      "emailSent": true,
+      "weekSummary": {
+        "interactions": 1,
+        "recovered": 0,
+        "revenue": 0,
+        "opportunities": 0
+      }
+    },
+    "timestamp": "2026-06-01T11:00:10.964Z"
+  }
+]

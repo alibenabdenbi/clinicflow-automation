@@ -1,0 +1,123 @@
+ORE-Engine — Daily Report
+Date: 2026-04-30
+Generated: 2026-04-30T20:47:48.366Z
+────────────────────────────────────────────────────
+
+DISCOVERY & CRM
+  Total CRM leads: 78                     
+  New leads today: 0                      
+  Tier A: 26                              
+  Tier B: 52                              
+  Tier C: 0                               
+  Confirmed / accepted: 1                 
+  Offer acceptance rate: 1% (1/78 confirmed)
+  Top theme today: Other                  
+  High-score signals (>=9): 0             
+  Validated offer packs: 0                
+
+EMAIL OUTREACH
+  Total clinics in queue: 3597            
+  Emails pending (todo): 144              
+  Initial emails sent (all time): 162     
+  Emails sent today: 31                   
+  Emails sent yesterday: 30               
+  Total sent all time (SMTP): 644         
+    → Initial sends (all time): 462       
+    → Follow-ups (all time): 182          
+  Clinics with no email: 2975             
+  Open rate proxy: 62% (100/162 proceeded to FU1)
+  Unique sends (deduped): 221             
+  Bounce rate (deduped): 9.0% total  |  5.4% hard  (20 bounced / 221 unique sends)
+  ⚠ BOUNCE RATE EXCEEDS 5% — pause sending and clean list
+
+FOLLOW-UPS (3-stage)
+  FU1 due now: 36                         
+  FU1 due in next 7 days: 29              
+  FU2 due now: 9                          
+  FU1 sent (total): 100                   
+  FU2 sent (total): 66                    
+  FU3 sent (total): 0                     
+  Sequences complete: 0                   
+
+ACTION REQUIRED
+  None — inbox is clear
+
+HOT PROSPECTS (emailed in last 7 days, no reply yet)
+  29 clinic(s) worth following up:
+  • Chapman Mills Dental                   1d ago  sent
+  • Riverside Family Dentistry             1d ago  sent
+  • Nuo Dental                             1d ago  sent
+  • Canada Way Dental                      1d ago  sent
+  • 4th Street Dental                      1d ago  sent
+  ... and 24 more
+
+READY TO CLOSE (replied AUDIT_YES — send them the 3 questions)
+  None yet
+
+WINS THIS WEEK
+  No payments recorded this week
+
+DELIVERABILITY TREND (last 7 days)
+  2026-04-24  new:30 fu: 0 total: 30  ████████████████████
+  2026-04-25  new:25 fu:25 total: 50  ████████████████████
+  2026-04-26  new:25 fu:25 total: 50  ████████████████████
+  2026-04-27  new:25 fu:25 total: 50  ████████████████████
+  2026-04-28  new:15 fu:10 total: 25  ████████████████████
+  2026-04-29  new:30 fu: 0 total: 30  ████████████████████
+  2026-04-30  new: 9 fu:22 total: 31  ████████████████████
+
+BEST PERFORMING SUBJECT LINES (by FU1 proceed rate)
+  Not enough data yet
+
+VARIANT PERFORMANCE
+  Variant  Sent   →FU1      Reply rate
+  ──────────────────────────────────────
+  A        4      0 (0%)    0%
+  B        1      0 (0%)    0%
+  C        3      0 (0%)    0%
+  D        1      0 (0%)    0%
+  E        0      0 (—)     —
+  F        6      0 (0%)    0%
+  G        4      0 (0%)    0%
+  H        3      0 (0%)    0%
+  I        1      0 (0%)    0%
+  J        3      0 (0%)    0%
+  K        6      0 (0%)    0%
+  L        3      0 (0%)    0%
+  R        8      0 (0%)    0%
+
+TODAY'S RECOMMENDED ACTIONS
+  1. Send FU1 to these clinics today — named email, recent send, most likely to reply:
+     → Lougheed Village                          (2d ago, dr.jill.lee@gmail.com)
+  2. Call these clinics today — direct lines, no email reply:
+     → London Bridge Dental                  (519) 672-0230  (followup_2_sent)
+     → Nelson Dental Clinic                  +16044332225  (followup_2_sent)
+     → Lakeview Dental Clinic                +16045264455  (followup_2_sent)
+  3. No new Google review pain signals detected
+  4. Hunter resets in 1 day(s) — run enrich on 2026-05-01
+  5. Best variant: A (0% reply rate, 4 sends)
+
+VOICE OUTREACH
+  Voicemail drops today: 0                
+  Twilio calls made today: 0              
+  Callbacks received today: 0             
+  Total voice touches (all time): 58      
+  Total callbacks (all time): 0           
+
+SYSTEM HEALTH
+  Last health check: ISSUES FOUND         
+  Scheduler errors today: 10              
+  Recent errors:
+    [2026-04-30T13:15:00.034Z] ERROR  src/cli/deliveryEngine.js: Command failed: C:\Program Files\nodejs\node.exe D:\Poject-ORE-EMGINE\src\cli\deliveryEngine.js
+    [2026-04-30T13:15:00.038Z] ERROR  src/cli/deliveryEngine.js: Command failed: C:\Program Files\nodejs\node.exe D:\Poject-ORE-EMGINE\src\cli\deliveryEngine.js
+    [2026-04-30T14:15:00.066Z] ERROR  src/cli/twilioCallQueue.js: Command failed: C:\Program Files\nodejs\node.exe D:\Poject-ORE-EMGINE\src\cli\twilioCallQueue.js
+    [2026-04-30T14:15:00.139Z] ERROR  src/cli/twilioCallQueue.js: Command failed: C:\Program Files\nodejs\node.exe D:\Poject-ORE-EMGINE\src\cli\twilioCallQueue.js
+    [2026-04-30T14:30:00.120Z] ERROR  src/cli/sendOooFollowups.js: Command failed: C:\Program Files\nodejs\node.exe D:\Poject-ORE-EMGINE\src\cli\sendOooFollowups.js
+
+WARNINGS
+  ⚠ WARNING: 10 scheduler errors today — pipeline needs attention
+  ⚠ WARNING: No new CRM leads discovered today — check if main pipeline ran
+  ⚠ WARNING: Bounce rate 9.0% exceeds 5% — run smtpVerify and clean list
+
+────────────────────────────────────────────────────
+End of report

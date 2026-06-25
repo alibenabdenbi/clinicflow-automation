@@ -1,0 +1,73 @@
+[
+  {
+    "id": "f39201bf-0286-45a4-95e5-05fe19fa22e7",
+    "clinicSlug": "test-clinic",
+    "patientPhone": "+15143330001",
+    "patientName": null,
+    "serviceType": "Cleaning & Exam",
+    "status": "confirmed",
+    "slotsOffered": [
+      {
+        "display": "Monday, May 11 at 9:00 a.m.",
+        "iso": "2026-05-11T13:00:00.000Z",
+        "duration": 60,
+        "tentative": true
+      },
+      {
+        "display": "Monday, May 11 at 9:30 a.m.",
+        "iso": "2026-05-11T13:30:00.000Z",
+        "duration": 60,
+        "tentative": true
+      },
+      {
+        "display": "Monday, May 11 at 10:00 a.m.",
+        "iso": "2026-05-11T14:00:00.000Z",
+        "duration": 60,
+        "tentative": true
+      }
+    ],
+    "slotChosen": {
+      "display": "Monday, May 11 at 9:30 a.m.",
+      "iso": "2026-05-11T13:30:00.000Z",
+      "duration": 60,
+      "tentative": true
+    },
+    "calendarEventId": "booking_1778344996295_9d5t4h",
+    "offeredAt": "2026-05-09T16:43:15.273Z",
+    "confirmedAt": "2026-05-09T16:43:16.295Z",
+    "cancelledAt": null
+  },
+  {
+    "id": "066cdbaa-0e22-41c9-a1a0-6d0c4edc6c4f",
+    "clinicSlug": "test-clinic",
+    "patientPhone": "+15143330002",
+    "patientName": null,
+    "serviceType": "appointment",
+    "status": "slots_offered",
+    "slotsOffered": [
+      {
+        "display": "Monday, May 11 at 9:00 a.m.",
+        "iso": "2026-05-11T13:00:00.000Z",
+        "duration": 60,
+        "tentative": true
+      },
+      {
+        "display": "Monday, May 11 at 9:30 a.m.",
+        "iso": "2026-05-11T13:30:00.000Z",
+        "duration": 60,
+        "tentative": true
+      },
+      {
+        "display": "Monday, May 11 at 10:00 a.m.",
+        "iso": "2026-05-11T14:00:00.000Z",
+        "duration": 60,
+        "tentative": true
+      }
+    ],
+    "slotChosen": null,
+    "calendarEventId": null,
+    "offeredAt": "2026-05-09T16:43:16.541Z",
+    "confirmedAt": null,
+    "cancelledAt": null
+  }
+]

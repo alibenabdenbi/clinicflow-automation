@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-04-24T00:00:00.000Z",
+  "clinicName": "Align Orthodontics",
+  "email": "info@align-ortho.ca",
+  "type": "missed_call_followup",
+  "signal": "sms_auto_response",
+  "subject": "Called your office today — noticed something",
+  "body": "Hi,\n\nI called your office earlier today and noticed your missed-call auto-response fired immediately — that tells me you already have some automation in place.\n\nI do free audits for dental clinics to find gaps in the full patient communication sequence. Most clinics with auto-text still have gaps in reactivation and reminder sequences worth fixing.\n\nWorth a quick look at Align Orthodontics?\n\nMohamed\nClinicFlow Automation\n438-544-0442",
+  "notes": "SMS auto-response received after calling Align Orthodontics (Brampton ON). Clinic already has missed-call automation — prime prospect for reactivation/reminder audit. Website: align-ortho.ca"
+}

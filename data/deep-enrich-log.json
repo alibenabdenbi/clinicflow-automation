@@ -1,0 +1,3061 @@
+[
+  {
+    "clinicName": "Dr Arun Narang & Associates Smile by Design",
+    "email": "drarunnarang@smilebydesigndental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:03:36.481Z"
+  },
+  {
+    "clinicName": "Dentist in The Queensway–Humber Bay, Etobicoke, Toronto",
+    "email": "dentistinthe@parklawndental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:03:59.782Z"
+  },
+  {
+    "clinicName": "Mississauga Dentist",
+    "email": "domain.operations@web.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:04:13.465Z"
+  },
+  {
+    "clinicName": "Welcome to Wildwood",
+    "email": "info@greenwoodsdental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:04:15.524Z"
+  },
+  {
+    "clinicName": "Dental Clinics and Family Dentists Near You",
+    "email": "domain.operations@web.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:04:31.273Z"
+  },
+  {
+    "clinicName": "Dentist in Etobicoke, ON",
+    "email": "info@torontolakeshoredental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:04:32.870Z"
+  },
+  {
+    "clinicName": "Royal Centre Dental Group",
+    "email": "cira@endurance.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:04:48.381Z"
+  },
+  {
+    "clinicName": "Smile Squad",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:05:09.904Z"
+  },
+  {
+    "clinicName": "Studio Dental",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:05:34.855Z"
+  },
+  {
+    "clinicName": "Dentistry by Dr. Sferlazza",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:05:51.214Z"
+  },
+  {
+    "clinicName": "Park Haven Dental",
+    "email": "compliance@tucows.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:06:05.728Z"
+  },
+  {
+    "clinicName": "Barrhaven Dental Studio",
+    "email": "info@barrhavendentalstudio.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:06:28.253Z"
+  },
+  {
+    "clinicName": "Mystic Pointe",
+    "email": "impallari@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:06:29.794Z"
+  },
+  {
+    "clinicName": "Dentist in Beaches Toronto, ON",
+    "email": "info@torontobeachdental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:06:32.782Z"
+  },
+  {
+    "clinicName": "Charm Dental",
+    "email": "abuse@namecheap.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:06:48.525Z"
+  },
+  {
+    "clinicName": "Bathurst-Steeles Dental",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:07:01.551Z"
+  },
+  {
+    "clinicName": "North Bramalea Dental",
+    "email": "northbramale@northbramaleadental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:07:25.305Z"
+  },
+  {
+    "clinicName": "Dental Health",
+    "email": "admin@dentalhealthclinic.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:07:28.030Z"
+  },
+  {
+    "clinicName": "Mississauga Smiles Dentistry",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:07:41.609Z"
+  },
+  {
+    "clinicName": "Sarna Dentistry",
+    "email": "sarnadentist@hawthornevillagedental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:08:02.283Z"
+  },
+  {
+    "clinicName": "Elm Hill Dentistry - Dr. Mark Iacovino",
+    "email": "cira@endurance.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:08:16.314Z"
+  },
+  {
+    "clinicName": "Humber Bay Physio",
+    "email": "mary@humberdental.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:08:21.114Z"
+  },
+  {
+    "clinicName": "Elmwood Park Dental",
+    "email": "abuse@namecheap.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:08:34.855Z"
+  },
+  {
+    "clinicName": "Monarch Dentistry – Affordable Family & Emergency Dental Care",
+    "email": "info@monarchdentistry.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:08:36.900Z"
+  },
+  {
+    "clinicName": "Kits Point Dental Group",
+    "email": "domainabuse@tucows.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:08:57.894Z"
+  },
+  {
+    "clinicName": "Heritage Orthodontics",
+    "email": "heritageorth@heritageorthodontics.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:09:20.427Z"
+  },
+  {
+    "clinicName": "Centre Dentaire Mawlawi",
+    "email": "centredentai@centredentairemawlawi.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:09:51.569Z"
+  },
+  {
+    "clinicName": "Dentistry On The Q",
+    "email": "info@dentistryontheq.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:09:53.990Z"
+  },
+  {
+    "clinicName": "Corktown Dental",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:10:10.183Z"
+  },
+  {
+    "clinicName": "Altima",
+    "email": "scotiaplaza@altima.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:10:11.591Z"
+  },
+  {
+    "clinicName": "Rockingham Ridge Dental Centre",
+    "email": "abuse@gcd.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:10:34.114Z"
+  },
+  {
+    "clinicName": "Marine Way & Northgate Dental",
+    "email": "marinewaynor@marinewaydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:10:56.324Z"
+  },
+  {
+    "clinicName": "Your Dental",
+    "email": "frontdesk@yourdentaloffice.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:10:57.941Z"
+  },
+  {
+    "clinicName": "Eatonville Dental",
+    "email": "abuse@namecheap.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:11:12.070Z"
+  },
+  {
+    "clinicName": "Mindfulness Psychotherapy",
+    "email": "smile@allsmiles.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:11:13.744Z"
+  },
+  {
+    "clinicName": "Brampton Mississauga Streetsville Cosmetic Dentist",
+    "email": "reception@dentistryinstreetsville.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:11:15.747Z"
+  },
+  {
+    "clinicName": "Accueil - La Dentisterie LA",
+    "email": "cliniquedentairelacite@cdlc.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:11:20.230Z"
+  },
+  {
+    "clinicName": "Centre Dentaire Dr Louise Magnan",
+    "email": "info@mag-dent.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:11:23.336Z"
+  },
+  {
+    "clinicName": "Emergency Dental Service",
+    "email": "contact@kitchenerdentistfairway.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:11:24.780Z"
+  },
+  {
+    "clinicName": "Dentistry for Everyone",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:11:42.167Z"
+  },
+  {
+    "clinicName": "Trinity Dental Centre",
+    "email": "abuse@webnames.ca",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:12:17.237Z"
+  },
+  {
+    "clinicName": "New Smile Dental & Implant",
+    "email": "info@newsmiledental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:12:26.483Z"
+  },
+  {
+    "clinicName": "Aldent Smile Dentistry",
+    "email": "aedentalart@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:12:28.378Z"
+  },
+  {
+    "clinicName": "Applewood Dental Centre",
+    "email": "applewoodden@applewooddentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:12:49.609Z"
+  },
+  {
+    "clinicName": "Rocky Ridge Dental",
+    "email": "abuse@enom.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:13:03.940Z"
+  },
+  {
+    "clinicName": "Cracovia Dental",
+    "email": "cracoviadent@cracoviadental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:13:24.073Z"
+  },
+  {
+    "clinicName": "Bathurst Dundas Dental Centre",
+    "email": "bathurstdund@bathurstdundasdentalcentre.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:13:45.464Z"
+  },
+  {
+    "clinicName": "Market Dental Centre Toronto",
+    "email": "info@marketdentalcentre.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:13:49.924Z"
+  },
+  {
+    "clinicName": "Dundas East Dental",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:14:02.750Z"
+  },
+  {
+    "clinicName": "Dental Centre on Bloor",
+    "email": "info@bloordufferindental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:14:04.158Z"
+  },
+  {
+    "clinicName": "Dr. O.K. Medical",
+    "email": "domainabuse@tucows.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:14:33.370Z"
+  },
+  {
+    "clinicName": "Lolo Pediatric Dentistry",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:14:52.779Z"
+  },
+  {
+    "clinicName": "Appleday Dental",
+    "email": "appledaydent@appledaydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:15:14.141Z"
+  },
+  {
+    "clinicName": "Jacobs & Associates Dental Office",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:15:27.335Z"
+  },
+  {
+    "clinicName": "OrthoSmiles",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:15:40.867Z"
+  },
+  {
+    "clinicName": "Vimy Bridge Dental",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:15:55.670Z"
+  },
+  {
+    "clinicName": "King East Dental Toronto",
+    "email": "info@kingeastdental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:15:57.161Z"
+  },
+  {
+    "clinicName": "DR. BHANDAL & ASSOCIATES",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:16:22.085Z"
+  },
+  {
+    "clinicName": "Queens Plate",
+    "email": "queensplatedental@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:16:23.615Z"
+  },
+  {
+    "clinicName": "Dr. Martin Frankel Cosmetic Dentist / SMILES by design",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:16:37.083Z"
+  },
+  {
+    "clinicName": "Cosmetic & Family Dentist",
+    "email": "dfdentistry3300@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:16:38.494Z"
+  },
+  {
+    "clinicName": "Dental Care For You - Visit our Scarborough Dental Office for all your Toronto Dental Care needs",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:17:12.156Z"
+  },
+  {
+    "clinicName": "Lakeshore West Dental",
+    "email": "abuse@ionos.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:17:30.760Z"
+  },
+  {
+    "clinicName": "Ottawa South Dental",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:17:44.730Z"
+  },
+  {
+    "clinicName": "Port Credit Dental",
+    "email": "domainabuse@tucows.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:17:58.283Z"
+  },
+  {
+    "clinicName": "Metrotown Endodontics",
+    "email": "metrotownend@metrotownendo.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:18:22.026Z"
+  },
+  {
+    "clinicName": "Dr. Kwong Lo",
+    "email": "drkwonglo@drkwonglo.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:18:42.641Z"
+  },
+  {
+    "clinicName": "Wellesley Dental Centre",
+    "email": "wellesleyden@cwdentalcentre.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:19:05.755Z"
+  },
+  {
+    "clinicName": "Clinique Dentaire Sylvie Clermont",
+    "email": "aylmer@clareo.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:19:11.837Z"
+  },
+  {
+    "clinicName": "Dr. Pinto & Associates",
+    "email": "cira@endurance.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:19:25.415Z"
+  },
+  {
+    "clinicName": "Avalon Denture Care",
+    "email": "info@avalondentalclinic.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:19:53.438Z"
+  },
+  {
+    "clinicName": "Dr. Dagys Orthodontics",
+    "email": "dr.arlenedagys@rocketmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:19:55.350Z"
+  },
+  {
+    "clinicName": "Dr. Lisa Chong",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:20:08.656Z"
+  },
+  {
+    "clinicName": "1955 Dental – Dr. Joyce Ling, Dr. Donald Shuen, & Dr. Tom Cheevers",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:20:38.059Z"
+  },
+  {
+    "clinicName": "Clinique Dentaire St",
+    "email": "info@lessoinsdentaires.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:20:41.182Z"
+  },
+  {
+    "clinicName": "Dr. Ng and Associates Dental",
+    "email": "office@ngdentists.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:20:42.575Z"
+  },
+  {
+    "clinicName": "Clinique de denturologie Josée Bouthillier",
+    "email": "abuse@1api.net",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:21:02.241Z"
+  },
+  {
+    "clinicName": "shermanorthodontics.ca",
+    "email": "info@docbraces.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:21:26.307Z"
+  },
+  {
+    "clinicName": "Mason Denture Clinic",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:21:39.158Z"
+  },
+  {
+    "clinicName": "Mobile Wellness",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:21:52.104Z"
+  },
+  {
+    "clinicName": "York University Dentist in North York",
+    "email": "abuse@gcd.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:22:06.051Z"
+  },
+  {
+    "clinicName": "Sheppard West Dental in North York",
+    "email": "abuse@gcd.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:22:20.035Z"
+  },
+  {
+    "clinicName": "Royal Dental Hygiene Centre",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:22:32.275Z"
+  },
+  {
+    "clinicName": "RV Dental Family Dentistry",
+    "email": "rvdentalfami@rvdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:22:55.007Z"
+  },
+  {
+    "clinicName": "Thornhill Woods Family",
+    "email": "domainabuse@tucows.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:23:10.648Z"
+  },
+  {
+    "clinicName": "Dr. Bao Vo & Associates",
+    "email": "drbaovoassoc@tmjsleepdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:23:42.486Z"
+  },
+  {
+    "clinicName": "The Tooth Place",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:24:17.903Z"
+  },
+  {
+    "clinicName": "Treehouse Dental Care, Greater Toronto Area",
+    "email": "treehouseden@treehousedentalcare.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:24:39.944Z"
+  },
+  {
+    "clinicName": "Seoul Dental",
+    "email": "seouldental@seouldental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:25:00.064Z"
+  },
+  {
+    "clinicName": "Orthodontists in Ontario",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:25:14.005Z"
+  },
+  {
+    "clinicName": "Arch Dental Centre",
+    "email": "king@archdental.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:25:16.419Z"
+  },
+  {
+    "clinicName": "Dr D. M. Freedman",
+    "email": "abuse@godaddy.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-15T08:26:07.317Z"
+  },
+  {
+    "clinicName": "Downtown Toronto",
+    "email": "info@drcharlesgoldberg.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:26:08.765Z"
+  },
+  {
+    "clinicName": "SquareOne Smiles",
+    "email": "info@squareonesmiles.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:26:12.435Z"
+  },
+  {
+    "clinicName": "Ellesmere Village",
+    "email": "info@ellesmerevillagedental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-15T08:26:36.042Z"
+  },
+  {
+    "clinicName": "Mississauga Dentist",
+    "email": "domain.operations@web.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:14:18.282Z"
+  },
+  {
+    "clinicName": "Dental Clinics and Family Dentists Near You",
+    "email": "domain.operations@web.com",
+    "method": "whois",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:14:23.584Z"
+  },
+  {
+    "clinicName": "Parkview",
+    "email": "info@parkviewdentaltoronto.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:14:35.160Z"
+  },
+  {
+    "clinicName": "Etobicoke Dentist",
+    "email": "info@torontolakeshoredental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:14:36.172Z"
+  },
+  {
+    "clinicName": "Dentist in Etobicoke, ON",
+    "email": "info@torontolakeshoredental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:14:37.036Z"
+  },
+  {
+    "clinicName": "Dr Arun Narang & Associates Smile by Design",
+    "email": "info@smilebydesigndental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:15:59.698Z"
+  },
+  {
+    "clinicName": "Dentist in The Queensway–Humber Bay, Etobicoke, Toronto",
+    "email": "info@parklawndental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:16:04.834Z"
+  },
+  {
+    "clinicName": "Bloor Valley Dental Office",
+    "email": "info@dentistsonbloor.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:16:15.388Z"
+  },
+  {
+    "clinicName": "Mississauga Dentist",
+    "email": "info@1citycentredentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:16:18.500Z"
+  },
+  {
+    "clinicName": "Dental Clinics and Family Dentists Near You",
+    "email": "info@waterviewdentaltoronto.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:16:22.008Z"
+  },
+  {
+    "clinicName": "Royal Centre Dental Group",
+    "email": "info@royalcentredentalgroup.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:16:32.370Z"
+  },
+  {
+    "clinicName": "Michou",
+    "email": "INFO@SMILEDENTALTORONTO.CA",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:16:33.586Z"
+  },
+  {
+    "clinicName": "Scarborough",
+    "email": "info@scarborosmiles.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:16:34.739Z"
+  },
+  {
+    "clinicName": "Smile Squad",
+    "email": "info@smilesquad.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:16:48.038Z"
+  },
+  {
+    "clinicName": "Studio Dental",
+    "email": "info@studiodentalcentres.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:00.890Z"
+  },
+  {
+    "clinicName": "Dentistry by Dr. Sferlazza",
+    "email": "info@winningsmiletor.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:03.499Z"
+  },
+  {
+    "clinicName": "Park Haven Dental",
+    "email": "info@parkhavendental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:06.614Z"
+  },
+  {
+    "clinicName": "SquareOne Smiles",
+    "email": "info@square1dental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:12.086Z"
+  },
+  {
+    "clinicName": "York University Dentist in North York",
+    "email": "info@yorkusmiles.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:17.524Z"
+  },
+  {
+    "clinicName": "Barrhaven Dental Studio",
+    "email": "info@barrhavendentalstudio.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:19.220Z"
+  },
+  {
+    "clinicName": "Mystic Pointe",
+    "email": "impallari@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:17:20.391Z"
+  },
+  {
+    "clinicName": "Ellesmere Village",
+    "email": "info@ellesmerevillagedental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:21.538Z"
+  },
+  {
+    "clinicName": "Dentist in Beaches Toronto, ON",
+    "email": "info@torontobeachdental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:24.237Z"
+  },
+  {
+    "clinicName": "Arch Dental Centre",
+    "email": "king@archdental.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:17:25.754Z"
+  },
+  {
+    "clinicName": "Charm Dental",
+    "email": "info@charmdentalcare.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:36.512Z"
+  },
+  {
+    "clinicName": "Bathurst-Steeles Dental",
+    "email": "info@bathurst-steelesdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:47.095Z"
+  },
+  {
+    "clinicName": "North Bramalea Dental",
+    "email": "info@northbramaleadental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:51.912Z"
+  },
+  {
+    "clinicName": "Dental Health",
+    "email": "admin@dentalhealthclinic.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:54.259Z"
+  },
+  {
+    "clinicName": "Mississauga Smiles Dentistry",
+    "email": "info@mississaugasmilesdentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:17:57.567Z"
+  },
+  {
+    "clinicName": "Sarna Dentistry",
+    "email": "info@hawthornevillagedental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:18:00.572Z"
+  },
+  {
+    "clinicName": "Elm Hill Dentistry - Dr. Mark Iacovino",
+    "email": "info@elmhilldentistry.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:18:13.682Z"
+  },
+  {
+    "clinicName": "Humber Bay Physio",
+    "email": "mary@humberdental.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:18:18.072Z"
+  },
+  {
+    "clinicName": "Elmwood Park Dental",
+    "email": "info@dentalclinictoronto.dentist",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:18:21.277Z"
+  },
+  {
+    "clinicName": "RV Dental Family Dentistry",
+    "email": "info@rvdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:18:26.557Z"
+  },
+  {
+    "clinicName": "Monarch Dentistry – Affordable Family & Emergency Dental Care",
+    "email": "info@monarchdentistry.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:18:28.285Z"
+  },
+  {
+    "clinicName": "Kits Point Dental Group",
+    "email": "info@kitspointdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:18:31.202Z"
+  },
+  {
+    "clinicName": "Downtown Toronto",
+    "email": "info@downtowndentalclinic.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:18:56.094Z"
+  },
+  {
+    "clinicName": "Heritage Orthodontics",
+    "email": "info@heritageorthodontics.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:19:07.271Z"
+  },
+  {
+    "clinicName": "Centre Dentaire Mawlawi",
+    "email": "info@centredentairemawlawi.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:19:27.210Z"
+  },
+  {
+    "clinicName": "Dentistry On The Q",
+    "email": "info@dentistryontheq.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:19:30.156Z"
+  },
+  {
+    "clinicName": "Bloor Kipling Dentistry in Etobicoke",
+    "email": "info@bloorkiplingdentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:19:43.489Z"
+  },
+  {
+    "clinicName": "Eringate Dental",
+    "email": "info@eringatedental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:19:55.209Z"
+  },
+  {
+    "clinicName": "Corktown Dental",
+    "email": "info@corktowndental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:20:02.909Z"
+  },
+  {
+    "clinicName": "Altima",
+    "email": "scotiaplaza@altima.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:20:04.129Z"
+  },
+  {
+    "clinicName": "Rockingham Ridge Dental Centre",
+    "email": "info@robiestreetdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:20:17.566Z"
+  },
+  {
+    "clinicName": "Sheppard West Dental in North York",
+    "email": "info@sheppardwestdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:20:41.596Z"
+  },
+  {
+    "clinicName": "Marine Way & Northgate Dental",
+    "email": "info@marinewaydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:20:46.210Z"
+  },
+  {
+    "clinicName": "Your Dental",
+    "email": "frontdesk@yourdentaloffice.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:20:47.474Z"
+  },
+  {
+    "clinicName": "Eatonville Dental",
+    "email": "info@eatonvilledental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:20:51.168Z"
+  },
+  {
+    "clinicName": "Mindfulness Psychotherapy",
+    "email": "smile@allsmiles.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:20:52.468Z"
+  },
+  {
+    "clinicName": "Brampton Mississauga Streetsville Cosmetic Dentist",
+    "email": "reception@dentistryinstreetsville.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:20:53.919Z"
+  },
+  {
+    "clinicName": "Accueil - La Dentisterie LA",
+    "email": "cliniquedentairelacite@cdlc.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:21:01.102Z"
+  },
+  {
+    "clinicName": "Centre Dentaire Dr Louise Magnan",
+    "email": "info@mag-dent.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:21:04.069Z"
+  },
+  {
+    "clinicName": "Emergency Dental Service",
+    "email": "contact@kitchenerdentistfairway.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:21:05.369Z"
+  },
+  {
+    "clinicName": "Dentistry for Everyone",
+    "email": "info@dentistryforeveryone.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:21:15.367Z"
+  },
+  {
+    "clinicName": "Pacific",
+    "email": "info@pacificdentalondundas.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:21:17.445Z"
+  },
+  {
+    "clinicName": "The Tooth Place",
+    "email": "info@thetoothplace.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:21:34.207Z"
+  },
+  {
+    "clinicName": "Trinity Dental Centre",
+    "email": "info@trinitydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:21:46.861Z"
+  },
+  {
+    "clinicName": "New Smile Dental & Implant",
+    "email": "info@newsmiledental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:21:54.814Z"
+  },
+  {
+    "clinicName": "Seoul Dental",
+    "email": "info@seouldental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:21:59.064Z"
+  },
+  {
+    "clinicName": "downtown Toronto dental clinic - QQ",
+    "email": "info@qqdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:06.207Z"
+  },
+  {
+    "clinicName": "Aldent Smile Dentistry",
+    "email": "aedentalart@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:22:07.804Z"
+  },
+  {
+    "clinicName": "Applewood Dental Centre",
+    "email": "info@applewooddentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:18.708Z"
+  },
+  {
+    "clinicName": "Rocky Ridge Dental",
+    "email": "info@rockyridgedental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:22.654Z"
+  },
+  {
+    "clinicName": "Treehouse Dental Care, Greater Toronto Area",
+    "email": "info@treehousedentalcare.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:26.856Z"
+  },
+  {
+    "clinicName": "Cracovia Dental",
+    "email": "info@cracoviadental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:29.648Z"
+  },
+  {
+    "clinicName": "Bathurst Dundas Dental Centre",
+    "email": "info@bathurstdundasdentalcentre.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:33.111Z"
+  },
+  {
+    "clinicName": "Orthodontists in Ontario",
+    "email": "info@vaughanortho.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:34.457Z"
+  },
+  {
+    "clinicName": "Market Dental Centre Toronto",
+    "email": "info@marketdentalcentre.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:38.272Z"
+  },
+  {
+    "clinicName": "Dundas East Dental",
+    "email": "info@dundaseastdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:45.553Z"
+  },
+  {
+    "clinicName": "Dr D. M. Freedman",
+    "email": "info@midtownorthodontics.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:46.718Z"
+  },
+  {
+    "clinicName": "Dental Centre on Bloor",
+    "email": "info@bloordufferindental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:47.791Z"
+  },
+  {
+    "clinicName": "Royal Dental Hygiene Centre",
+    "email": "info@royaldentalmaple.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:22:58.499Z"
+  },
+  {
+    "clinicName": "Dr. O.K. Medical",
+    "email": "info@dentalhealthcentre.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:23:25.275Z"
+  },
+  {
+    "clinicName": "Lolo Pediatric Dentistry",
+    "email": "info@lolosmiles.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:23:36.736Z"
+  },
+  {
+    "clinicName": "Appleday Dental",
+    "email": "info@appledaydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:23:40.036Z"
+  },
+  {
+    "clinicName": "Jacobs & Associates Dental Office",
+    "email": "info@jacobsdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:23:42.877Z"
+  },
+  {
+    "clinicName": "OrthoSmiles",
+    "email": "info@laskiorthosmiles.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:23:53.968Z"
+  },
+  {
+    "clinicName": "Vimy Bridge Dental",
+    "email": "info@vimydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:23:57.277Z"
+  },
+  {
+    "clinicName": "King East Dental Toronto",
+    "email": "info@kingeastdental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:23:58.464Z"
+  },
+  {
+    "clinicName": "DR. BHANDAL & ASSOCIATES",
+    "email": "info@drbhandal.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:24:12.413Z"
+  },
+  {
+    "clinicName": "Queens Plate",
+    "email": "queensplatedental@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:24:13.629Z"
+  },
+  {
+    "clinicName": "Dr. Martin Frankel Cosmetic Dentist / SMILES by design",
+    "email": "info@drmartyfrankel.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:24:16.662Z"
+  },
+  {
+    "clinicName": "Cosmetic & Family Dentist",
+    "email": "dfdentistry3300@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:24:17.836Z"
+  },
+  {
+    "clinicName": "Dental Care For You - Visit our Scarborough Dental Office for all your Toronto Dental Care needs",
+    "email": "info@dentalcareforyou.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:24:35.845Z"
+  },
+  {
+    "clinicName": "Lakeshore West Dental",
+    "email": "info@lakeshorewestdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:24:44.520Z"
+  },
+  {
+    "clinicName": "Ottawa South Dental",
+    "email": "info@ottawasouthdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:24:48.312Z"
+  },
+  {
+    "clinicName": "Port Credit Dental",
+    "email": "info@portcreditdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:24:51.801Z"
+  },
+  {
+    "clinicName": "Metrotown Endodontics",
+    "email": "info@metrotownendo.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:24:58.120Z"
+  },
+  {
+    "clinicName": "Dr. Kwong Lo",
+    "email": "info@drkwonglo.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:25:00.950Z"
+  },
+  {
+    "clinicName": "Wellesley Dental Centre",
+    "email": "info@cwdentalcentre.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:25:06.202Z"
+  },
+  {
+    "clinicName": "Clinique Dentaire Sylvie Clermont",
+    "email": "aylmer@clareo.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:25:16.199Z"
+  },
+  {
+    "clinicName": "Dr. Pinto & Associates",
+    "email": "info@drpinto.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:25:27.886Z"
+  },
+  {
+    "clinicName": "Cosentino Dental Care",
+    "email": "contact@cosentinodentalcare.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:25:29.280Z"
+  },
+  {
+    "clinicName": "Renaissance Dental Prosthetics Ltd.",
+    "email": "info@premierehealthgroup.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:25:49.026Z"
+  },
+  {
+    "clinicName": "Avalon Denture Care",
+    "email": "info@avalondentalclinic.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:25:50.447Z"
+  },
+  {
+    "clinicName": "Thornhill Woods Family",
+    "email": "info@thornhillwoodsdentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:25:54.466Z"
+  },
+  {
+    "clinicName": "Thomas Vesz, Endodontist",
+    "email": "info@westendo.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:25:57.648Z"
+  },
+  {
+    "clinicName": "Dr. Dagys Orthodontics",
+    "email": "dr.arlenedagys@rocketmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:25:59.189Z"
+  },
+  {
+    "clinicName": "J. Kennedy Dentistry",
+    "email": "info@kennedydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:26:15.959Z"
+  },
+  {
+    "clinicName": "1955 Dental – Dr. Joyce Ling, Dr. Donald Shuen, & Dr. Tom Cheevers",
+    "email": "info@1955dental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:26:41.259Z"
+  },
+  {
+    "clinicName": "Clinique Dentaire St",
+    "email": "info@lessoinsdentaires.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:26:43.902Z"
+  },
+  {
+    "clinicName": "Dr. Ng and Associates Dental",
+    "email": "office@ngdentists.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:26:44.956Z"
+  },
+  {
+    "clinicName": "Clinique de denturologie Josée Bouthillier",
+    "email": "info@411sante.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:27:20.883Z"
+  },
+  {
+    "clinicName": "Dr. Bao Vo & Associates",
+    "email": "info@tmjsleepdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:27:30.382Z"
+  },
+  {
+    "clinicName": "Dr. Alain Nourkeyhani",
+    "email": "cdlm.info@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:27:35.041Z"
+  },
+  {
+    "clinicName": "Smile Design Dental Studio",
+    "email": "info@smilebydesigndentalstudios.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:27:36.477Z"
+  },
+  {
+    "clinicName": "shermanorthodontics.ca",
+    "email": "info@docbraces.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:27:37.962Z"
+  },
+  {
+    "clinicName": "Mobile Wellness",
+    "email": "info@mobilewellness.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:27:44.464Z"
+  },
+  {
+    "clinicName": "Mississauga Dentist",
+    "email": "your@email.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:27:46.498Z"
+  },
+  {
+    "clinicName": "Dr. Bao Vo & Associates",
+    "email": "info@tmjsleepdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:27:55.051Z"
+  },
+  {
+    "clinicName": "Brill Dental",
+    "email": "your@email.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:27:57.090Z"
+  },
+  {
+    "clinicName": "Smile Care Dental",
+    "email": "info@smilecare.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:28:08.685Z"
+  },
+  {
+    "clinicName": "College & Dufferin Dental Clinic",
+    "email": "info@collegedufferindental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:30:18.876Z"
+  },
+  {
+    "clinicName": "Bloor Lansdowne Dental",
+    "email": "info@bloorlansdownedental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:30:20.251Z"
+  },
+  {
+    "clinicName": "Love Your Teeth",
+    "email": "info@campusdentalnorth.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:30:32.190Z"
+  },
+  {
+    "clinicName": "King West Dentistry",
+    "email": "info@kingwestdentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:30:43.862Z"
+  },
+  {
+    "clinicName": "City of Toronto",
+    "email": "info@toronto.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:30:58.182Z"
+  },
+  {
+    "clinicName": "Waterview",
+    "email": "info@waterviewdentaltoronto.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:31:54.056Z"
+  },
+  {
+    "clinicName": "The Richmond Dental",
+    "email": "info@therichmonddentalcentre.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:31:57.760Z"
+  },
+  {
+    "clinicName": "Gerrard Dental Care",
+    "email": "info@gerrarddentalcare.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:31:59.883Z"
+  },
+  {
+    "clinicName": "Dixie Dental Associates",
+    "email": "info@dixiedentalassociates.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:32:09.870Z"
+  },
+  {
+    "clinicName": "Denture Works",
+    "email": "info@dentureworks.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:32:21.480Z"
+  },
+  {
+    "clinicName": "Northshore",
+    "email": "eben@eyebytes.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:32:22.675Z"
+  },
+  {
+    "clinicName": "Sherwood",
+    "email": "info@sherwooddental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:32:30.478Z"
+  },
+  {
+    "clinicName": "Southdown Dental",
+    "email": "info@southdowndental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:32:44.269Z"
+  },
+  {
+    "clinicName": "Lifestyle",
+    "email": "info@lifestyledentistry.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:32:47.176Z"
+  },
+  {
+    "clinicName": "Elsheikh Dental – Exceeding your expectations of a beautiful smile!",
+    "email": "info@elsheikhdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:33:05.941Z"
+  },
+  {
+    "clinicName": "Creditview Dental in Mississauga | Your Mississauga",
+    "email": "info@creditviewdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:33:18.466Z"
+  },
+  {
+    "clinicName": "Dr. Dalia Henein",
+    "email": "frontdesk@shineteeth.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:33:29.974Z"
+  },
+  {
+    "clinicName": "Jauhal",
+    "email": "info@jauhaldental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:33:31.591Z"
+  },
+  {
+    "clinicName": "Mistry",
+    "email": "info@mistrydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:33:54.940Z"
+  },
+  {
+    "clinicName": "Mississauga Dentist, Family Dental",
+    "email": "your@email.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:33:56.989Z"
+  },
+  {
+    "clinicName": "Southcommon Dental in Mississauga | Your Mississauga",
+    "email": "info@southcommondental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:34:13.867Z"
+  },
+  {
+    "clinicName": "VanMills Dental - The Office of Dr.Demarchi",
+    "email": "demarchidental@bellnet.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:34:17.522Z"
+  },
+  {
+    "clinicName": "Derry Village Dental Care",
+    "email": "info@derrydental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:34:59.134Z"
+  },
+  {
+    "clinicName": "Sandalwood Dental",
+    "email": "info@sandalwooddental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:35:37.153Z"
+  },
+  {
+    "clinicName": "Home of",
+    "email": "info@homeofdentistry.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:35:48.767Z"
+  },
+  {
+    "clinicName": "West Mississauga Dental | Creating Healthy Smiles",
+    "email": "info@westmississaugadental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:36:02.203Z"
+  },
+  {
+    "clinicName": "MiSmile Dental",
+    "email": "info@mismiledental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:36:13.424Z"
+  },
+  {
+    "clinicName": "Dr. Gagan Bhalla Orthodontist",
+    "email": "info@braces4u.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:36:37.196Z"
+  },
+  {
+    "clinicName": "Dentistry on Lakeshore",
+    "email": "info@dentistryonlakeshore.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:36:52.895Z"
+  },
+  {
+    "clinicName": "AXIS Dental Group",
+    "email": "info@drpapneja.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:36:54.911Z"
+  },
+  {
+    "clinicName": "Dental Clinics and Family Dentists Near You | Dawson Dental Care",
+    "email": "info@dawsondental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:37:07.391Z"
+  },
+  {
+    "clinicName": "Kazman Family Dental in Brampton, ON",
+    "email": "info@goodmedicinedpc.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:37:10.852Z"
+  },
+  {
+    "clinicName": "Brittany Dental Centre",
+    "email": "info@brittanydental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:37:20.999Z"
+  },
+  {
+    "clinicName": "Mississauga Dentist - Eye Smile",
+    "email": "info@eyesmile.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:37:52.229Z"
+  },
+  {
+    "clinicName": "dentalworks4kids",
+    "email": "vaughan@dw4k-align.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:37:53.631Z"
+  },
+  {
+    "clinicName": "Advanced Bionics",
+    "email": "staffdrpkahlon@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:37:55.520Z"
+  },
+  {
+    "clinicName": "Brampton, ON Renowned Family Dentist - Bramcountry",
+    "email": "info@bramcountrydental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:38:16.274Z"
+  },
+  {
+    "clinicName": "BluSky Dental Holland Cross Ottawa - Personalized Family Dentistry in Westboro, Ottawa",
+    "email": "hollandcrossreception@blusky.dental",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:38:17.680Z"
+  },
+  {
+    "clinicName": "Skyline Dental Associates, Ottawa",
+    "email": "info@hogsbackdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:38:30.021Z"
+  },
+  {
+    "clinicName": "Westend Dental",
+    "email": "example@mysite.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:38:39.726Z"
+  },
+  {
+    "clinicName": "Legget Drive Dental",
+    "email": "Emaildentalleggetdrive@gmail.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:38:46.311Z"
+  },
+  {
+    "clinicName": "Séguin Dental | General & Cosmetic Dentist Ottawa, ON",
+    "email": "info@seguindental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:38:58.506Z"
+  },
+  {
+    "clinicName": "Clinique Dentaire D'Aylmer, Gatineau Dentiste",
+    "email": "info@cliniquedentairedubreuil-levesque.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:39:22.781Z"
+  },
+  {
+    "clinicName": "Clinique Médico-Dentaire de la Gatineau",
+    "email": "info@cliniquemedicodentaire.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:39:56.473Z"
+  },
+  {
+    "clinicName": "Ottawa East Endodontics",
+    "email": "info@ottawa-east-endodontics.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:40:46.718Z"
+  },
+  {
+    "clinicName": "7Dental",
+    "email": "admin@dentalsupport.ca%20",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:40:49.432Z"
+  },
+  {
+    "clinicName": "Welcome | Ottawa, Ontario | Fernbank",
+    "email": "info@fernbankdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:41:19.189Z"
+  },
+  {
+    "clinicName": "Clinique dentaire, dentiste à Gatineau",
+    "email": "info@ricardettran.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:41:31.857Z"
+  },
+  {
+    "clinicName": "Orthodontist | Ottawa Kemptville ON | Capital Orthodontics",
+    "email": "info@capitalorthodontics.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:41:47.774Z"
+  },
+  {
+    "clinicName": "Argyle Associates",
+    "email": "patientservices@argyleassociates.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:42:00.608Z"
+  },
+  {
+    "clinicName": "Welcome | Orleans, ON | Fallingbrook Dental",
+    "email": "your@email.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:42:02.807Z"
+  },
+  {
+    "clinicName": "Dentist in Overbrook, Ottawa",
+    "email": "info@manorparkdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:42:13.316Z"
+  },
+  {
+    "clinicName": "Queensbury Dental",
+    "email": "info@queensburydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:42:32.262Z"
+  },
+  {
+    "clinicName": "Barrhaven Crossings Dental",
+    "email": "info@barrhavendentists.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:42:40.517Z"
+  },
+  {
+    "clinicName": "Orthodontist Ottawa Manotick ON | Dr. Nick Karaiskos Orthodontist",
+    "email": "info@myottawaorthodontist.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:43:32.146Z"
+  },
+  {
+    "clinicName": "Villanova",
+    "email": "info@villanovadental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:44:18.309Z"
+  },
+  {
+    "clinicName": "Greenbank Hunt Club Dental in Ottawa | Your Dentist in Ottawa",
+    "email": "info@greenbankhuntclubdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:44:30.940Z"
+  },
+  {
+    "clinicName": "Cruzado Dentures",
+    "email": "info@cruzadodentures.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:46:41.657Z"
+  },
+  {
+    "clinicName": "Palladium Orthodontics",
+    "email": "info@palladiumorthodontics.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:46:50.093Z"
+  },
+  {
+    "clinicName": "Orthodontist Ottawa & Kanata ON | Van Orthodontics",
+    "email": "info@vanorthodontics.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:49:16.334Z"
+  },
+  {
+    "clinicName": "Orleans Orthodontics. Braces & Invisalign",
+    "email": "info@orleansorthodontics.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:49:27.297Z"
+  },
+  {
+    "clinicName": "Hazeldean Family Dental Centre",
+    "email": "info@ismilekanata.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:49:30.017Z"
+  },
+  {
+    "clinicName": "Apple's Dental Clinics",
+    "email": "webmaster@appledentalclinics.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:49:31.161Z"
+  },
+  {
+    "clinicName": "Hazeldean Dental Group",
+    "email": "info@hazeldeandental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:49:41.846Z"
+  },
+  {
+    "clinicName": "Toothpark Pediatric Dentistry",
+    "email": "info@toothpark.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:49:51.975Z"
+  },
+  {
+    "clinicName": "Oakville Family & Cosmetic",
+    "email": "info@drsaunders.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:49:53.689Z"
+  },
+  {
+    "clinicName": "Heritagehill",
+    "email": "heritagehilldental@bellnet.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:49:55.056Z"
+  },
+  {
+    "clinicName": "Bronte Road Family",
+    "email": "info@oakvillefamilydental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:50:10.971Z"
+  },
+  {
+    "clinicName": "Oakville North",
+    "email": "info@oakvillenorthdentistry.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:50:24.703Z"
+  },
+  {
+    "clinicName": "Dentistry at The Grove",
+    "email": "info@grovedentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:50:49.133Z"
+  },
+  {
+    "clinicName": "Mountcrest Dental | Your Friendly Hamilton",
+    "email": "admin@mountcrestdental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:50:50.792Z"
+  },
+  {
+    "clinicName": "Smile Design Dental Care | Modern Dentistry Across Ontario",
+    "email": "info@smiledesign.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:51:02.052Z"
+  },
+  {
+    "clinicName": "Endodontist Pike",
+    "email": "info@kwrootcanals.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:51:20.867Z"
+  },
+  {
+    "clinicName": "University Dental Hygiene Clinic",
+    "email": "info@universitydentalhygieneclinic.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:51:31.136Z"
+  },
+  {
+    "clinicName": "Orthodontic Smile Studio | A great smile is for everyone!",
+    "email": "info@orthodonticsmilestudio.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:51:42.911Z"
+  },
+  {
+    "clinicName": "University Dental",
+    "email": "kwuniversitydental@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:51:44.505Z"
+  },
+  {
+    "clinicName": "Westmeadow",
+    "email": "info@westmeadowdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:52:16.793Z"
+  },
+  {
+    "clinicName": "Grand River Dental Care",
+    "email": "info@grandriverdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:52:28.186Z"
+  },
+  {
+    "clinicName": "King Street Dental",
+    "email": "info@ksdc.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:52:29.462Z"
+  },
+  {
+    "clinicName": "Sante Family",
+    "email": "info@santefamilydental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:52:44.181Z"
+  },
+  {
+    "clinicName": "Imagine Children’s",
+    "email": "xrays@imaginecd.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:52:54.288Z"
+  },
+  {
+    "clinicName": "Denturologiste Montréal, prothèse dentaire de qualité",
+    "email": "info@barriaultdd.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:53:05.561Z"
+  },
+  {
+    "clinicName": "centredentaireschwartz - Just another WordPress site",
+    "email": "info@centredentaireschwartz.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:53:06.879Z"
+  },
+  {
+    "clinicName": "PARO CHIRURGIE MONTRÉAL",
+    "email": "info@parochirurgiemontreal.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:53:26.009Z"
+  },
+  {
+    "clinicName": "Clinique Dentaire Cartier",
+    "email": "info@cliniquedentairecartier.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:53:56.762Z"
+  },
+  {
+    "clinicName": "Dentistes Messier Martin",
+    "email": "info@dentistesmessiermartin.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:53:57.990Z"
+  },
+  {
+    "clinicName": "Centre dentaire 1450 | Clinique dentaire à Longueuil",
+    "email": "info@centredentaire1450.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:54:13.383Z"
+  },
+  {
+    "clinicName": "Centre dentaire Fancelli, dentiste à Longeuil",
+    "email": "info@centredentairefancelli.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:54:25.259Z"
+  },
+  {
+    "clinicName": "Clinique Dentaire Métro Papineau",
+    "email": "info@cliniquemetropapineau.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:54:40.021Z"
+  },
+  {
+    "clinicName": "Blanc Dentaire",
+    "email": "info@blancdentaire.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:55:14.213Z"
+  },
+  {
+    "clinicName": "Clinique Dentaire Bouchard Bélanger",
+    "email": "info@cliniquedentairebbc.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:55:19.668Z"
+  },
+  {
+    "clinicName": "Clinique dentaire Rosemont",
+    "email": "info@cdrosemont.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:55:22.707Z"
+  },
+  {
+    "clinicName": "PagesJaunes.ca",
+    "email": "info@pagesjaunes.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:55:33.439Z"
+  },
+  {
+    "clinicName": "Kadent",
+    "email": "info@cliniquedentairekadent.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:55:34.802Z"
+  },
+  {
+    "clinicName": "Clinique de Denturologie Michel Puertas",
+    "email": "info@michelpuertas.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:55:36.099Z"
+  },
+  {
+    "clinicName": "Centre dentaire Samaha",
+    "email": "info@centredentairesamaha.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:56:03.081Z"
+  },
+  {
+    "clinicName": "Dentiste Laval Québec - Clinique Dentaire à Laval - Cabinet Dentaire",
+    "email": "info@mharmonydental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:56:14.838Z"
+  },
+  {
+    "clinicName": "Dr. Tina Dorfman, Dentist at Dr. Tina Dorfman Family Dentist in Pointe-Claire",
+    "email": "info@drtinadorfman.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:56:19.233Z"
+  },
+  {
+    "clinicName": "Bienvenue au Centre dentaire Jobin, dentiste à Boisbriand",
+    "email": "info@centredentairejobin.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:56:25.740Z"
+  },
+  {
+    "clinicName": "Clinique dentaire Reinhardt Thibert",
+    "email": "info@cliniquerta.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:56:35.507Z"
+  },
+  {
+    "clinicName": "Clinique dentaire Gervais et associés, Saint-Hubert Dentiste",
+    "email": "info@cliniquedentairegervais.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:56:47.887Z"
+  },
+  {
+    "clinicName": "Les Dentistes Durepos et Associés",
+    "email": "info@dentistesdurepos.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:56:49.380Z"
+  },
+  {
+    "clinicName": "Clinique dentaire Centre dentaire Masse, dentiste à Québec",
+    "email": "info@drmasse.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:56:58.903Z"
+  },
+  {
+    "clinicName": "Clinique dentaire Samuel Holland, Québec Dentiste",
+    "email": "info@cliniquesamuelholland.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:57:11.355Z"
+  },
+  {
+    "clinicName": "Centre dentaire Pellan & Lessard, dentiste à Québec",
+    "email": "info@centredentairepellanetlessard.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:57:24.080Z"
+  },
+  {
+    "clinicName": "Bienvenue à la Clinique dentaire St-Louis, dentiste à Québec",
+    "email": "info@cliniquestlouis.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:57:35.704Z"
+  },
+  {
+    "clinicName": "W Dental in Vancouver",
+    "email": "info@w-dental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:57:48.823Z"
+  },
+  {
+    "clinicName": "Joyce Station Dental: Welcome",
+    "email": "info@joycestationdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:57:56.521Z"
+  },
+  {
+    "clinicName": "Family Dentist in Vancouver, BC",
+    "email": "dralextsai@hotmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:57:57.851Z"
+  },
+  {
+    "clinicName": "Unity",
+    "email": "info@lighthousedental.care",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:57:59.845Z"
+  },
+  {
+    "clinicName": "House of Teeth",
+    "email": "info@houseofteeth.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:58:24.315Z"
+  },
+  {
+    "clinicName": "Loft 19",
+    "email": "contact@loft19dental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:58:25.597Z"
+  },
+  {
+    "clinicName": "Fraser Dental Group in Vancouver",
+    "email": "fraserdentalgroup@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T04:58:44.543Z"
+  },
+  {
+    "clinicName": "Tot 2 Teen Dental",
+    "email": "info@tot2teendental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:58:53.356Z"
+  },
+  {
+    "clinicName": "Sunrise Village Dental",
+    "email": "info@sunrisevillagedental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:59:16.048Z"
+  },
+  {
+    "clinicName": "Birch Dental Broadway",
+    "email": "info@birchdentalgroup.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:59:30.148Z"
+  },
+  {
+    "clinicName": "Vancouver",
+    "email": "info@vancouverdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:59:47.580Z"
+  },
+  {
+    "clinicName": "Fifth Avenue Dental",
+    "email": "info@fifthavenuedentalcentre.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:59:49.230Z"
+  },
+  {
+    "clinicName": "Welcome | Surrey, British Columbia | Park Dental Group",
+    "email": "info@parkdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:59:56.042Z"
+  },
+  {
+    "clinicName": "Orthodontist Surrey | Braces Surrey | Invisalign Surrey",
+    "email": "info@gtcorthodontist.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T04:59:57.417Z"
+  },
+  {
+    "clinicName": "Aura Orthodontics",
+    "email": "info@auraortho.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:00:00.418Z"
+  },
+  {
+    "clinicName": "Morgan Heights Dental",
+    "email": "info@morganheightsdental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:00:01.872Z"
+  },
+  {
+    "clinicName": "Life Dental on 6th St. in New Westminster",
+    "email": "info@lifedental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:00:12.550Z"
+  },
+  {
+    "clinicName": "Royal City Family",
+    "email": "royalcity@familydentalcentres.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T05:00:26.032Z"
+  },
+  {
+    "clinicName": "South Point Denture Clinic - Your Smile, Our Passion",
+    "email": "info@southpointdentures.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:00:28.822Z"
+  },
+  {
+    "clinicName": "Family Dentist in Surrey, BC | Clover Hills",
+    "email": "info@cloverhillsdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:00:32.331Z"
+  },
+  {
+    "clinicName": "Welcome | Surrey, British Columbia | Elgin Corners",
+    "email": "info@elgincorners.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:00:37.048Z"
+  },
+  {
+    "clinicName": "cwtcm",
+    "email": "info@cwtcm.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:00:48.903Z"
+  },
+  {
+    "clinicName": "Vancouver Centre for Cosmetic and Implant Dentistry",
+    "email": "info@vccid.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:01:04.453Z"
+  },
+  {
+    "clinicName": "Astra Orthodontics",
+    "email": "richmond@astraorthodontics.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T05:01:06.005Z"
+  },
+  {
+    "clinicName": "Welcome to North Burnaby Dental Group, Dentists in Burnaby, BC",
+    "email": "info@northburnabydental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:01:16.988Z"
+  },
+  {
+    "clinicName": "Dawson Dental",
+    "email": "info@dawsondentalcentre.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:01:18.427Z"
+  },
+  {
+    "clinicName": "Dr. Wilfred Yu",
+    "email": "info@drwilfredyu.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:01:31.204Z"
+  },
+  {
+    "clinicName": "Oaklands Dental, Victoria",
+    "email": "info@oaklandsdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:01:35.191Z"
+  },
+  {
+    "clinicName": "Delta & Ladner Dentist | Family Dentistry | Ladner Village",
+    "email": "info@ladnervillagedental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:01:47.576Z"
+  },
+  {
+    "clinicName": "University Village Dental Clinic",
+    "email": "info@universityvillageclinic.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:01:58.799Z"
+  },
+  {
+    "clinicName": "Terra Nova Dental",
+    "email": "terranovadentalcentre@gmail.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:02:01.280Z"
+  },
+  {
+    "clinicName": "Seacoast Dental Centre – Steveston's most beautiful smiles",
+    "email": "info@seacoastdental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:02:03.128Z"
+  },
+  {
+    "clinicName": "Metro Dental Care in Calgary NW | Your Dentist in Calgary NW",
+    "email": "info@metrodentalcare.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:02:08.916Z"
+  },
+  {
+    "clinicName": "Brentwood Dental",
+    "email": "info@brentwooddentalcentre.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:02:30.376Z"
+  },
+  {
+    "clinicName": "Millennium Smile – Crowfoot Dental, NW Calgary Dentist » Comprehensive Aesthetic",
+    "email": "info@millenniumsmile.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:02:48.710Z"
+  },
+  {
+    "clinicName": "Northwest Dental Centre",
+    "email": "admin@northwestdental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:02:50.558Z"
+  },
+  {
+    "clinicName": "Avenida",
+    "email": "info@avenidadental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:03:12.391Z"
+  },
+  {
+    "clinicName": "Canyon Creek Dental Clinic, Calgary",
+    "email": "info@ccdclinic.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:03:23.335Z"
+  },
+  {
+    "clinicName": "Dr. Leonard H. Brown – Calgary General Dentist – Call 403 243 7534",
+    "email": "info@yourcalgarydentist.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:03:41.015Z"
+  },
+  {
+    "clinicName": "Garrison Woods Dental, Calgary",
+    "email": "info@garrisonwoodsdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:03:46.143Z"
+  },
+  {
+    "clinicName": "inglewoodfamily",
+    "email": "inglewoodfamilydental@gmail.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:04:12.342Z"
+  },
+  {
+    "clinicName": "Brentwood Village",
+    "email": "info@brentwoodvillagedental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:04:29.059Z"
+  },
+  {
+    "clinicName": "Dentist in Crowfoot, Calgary | Arbour Lake Dental Care",
+    "email": "info@arbourlakedental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:04:40.239Z"
+  },
+  {
+    "clinicName": "NWEndodontics",
+    "email": "info@nwendodontics.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:04:51.682Z"
+  },
+  {
+    "clinicName": "Dr. Stephen Jay",
+    "email": "rcdentalcalgary@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T05:04:53.115Z"
+  },
+  {
+    "clinicName": "Mount Royal Dental Centre – The Home of Your New Smile",
+    "email": "info@mountroyaldentalcentre.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:05:11.154Z"
+  },
+  {
+    "clinicName": "Complete Dental Ceramics",
+    "email": "info@completedental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:05:22.732Z"
+  },
+  {
+    "clinicName": "Wentworth Family",
+    "email": "info@wentworthfamilydental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:05:24.577Z"
+  },
+  {
+    "clinicName": "Pediatric Dentistry on 160",
+    "email": "info@peddent160.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:05:26.925Z"
+  },
+  {
+    "clinicName": "Dentures in South Edmonton | Grandview Heights Denturist | Grandview Denture",
+    "email": "info@grandviewdentureclinic.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:05:44.800Z"
+  },
+  {
+    "clinicName": "Parhar Dental Group",
+    "email": "info@parhardentalgroup.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:05:49.330Z"
+  },
+  {
+    "clinicName": "Avenue Pediatric",
+    "email": "info@avenuepd.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:05:53.165Z"
+  },
+  {
+    "clinicName": "Pediatric Dental Clinic/Centre in Edmonton, Sherwood Park & St. Albert | Emergency & Special Needs Children's Dentist and Dental Care Services",
+    "email": "info@gatewaypd.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:05:57.186Z"
+  },
+  {
+    "clinicName": "Fort Richmond Dental Centre in Winnipeg | Winnipeg",
+    "email": "info@fortrichmonddental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:06:12.334Z"
+  },
+  {
+    "clinicName": "Welcome to Sutherland Dental Group | Saskatoon",
+    "email": "info@sutherlanddental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:06:32.638Z"
+  },
+  {
+    "clinicName": "allieddenture",
+    "email": "east@allieddenture.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T05:06:34.231Z"
+  },
+  {
+    "clinicName": "Westend",
+    "email": "info@westend-dental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:06:35.923Z"
+  },
+  {
+    "clinicName": "Boychuk",
+    "email": "info@boychukdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:06:39.679Z"
+  },
+  {
+    "clinicName": "Willowgrove",
+    "email": "info@willowgrove-dental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:06:41.474Z"
+  },
+  {
+    "clinicName": "Dowtown Dental",
+    "email": "downtowndentalcentre@myaccess.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:06:42.833Z"
+  },
+  {
+    "clinicName": "Courtside Dental, Regina",
+    "email": "info@courtsidedental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:06:45.679Z"
+  },
+  {
+    "clinicName": "Garden Ridge Dental Centre | North Regina Family",
+    "email": "gardenridgedental@sasktel.net",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T05:06:48.716Z"
+  },
+  {
+    "clinicName": "Dartmouth",
+    "email": "info@dartmouthdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:06:52.371Z"
+  },
+  {
+    "clinicName": "Physio In The Six Inc",
+    "email": "info@physiointhesix.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:07:07.162Z"
+  },
+  {
+    "clinicName": "rophasbodybalance",
+    "email": "info@rophasbodybalance.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:07:26.971Z"
+  },
+  {
+    "clinicName": "Kaizen Physiotherapy Group",
+    "email": "info@kaizenphysiotherapygroup.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:09:39.143Z"
+  },
+  {
+    "clinicName": "Welcome to High Park Physiotherapy!",
+    "email": "info@highparkphysiotherapy.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:09:59.127Z"
+  },
+  {
+    "clinicName": "ETOSIC",
+    "email": "info@mytorontophysio.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:10:24.486Z"
+  },
+  {
+    "clinicName": "St. Clair Physiotherapy Clinic",
+    "email": "info@stclairphysioclinic.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:10:45.635Z"
+  },
+  {
+    "clinicName": "The Clinic Health Group – Toronto's top Medical & Sports Clinic!",
+    "email": "contact@theclinicatchristie.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:10:48.047Z"
+  },
+  {
+    "clinicName": "Body Works Physiotherapy",
+    "email": "info@bodyworksphysio.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:11:13.001Z"
+  },
+  {
+    "clinicName": "Physiotherapy Etobicoke - Ortho-Physio Physiotherapy",
+    "email": "orthophysio@live.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T05:11:14.614Z"
+  },
+  {
+    "clinicName": "CoreWorks – Pilates studio in Leslieville, Toronto",
+    "email": "hello@yourcoreworks.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:11:58.566Z"
+  },
+  {
+    "clinicName": "Lifemark Physiotherapy Leslie",
+    "email": "info@lifemark.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:14:18.516Z"
+  },
+  {
+    "clinicName": "Stadium PhysiOsteo",
+    "email": "cberry@StadiumPO.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T05:14:22.862Z"
+  },
+  {
+    "clinicName": "Catalyst Sante",
+    "email": "info@catalystsante.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:14:39.052Z"
+  },
+  {
+    "clinicName": "Physio Summum",
+    "email": "utilisateur@domaine.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-16T05:14:40.412Z"
+  },
+  {
+    "clinicName": ":: Physio Dynamik ::",
+    "email": "info@physiodynamik.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:15:11.302Z"
+  },
+  {
+    "clinicName": "Accès Physio | Accueil",
+    "email": "info@accesphysio.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-16T05:15:27.960Z"
+  },
+  {
+    "clinicName": "Best Dentist Near Vancouver BC - Gentle Dental Vancouver",
+    "email": "contact600@gdgvancouver.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:20:41.959Z"
+  },
+  {
+    "clinicName": "Bond Street",
+    "email": "info@dentalimplantsclinic.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:20:43.650Z"
+  },
+  {
+    "clinicName": "Urban Dental Centre",
+    "email": "urban@brushdentists.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:20:57.073Z"
+  },
+  {
+    "clinicName": "Dental Land Summerhill",
+    "email": "info@dentalland.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:20:58.468Z"
+  },
+  {
+    "clinicName": "The Art of Smile",
+    "email": "Smile@theartofsmile.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:21:19.597Z"
+  },
+  {
+    "clinicName": "Bedford Park Dental",
+    "email": "info@theparksdentistry.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:21:21.129Z"
+  },
+  {
+    "clinicName": "Smile Centre Skymark",
+    "email": "info@skymarksmilecentre.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:21:32.075Z"
+  },
+  {
+    "clinicName": "Maxilla Dental",
+    "email": "info@maxilladental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:21:35.420Z"
+  },
+  {
+    "clinicName": "Mersal Dental Formally Centre Dentaire Dalhousie Dental Centre",
+    "email": "mersaldental@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:21:36.971Z"
+  },
+  {
+    "clinicName": "Woodchester Dental",
+    "email": "info@sherwoodforrestdental.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:21:39.211Z"
+  },
+  {
+    "clinicName": "Sheridan Garden Dentist",
+    "email": "info@sheridandentaloffice.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:21:41.341Z"
+  },
+  {
+    "clinicName": "Avenue Dental",
+    "email": "info@avlaserdentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:21:53.913Z"
+  },
+  {
+    "clinicName": "CU Smile Dental",
+    "email": "info@cusmile.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:22:19.587Z"
+  },
+  {
+    "clinicName": "Bridgeport Weber Dental Centre",
+    "email": "bridgeportweber@kwcdental.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:22:21.118Z"
+  },
+  {
+    "clinicName": "Mason Denture Clinic",
+    "email": "Smile@Maison-Dental.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:22:22.636Z"
+  },
+  {
+    "clinicName": "Clinique Dentaire Gatineau, dentiste à Gatineau",
+    "email": "info@cdentairegatineau.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:22:36.395Z"
+  },
+  {
+    "clinicName": "Six Points Plaza Dental",
+    "email": "info@sixpointsplazadental.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:22:39.325Z"
+  },
+  {
+    "clinicName": "Confident Smiles",
+    "email": "csdcbooking@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:22:58.951Z"
+  },
+  {
+    "clinicName": "Sedation Dentistry",
+    "email": " smile@sedationdentalgroup.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:23:00.502Z"
+  },
+  {
+    "clinicName": "Bloor West Village Dental Care",
+    "email": "office@bloorwestdentalgroup.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:23:02.202Z"
+  },
+  {
+    "clinicName": "Century City Dental",
+    "email": "drjbdental@gmail.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:23:03.926Z"
+  },
+  {
+    "clinicName": "John Lott Dentist",
+    "email": "info@londonnorthdentalcentre.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:23:42.777Z"
+  },
+  {
+    "clinicName": "Tooth Fairy Dental on Eglinton",
+    "email": "smile@toothfairydentaleglinton.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:23:45.143Z"
+  },
+  {
+    "clinicName": "Dr. Halyna Hrynash DDS Dentistry on the Avenue",
+    "email": "dentistryontheavenue@gmail.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:23:47.174Z"
+  },
+  {
+    "clinicName": "Mississauga Dentist | Dr. Vesna Janev | Mississauga Family Dental Practice",
+    "email": "your@email.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:23:49.640Z"
+  },
+  {
+    "clinicName": "Waterdown Family Dentistry",
+    "email": "waterdownvillagedentistry@gmail.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:24:10.143Z"
+  },
+  {
+    "clinicName": "Welcome | Orleans, ON | Fallingbrook Dental",
+    "email": "your@email.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:24:12.397Z"
+  },
+  {
+    "clinicName": "Centre dentaire Gegati",
+    "email": "info@dentistequartiersante.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:24:14.058Z"
+  },
+  {
+    "clinicName": "Dentistry @ Equinox",
+    "email": "info@equinoxdentalhub.com",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:24:15.808Z"
+  },
+  {
+    "clinicName": "City Dental on Yonge",
+    "email": "bay@citydentaltoronto.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:24:37.183Z"
+  },
+  {
+    "clinicName": "Dr. Ali Mirjan",
+    "email": "smile@lakeviewdentalcentre.ca",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:24:45.383Z"
+  },
+  {
+    "clinicName": "Family Dental Care",
+    "email": "info@familydentalcare.ca",
+    "method": "page-scrape",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:25:28.760Z"
+  },
+  {
+    "clinicName": "Physio Summum",
+    "email": "utilisateur@domaine.com",
+    "method": "page-scrape",
+    "confidence": "high",
+    "foundAt": "2026-05-20T07:27:12.688Z"
+  },
+  {
+    "clinicName": "Cosmetic & Family Dentist",
+    "email": "info@kmdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:27:16.515Z"
+  },
+  {
+    "clinicName": "Bathurst-Steeles Dental",
+    "email": "info@bathurst-steelesdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:27:27.467Z"
+  },
+  {
+    "clinicName": "Altima Dental",
+    "email": "info@altimadental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:27:38.851Z"
+  },
+  {
+    "clinicName": "York Lanes Dental Office",
+    "email": "info@yorkusmiles.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:27:50.880Z"
+  },
+  {
+    "clinicName": "Dr. David Bernstein & Associates Family Dentist",
+    "email": "info@doctorbernstein.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:27:55.587Z"
+  },
+  {
+    "clinicName": "RVDental",
+    "email": "info@rvdental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:28:13.346Z"
+  },
+  {
+    "clinicName": "Thornhill Woods Family Dentistry",
+    "email": "info@thornhillwoodsdentistry.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:28:24.597Z"
+  },
+  {
+    "clinicName": "TMJ & Sleep Dentistry",
+    "email": "info@tmjsleepdental.com",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:28:45.722Z"
+  },
+  {
+    "clinicName": "The Tooth Place - Dentist in Bolton",
+    "email": "info@thetoothplace.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:29:16.568Z"
+  },
+  {
+    "clinicName": "Treehouse Dental Care",
+    "email": "info@treehousedentalcare.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:29:28.544Z"
+  },
+  {
+    "clinicName": "Seoul Dental",
+    "email": "info@seouldental.ca",
+    "method": "pattern",
+    "confidence": "medium",
+    "foundAt": "2026-05-20T07:29:35.055Z"
+  }
+]

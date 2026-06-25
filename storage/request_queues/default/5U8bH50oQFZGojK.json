@@ -1,0 +1,9 @@
+{
+	"id": "5U8bH50oQFZGojK",
+	"json": "{\"id\":\"5U8bH50oQFZGojK\",\"url\":\"https://wordpress.org/plugins/fluent-crm/reviews/\",\"loadedUrl\":\"https://wordpress.org/plugins/fluent-crm/\",\"uniqueKey\":\"https://wordpress.org/plugins/fluent-crm/reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"reviews\",\"kw\":\"crm\",\"pluginUrl\":\"https://wordpress.org/plugins/fluent-crm/\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:56.621Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/fluent-crm/reviews",
+	"url": "https://wordpress.org/plugins/fluent-crm/reviews/"
+}

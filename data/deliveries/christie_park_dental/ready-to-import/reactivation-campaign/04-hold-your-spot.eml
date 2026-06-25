@@ -1,0 +1,98 @@
+MIME-Version: 1.0
+Date: Thu, 09 Apr 2026 03:35:30 GMT
+From: "Christie Park Dental" <contact@christieparkdental.com>
+To: [PatientFirstName] <patient@example.com>
+Subject: [PatientFirstName], we want to hold your spot
+X-CF-Sequence: Patient Reactivation Campaign
+X-CF-Email-Number: 4
+X-CF-Send-Timing: Week 6 (day 42)
+Content-Type: multipart/alternative; boundary="_cfbound_mnqxcea1_limupe"
+
+--_cfbound_mnqxcea1_limupe
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Hi [PatientFirstName],
+
+We try to keep preferred appointment times available for patients who've been with us — but when we haven't heard from someone for a while, those slots go to new patients on our waitlist.
+
+If you'd like to keep your preferred time at Christie Park Dental, now's a good moment to book. [BookingLink] or [ClinicPhone].
+
+If you've moved on to another dentist, no hard feelings — just reply and let us know, and we'll update your file.
+
+The Christie Park Dental Team
+
+--_cfbound_mnqxcea1_limupe
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>[PatientFirstName], we want to hold your spot</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f2f2;">
+
+<table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+  style="background-color:#f2f2f2;padding:28px 0;">
+<tr><td align="center">
+
+<table role="presentation" cellpadding="0" cellspacing="0" width="600"
+  style="max-width:600px;width:100%;background:#ffffff;border-radius:4px;overflow:hidden;">
+
+  <!-- Header bar -->
+  <tr>
+    <td style="background-color:#2c3e50;padding:18px 32px;">
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;
+         color:#ffffff;letter-spacing:0.4px;">Christie Park Dental</p>
+    </td>
+  </tr>
+
+  <!-- Body -->
+  <tr>
+    <td style="padding:32px 32px 20px 32px;font-family:Arial,Helvetica,sans-serif;
+       font-size:15px;line-height:1.65;color:#333333;">
+      <p style="margin:0 0 14px 0;">Hi <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[PatientFirstName]</span>,</p>
+      <p style="margin:0 0 14px 0;">We try to keep preferred appointment times available for patients who've been with us — but when we haven't heard from someone for a while, those slots go to new patients on our waitlist.</p>
+      <p style="margin:0 0 14px 0;">If you'd like to keep your preferred time at Christie Park Dental, now's a good moment to book. <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[BookingLink]</span> or <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[ClinicPhone]</span>.</p>
+      <p style="margin:0 0 14px 0;">If you've moved on to another dentist, no hard feelings — just reply and let us know, and we'll update your file.</p>
+      <p style="margin:0 0 14px 0;">The Christie Park Dental Team</p>
+    </td>
+  </tr>
+
+  <!-- Footer -->
+  <tr>
+    <td style="background-color:#f9f9f9;padding:16px 32px;border-top:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#aaaaaa;">
+        Christie Park Dental&nbsp;&middot;&nbsp;Toronto
+      </p>
+      <p style="margin:0 0 4px 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#cccccc;">
+        <em>To stop receiving messages, reply with &ldquo;unsubscribe&rdquo;.</em>
+      </p>
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#dddddd;">
+        This automation complies with PIPEDA (Canadian privacy law). Patient data is never stored or shared.
+      </p>
+    </td>
+  </tr>
+
+</table>
+
+<!-- Developer reference -->
+<!--
+  Sequence : Patient Reactivation Campaign
+  Email    : 4 of sequence
+  Subject  : [PatientFirstName], we want to hold your spot
+  Timing   : Week 6 (day 42)
+  Generated: ClinicFlow delivery engine
+-->
+
+</td></tr>
+</table>
+
+</body>
+</html>
+
+--_cfbound_mnqxcea1_limupe--

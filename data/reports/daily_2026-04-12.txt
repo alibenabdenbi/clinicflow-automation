@@ -1,0 +1,47 @@
+ORE-Engine — Daily Report
+Date: 2026-04-12
+Generated: 2026-04-12T23:38:22.643Z
+────────────────────────────────────────────────────
+
+DISCOVERY & CRM
+  Total CRM leads: 75                     
+  New leads today: 0                      
+  Tier A: 26                              
+  Tier B: 49                              
+  Tier C: 0                               
+  Confirmed / accepted: 1                 
+  Offer acceptance rate: 1% (1/75 confirmed)
+  Top theme today: Other                  
+  High-score signals (>=9): 0             
+  Validated offer packs: 0                
+
+EMAIL OUTREACH
+  Total clinics in queue: 267             
+  Emails pending (todo): 192              
+  Initial emails sent (all time): 51      
+  Emails sent today: 20                   
+  Emails sent yesterday: 20               
+  Total via SMTP (all dates): 130         
+  Clinics with no email: 13               
+  Open rate proxy: 37% (19/51 proceeded to FU1)
+
+FOLLOW-UPS (3-stage)
+  FU1 due now: 6                          
+  FU1 due in next 7 days: 26              
+  FU2 due now: 0                          
+  FU1 sent (total): 19                    
+  FU2 sent (total): 0                     
+  FU3 sent (total): 0                     
+  Sequences complete: 0                   
+
+SYSTEM HEALTH
+  Last health check: HEALTHY              
+  Scheduler errors today: 1               
+  Recent errors:
+    [2026-04-12T14:15:01.516Z] ERROR  src/cli/sendBatch.js: Command failed: C:\Program Files\nodejs\node.exe D:\Poject-ORE-EMGINE\src\cli\sendBatch.js
+
+WARNINGS
+  ⚠ WARNING: No new CRM leads discovered today — check if main pipeline ran
+
+────────────────────────────────────────────────────
+End of report

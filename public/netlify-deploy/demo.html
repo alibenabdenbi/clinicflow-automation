@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Try ClinicFlow — Live Demo</title>
+<meta name="description" content="Text our demo number and experience ClinicFlow exactly as your patients would.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Syne',sans-serif;background:#0b0f17;color:#f1f5f9;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.card{max-width:480px;width:100%;text-align:center}
+.logo{font-size:11px;letter-spacing:4px;color:#4a5568;margin-bottom:32px;text-transform:uppercase}
+.phone-icon{font-size:64px;margin-bottom:24px;display:block;animation:ring 3s infinite}
+@keyframes ring{0%,80%,100%{transform:rotate(0)}82%{transform:rotate(-15deg)}86%{transform:rotate(15deg)}90%{transform:rotate(-10deg)}94%{transform:rotate(10deg)}}
+h1{font-size:clamp(24px,5vw,36px);font-weight:800;line-height:1.2;margin-bottom:16px}
+h1 span{color:#39d98a}
+.sub{font-size:15px;color:#94a3b8;line-height:1.7;margin-bottom:40px}
+.demo-box{background:#111827;border-radius:20px;padding:32px;margin-bottom:32px;border:1px solid rgba(255,255,255,.08)}
+.step{display:flex;gap:16px;align-items:flex-start;text-align:left;margin-bottom:20px}
+.step:last-child{margin-bottom:0}
+.step-num{width:36px;height:36px;border-radius:50%;background:rgba(124,92,255,.15);color:#7c5cff;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.step-text{font-size:14px;color:#94a3b8;line-height:1.6}
+.step-text strong{color:#f1f5f9;display:block;margin-bottom:2px}
+.number-display{background:#0b0f17;border-radius:14px;padding:24px;margin-bottom:20px;border:1px solid rgba(124,92,255,.2)}
+.number-label{font-size:11px;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.number{font-size:32px;font-weight:800;color:#7c5cff;letter-spacing:2px;font-variant-numeric:tabular-nums}
+.number-sub{font-size:13px;color:#64748b;margin-top:6px}
+.copy-btn{background:rgba(124,92,255,.1);color:#7c5cff;border:1px solid rgba(124,92,255,.2);padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:'Syne',sans-serif;margin-top:12px;transition:opacity .15s}
+.copy-btn:active{opacity:.6}
+.sms-btn{display:block;background:#39d98a;color:#0b0f17;padding:16px;border-radius:12px;font-size:17px;font-weight:700;text-decoration:none;margin-bottom:12px;transition:opacity .15s}
+.sms-btn:active{opacity:.8}
+.note{font-size:12px;color:#4a5568;line-height:1.7}
+.powered{margin-top:32px;font-size:12px;color:#374151}
+.powered span{color:#7c5cff}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">ClinicFlow Automation</div>
+
+  <span class="phone-icon">📞</span>
+
+  <h1>Experience it<br><span>yourself</span></h1>
+  <p class="sub">Text the number below and see exactly what your patients experience when they call your clinic and no one picks up.</p>
+
+  <div class="demo-box">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">
+        <strong>Text any message to the number below</strong>
+        "Hi", "I need an appointment", "What are your hours" — anything
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">
+        <strong>Experience the AI receptionist live</strong>
+        It responds as if you just called a real dental clinic
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">
+        <strong>See how it books, answers &amp; follows up</strong>
+        The full conversation flow — automated, instant, 24/7
+      </div>
+    </div>
+  </div>
+
+  <div class="number-display">
+    <div class="number-label">Demo number</div>
+    <div class="number" id="demo-number">+1 (575) 573-5822</div>
+    <div class="number-sub">Text anything to start</div>
+    <button class="copy-btn" onclick="copyNumber()">Copy Number</button>
+  </div>
+
+  <a href="sms:+15755735822?body=Hi%2C%20I%20need%20to%20book%20an%20appointment" class="sms-btn" id="sms-link">
+    📱 Open in Messages &rarr;
+  </a>
+
+  <div class="note">
+    Standard SMS rates apply. This is a live demo — you'll experience<br>
+    exactly what your patients would see when ClinicFlow is active.
+  </div>
+
+  <div class="powered">Powered by <span>ClinicFlow Automation</span> &middot; Montreal, QC</div>
+</div>
+
+<script>
+function copyNumber() {
+  navigator.clipboard.writeText('+15755735822').then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => btn.textContent = 'Copy Number', 2000);
+  });
+}
+</script>
+
+<script>
+(function(){
+  fetch('/api/track',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      page:window.location.pathname,
+      ref:document.referrer,
+      utm_source:new URLSearchParams(window.location.search).get('utm_source'),
+      utm_campaign:new URLSearchParams(window.location.search).get('utm_campaign'),
+      ts:Date.now()
+    }),
+    keepalive:true
+  }).catch(()=>{});
+})();
+</script>
+</body>
+</html>

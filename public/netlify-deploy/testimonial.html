@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Share Your Results | ClinicFlow</title>
+  <meta name="robots" content="noindex"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --blue:#1a6bbd; --blue-dark:#114f93; --accent:#0fa86e; --text:#1a2332; --muted:#5a6a80; --border:#d0dcea; --bg:#f7fafd; --white:#ffffff; --radius:10px; }
+    body { font-family: ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); padding:20px; }
+    nav { background:var(--white); border-bottom:1px solid var(--border); padding:14px 0; margin:-20px -20px 32px; }
+    nav .inner { display:flex; align-items:center; gap:16px; max-width:600px; margin:0 auto; padding:0 20px; }
+    .brand { font-weight:800; font-size:17px; color:var(--blue-dark); text-decoration:none; }
+    .brand span { color:var(--accent); }
+    .card { background:var(--white); border:1px solid var(--border); border-radius:14px; padding:40px; max-width:580px; margin:0 auto; box-shadow:0 4px 20px rgba(0,0,0,.05); }
+    h1 { font-size:26px; font-weight:900; margin-bottom:8px; letter-spacing:-.3px; }
+    .subtitle { color:var(--muted); margin-bottom:28px; font-size:15px; }
+    label { display:block; font-weight:600; font-size:14px; margin-bottom:5px; margin-top:18px; }
+    label span { color:var(--muted); font-weight:400; }
+    input, textarea, select { width:100%; padding:11px 14px; border:1px solid var(--border); border-radius:var(--radius); font-size:15px; color:var(--text); font-family:inherit; outline:none; transition:border .15s; }
+    input:focus, textarea:focus, select:focus { border-color:var(--blue); }
+    textarea { resize:vertical; min-height:110px; }
+    .stars-row { display:flex; gap:8px; margin-top:6px; }
+    .star { font-size:32px; cursor:pointer; color:#d1d5db; transition:color .1s; user-select:none; }
+    .star.active, .star:hover { color:#f59e0b; }
+    .btn { background:var(--blue); color:#fff; padding:13px 28px; border-radius:var(--radius); font-weight:800; font-size:15px; border:none; cursor:pointer; width:100%; margin-top:24px; transition:background .15s; }
+    .btn:hover { background:var(--blue-dark); }
+    #success { display:none; background:#ecfdf5; border:1px solid #a7f3d0; border-radius:var(--radius); padding:24px; text-align:center; color:#065f46; }
+    #success h2 { font-size:20px; font-weight:800; margin-bottom:8px; }
+    #success p { color:#047857; }
+  </style>
+</head>
+<body>
+<nav><div class="inner"><a class="brand" href="/">Clinic<span>Flow</span></a></div></nav>
+<div class="card">
+  <h1>Share your results</h1>
+  <p class="subtitle">Your experience helps other clinic owners decide whether ClinicFlow is right for them. Takes 2 minutes.</p>
+  <form id="testimonial-form">
+    <label for="clinicName">Clinic name <span>(required)</span></label>
+    <input type="text" id="clinicName" name="clinicName" placeholder="Maple Dental Centre" required/>
+
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" placeholder="Toronto, ON"/>
+
+    <label for="contactName">Your name <span>(optional — we'll use first name only)</span></label>
+    <input type="text" id="contactName" name="contactName" placeholder="Dr. Sarah"/>
+
+    <label for="problem">What problem did ClinicFlow solve for you? <span>(required)</span></label>
+    <textarea id="problem" name="problem" placeholder="We were losing patients to missed calls every day and had no way to follow up automatically..." required></textarea>
+
+    <label>Rating</label>
+    <div class="stars-row" id="star-row">
+      <span class="star" data-val="1">★</span>
+      <span class="star" data-val="2">★</span>
+      <span class="star" data-val="3">★</span>
+      <span class="star" data-val="4">★</span>
+      <span class="star" data-val="5">★</span>
+    </div>
+    <input type="hidden" id="rating" name="rating" value="5"/>
+
+    <label for="email">Email <span>(so we can thank you — not published)</span></label>
+    <input type="email" id="email" name="email" placeholder="you@clinic.ca"/>
+
+    <button type="submit" class="btn">Submit testimonial →</button>
+  </form>
+  <div id="success">
+    <h2>Thank you! 🙏</h2>
+    <p>Your testimonial has been received. We genuinely appreciate you taking the time.</p>
+  </div>
+</div>
+<script>
+  // Star rating
+  const stars = document.querySelectorAll(".star");
+  let selected = 5;
+  stars.forEach(s => {
+    s.classList.toggle("active", parseInt(s.dataset.val) <= selected);
+    s.addEventListener("click", () => {
+      selected = parseInt(s.dataset.val);
+      document.getElementById("rating").value = selected;
+      stars.forEach(x => x.classList.toggle("active", parseInt(x.dataset.val) <= selected));
+    });
+  });
+
+  document.getElementById("testimonial-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector("button");
+    btn.disabled = true; btn.textContent = "Sending…";
+    try {
+      const res = await fetch("/.netlify/functions/submit-testimonial", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          clinicName:   document.getElementById("clinicName").value,
+          city:         document.getElementById("city").value,
+          contactName:  document.getElementById("contactName").value,
+          problem:      document.getElementById("problem").value,
+          rating:       document.getElementById("rating").value,
+          email:        document.getElementById("email").value,
+        }),
+      });
+      if (res.ok) {
+        this.style.display = "none";
+        document.getElementById("success").style.display = "block";
+      } else {
+        btn.disabled = false; btn.textContent = "Submit testimonial →";
+        alert("Something went wrong — email us at contact@clinicflowautomation.com");
+      }
+    } catch { btn.disabled = false; btn.textContent = "Submit testimonial →"; }
+  });
+</script>
+</body>
+</html>

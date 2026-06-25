@@ -1,0 +1,104 @@
+ORE-Engine — Daily Report
+Date: 2026-04-23
+Generated: 2026-04-24T03:51:58.193Z
+────────────────────────────────────────────────────
+
+DISCOVERY & CRM
+  Total CRM leads: 78                     
+  New leads today: 0                      
+  Tier A: 26                              
+  Tier B: 52                              
+  Tier C: 0                               
+  Confirmed / accepted: 1                 
+  Offer acceptance rate: 1% (1/78 confirmed)
+  Top theme today: Other                  
+  High-score signals (>=9): 0             
+  Validated offer packs: 0                
+
+EMAIL OUTREACH
+  Total clinics in queue: 1010            
+  Emails pending (todo): 192              
+  Initial emails sent (all time): 136     
+  Emails sent today: 60                   
+  Emails sent yesterday: 20               
+  Total sent all time (SMTP): 378         
+    → Initial sends (all time): 303       
+    → Follow-ups (all time): 75           
+  Clinics with no email: 602              
+  Open rate proxy: 35% (48/136 proceeded to FU1)
+  Unique sends (deduped): 160             
+  Bounce rate (deduped): 7.5% total  |  3.8% hard  (12 bounced / 160 unique sends)
+  ⚠ BOUNCE RATE EXCEEDS 5% — pause sending and clean list
+
+FOLLOW-UPS (3-stage)
+  FU1 due now: 21                         
+  FU1 due in next 7 days: 70              
+  FU2 due now: 3                          
+  FU1 sent (total): 48                    
+  FU2 sent (total): 41                    
+  FU3 sent (total): 0                     
+  Sequences complete: 0                   
+
+ACTION REQUIRED
+  None — inbox is clear
+
+HOT PROSPECTS (emailed in last 7 days, no reply yet)
+  73 clinic(s) worth following up:
+  • London Bridge Dental                   2d ago  sent
+  • Montreal West Dentistry                2d ago  sent
+  • River District Dentistry               2d ago  sent
+  • Alpine Dental                          2d ago  sent
+  • Nelson Dental Clinic                   2d ago  sent
+  ... and 68 more
+
+READY TO CLOSE (replied AUDIT_YES — send them the 3 questions)
+  None yet
+
+WINS THIS WEEK
+  No payments recorded this week
+
+DELIVERABILITY TREND (last 7 days)
+  2026-04-17  new: 5 fu:10 total: 15  ███████████████
+  2026-04-18  new:10 fu:10 total: 20  ████████████████████
+  2026-04-19  new:15 fu:15 total: 30  ████████████████████
+  2026-04-20  new:30 fu: 0 total: 30  ████████████████████
+  2026-04-21  new:15 fu: 5 total: 20  ████████████████████
+  2026-04-22  new:15 fu: 5 total: 20  ████████████████████
+  2026-04-23  new:60 fu: 0 total: 60  ████████████████████
+
+BEST PERFORMING SUBJECT LINES (by FU1 proceed rate)
+  Not enough data yet
+
+VARIANT PERFORMANCE
+  Variant  Sent   →FU1      Reply rate
+  ──────────────────────────────────────
+  A        9      0 (0%)    0%
+  B        7      0 (0%)    0%
+  C        6      0 (0%)    0%
+  D        6      0 (0%)    0%
+  E        1      0 (0%)    0%
+  F        6      0 (0%)    0%
+  G        6      0 (0%)    0%
+  H        5      0 (0%)    0%
+  I        10     0 (0%)    0%
+  J        5      0 (0%)    0%
+  K        7      0 (0%)    0%
+  R        2      0 (0%)    0%
+
+VOICE OUTREACH
+  Voicemail drops today: 0                
+  Twilio calls made today: 10             
+  Callbacks received today: 0             
+  Total voice touches (all time): 15      
+  Total callbacks (all time): 0           
+
+SYSTEM HEALTH
+  Last health check: HEALTHY              
+  Scheduler errors today: 0               
+
+WARNINGS
+  ⚠ WARNING: No new CRM leads discovered today — check if main pipeline ran
+  ⚠ WARNING: Bounce rate 7.5% exceeds 5% — run smtpVerify and clean list
+
+────────────────────────────────────────────────────
+End of report

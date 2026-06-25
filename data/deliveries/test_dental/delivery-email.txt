@@ -1,0 +1,30 @@
+To: test@testdental.com
+Subject: Your ClinicFlow Starter package is ready — Test Dental
+
+Hi,
+
+Your ClinicFlow automation package is complete and ready to use.
+
+Everything has been set up and documented below. No technical knowledge needed — just follow the guides.
+
+What's included in your Starter package:
+
+  • missed-call-followup.md
+  • appointment-reminder.md
+  • monthly-newsletter.md
+  • tracking-spreadsheet.md
+  • setup-summary.md
+
+All files are attached to this email.
+
+How to get started:
+1. Read setup-summary.md first — it explains everything in plain language
+2. Share the staff-training-guide.md with your front desk (Growth/Full tiers)
+3. Use the tracking spreadsheet to monitor results week by week
+4. Your first weekly report arrives next Monday
+
+If anything is unclear or needs adjusting, reply here. We're available for 60 days after delivery.
+
+Mohamed
+contact@clinicflowautomation.com
+clinicflowautomation.com

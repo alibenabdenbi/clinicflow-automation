@@ -1,0 +1,70 @@
+{
+  "_note": "Mailchimp Customer Journey reference file. Use the data below when building your automation in Mailchimp: Automations → Customer Journeys → Create Journey.",
+  "automation_name": "Missed Call Recovery",
+  "trigger": "Missed call detected by phone system",
+  "client": "Bayview Village Dental",
+  "city": "Toronto",
+  "from_name": "Bayview Village Dental",
+  "from_email": "contact@bayviewvillagedental.com",
+  "total_emails": 3,
+  "sequence_duration_days": 1,
+  "emails": [
+    {
+      "step": 1,
+      "timing": {
+        "label": "Within 2 minutes of trigger",
+        "amount": 2,
+        "unit": "minutes",
+        "mailchimp_delay_setting": "Wait 2 minutes after previous step"
+      },
+      "subject_line": "We just missed your call — Bayview Village Dental",
+      "subject_char_count": 49,
+      "preview_text": "We saw your call come in and we're sorry we missed you — we were most likely with another patient.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWe saw your call come in and we're sorry we missed you — we were most likely with another patient.\n\nWe'll call you back as soon as we're free, usually within the hour. If you'd rather not wait, you can book directly at [BookingLink] — it only takes a minute.\n\nTalk soon,\nThe Bayview Village Dental Team\n[ClinicPhone]",
+      "body_word_count": 60,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[BookingLink]",
+        "[ClinicPhone]"
+      ]
+    },
+    {
+      "step": 2,
+      "timing": {
+        "label": "2 hours after trigger",
+        "amount": 2,
+        "unit": "hours",
+        "mailchimp_delay_setting": "Wait 2 hours after previous step"
+      },
+      "subject_line": "Still hoping to connect — Bayview Village Dental",
+      "subject_char_count": 48,
+      "preview_text": "We tried to get back to you but may have missed you again. We haven't forgotten.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWe tried to get back to you but may have missed you again. We haven't forgotten.\n\nWhenever it's convenient, give us a call at [ClinicPhone] or book a time that works for you directly at [BookingLink] — no hold times, no phone tag.\n\nThe Bayview Village Dental Team",
+      "body_word_count": 50,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[ClinicPhone]",
+        "[BookingLink]"
+      ]
+    },
+    {
+      "step": 3,
+      "timing": {
+        "label": "Next morning (~24h after trigger)",
+        "amount": 1,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 1 days after previous step"
+      },
+      "subject_line": "One last try from Bayview Village Dental",
+      "subject_char_count": 40,
+      "preview_text": "We wanted to reach out one more time. If you're still looking for a dentist in Toronto, we'd genuinely love to help.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWe wanted to reach out one more time. If you're still looking for a dentist in Toronto, we'd genuinely love to help.\n\nCall us at [ClinicPhone] whenever you're ready, or book at [BookingLink]. No pressure either way.\n\nWarmly,\nThe Bayview Village Dental Team",
+      "body_word_count": 45,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[ClinicPhone]",
+        "[BookingLink]"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "_note": "Mailchimp Customer Journey reference file. Use the data below when building your automation in Mailchimp: Automations → Customer Journeys → Create Journey.",
+  "automation_name": "New Patient Welcome",
+  "trigger": "New patient books first appointment",
+  "client": "Bayview Village Dental",
+  "city": "Toronto",
+  "from_name": "Bayview Village Dental",
+  "from_email": "contact@bayviewvillagedental.com",
+  "total_emails": 4,
+  "sequence_duration_days": 7,
+  "emails": [
+    {
+      "step": 1,
+      "timing": {
+        "label": "Immediately on trigger",
+        "amount": 0,
+        "unit": "days",
+        "mailchimp_delay_setting": "Send immediately after trigger"
+      },
+      "subject_line": "You're booked at Bayview Village Dental",
+      "subject_char_count": 39,
+      "preview_text": "Welcome — we're glad you chose Bayview Village Dental.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWelcome — we're glad you chose Bayview Village Dental.\n\nHere's what you need before your visit:\n\n- **Appointment:** [AppointmentDate] at [AppointmentTime]\n- **Address:** [ClinicAddress], Toronto\n- **Parking:** [Add parking details — e.g. \"Free parking in our lot off [Street]\" or \"Street parking on [Street], usually available\"]\n- **New patient form:** [NewPatientFormLink] — takes about 3 minutes, saves time at the front desk\n\nIf you have dental X-rays from a previous dentist, feel free to bring them or ask your old clinic to send them ahead — it helps us skip the redundant work.\n\nAny questions before your visit? Reply here or call [ClinicPhone].\n\nWe're looking forward to meeting you.\n\n— The Bayview Village Dental Team",
+      "body_word_count": 117,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[AppointmentDate]",
+        "[AppointmentTime]",
+        "[ClinicAddress]",
+        "[Add parking details — e.g. \"Free parking in our lot off [Street]",
+        "[Street]",
+        "[NewPatientFormLink]",
+        "[ClinicPhone]"
+      ]
+    },
+    {
+      "step": 2,
+      "timing": {
+        "label": "1 day before appointment",
+        "amount": 1,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 1 days after previous step"
+      },
+      "subject_line": "See you tomorrow, [PatientFirstName]",
+      "subject_char_count": 36,
+      "preview_text": "Your appointment at Bayview Village Dental is tomorrow at [AppointmentTime]. A few things that make first visits smoother:",
+      "body_plain_text": "Hi [PatientFirstName],\n\nYour appointment at Bayview Village Dental is tomorrow at [AppointmentTime]. A few things that make first visits smoother:\n\n- Arrive 5–10 minutes early to complete any remaining paperwork\n- Bring your insurance card if you have coverage\n- Let us know of any medications you're currently taking when you arrive\n- If you have any anxiety about dental visits, just mention it — we have options that help\n\nIf anything changes before tomorrow, call [ClinicPhone] as soon as possible and we'll sort it out.\n\nSee you then.\nThe Bayview Village Dental Team",
+      "body_word_count": 94,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[AppointmentTime]",
+        "[ClinicPhone]"
+      ]
+    },
+    {
+      "step": 3,
+      "timing": {
+        "label": "1 day after trigger",
+        "amount": 1,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 1 days after previous step"
+      },
+      "subject_line": "Great to meet you, [PatientFirstName]",
+      "subject_char_count": 37,
+      "preview_text": "Thank you for coming in yesterday — it was genuinely great to meet you.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nThank you for coming in yesterday — it was genuinely great to meet you.\n\nA few things to keep in mind after your visit:\n- Brush twice a day, floss once — consistency matters more than technique\n- If any work you had done is still a little sensitive, that's normal and usually settles within 48 hours. Call us if it doesn't.\n- Your next recommended visit is around [NextVisitDate] — we'll remind you as it gets closer\n\nIf you have any questions about your treatment plan or what we discussed, reply here or call [ClinicPhone].\n\nLooking forward to seeing you again.\nThe Bayview Village Dental Team",
+      "body_word_count": 109,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[NextVisitDate]",
+        "[ClinicPhone]"
+      ]
+    },
+    {
+      "step": 4,
+      "timing": {
+        "label": "7 days after trigger",
+        "amount": 7,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 7 days after previous step"
+      },
+      "subject_line": "How was everything, [PatientFirstName]?",
+      "subject_char_count": 39,
+      "preview_text": "We hope everything felt good after your appointment last week.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWe hope everything felt good after your appointment last week.\n\nTwo small things:\n\n**1. If you have 60 seconds:** It would mean a lot if you shared your experience on Google. It helps other people in Toronto find a dentist they can trust, and it genuinely helps our practice.\n→ [ReviewLink]\n\n**2. Your next visit:** Most patients come back every 6 months for a cleaning. We can pre-book your spot now so you don't have to think about it later — call [ClinicPhone] or book at [BookingLink].\n\nThanks again for choosing Bayview Village Dental.\n\nThe Bayview Village Dental Team",
+      "body_word_count": 101,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[ReviewLink]",
+        "[ClinicPhone]",
+        "[BookingLink]"
+      ]
+    }
+  ]
+}

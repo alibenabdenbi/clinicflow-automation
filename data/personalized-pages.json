@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "clinique-physiomotionplus",
+    "name": "Clinique PhysioMotionPlus",
+    "email": "contact@physiomotionplus.com",
+    "city": "Montreal"
+  },
+  {
+    "slug": "st-lawrence-dentistry",
+    "name": "St. Lawrence Dentistry",
+    "email": "info@stlawrencedentistry.com",
+    "city": "Mississauga"
+  },
+  {
+    "slug": "best-dentist-near-vancouver-bc-gentle-dental-vancouver",
+    "name": "Best Dentist Near Vancouver BC - Gentle Dental Vancouver",
+    "email": "contact600@gdgvancouver.ca",
+    "city": "Vancouver"
+  },
+  {
+    "slug": "clinique-dentaire-m-tro-papineau",
+    "name": "Clinique Dentaire Métro Papineau",
+    "email": "info@cliniquemetropapineau.com",
+    "city": "Montreal"
+  },
+  {
+    "slug": "the-art-of-smile",
+    "name": "The Art of Smile",
+    "email": "Smile@theartofsmile.ca",
+    "city": "Vancouver"
+  },
+  {
+    "slug": "barrhaven-dental-studio",
+    "name": "Barrhaven Dental Studio",
+    "email": "info@barrhavendentalstudio.ca",
+    "city": "Ottawa"
+  },
+  {
+    "slug": "welcome-to-wildwood",
+    "name": "Welcome to Wildwood",
+    "email": "info@greenwoodsdental.com",
+    "city": "Winnipeg"
+  },
+  {
+    "slug": "dentist-in-the-queensway-humber-bay-etobicoke-toronto",
+    "name": "Dentist in The Queensway–Humber Bay, Etobicoke, Toronto",
+    "email": "info@parklawndental.ca",
+    "city": "Toronto"
+  },
+  {
+    "slug": "mississauga-dental-office",
+    "name": "Mississauga Dental Office",
+    "email": "reception@kingsburydental.com",
+    "city": "Toronto"
+  },
+  {
+    "slug": "scarborough",
+    "name": "Scarborough",
+    "email": "info@scarborosmiles.ca",
+    "city": "Toronto"
+  }
+]

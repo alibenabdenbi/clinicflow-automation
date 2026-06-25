@@ -1,0 +1,9 @@
+{
+	"id": "Bm1EMXjvM1rNs0m",
+	"json": "{\"id\":\"Bm1EMXjvM1rNs0m\",\"url\":\"https://wordpress.org/plugins/optinmonster/reviews/\",\"loadedUrl\":\"https://wordpress.org/plugins/optinmonster/\",\"uniqueKey\":\"https://wordpress.org/plugins/optinmonster/reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"reviews\",\"kw\":\"lead generation\",\"pluginUrl\":\"https://wordpress.org/plugins/optinmonster/\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:57.268Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/optinmonster/reviews",
+	"url": "https://wordpress.org/plugins/optinmonster/reviews/"
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Test Clinic — ClinicFlow Results</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Syne',sans-serif;background:#0b0f17;color:#f1f5f9;min-height:100vh;
+  background-image:radial-gradient(700px 400px at 50% -10%,rgba(57,217,138,.08),transparent 55%)}
+.hero{padding:60px 20px 40px;text-align:center;max-width:700px;margin:0 auto}
+.badge{display:inline-block;background:rgba(57,217,138,.1);color:#39d98a;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;border:1px solid rgba(57,217,138,.2)}
+.hero h1{font-size:clamp(24px,4vw,40px);font-weight:800;line-height:1.2;margin-bottom:12px}
+.hero h1 span{color:#39d98a}
+.hero p{font-size:15px;color:#94a3b8;line-height:1.7}
+.wrap{max-width:700px;margin:0 auto;padding:0 20px 80px}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:36px 0}
+@media(min-width:600px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+.stat-card{background:#111827;border-radius:16px;padding:24px;text-align:center;border:1px solid rgba(255,255,255,.06)}
+.stat-num{font-size:36px;font-weight:800;color:#39d98a;line-height:1;margin-bottom:6px}
+.stat-lbl{font-size:12px;color:#64748b;line-height:1.4}
+.section{margin-bottom:40px}
+.section-label{font-size:11px;font-weight:700;color:#4a5568;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px}
+.tl-item{background:#111827;border-radius:12px;padding:18px;margin-bottom:10px;border-left:3px solid #7c5cff;font-size:14px;color:#94a3b8;line-height:1.6}
+.tl-item b{color:#f1f5f9}
+.cta{background:linear-gradient(135deg,rgba(124,92,255,.1),rgba(57,217,138,.05));border:1px solid rgba(124,92,255,.2);border-radius:20px;padding:36px;text-align:center}
+.cta h2{font-size:24px;font-weight:800;margin-bottom:12px}
+.cta p{font-size:14px;color:#94a3b8;margin-bottom:24px;line-height:1.7}
+.cta a{display:inline-block;background:#7c5cff;color:#fff;padding:16px 32px;border-radius:12px;font-size:16px;font-weight:700;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="badge">30-Day Results</div>
+  <h1>Test Clinic — <span>30 days</span> with ClinicFlow</h1>
+  <p>Real numbers from a real deployment.</p>
+</div>
+<div class="wrap">
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-num">11</div><div class="stat-lbl">Missed calls recovered</div></div>
+    <div class="stat-card"><div class="stat-num">7</div><div class="stat-lbl">Appointments booked via SMS</div></div>
+    <div class="stat-card"><div class="stat-num">$1 540</div><div class="stat-lbl">Revenue recovered</div></div>
+    <div class="stat-card"><div class="stat-num">47</div><div class="stat-lbl">Reminders sent</div></div>
+  </div>
+  <div class="section">
+    <div class="section-label">What happened</div>
+    <div class="tl-item"><b>Day 1–2:</b> System configured. Clinic profile built — hours, services, team, tone.</div>
+    <div class="tl-item"><b>Day 3:</b> Test call completed. First auto-text arrived in 47 seconds.</div>
+    <div class="tl-item"><b>Day 5:</b> Live. First real patient recovered — called after hours, booked next morning via SMS.</div>
+    <div class="tl-item"><b>Days 6–30:</b> 11 missed calls recovered. 7 appointments booked. 47 reminders sent automatically.</div>
+  </div>
+  <div class="cta">
+    <h2>Want the same results?</h2>
+    <p>One-time setup. No monthly fees. You pay the second half only after you see results like these.</p>
+    <a href="https://clinicflowautomation.com/intake">Get Started →</a>
+  </div>
+</div>
+</body>
+</html>

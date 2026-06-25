@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Your Plan — ClinicFlow Automation</title>
+  <meta name="description" content="Answer 3 quick questions and get a personalized ClinicFlow tier recommendation for your dental clinic." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-light: #eff6ff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --radius: 10px;
+      --starter: #0891b2;
+      --growth: #2563eb;
+      --full: #7c3aed;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7fafd;
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Nav ── */
+    nav {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .nav-logo { font-weight: 900; font-size: 18px; color: var(--blue); text-decoration: none; }
+    .nav-back { font-size: 14px; color: var(--muted); text-decoration: none; }
+    .nav-back:hover { color: var(--blue); }
+
+    /* ── Quiz shell ── */
+    .quiz-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+    .quiz-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 24px rgba(0,0,0,.07);
+      width: 100%;
+      max-width: 600px;
+      padding: 44px 40px;
+    }
+
+    /* ── Progress ── */
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .progress-track {
+      flex: 1;
+      height: 4px;
+      background: #e5e7eb;
+      border-radius: 9px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 9px;
+      transition: width .4s ease;
+    }
+    .progress-label { font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+    /* ── Step content ── */
+    .step { display: none; }
+    .step.active { display: block; }
+
+    .step-tag {
+      display: inline-block;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .step-sub {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+
+    /* ── Option cards ── */
+    .options { display: flex; flex-direction: column; gap: 12px; }
+    .option {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 18px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: border-color .15s, background .15s;
+      background: #fff;
+    }
+    .option:hover { border-color: var(--blue); background: var(--blue-light); }
+    .option.selected { border-color: var(--blue); background: var(--blue-light); }
+    .option-icon {
+      font-size: 22px;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .option-text strong { display: block; font-size: 15px; font-weight: 700; margin-bottom: 2px; }
+    .option-text span { font-size: 13px; color: var(--muted); }
+
+    /* ── Nav buttons ── */
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .btn-next {
+      flex: 1;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background .15s;
+    }
+    .btn-next:hover:not(:disabled) { background: var(--blue-dark); }
+    .btn-next:disabled { opacity: .4; cursor: not-allowed; }
+    .btn-back {
+      background: #fff;
+      color: var(--muted);
+      border: 1.5px solid var(--border);
+      padding: 14px 18px;
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .btn-back:hover { border-color: var(--blue); color: var(--blue); }
+
+    /* ── Result ── */
+    .result { display: none; }
+    .result.active { display: block; }
+    .result-badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+    }
+    .badge-starter { background: #cffafe; color: #0e7490; }
+    .badge-growth  { background: #dbeafe; color: #1d4ed8; }
+    .badge-full    { background: #ede9fe; color: #6d28d9; }
+
+    .result h2 { font-size: 26px; font-weight: 900; margin-bottom: 10px; }
+    .result-sub { font-size: 16px; color: var(--muted); margin-bottom: 28px; }
+
+    .result-card {
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .result-card.starter { border-color: var(--starter); }
+    .result-card.growth  { border-color: var(--growth);  }
+    .result-card.full    { border-color: var(--full);    }
+
+    .result-price {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+    .result-price span { font-size: 14px; font-weight: 500; color: var(--muted); }
+    .result-tagline { font-size: 14px; color: var(--muted); margin-bottom: 18px; }
+
+    .result-features { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .result-features li { font-size: 14px; display: flex; align-items: flex-start; gap: 8px; }
+    .result-features li::before { content: "✓"; color: var(--blue); font-weight: 700; flex-shrink: 0; }
+
+    .result-why {
+      background: var(--blue-light);
+      border-left: 3px solid var(--blue);
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 14px;
+      color: #1e40af;
+      margin-top: 20px;
+      margin-bottom: 28px;
+    }
+    .result-why strong { display: block; margin-bottom: 4px; font-size: 13px; text-transform: uppercase; letter-spacing: .4px; }
+
+    .cta-email {
+      display: block;
+      background: var(--blue);
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      border-radius: var(--radius);
+      font-weight: 800;
+      font-size: 16px;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: background .15s;
+    }
+    .cta-email:hover { background: var(--blue-dark); }
+    .cta-restart {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      cursor: pointer;
+      margin-top: 12px;
+      text-decoration: underline;
+    }
+    .cta-restart:hover { color: var(--blue); }
+    .guarantee { font-size: 13px; color: var(--muted); text-align: center; margin-top: 10px; }
+
+    @media (max-width: 480px) {
+      .quiz-card { padding: 28px 20px; }
+      h2 { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">ClinicFlow</a>
+  <a class="nav-back" href="/">← Back to site</a>
+</nav>
+
+<div class="quiz-wrap">
+  <div class="quiz-card">
+
+    <!-- Progress bar -->
+    <div class="progress-row">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width: 33%"></div>
+      </div>
+      <div class="progress-label" id="progress-label">Question 1 of 3</div>
+    </div>
+
+    <!-- ── Step 1 ── -->
+    <div class="step active" id="step-1">
+      <div class="step-tag">Step 1</div>
+      <h2>What's the biggest challenge at your clinic right now?</h2>
+      <p class="step-sub">Pick the one that keeps you up at night.</p>
+      <div class="options" id="opts-1">
+        <div class="option" data-value="missed_calls" onclick="selectOption(1, this)">
+          <div class="option-icon">📞</div>
+          <div class="option-text">
+            <strong>Missed calls go unanswered</strong>
+            <span>Patients call after hours or during lunch and don't hear back</span>
+          </div>
+        </div>
+        <div class="option" data-value="no_shows" onclick="selectOption(1, this)">
+          <div class="option-icon">📅</div>
+          <div class="option-text">
+            <strong>Too many no-shows and cancellations</strong>
+            <span>Empty chairs are costing us real revenue</span>
+          </div>
+        </div>
+        <div class="option" data-value="lost_patients" onclick="selectOption(1, this)">
+          <div class="option-icon">👤</div>
+          <div class="option-text">
+            <strong>Past patients aren't coming back</strong>
+            <span>We've lost touch with patients we haven't seen in 6–12 months</span>
+          </div>
+        </div>
+        <div class="option" data-value="reviews" onclick="selectOption(1, this)">
+          <div class="option-icon">⭐</div>
+          <div class="option-text">
+            <strong>We need more Google reviews</strong>
+            <span>Competitors have more reviews and we're losing new patients because of it</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-next" id="next-1" onclick="nextStep(1)" disabled>Next →</button>
+      </div>
+    </div>
+
+    <!-- ── Step 2 ── -->
+    <div class="step" id="step-2">
+      <div class="step-tag">Step 2</div>
+      <h2>How many active patients does your clinic have?</h2>
+      <p class="step-sub">This helps us recommend the right scale of automation.</p>
+      <div class="options" id="opts-2">
+        <div class="option" data-value="small" onclick="selectOption(2, this)">
+          <div class="option-icon">🌱</div>
+          <div class="option-text">
+            <strong>Under 500 patients</strong>
+            <span>We're a newer or smaller practice</span>
+          </div>
+        </div>
+        <div class="option" data-value="medium" onclick="selectOption(2, this)">
+          <div class="option-icon">🏥</div>
+          <div class="option-text">
+            <strong>500–1,500 patients</strong>
+            <span>A solid established practice</span>
+          </div>
+        </div>
+        <div class="option" data-value="large" onclick="selectOption(2, this)">
+          <div class="option-icon">🏢</div>
+          <div class="option-text">
+            <strong>1,500+ patients</strong>
+            <span>A high-volume or multi-chair clinic</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-back" onclick="prevStep(2)">← Back</button>
+        <button class="btn-next" id="next-2" onclick="nextStep(2)" disabled>Next →</button>
+      </div>
+    </div>
+
+    <!-- ── Step 3 ── -->
+    <div class="step" id="step-3">
+      <div class="step-tag">Step 3</div>
+      <h2>How hands-on do you want to be with the setup?</h2>
+      <p class="step-sub">There's no wrong answer — we have an option for every preference.</p>
+      <div class="options" id="opts-3">
+        <div class="option" data-value="diy" onclick="selectOption(3, this)">
+          <div class="option-icon">🛠️</div>
+          <div class="option-text">
+            <strong>We'll set it up ourselves</strong>
+            <span>Give us the templates and a clear guide — our team will handle the tech</span>
+          </div>
+        </div>
+        <div class="option" data-value="help" onclick="selectOption(3, this)">
+          <div class="option-icon">🤝</div>
+          <div class="option-text">
+            <strong>A little help would be nice</strong>
+            <span>We'd like the option to have someone configure it for us</span>
+          </div>
+        </div>
+        <div class="option" data-value="done_for_you" onclick="selectOption(3, this)">
+          <div class="option-icon">✅</div>
+          <div class="option-text">
+            <strong>Done-for-us, please</strong>
+            <span>We're busy — we want everything configured and ready to go</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-back" onclick="prevStep(3)">← Back</button>
+        <button class="btn-next" id="next-3" onclick="showResult()" disabled>See my plan →</button>
+      </div>
+    </div>
+
+    <!-- ── Result ── -->
+    <div class="result" id="result">
+      <!-- filled by JS -->
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const answers = { 1: null, 2: null, 3: null };
+
+  function selectOption(step, el) {
+    document.querySelectorAll(`#opts-${step} .option`).forEach(o => o.classList.remove("selected"));
+    el.classList.add("selected");
+    answers[step] = el.dataset.value;
+    document.getElementById(`next-${step}`).disabled = false;
+  }
+
+  function nextStep(from) {
+    document.getElementById(`step-${from}`).classList.remove("active");
+    const to = from + 1;
+    document.getElementById(`step-${to}`).classList.add("active");
+    updateProgress(to);
+  }
+
+  function prevStep(from) {
+    document.getElementById(`step-${from}`).classList.remove("active");
+    const to = from - 1;
+    document.getElementById(`step-${to}`).classList.add("active");
+    updateProgress(to);
+  }
+
+  function updateProgress(step) {
+    const pct = Math.round((step / 3) * 100);
+    document.getElementById("progress-fill").style.width = pct + "%";
+    document.getElementById("progress-label").textContent = `Question ${step} of 3`;
+  }
+
+  // ── Tier recommendation logic ────────────────────────────────────────────────
+  function recommend() {
+    const challenge = answers[1];
+    const size      = answers[2];
+    const hands     = answers[3];
+
+    // Full: large clinic, OR done-for-you preference, OR reactivation + medium/large
+    if (hands === "done_for_you" || size === "large") return "full";
+
+    // Growth: medium size, or multiple/complex challenges
+    if (size === "medium") return "growth";
+    if (challenge === "lost_patients" || challenge === "reviews") return "growth";
+
+    // Starter: small clinic, missed calls or no-shows, DIY
+    return "starter";
+  }
+
+  const TIERS = {
+    starter: {
+      name: "Starter",
+      price: "$397",
+      priceNote: "CAD one-time",
+      tagline: "Plug the most immediate revenue leak — fast.",
+      badge: "badge-starter",
+      color: "starter",
+      features: [
+        "Missed call recovery sequence (3 emails, fires within 2 min)",
+        "Appointment reminders — 72h + 24h email and SMS",
+        "Monthly newsletter template (ready to personalise)",
+        "Patient tracking spreadsheet + Google Sheets setup guide",
+        "Setup guide + 30-day support",
+      ],
+      whyTitle: "Why Starter fits you",
+      why: {
+        missed_calls: "Your biggest pain is missed calls — this is exactly what Starter was designed to solve. The missed call recovery sequence runs automatically, 24/7.",
+        no_shows:     "Appointment reminders at 72h and 24h have the highest documented impact on no-show rates. Starter includes both SMS and email versions.",
+        lost_patients:"You can get started with Starter today — but if re-engaging a larger list of inactive patients is the goal, Growth includes a dedicated 5-email reactivation campaign.",
+        reviews:      "Starter gets your foundation in place. If Google reviews are your primary goal, consider Growth — it includes an automated review request sequence.",
+      },
+      addOn: "Want it configured for you? Add done-for-you setup (+$150 CAD).",
+      emailSubject: "ClinicFlow%20Starter%20%E2%80%94%20Getting%20Started",
+    },
+    growth: {
+      name: "Growth",
+      price: "$997",
+      priceNote: "CAD one-time",
+      tagline: "The complete automation suite for a growing practice.",
+      badge: "badge-growth",
+      color: "growth",
+      features: [
+        "Everything in Starter",
+        "New patient welcome sequence (4 emails)",
+        "Patient reactivation campaign (5 emails — targets inactive 12+ months)",
+        "Automated Google review request sequence",
+        "Results projection calculator",
+        "Setup guide + 30-day support",
+      ],
+      whyTitle: "Why Growth fits you",
+      why: {
+        missed_calls: "Growth includes missed call recovery AND the full automation suite — so you stop losing calls and start building a system that works while you're treating patients.",
+        no_shows:     "Growth includes appointment reminders plus a welcome sequence for new patients — reducing no-shows before and after their first visit.",
+        lost_patients:"This is what Growth was built for. The 5-email reactivation campaign targets patients you haven't seen in 12+ months and has a direct, measurable impact on recall revenue.",
+        reviews:      "Growth includes the automated Google review request sequence — a 3-step post-visit follow-up that consistently grows your online profile with real patient reviews.",
+      },
+      addOn: "Add done-for-you setup (+$150 CAD) to have us configure your first 3 sequences in Mailchimp.",
+      emailSubject: "ClinicFlow%20Growth%20%E2%80%94%20Getting%20Started",
+    },
+    full: {
+      name: "Full",
+      price: "$2,497",
+      priceNote: "CAD one-time",
+      tagline: "A custom-built, done-for-you system with priority support.",
+      badge: "badge-full",
+      color: "full",
+      features: [
+        "Everything in Growth",
+        "Custom branded email templates in your clinic's voice",
+        "90-day patient journey map",
+        "Staff training guide",
+        "Monthly reporting template",
+        "Priority support — same-day response",
+        "Done-for-you Mailchimp setup included (no add-on needed)",
+      ],
+      whyTitle: "Why Full fits you",
+      why: {
+        missed_calls: "Full includes every automation plus done-for-you setup — so you don't have to lift a finger. We configure everything and hand it off to your team ready to run.",
+        no_shows:     "Full gives you a custom 90-day patient journey map so every touchpoint — from first appointment to recall — is optimized for your clinic specifically.",
+        lost_patients:"Full includes the complete reactivation suite, custom-branded in your clinic's voice, plus done-for-you setup. Your team won't have to configure anything.",
+        reviews:      "Full includes the automated review sequence plus custom templates and done-for-you setup — you'll have a professional, branded system running within a week.",
+      },
+      addOn: null,
+      emailSubject: "ClinicFlow%20Full%20%E2%80%94%20Getting%20Started",
+    },
+  };
+
+  function showResult() {
+    // Hide all steps and progress
+    document.querySelectorAll(".step").forEach(s => s.classList.remove("active"));
+    document.getElementById("progress-fill").style.width = "100%";
+    document.getElementById("progress-label").textContent = "Done!";
+
+    const tier = recommend();
+    const t = TIERS[tier];
+    const challenge = answers[1];
+    const whyText = t.why[challenge] || t.why.missed_calls;
+
+    const featuresHTML = t.features.map(f => `<li>${f}</li>`).join("");
+    const addOnHTML = t.addOn
+      ? `<p style="font-size:13px;color:var(--muted);margin-top:16px;padding-top:14px;border-top:1px solid var(--border)">${t.addOn}</p>`
+      : "";
+
+    document.getElementById("result").innerHTML = `
+      <span class="result-badge ${t.badge}">${t.name} — Recommended for you</span>
+      <h2>The ${t.name} Plan</h2>
+      <p class="result-sub">${t.tagline}</p>
+      <div class="result-card ${t.color}">
+        <div class="result-price">${t.price} <span>${t.priceNote}</span></div>
+        <div class="result-tagline">No monthly fees. No subscription. No ongoing charge.</div>
+        <ul class="result-features">${featuresHTML}</ul>
+        ${addOnHTML}
+      </div>
+      <div class="result-why">
+        <strong>${t.whyTitle}</strong>
+        ${whyText}
+      </div>
+      <a class="cta-email"
+         href="mailto:contact@clinicflowautomation.com?subject=Free%20audit%20request%20—%20${encodeURIComponent(t.name)}%20plan&body=Hi%2C%20I%20just%20completed%20the%20ClinicFlow%20quiz%20and%20I%27m%20interested%20in%20a%20free%20audit.%20My%20clinic%20is%3A%20">
+        Get your free audit →
+      </a>
+      <div class="guarantee">Free audit — no payment, no commitment</div>
+      <div style="margin-top:18px;padding:14px 18px;background:#f0f7ff;border-radius:10px;font-size:14px;color:#1a2332;">
+        Want to see the exact revenue number? <a href="/calculator.html" style="color:#1a6bbd;font-weight:700;">Run the missed call calculator →</a>
+      </div>
+      <div class="cta-restart" onclick="restart()">Take the quiz again</div>
+    `;
+
+    document.getElementById("result").classList.add("active");
+  }
+
+  function restart() {
+    answers[1] = answers[2] = answers[3] = null;
+    document.getElementById("result").classList.remove("active");
+    document.querySelectorAll(".option").forEach(o => o.classList.remove("selected"));
+    document.querySelectorAll(".btn-next").forEach(b => b.disabled = true);
+    document.getElementById("step-1").classList.add("active");
+    document.getElementById("progress-fill").style.width = "33%";
+    document.getElementById("progress-label").textContent = "Question 1 of 3";
+  }
+</script>
+</body>
+</html>

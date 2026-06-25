@@ -1,0 +1,115 @@
+{
+  "clinicSlug": "test-clinic",
+  "clinicName": "Test Dental Clinic",
+  "type": "dental",
+  "contact": {
+    "phone": "+15145618268",
+    "email": "hello@testdentalclinic.ca",
+    "website": "testdentalclinic.ca",
+    "address": "1234 Sainte-Catherine St W, Montreal, QC H3G 1P1",
+    "city": "Montreal",
+    "province": "QC"
+  },
+  "hours": {
+    "monday":    { "open": "9:00",  "close": "17:00", "closed": false },
+    "tuesday":   { "open": "9:00",  "close": "17:00", "closed": false },
+    "wednesday": { "open": "9:00",  "close": "17:00", "closed": false },
+    "thursday":  { "open": "9:00",  "close": "17:00", "closed": false },
+    "friday":    { "open": "9:00",  "close": "17:00", "closed": false },
+    "saturday":  { "open": "10:00", "close": "14:00", "closed": false },
+    "sunday":    { "closed": true }
+  },
+  "holidays": [
+    { "date": "2026-12-25", "name": "Christmas Day" },
+    { "date": "2026-12-26", "name": "Boxing Day" },
+    { "date": "2027-01-01", "name": "New Year's Day" },
+    { "date": "2026-07-01", "name": "Canada Day" }
+  ],
+  "team": [
+    {
+      "name": "Dr. Sarah Chen",
+      "role": "Dentist",
+      "specialties": ["Invisalign", "anxious patients", "family dentistry"],
+      "bio": "Dr. Chen has 12 years of experience and a special interest in helping anxious patients feel comfortable."
+    },
+    {
+      "name": "Marie",
+      "role": "Dental Hygienist",
+      "specialties": ["deep cleaning", "periodontal care"]
+    }
+  ],
+  "services": [
+    {
+      "name": "Cleaning & Exam",
+      "duration": 60,
+      "price": 180,
+      "description": "Full cleaning with X-rays and comprehensive exam"
+    },
+    {
+      "name": "Invisalign Consultation",
+      "duration": 45,
+      "price": 0,
+      "description": "Free consultation with digital scanning — no impressions needed"
+    },
+    {
+      "name": "Teeth Whitening",
+      "duration": 90,
+      "price": 350,
+      "description": "In-office whitening, 3-4 shades lighter in one session"
+    },
+    {
+      "name": "Dental Emergency",
+      "duration": 30,
+      "price": 120,
+      "description": "Same-day emergency slots reserved daily — call ahead"
+    },
+    {
+      "name": "New Patient Exam",
+      "duration": 75,
+      "price": 200,
+      "description": "Comprehensive first visit including full X-ray series"
+    }
+  ],
+  "insurance": {
+    "accepted": true,
+    "providers": ["Sun Life", "Manulife", "Great-West Life", "Blue Cross", "Desjardins", "Beneva"],
+    "directBilling": true,
+    "notes": "We handle all insurance paperwork. Bring your insurance card and we take care of the rest."
+  },
+  "parking": "Free parking available in the Cavendish Mall lot — enter from Côte-Saint-Luc Road",
+  "accessibility": "Fully wheelchair accessible. Elevator available. Please call ahead so we can assist.",
+  "languages": ["English", "French"],
+  "tone": {
+    "style": "warm and professional",
+    "useFirstNames": true,
+    "signatureName": "The [Clinic Name] team",
+    "avoidWords": ["ASAP", "immediately", "urgent", "quick"]
+  },
+  "faqs": [
+    {
+      "question": "Do you accept new patients?",
+      "answer": "Yes! We're always welcoming new patients. Book online or reply here and we'll get you set up."
+    },
+    {
+      "question": "How do I book an appointment?",
+      "answer": "Reply to this message with your preferred day and time, or call us at (514) 561-8268 during business hours."
+    },
+    {
+      "question": "Do you accept walk-ins?",
+      "answer": "We reserve a few same-day slots for emergencies. Call us in the morning to check availability."
+    },
+    {
+      "question": "How long is a cleaning appointment?",
+      "answer": "A standard cleaning and exam takes about 60 minutes. New patients should allow 75 minutes."
+    },
+    {
+      "question": "Do you offer payment plans?",
+      "answer": "Yes, we offer flexible payment plans. Ask us about financing options at your visit."
+    }
+  ],
+  "bookingInstructions": "Reply with your preferred day and time, or call (514) 561-8268. We'll confirm within 2 hours.",
+  "emergencyProtocol": "For dental emergencies (severe pain, swelling, broken tooth), call us immediately at (514) 561-8268. We keep same-day emergency slots available Mon-Fri.",
+  "availableSlots": [],
+  "customInstructions": "Always mention free parking if a patient asks about location. Never promise a specific doctor unless asked directly. If a patient mentions anxiety, acknowledge it warmly before anything else.",
+  "lastUpdated": "2026-05-08T00:00:00.000Z"
+}

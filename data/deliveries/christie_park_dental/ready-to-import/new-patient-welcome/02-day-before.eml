@@ -1,0 +1,103 @@
+MIME-Version: 1.0
+Date: Thu, 09 Apr 2026 03:35:30 GMT
+From: "Christie Park Dental" <contact@christieparkdental.com>
+To: [PatientFirstName] <patient@example.com>
+Subject: See you tomorrow, [PatientFirstName]
+X-CF-Sequence: New Patient Welcome
+X-CF-Email-Number: 2
+X-CF-Send-Timing: 1 day before appointment
+Content-Type: multipart/alternative; boundary="_cfbound_mnqxcea5_gmr7lb"
+
+--_cfbound_mnqxcea5_gmr7lb
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Hi [PatientFirstName],
+
+Your appointment at Christie Park Dental is tomorrow at [AppointmentTime]. A few things that make first visits smoother:
+
+- Arrive 5–10 minutes early to complete any remaining paperwork
+- Bring your insurance card if you have coverage
+- Let us know of any medications you're currently taking when you arrive
+- If you have any anxiety about dental visits, just mention it — we have options that help
+
+If anything changes before tomorrow, call [ClinicPhone] as soon as possible and we'll sort it out.
+
+See you then.
+The Christie Park Dental Team
+
+--_cfbound_mnqxcea5_gmr7lb
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>See you tomorrow, [PatientFirstName]</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f2f2;">
+
+<table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+  style="background-color:#f2f2f2;padding:28px 0;">
+<tr><td align="center">
+
+<table role="presentation" cellpadding="0" cellspacing="0" width="600"
+  style="max-width:600px;width:100%;background:#ffffff;border-radius:4px;overflow:hidden;">
+
+  <!-- Header bar -->
+  <tr>
+    <td style="background-color:#2c3e50;padding:18px 32px;">
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;
+         color:#ffffff;letter-spacing:0.4px;">Christie Park Dental</p>
+    </td>
+  </tr>
+
+  <!-- Body -->
+  <tr>
+    <td style="padding:32px 32px 20px 32px;font-family:Arial,Helvetica,sans-serif;
+       font-size:15px;line-height:1.65;color:#333333;">
+      <p style="margin:0 0 14px 0;">Hi <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[PatientFirstName]</span>,</p>
+      <p style="margin:0 0 14px 0;">Your appointment at Christie Park Dental is tomorrow at <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[AppointmentTime]</span>. A few things that make first visits smoother:</p>
+      <ul style="margin:8px 0 16px 0;padding-left:20px;"><li style="margin:4px 0;">Arrive 5–10 minutes early to complete any remaining paperwork</li><li style="margin:4px 0;">Bring your insurance card if you have coverage</li><li style="margin:4px 0;">Let us know of any medications you're currently taking when you arrive</li><li style="margin:4px 0;">If you have any anxiety about dental visits, just mention it — we have options that help</li></ul>
+      <p style="margin:0 0 14px 0;">If anything changes before tomorrow, call <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[ClinicPhone]</span> as soon as possible and we'll sort it out.</p>
+      <p style="margin:0 0 14px 0;">See you then.</p>
+      <p style="margin:0 0 14px 0;">The Christie Park Dental Team</p>
+    </td>
+  </tr>
+
+  <!-- Footer -->
+  <tr>
+    <td style="background-color:#f9f9f9;padding:16px 32px;border-top:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#aaaaaa;">
+        Christie Park Dental&nbsp;&middot;&nbsp;Toronto
+      </p>
+      <p style="margin:0 0 4px 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#cccccc;">
+        <em>To stop receiving messages, reply with &ldquo;unsubscribe&rdquo;.</em>
+      </p>
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#dddddd;">
+        This automation complies with PIPEDA (Canadian privacy law). Patient data is never stored or shared.
+      </p>
+    </td>
+  </tr>
+
+</table>
+
+<!-- Developer reference -->
+<!--
+  Sequence : New Patient Welcome
+  Email    : 2 of sequence
+  Subject  : See you tomorrow, [PatientFirstName]
+  Timing   : 1 day before appointment
+  Generated: ClinicFlow delivery engine
+-->
+
+</td></tr>
+</table>
+
+</body>
+</html>
+
+--_cfbound_mnqxcea5_gmr7lb--

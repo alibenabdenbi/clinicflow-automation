@@ -1,0 +1,19 @@
+[
+  {
+    "id": "f64fabd7-d3cc-48de-a30b-0e4b1285a71c",
+    "clinicSlug": "test-clinic",
+    "bookingId": "f39201bf-0286-45a4-95e5-05fe19fa22e7",
+    "patientPhone": "+15143330001",
+    "patientName": null,
+    "serviceType": "Cleaning & Exam",
+    "servicePrice": 200,
+    "slotIso": "2026-05-11T13:30:00.000Z",
+    "slotDisplay": "Monday, May 11 at 9:30 a.m.",
+    "calendarEventId": "booking_1778344996295_9d5t4h",
+    "checkAt": "2026-05-12T13:30:00.000Z",
+    "status": "sent",
+    "smsSentAt": "2026-05-12T13:30:46.959Z",
+    "outcome": null,
+    "answeredAt": null
+  }
+]

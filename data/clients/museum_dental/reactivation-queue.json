@@ -1,0 +1,1711 @@
+{
+  "generatedAt": "2026-04-29T06:14:03.330Z",
+  "clinicName": "Museum Dental",
+  "totalPatients": 50,
+  "inactiveMonths": 12,
+  "campaignSize": 50,
+  "bookingLink": null,
+  "reviewLink": null,
+  "patients": [
+    {
+      "patientEmail": "emma.thompson@gmail.com",
+      "firstName": "Emma",
+      "lastName": "Thompson",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Emma — it's been a while",
+          "body": "Hi Emma,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Emma,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Emma",
+          "body": "Hi Emma,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Emma",
+          "body": "Hi Emma,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Emma",
+          "body": "Hi Emma,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "liam.miller@hotmail.com",
+      "firstName": "Liam",
+      "lastName": "Miller",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Liam — it's been a while",
+          "body": "Hi Liam,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Liam,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Liam",
+          "body": "Hi Liam,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Liam",
+          "body": "Hi Liam,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Liam",
+          "body": "Hi Liam,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "olivia.wright@yahoo.com",
+      "firstName": "Olivia",
+      "lastName": "Wright",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Olivia — it's been a while",
+          "body": "Hi Olivia,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Olivia,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Olivia",
+          "body": "Hi Olivia,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Olivia",
+          "body": "Hi Olivia,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Olivia",
+          "body": "Hi Olivia,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "noah.morin@outlook.com",
+      "firstName": "Noah",
+      "lastName": "Morin",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Noah — it's been a while",
+          "body": "Hi Noah,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Noah,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Noah",
+          "body": "Hi Noah,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Noah",
+          "body": "Hi Noah,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Noah",
+          "body": "Hi Noah,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "ava.allen@rogers.com",
+      "firstName": "Ava",
+      "lastName": "Allen",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Ava — it's been a while",
+          "body": "Hi Ava,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Ava,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Ava",
+          "body": "Hi Ava,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Ava",
+          "body": "Hi Ava,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Ava",
+          "body": "Hi Ava,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "william.smith@bell.net",
+      "firstName": "William",
+      "lastName": "Smith",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi William — it's been a while",
+          "body": "Hi William,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi William,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, William",
+          "body": "Hi William,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, William",
+          "body": "Hi William,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, William",
+          "body": "Hi William,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "sophia.gauthier@shaw.ca",
+      "firstName": "Sophia",
+      "lastName": "Gauthier",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Sophia — it's been a while",
+          "body": "Hi Sophia,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Sophia,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Sophia",
+          "body": "Hi Sophia,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Sophia",
+          "body": "Hi Sophia,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Sophia",
+          "body": "Hi Sophia,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "james.tremblay@gmail.com",
+      "firstName": "James",
+      "lastName": "Tremblay",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi James — it's been a while",
+          "body": "Hi James,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi James,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, James",
+          "body": "Hi James,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, James",
+          "body": "Hi James,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, James",
+          "body": "Hi James,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "isabella.singh@hotmail.com",
+      "firstName": "Isabella",
+      "lastName": "Singh",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Isabella — it's been a while",
+          "body": "Hi Isabella,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Isabella,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Isabella",
+          "body": "Hi Isabella,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Isabella",
+          "body": "Hi Isabella,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Isabella",
+          "body": "Hi Isabella,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "oliver.garcia@yahoo.com",
+      "firstName": "Oliver",
+      "lastName": "Garcia",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Oliver — it's been a while",
+          "body": "Hi Oliver,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Oliver,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Oliver",
+          "body": "Hi Oliver,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Oliver",
+          "body": "Hi Oliver,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Oliver",
+          "body": "Hi Oliver,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "charlotte.gauthier@outlook.com",
+      "firstName": "Charlotte",
+      "lastName": "Gauthier",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Charlotte — it's been a while",
+          "body": "Hi Charlotte,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Charlotte,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Charlotte",
+          "body": "Hi Charlotte,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Charlotte",
+          "body": "Hi Charlotte,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Charlotte",
+          "body": "Hi Charlotte,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "benjamin.davis@rogers.com",
+      "firstName": "Benjamin",
+      "lastName": "Davis",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Benjamin — it's been a while",
+          "body": "Hi Benjamin,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Benjamin,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Benjamin",
+          "body": "Hi Benjamin,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Benjamin",
+          "body": "Hi Benjamin,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Benjamin",
+          "body": "Hi Benjamin,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "amelia.young@bell.net",
+      "firstName": "Amelia",
+      "lastName": "Young",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Amelia — it's been a while",
+          "body": "Hi Amelia,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Amelia,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Amelia",
+          "body": "Hi Amelia,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Amelia",
+          "body": "Hi Amelia,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Amelia",
+          "body": "Hi Amelia,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "elijah.macdonald@shaw.ca",
+      "firstName": "Elijah",
+      "lastName": "Macdonald",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Elijah — it's been a while",
+          "body": "Hi Elijah,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Elijah,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Elijah",
+          "body": "Hi Elijah,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Elijah",
+          "body": "Hi Elijah,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Elijah",
+          "body": "Hi Elijah,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "mia.walker@gmail.com",
+      "firstName": "Mia",
+      "lastName": "Walker",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Mia — it's been a while",
+          "body": "Hi Mia,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Mia,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Mia",
+          "body": "Hi Mia,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Mia",
+          "body": "Hi Mia,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Mia",
+          "body": "Hi Mia,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "lucas.garcia@hotmail.com",
+      "firstName": "Lucas",
+      "lastName": "Garcia",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Lucas — it's been a while",
+          "body": "Hi Lucas,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Lucas,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Lucas",
+          "body": "Hi Lucas,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Lucas",
+          "body": "Hi Lucas,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Lucas",
+          "body": "Hi Lucas,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "harper.garcia@yahoo.com",
+      "firstName": "Harper",
+      "lastName": "Garcia",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Harper — it's been a while",
+          "body": "Hi Harper,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Harper,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Harper",
+          "body": "Hi Harper,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Harper",
+          "body": "Hi Harper,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Harper",
+          "body": "Hi Harper,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "mason.walker@outlook.com",
+      "firstName": "Mason",
+      "lastName": "Walker",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Mason — it's been a while",
+          "body": "Hi Mason,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Mason,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Mason",
+          "body": "Hi Mason,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Mason",
+          "body": "Hi Mason,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Mason",
+          "body": "Hi Mason,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "evelyn.chen@rogers.com",
+      "firstName": "Evelyn",
+      "lastName": "Chen",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Evelyn — it's been a while",
+          "body": "Hi Evelyn,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Evelyn,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Evelyn",
+          "body": "Hi Evelyn,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Evelyn",
+          "body": "Hi Evelyn,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Evelyn",
+          "body": "Hi Evelyn,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "logan.johnson@bell.net",
+      "firstName": "Logan",
+      "lastName": "Johnson",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Logan — it's been a while",
+          "body": "Hi Logan,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Logan,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Logan",
+          "body": "Hi Logan,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Logan",
+          "body": "Hi Logan,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Logan",
+          "body": "Hi Logan,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "abigail.bouchard@shaw.ca",
+      "firstName": "Abigail",
+      "lastName": "Bouchard",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Abigail — it's been a while",
+          "body": "Hi Abigail,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Abigail,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Abigail",
+          "body": "Hi Abigail,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Abigail",
+          "body": "Hi Abigail,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Abigail",
+          "body": "Hi Abigail,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "aiden.williams@gmail.com",
+      "firstName": "Aiden",
+      "lastName": "Williams",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Aiden — it's been a while",
+          "body": "Hi Aiden,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Aiden,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Aiden",
+          "body": "Hi Aiden,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Aiden",
+          "body": "Hi Aiden,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Aiden",
+          "body": "Hi Aiden,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "emily.miller@hotmail.com",
+      "firstName": "Emily",
+      "lastName": "Miller",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Emily — it's been a while",
+          "body": "Hi Emily,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Emily,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Emily",
+          "body": "Hi Emily,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Emily",
+          "body": "Hi Emily,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Emily",
+          "body": "Hi Emily,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "caden.roy@yahoo.com",
+      "firstName": "Caden",
+      "lastName": "Roy",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Caden — it's been a while",
+          "body": "Hi Caden,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Caden,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Caden",
+          "body": "Hi Caden,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Caden",
+          "body": "Hi Caden,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Caden",
+          "body": "Hi Caden,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "elizabeth.bouchard@outlook.com",
+      "firstName": "Elizabeth",
+      "lastName": "Bouchard",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Elizabeth — it's been a while",
+          "body": "Hi Elizabeth,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Elizabeth,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Elizabeth",
+          "body": "Hi Elizabeth,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Elizabeth",
+          "body": "Hi Elizabeth,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Elizabeth",
+          "body": "Hi Elizabeth,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "grayson.fortin@rogers.com",
+      "firstName": "Grayson",
+      "lastName": "Fortin",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Grayson — it's been a while",
+          "body": "Hi Grayson,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Grayson,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Grayson",
+          "body": "Hi Grayson,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Grayson",
+          "body": "Hi Grayson,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Grayson",
+          "body": "Hi Grayson,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "sofia.jackson@bell.net",
+      "firstName": "Sofia",
+      "lastName": "Jackson",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Sofia — it's been a while",
+          "body": "Hi Sofia,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Sofia,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Sofia",
+          "body": "Hi Sofia,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Sofia",
+          "body": "Hi Sofia,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Sofia",
+          "body": "Hi Sofia,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "jackson.wilson@shaw.ca",
+      "firstName": "Jackson",
+      "lastName": "Wilson",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Jackson — it's been a while",
+          "body": "Hi Jackson,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Jackson,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Jackson",
+          "body": "Hi Jackson,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Jackson",
+          "body": "Hi Jackson,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Jackson",
+          "body": "Hi Jackson,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "avery.côté@gmail.com",
+      "firstName": "Avery",
+      "lastName": "Côté",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Avery — it's been a while",
+          "body": "Hi Avery,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Avery,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Avery",
+          "body": "Hi Avery,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Avery",
+          "body": "Hi Avery,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Avery",
+          "body": "Hi Avery,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "sebastian.lavoie@hotmail.com",
+      "firstName": "Sebastian",
+      "lastName": "Lavoie",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Sebastian — it's been a while",
+          "body": "Hi Sebastian,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Sebastian,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Sebastian",
+          "body": "Hi Sebastian,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Sebastian",
+          "body": "Hi Sebastian,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Sebastian",
+          "body": "Hi Sebastian,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "ella.smith@yahoo.com",
+      "firstName": "Ella",
+      "lastName": "Smith",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Ella — it's been a while",
+          "body": "Hi Ella,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Ella,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Ella",
+          "body": "Hi Ella,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Ella",
+          "body": "Hi Ella,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Ella",
+          "body": "Hi Ella,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "mateo.taylor@outlook.com",
+      "firstName": "Mateo",
+      "lastName": "Taylor",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Mateo — it's been a while",
+          "body": "Hi Mateo,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Mateo,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Mateo",
+          "body": "Hi Mateo,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Mateo",
+          "body": "Hi Mateo,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Mateo",
+          "body": "Hi Mateo,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "madison.bouchard@rogers.com",
+      "firstName": "Madison",
+      "lastName": "Bouchard",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Madison — it's been a while",
+          "body": "Hi Madison,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Madison,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Madison",
+          "body": "Hi Madison,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Madison",
+          "body": "Hi Madison,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Madison",
+          "body": "Hi Madison,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "jack.lavoie@bell.net",
+      "firstName": "Jack",
+      "lastName": "Lavoie",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Jack — it's been a while",
+          "body": "Hi Jack,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Jack,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Jack",
+          "body": "Hi Jack,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Jack",
+          "body": "Hi Jack,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Jack",
+          "body": "Hi Jack,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "scarlett.wright@shaw.ca",
+      "firstName": "Scarlett",
+      "lastName": "Wright",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Scarlett — it's been a while",
+          "body": "Hi Scarlett,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Scarlett,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Scarlett",
+          "body": "Hi Scarlett,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Scarlett",
+          "body": "Hi Scarlett,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Scarlett",
+          "body": "Hi Scarlett,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "owen.lavoie@gmail.com",
+      "firstName": "Owen",
+      "lastName": "Lavoie",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Owen — it's been a while",
+          "body": "Hi Owen,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Owen,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Owen",
+          "body": "Hi Owen,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Owen",
+          "body": "Hi Owen,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Owen",
+          "body": "Hi Owen,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "victoria.côté@hotmail.com",
+      "firstName": "Victoria",
+      "lastName": "Côté",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Victoria — it's been a while",
+          "body": "Hi Victoria,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Victoria,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Victoria",
+          "body": "Hi Victoria,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Victoria",
+          "body": "Hi Victoria,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Victoria",
+          "body": "Hi Victoria,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "theodore.allen@yahoo.com",
+      "firstName": "Theodore",
+      "lastName": "Allen",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Theodore — it's been a while",
+          "body": "Hi Theodore,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Theodore,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Theodore",
+          "body": "Hi Theodore,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Theodore",
+          "body": "Hi Theodore,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Theodore",
+          "body": "Hi Theodore,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "aria.anderson@outlook.com",
+      "firstName": "Aria",
+      "lastName": "Anderson",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Aria — it's been a while",
+          "body": "Hi Aria,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Aria,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Aria",
+          "body": "Hi Aria,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Aria",
+          "body": "Hi Aria,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Aria",
+          "body": "Hi Aria,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "asher.allen@rogers.com",
+      "firstName": "Asher",
+      "lastName": "Allen",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Asher — it's been a while",
+          "body": "Hi Asher,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Asher,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Asher",
+          "body": "Hi Asher,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Asher",
+          "body": "Hi Asher,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Asher",
+          "body": "Hi Asher,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "grace.roy@bell.net",
+      "firstName": "Grace",
+      "lastName": "Roy",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Grace — it's been a while",
+          "body": "Hi Grace,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Grace,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Grace",
+          "body": "Hi Grace,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Grace",
+          "body": "Hi Grace,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Grace",
+          "body": "Hi Grace,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "ethan.tremblay@shaw.ca",
+      "firstName": "Ethan",
+      "lastName": "Tremblay",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Ethan — it's been a while",
+          "body": "Hi Ethan,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Ethan,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Ethan",
+          "body": "Hi Ethan,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Ethan",
+          "body": "Hi Ethan,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Ethan",
+          "body": "Hi Ethan,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "chloe.lee@gmail.com",
+      "firstName": "Chloe",
+      "lastName": "Lee",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Chloe — it's been a while",
+          "body": "Hi Chloe,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Chloe,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Chloe",
+          "body": "Hi Chloe,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Chloe",
+          "body": "Hi Chloe,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Chloe",
+          "body": "Hi Chloe,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "carter.wilson@hotmail.com",
+      "firstName": "Carter",
+      "lastName": "Wilson",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Carter — it's been a while",
+          "body": "Hi Carter,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Carter,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Carter",
+          "body": "Hi Carter,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Carter",
+          "body": "Hi Carter,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Carter",
+          "body": "Hi Carter,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "riley.wright@yahoo.com",
+      "firstName": "Riley",
+      "lastName": "Wright",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Riley — it's been a while",
+          "body": "Hi Riley,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Riley,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Riley",
+          "body": "Hi Riley,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Riley",
+          "body": "Hi Riley,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Riley",
+          "body": "Hi Riley,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "muhammad.gauthier@outlook.com",
+      "firstName": "Muhammad",
+      "lastName": "Gauthier",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Muhammad — it's been a while",
+          "body": "Hi Muhammad,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Muhammad,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Muhammad",
+          "body": "Hi Muhammad,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Muhammad",
+          "body": "Hi Muhammad,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Muhammad",
+          "body": "Hi Muhammad,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "layla.roy@rogers.com",
+      "firstName": "Layla",
+      "lastName": "Roy",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Layla — it's been a while",
+          "body": "Hi Layla,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Layla,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Layla",
+          "body": "Hi Layla,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Layla",
+          "body": "Hi Layla,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Layla",
+          "body": "Hi Layla,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "leo.scott@bell.net",
+      "firstName": "Leo",
+      "lastName": "Scott",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Leo — it's been a while",
+          "body": "Hi Leo,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Leo,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Leo",
+          "body": "Hi Leo,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Leo",
+          "body": "Hi Leo,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Leo",
+          "body": "Hi Leo,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "zoe.bouchard@shaw.ca",
+      "firstName": "Zoe",
+      "lastName": "Bouchard",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Zoe — it's been a while",
+          "body": "Hi Zoe,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Zoe,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Zoe",
+          "body": "Hi Zoe,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Zoe",
+          "body": "Hi Zoe,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Zoe",
+          "body": "Hi Zoe,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    },
+    {
+      "patientEmail": "ryan.roy@gmail.com",
+      "firstName": "Ryan",
+      "lastName": "Roy",
+      "lastVisit": "(unknown)",
+      "status": "pending",
+      "sequence": [
+        {
+          "day": 0,
+          "subject": "Hi Ryan — it's been a while",
+          "body": "Hi Ryan,\n\nIt's been a while since we've seen you at Museum Dental, and we wanted to check in.\n\nRegular check-ups catch small things before they become bigger issues — and most visits take less than an hour.\n\nIf you're ready to book:\n[booking link]\n\nIf you have any questions first, just reply to this email.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 7,
+          "subject": "A few things have changed at Museum Dental",
+          "body": "Hi Ryan,\n\nWanted to follow up on my last note — and share a quick update.\n\nWe've been working on making visits as smooth as possible: shorter wait times, online booking, and text reminders before every appointment so nothing slips through the cracks.\n\nIf you'd like to get back in for a check-up or cleaning:\n[booking link]\n\nAlways happy to answer any questions — just reply here.\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 21,
+          "subject": "Quick question, Ryan",
+          "body": "Hi Ryan,\n\nQuick question — when was your last professional cleaning?\n\nFor most people, 6 months is the recommended window. If it's been longer, a quick visit now is much simpler (and cheaper) than waiting until there's an issue.\n\nWe have availability coming up:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 35,
+          "subject": "We want to keep your spot, Ryan",
+          "body": "Hi Ryan,\n\nWe'd love to keep you as a patient at Museum Dental.\n\nIf life has just been busy — completely understandable. We make it easy to come back with no judgment, flexible scheduling, and reminders so you never have to think about it.\n\nBook when you're ready:\n[booking link]\n\nThe team at Museum Dental"
+        },
+        {
+          "day": 49,
+          "subject": "Our last note to you, Ryan",
+          "body": "Hi Ryan,\n\nThis is the last note we'll send — we don't want to fill your inbox.\n\nIf you ever want to come back to Museum Dental, the door is always open:\n[booking link]\n\nWishing you and your family good health.\n\nThe team at Museum Dental"
+        }
+      ]
+    }
+  ]
+}

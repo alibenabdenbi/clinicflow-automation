@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-04-23T00:00:00.000Z",
+  "clinicName": "Dental Works 4 Kids",
+  "email": "info@dentalworks4kids.com",
+  "type": "missed_call_followup",
+  "signal": "sms_auto_response",
+  "subject": "Called your office today — noticed something",
+  "body": "Hi,\n\nI called your office earlier today and noticed your missed-call auto-response fired immediately — that tells me you already have some automation in place.\n\nI do free audits for dental clinics to identify gaps in the full patient communication sequence. Most clinics with auto-text still have gaps in reactivation and reminder sequences.\n\nWorth a quick look at Dental Works 4 Kids?\n\nMohamed\nClinicFlow Automation\n438-544-0442",
+  "notes": "SMS auto-response received after calling +1-905-450-5333. Clinic already has missed-call automation — prime prospect for reactivation/reminder upsell."
+}

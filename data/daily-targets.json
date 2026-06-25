@@ -1,0 +1,336 @@
+{
+  "date": "2026-06-24",
+  "gmb": [
+    {
+      "clinicName": "Toothland Dental Clinic",
+      "city": "Brampton",
+      "mapsUrl": "https://maps.google.com/?cid=201766776166790842",
+      "message": "Trusted by 268+ patients with Dr. Gurpreet's 4.9-star care. Miss a call? Auto text-back in 60 sec—one-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Trusted by 268+ patients with Dr. Gurpreet's 4.9-star care",
+      "painSignal": "poor communication",
+      "rating": 4.9,
+      "reviewCount": 268
+    },
+    {
+      "clinicName": "Princess Elizabeth Dental in Edmonton",
+      "city": "Edmonton",
+      "mapsUrl": "https://maps.google.com/?cid=14962962827654037072",
+      "message": "Hi — a patient review mentioned \"never contacted\". I help dental clinics in Edmonton auto-reply to missed calls in 60 sec. One-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Trusted by 562+ patients with 4.8-star reviews in Edmonton",
+      "painSignal": "never contacted",
+      "rating": 4.8,
+      "reviewCount": 562
+    },
+    {
+      "clinicName": "Main Street Dental",
+      "city": "Mississauga",
+      "mapsUrl": "https://maps.google.com/?cid=4516481544537540961",
+      "message": "Hi — a patient review mentioned \"cannot reach\". I help dental clinics in Mississauga auto-reply to missed calls in 60 sec. One-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Dr. Kanwar Dhugga's patients praise his skilled, efficient care",
+      "painSignal": "cannot reach",
+      "rating": 4.8,
+      "reviewCount": 350
+    },
+    {
+      "clinicName": "Altima Markville Mall Dental Centre",
+      "city": "Markham",
+      "mapsUrl": "https://maps.google.com/?cid=11509978423780981626",
+      "message": "Hi — a patient review mentioned \"no show\". I help dental clinics in Markham auto-reply to missed calls in 60 sec. One-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Been a trusted choice for years—help retain loyal patients who fear you're getting too popular",
+      "painSignal": "no show",
+      "rating": 4.8,
+      "reviewCount": 262
+    },
+    {
+      "clinicName": "ABC FAMILY DENTAL",
+      "city": "Brampton",
+      "mapsUrl": "https://maps.google.com/?cid=13288029551962727590",
+      "message": "Hi — a patient review mentioned \"unanswered\". I help dental clinics in Brampton auto-reply to missed calls in 60 sec. One-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Specializes in complex pediatric cases like severe cavity treatment",
+      "painSignal": "unanswered",
+      "rating": 4.8,
+      "reviewCount": 83
+    },
+    {
+      "clinicName": "Laurentian Dental Centre Kitchener",
+      "city": "Kitchener",
+      "mapsUrl": "https://maps.google.com/?cid=10936014964398430492",
+      "message": "Missed appointment follow-up—strengthen patient retention systems. Miss a call? Auto text-back in 60 sec—one-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Missed appointment follow-up—strengthen patient retention systems",
+      "painSignal": "missed my appointment",
+      "rating": 4.7,
+      "reviewCount": 522
+    },
+    {
+      "clinicName": "Brisdale Family Dentistry",
+      "city": "Brampton",
+      "mapsUrl": "https://maps.google.com/?cid=9470452893350137585",
+      "message": "Dr. Zoha's patient communication excellence stands out with 4.7 stars. Miss a call? Auto text-back in 60 sec—one-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Dr. Zoha's patient communication excellence stands out with 4.7 stars",
+      "painSignal": "poor communication",
+      "rating": 4.7,
+      "reviewCount": 364
+    },
+    {
+      "clinicName": "Springdale Family Dental",
+      "city": "Brampton",
+      "mapsUrl": "https://maps.google.com/?cid=9470452893350137585",
+      "message": "Dr. Zoha's reputation for clear patient communication stands out. Miss a call? Auto text-back in 60 sec—one-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Dr. Zoha's reputation for clear patient communication stands out",
+      "painSignal": "poor communication",
+      "rating": 4.7,
+      "reviewCount": 364
+    },
+    {
+      "clinicName": "Dr. D. Aversa & Dr. D. Ceccacci Family Dentistry",
+      "city": "Windsor",
+      "mapsUrl": "https://maps.google.com/?cid=6016480613642097348",
+      "message": "Hi — a patient review mentioned \"no show\". I help dental clinics in Windsor auto-reply to missed calls in 60 sec. One-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Struggling with patient no-shows affecting your schedule and revenue",
+      "painSignal": "no show",
+      "rating": 4.3,
+      "reviewCount": 49
+    },
+    {
+      "clinicName": "Campus Dentist Waterloo",
+      "city": "Waterloo",
+      "mapsUrl": "https://maps.google.com/?cid=13581939384934556186",
+      "message": "Known for friendly staff and reasonable pricing in Waterloo. Miss a call? Auto text-back in 60 sec—one-time setup. — Mohamed, ClinicFlow",
+      "personalDetail": "Known for friendly staff and reasonable pricing in Waterloo",
+      "painSignal": "poor communication",
+      "rating": 4.1,
+      "reviewCount": 59
+    }
+  ],
+  "instagram": [
+    {
+      "clinicName": "Dentist in Hamilton Ontario | Accepting New Patients",
+      "instagramHandle": "@barton.dental",
+      "instagramUrl": "https://instagram.com/barton.dental",
+      "message": "Barton Dental's 4.9-star reputation shows patients trust you. ClinicFlow gives dental practices automatic text-back within 60 seconds to book more appointments. Worth a quick chat? — Mohamed, ClinicFlow",
+      "personalDetail": "Trusted by 1021+ patients with a 4.9-star reputation"
+    },
+    {
+      "clinicName": "Brampton Mississauga Streetsville Cosmetic Dentist",
+      "instagramHandle": "@dentistryinstreetsville",
+      "instagramUrl": "https://instagram.com/dentistryinstreetsville",
+      "message": "Brampton Mississauga Streetsville Cosmetic Dentist is crushing it with that 4.8-star rating. We help dental practices like yours handle patient messages with automatic text-back within 60 seconds. Worth a quick chat about freeing up your team? — Mohamed, ClinicFlow",
+      "personalDetail": "4.8-star clinic with 211 reviews"
+    },
+    {
+      "clinicName": "Barrhaven Dental Studio",
+      "instagramHandle": "@barrhavendentalstudio",
+      "instagramUrl": "https://instagram.com/barrhavendentalstudio",
+      "message": "Barrhaven Dental Studio has an impressive 4.9 rating with 751 reviews. We help dental practices like yours get automatic text-back within 60 seconds for appointment confirmations and reschedules. Worth a quick chat? — Mohamed, ClinicFlow",
+      "personalDetail": "4.9-star rated with 751 patient reviews"
+    },
+    {
+      "clinicName": "Emergency Dental Service",
+      "instagramHandle": "@FairwayDentalClinic",
+      "instagramUrl": "https://instagram.com/FairwayDentalClinic",
+      "message": "Emergency Dental Service is clearly doing something right with those patient reviews. I built ClinicFlow to help clinics like yours handle patient inquiries with automatic text-back within 60 seconds. Worth a quick chat about streamlining your front desk? — Mohamed, ClinicFlow",
+      "personalDetail": "Consistently earning 4.6 stars from 185 patient reviews"
+    },
+    {
+      "clinicName": "Centre Dentaire Dr Louise Magnan",
+      "instagramHandle": "@mag_dent_dental",
+      "instagramUrl": "https://instagram.com/mag_dent_dental",
+      "message": "Centre Dentaire Dr Louise Magnan has something special—patients travel farther to stay loyal to you. We help dental clinics like yours handle patient messages with automatic text-back within 60 seconds, so you never miss someone booking. Worth a quick call? — Mohamed, ClinicFlow",
+      "personalDetail": "Patient loyalty so strong, they travel farther to stay"
+    },
+    {
+      "clinicName": "New Smile Dental & Implant",
+      "instagramHandle": "@newsmile_dentalgroup",
+      "instagramUrl": "https://instagram.com/newsmile_dentalgroup",
+      "message": "New Smile Dental & Implant is clearly doing something right with 153 glowing reviews. I founded ClinicFlow to help clinics like yours handle patient messages with automatic text-back within 60 seconds. Worth a quick call to see if it fits your flow — Mohamed, ClinicFlow",
+      "personalDetail": "Consistently highly-rated with 153 patient reviews praising their care"
+    },
+    {
+      "clinicName": "Welcome to Wildwood",
+      "instagramHandle": "@greenwoods_dental_centres",
+      "instagramUrl": "https://instagram.com/greenwoods_dental_centres",
+      "message": "Welcome to Wildwood clearly resonates with patients - 1500+ reviews at 4.8 stars is impressive. We help dental clinics automate appointment confirmations and automatic text-backs within 60 seconds, freeing up your team. Worth a quick chat? — Mohamed, ClinicFlow",
+      "personalDetail": "Trusted by 1500+ patients with 4.8-star ratings"
+    },
+    {
+      "clinicName": "Rockingham Ridge Dental Centre",
+      "instagramHandle": "@robiestreetdentalcentre",
+      "instagramUrl": "https://instagram.com/robiestreetdentalcentre",
+      "message": "Rockingham Ridge Dental Centre clearly has patient care dialed in with those 4.8 stars. We help dental clinics like yours handle appointment confirmations and cancellations with automatic text-back within 60 seconds. Worth a quick chat about freeing up your team's time? — Mohamed, ClinicFlow",
+      "personalDetail": "4.8 stars from 235 patients praising exceptional patient care"
+    },
+    {
+      "clinicName": "Mindfulness Psychotherapy",
+      "instagramHandle": "@drdanacolson",
+      "instagramUrl": "https://instagram.com/drdanacolson",
+      "message": "Mindfulness Psychotherapy has built something special with that 4.9 rating. We help practices like yours handle admin work through automatic text-back within 60 seconds, freeing up your team for patient care. Worth a quick chat? — Mohamed, ClinicFlow",
+      "personalDetail": "4.9 stars with 217 reviews—patients rave about Dr. Leyla"
+    },
+    {
+      "clinicName": "Toronto Physiotherapy",
+      "instagramHandle": "@trdctoronto",
+      "instagramUrl": "https://instagram.com/trdctoronto",
+      "message": "Toronto Physiotherapy is clearly nailing patient satisfaction with those 4.9 stars. We help clinics like yours handle patient communications with automatic text-back within 60 seconds, so your team stays focused on care. Worth a quick chat? — Mohamed, ClinicFlow",
+      "personalDetail": "4.9 stars with 1,235 reviews—clearly excelling at patient care"
+    }
+  ],
+  "calls": [
+    {
+      "clinicName": "Laurentian Dental Centre Kitchener",
+      "city": "Kitchener",
+      "phone": "Closed · Opens 8 a.m. · (548) 490-1479",
+      "rating": 4.7,
+      "reviewCount": 522,
+      "painSignal": "missed my appointment",
+      "personalDetail": "Missed appointment follow-up—strengthen patient retention systems",
+      "website": "https://www.laurentiandentalcentre.com/?utm_source=GMB_Listing&utm_medium=organic&utm_campaign=Website_URL",
+      "mapsUrl": "https://maps.google.com/?cid=10936014964398430492",
+      "callStatus": "pending"
+    },
+    {
+      "clinicName": "Brisdale Family Dentistry",
+      "city": "Brampton",
+      "phone": "(905) 840-7800",
+      "rating": 4.7,
+      "reviewCount": 364,
+      "painSignal": "poor communication",
+      "personalDetail": "Dr. Zoha's patient communication excellence stands out with 4.7 stars",
+      "website": "https://springdalefamilydental.ca/",
+      "mapsUrl": "https://maps.google.com/?cid=9470452893350137585",
+      "callStatus": "pending"
+    },
+    {
+      "clinicName": "Springdale Family Dental",
+      "city": "Brampton",
+      "phone": "Closed · Opens 10 a.m. · (365) 977-7756",
+      "rating": 4.7,
+      "reviewCount": 364,
+      "painSignal": "poor communication",
+      "personalDetail": "Dr. Zoha's reputation for clear patient communication stands out",
+      "website": "https://springdalefamilydental.ca/",
+      "mapsUrl": "https://maps.google.com/?cid=9470452893350137585",
+      "callStatus": "pending"
+    },
+    {
+      "clinicName": "Toothland Dental Clinic",
+      "city": "Brampton",
+      "phone": "Closed · Opens 10 a.m. · (905) 456-7774",
+      "rating": 4.9,
+      "reviewCount": 268,
+      "painSignal": "poor communication",
+      "personalDetail": "Trusted by 268+ patients with Dr. Gurpreet's 4.9-star care",
+      "website": "https://www.toothlanddental.ca/?utm_source=GBP&utm_medium=button&utm_campaign=Home",
+      "mapsUrl": "https://maps.google.com/?cid=201766776166790842",
+      "callStatus": "pending"
+    },
+    {
+      "clinicName": "Altima Markville Mall Dental Centre",
+      "city": "Markham",
+      "phone": "(905) 752-0233",
+      "rating": 4.8,
+      "reviewCount": 262,
+      "painSignal": "no show",
+      "personalDetail": "Been a trusted choice for years—help retain loyal patients who fear you're getting too popular",
+      "website": "https://altimamarkvillemalldental.com/?utm_source=GMB_Listing&utm_medium=organic&utm_campaign=GMB",
+      "mapsUrl": "https://maps.google.com/?cid=11509978423780981626",
+      "callStatus": "pending"
+    },
+    {
+      "clinicName": "ABC FAMILY DENTAL",
+      "city": "Brampton",
+      "phone": "Dental clinic · Mcvean Commercial Centre, 11665 McVean Dr Unit 63",
+      "rating": 4.8,
+      "reviewCount": 83,
+      "painSignal": "unanswered",
+      "personalDetail": "Specializes in complex pediatric cases like severe cavity treatment",
+      "website": "http://www.abcdds.ca/",
+      "mapsUrl": "https://maps.google.com/?cid=13288029551962727590",
+      "callStatus": "pending"
+    },
+    {
+      "clinicName": "Campus Dentist Waterloo",
+      "city": "Waterloo",
+      "phone": "Closed · Opens 8 a.m. · (519) 888-4607",
+      "rating": 4.1,
+      "reviewCount": 59,
+      "painSignal": "poor communication",
+      "personalDetail": "Known for friendly staff and reasonable pricing in Waterloo",
+      "website": "",
+      "mapsUrl": "https://maps.google.com/?cid=13581939384934556186",
+      "callStatus": "pending"
+    },
+    {
+      "clinicName": "Universal Ave Dental Clinic",
+      "city": "Waterloo",
+      "phone": "Closed · Opens 9 a.m. · (519) 992-9123",
+      "rating": 4.1,
+      "reviewCount": 59,
+      "painSignal": "poor communication",
+      "personalDetail": "Known for exceptional patient friendliness and competitive pricing",
+      "website": "",
+      "mapsUrl": "https://maps.google.com/?cid=13581939384934556186",
+      "callStatus": "pending"
+    },
+    {
+      "clinicName": "Dr. D. Aversa & Dr. D. Ceccacci Family Dentistry",
+      "city": "Windsor",
+      "phone": "Closed · Opens 8:15 a.m. · (519) 967-1476",
+      "rating": 4.3,
+      "reviewCount": 49,
+      "painSignal": "no show",
+      "personalDetail": "Struggling with patient no-shows affecting your schedule and revenue",
+      "website": "http://www.acadental.ca/",
+      "mapsUrl": "https://maps.google.com/?cid=6016480613642097348",
+      "callStatus": "pending"
+    },
+    {
+      "clinicName": "Dentistry at City Centre",
+      "city": "Mississauga",
+      "phone": "Closed · Opens 10 a.m. · (905) 270-5020",
+      "rating": 5,
+      "reviewCount": 2178,
+      "painSignal": null,
+      "personalDetail": "5-star rated with 2,178 reviews from satisfied patients",
+      "website": "https://1citycentredentistry.com/",
+      "mapsUrl": "https://maps.google.com/?cid=5556156782570973959",
+      "callStatus": "pending"
+    }
+  ],
+  "linkedin": [
+    {
+      "name": "Abraam Dawod",
+      "clinicName": "Dentistry by Dr. Sferlazza",
+      "city": "Mississauga",
+      "profileUrl": "https://www.linkedin.com/search/results/people/?keywords=Abraam%20Dawod%20dentist%20Mississauga",
+      "message": "Hi Abraam, I noticed Dentistry by Dr. Sferlazza doesn't have automated follow-up for missed calls — patients who call and don't reach you often book elsewhere. I help dental clinics fix this in 5 days, no monthly fees. Worth a quick look?"
+    },
+    {
+      "name": "Abdallah Omar",
+      "clinicName": "Kennedy Dental Care Brampton",
+      "city": "Mississauga",
+      "profileUrl": "https://www.linkedin.com/search/results/people/?keywords=Abdallah%20Omar%20dentist%20Mississauga",
+      "message": "Hi Abdallah, I noticed Kennedy Dental Care Brampton doesn't have automated follow-up for missed calls — patients who call and don't reach you often book elsewhere. I help dental clinics fix this in 5 days, no monthly fees. Worth a quick look?"
+    },
+    {
+      "name": "Results View Details Akeel Al-Dabboos",
+      "clinicName": "iSmile Dental Centre",
+      "city": "Brampton",
+      "profileUrl": "https://www.linkedin.com/search/results/people/?keywords=Results%20View%20Details%20Akeel%20Al-Dabboos%20dentist%20Brampton",
+      "message": "Hi Results, I noticed iSmile Dental Centre doesn't have automated follow-up for missed calls — patients who call and don't reach you often book elsewhere. I help dental clinics fix this in 5 days, no monthly fees. Worth a quick look?"
+    },
+    {
+      "name": "Toghrul Ibrahimli",
+      "clinicName": "North Bramalea Dental",
+      "city": "Brampton",
+      "profileUrl": "https://www.linkedin.com/search/results/people/?keywords=Toghrul%20Ibrahimli%20dentist%20Brampton",
+      "message": "Hi Toghrul, I noticed North Bramalea Dental doesn't have automated follow-up for missed calls — patients who call and don't reach you often book elsewhere. I help dental clinics fix this in 5 days, no monthly fees. Worth a quick look?"
+    },
+    {
+      "name": "Marwan Bahjat",
+      "clinicName": "Lakefront Family Dental",
+      "city": "Hamilton",
+      "profileUrl": "https://www.linkedin.com/search/results/people/?keywords=Marwan%20Bahjat%20dentist%20Hamilton",
+      "message": "Hi Marwan, I noticed Lakefront Family Dental doesn't have automated follow-up for missed calls — patients who call and don't reach you often book elsewhere. I help dental clinics fix this in 5 days, no monthly fees. Worth a quick look?"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+ORE-Engine — Daily Report
+Date: 2026-04-29
+Generated: 2026-04-29T06:20:57.925Z
+────────────────────────────────────────────────────
+
+DISCOVERY & CRM
+  Total CRM leads: 78                     
+  New leads today: 0                      
+  Tier A: 26                              
+  Tier B: 52                              
+  Tier C: 0                               
+  Confirmed / accepted: 1                 
+  Offer acceptance rate: 1% (1/78 confirmed)
+  Top theme today: N/A                    
+  High-score signals (>=9): 0             
+  Validated offer packs: 0                
+
+EMAIL OUTREACH
+  Total clinics in queue: 3597            
+  Emails pending (todo): 167              
+  Initial emails sent (all time): 151     
+  Emails sent today: 0                    
+  Emails sent yesterday: 25               
+  Total sent all time (SMTP): 583         
+    → Initial sends (all time): 423       
+    → Follow-ups (all time): 160          
+  Clinics with no email: 2975             
+  Open rate proxy: 68% (103/151 proceeded to FU1)
+  Unique sends (deduped): 207             
+  Bounce rate (deduped): 5.3% total  |  2.4% hard  (11 bounced / 207 unique sends)
+  ⚠ BOUNCE RATE EXCEEDS 5% — pause sending and clean list
+
+FOLLOW-UPS (3-stage)
+  FU1 due now: 36                         
+  FU1 due in next 7 days: 15              
+  FU2 due now: 1                          
+  FU1 sent (total): 103                   
+  FU2 sent (total): 46                    
+  FU3 sent (total): 0                     
+  Sequences complete: 0                   
+
+ACTION REQUIRED
+  None — inbox is clear
+
+HOT PROSPECTS (emailed in last 7 days, no reply yet)
+  55 clinic(s) worth following up:
+  • Stars Orthodontics                     6d ago  followup_1_sent
+  • The Smile Doctors                      6d ago  followup_1_sent
+  • Barrhaven Dental Care                  6d ago  followup_1_sent
+  • Southpointe Dental                     6d ago  followup_1_sent
+  • Crossing Bridge Family Dentistry       6d ago  followup_1_sent
+  ... and 50 more
+
+READY TO CLOSE (replied AUDIT_YES — send them the 3 questions)
+  None yet
+
+WINS THIS WEEK
+  No payments recorded this week
+
+DELIVERABILITY TREND (last 7 days)
+  2026-04-23  new:60 fu: 0 total: 60  ████████████████████
+  2026-04-24  new:30 fu: 0 total: 30  ████████████████████
+  2026-04-25  new:25 fu:25 total: 50  ████████████████████
+  2026-04-26  new:25 fu:25 total: 50  ████████████████████
+  2026-04-27  new:25 fu:25 total: 50  ████████████████████
+  2026-04-28  new:15 fu:10 total: 25  ████████████████████
+  2026-04-29  new: 0 fu: 0 total:  0  
+
+BEST PERFORMING SUBJECT LINES (by FU1 proceed rate)
+  Not enough data yet
+
+VARIANT PERFORMANCE
+  Variant  Sent   →FU1      Reply rate
+  ──────────────────────────────────────
+  A        4      0 (0%)    0%
+  B        1      0 (0%)    0%
+  C        3      0 (0%)    0%
+  D        1      0 (0%)    0%
+  E        0      0 (—)     —
+  F        5      0 (0%)    0%
+  G        3      0 (0%)    0%
+  H        2      0 (0%)    0%
+  I        1      0 (0%)    0%
+  J        3      0 (0%)    0%
+  K        6      0 (0%)    0%
+  L        1      0 (0%)    0%
+  R        0      0 (—)     —
+
+TODAY'S RECOMMENDED ACTIONS
+  1. Send FU1 to these clinics today — named email, recent send, most likely to reply:
+     → Lougheed Village                          (0d ago, dr.jill.lee@gmail.com)
+  2. Call these clinics today — direct lines, no email reply:
+     → London Bridge Dental                  (519) 672-0230  (followup_1_sent)
+     → Nelson Dental Clinic                  +16044332225  (followup_1_sent)
+     → Lakeview Dental Clinic                +16045264455  (followup_1_sent)
+  3. These clinics have Google reviews mentioning communication problems:
+     → East Village Dental  (pain score: 2)
+     → Woodbine Dental  (pain score: 2)
+  4. Hunter resets in 2 day(s) — run enrich on 2026-05-01
+  5. Best variant: A (0% reply rate, 4 sends)
+
+VOICE OUTREACH
+  Voicemail drops today: 5                
+  Twilio calls made today: 0              
+  Callbacks received today: 0             
+  Total voice touches (all time): 48      
+  Total callbacks (all time): 0           
+
+SYSTEM HEALTH
+  Last health check: HEALTHY              
+  Scheduler errors today: 0               
+
+WARNINGS
+  ⚠ WARNING: No new CRM leads discovered today — check if main pipeline ran
+  ⚠ WARNING: Bounce rate 5.3% exceeds 5% — run smtpVerify and clean list
+
+────────────────────────────────────────────────────
+End of report

@@ -1,0 +1,9 @@
+{
+	"id": "Y3DALQGWTr5C5X9",
+	"json": "{\"id\":\"Y3DALQGWTr5C5X9\",\"url\":\"https://wordpress.org/plugins/wpforms-lite/reviews/\",\"loadedUrl\":\"https://wordpress.org/plugins/wpforms-lite/\",\"uniqueKey\":\"https://wordpress.org/plugins/wpforms-lite/reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"reviews\",\"kw\":\"contact form\",\"pluginUrl\":\"https://wordpress.org/plugins/wpforms-lite/\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:58.201Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/wpforms-lite/reviews",
+	"url": "https://wordpress.org/plugins/wpforms-lite/reviews/"
+}

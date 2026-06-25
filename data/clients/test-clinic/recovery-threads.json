@@ -1,0 +1,42 @@
+[
+  {
+    "id": "recovery_1778221128567_yk41sk",
+    "callSid": "test-recovery-001",
+    "clinicSlug": "test-clinic",
+    "callerNumber": "+15145618268",
+    "calledAt": "2026-05-08T06:18:48.567Z",
+    "patientName": "John Smith",
+    "patientLastVisit": "2025-03-01",
+    "isKnownPatient": true,
+    "status": "recovered",
+    "wave": 1,
+    "nextWaveAt": null,
+    "messages": [
+      {
+        "wave": 1,
+        "sentAt": "2026-05-08T06:18:49.057Z",
+        "body": "Hi John! You called Test Dental Clinic. We missed your call — we'll follow up with you within 2 hours. Reply here to book an appointment or ask a question. — Test Dental Clinic",
+        "sid": "SM0752a27f18d859baa82f3a0f53f4565a",
+        "success": true
+      },
+      {
+        "wave": "reply",
+        "direction": "inbound",
+        "receivedAt": "2026-05-08T06:18:51.827Z",
+        "body": "Yes I would like to book an appointment",
+        "intent": "booking"
+      },
+      {
+        "wave": "reply_response",
+        "direction": "outbound",
+        "sentAt": "2026-05-08T06:18:51.827Z",
+        "body": "Hi John! We're glad you reached out. Call us at +15145618268 to set up your appointment. We look forward to seeing you. — Test Dental Clinic",
+        "sid": "SM5fba17878044953b7fad022fe247e4ab"
+      }
+    ],
+    "reply": "Yes I would like to book an appointment",
+    "replyIntent": "booking",
+    "resolvedAt": "2026-05-08T06:18:51.827Z",
+    "recovered": true
+  }
+]

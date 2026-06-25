@@ -1,0 +1,58 @@
+{
+  "client": {
+    "name": "Christie Park Dental",
+    "city": "Toronto",
+    "email": "test@christieparkdental.com",
+    "tier": "growth",
+    "website": "christieparkdental.com"
+  },
+  "tier": "growth",
+  "generatedAt": "2026-04-09T03:35:29.235Z",
+  "files": [
+    {
+      "name": "missed-call-followup.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\christie_park_dental\\missed-call-followup.md",
+      "size": 1790
+    },
+    {
+      "name": "appointment-reminder.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\christie_park_dental\\appointment-reminder.md",
+      "size": 1455
+    },
+    {
+      "name": "monthly-newsletter.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\christie_park_dental\\monthly-newsletter.md",
+      "size": 2190
+    },
+    {
+      "name": "tracking-spreadsheet.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\christie_park_dental\\tracking-spreadsheet.md",
+      "size": 3067
+    },
+    {
+      "name": "reactivation-campaign.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\christie_park_dental\\reactivation-campaign.md",
+      "size": 3427
+    },
+    {
+      "name": "new-patient-welcome.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\christie_park_dental\\new-patient-welcome.md",
+      "size": 3453
+    },
+    {
+      "name": "review-request.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\christie_park_dental\\review-request.md",
+      "size": 2138
+    },
+    {
+      "name": "setup-summary.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\christie_park_dental\\setup-summary.md",
+      "size": 3583
+    },
+    {
+      "name": "setup-guide.md",
+      "path": "D:\\Poject-ORE-EMGINE\\data\\deliveries\\christie_park_dental\\setup-guide.md",
+      "size": 6197
+    }
+  ]
+}

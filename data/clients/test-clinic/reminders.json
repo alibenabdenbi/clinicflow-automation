@@ -1,0 +1,20 @@
+[
+  {
+    "patientName": "Sophie Lavoie",
+    "phone": "+15143330001",
+    "type": "72h",
+    "at": "2026-05-08T12:31:03.571Z"
+  },
+  {
+    "patientName": "Ahmed Hassan",
+    "phone": "+15145618268",
+    "type": "24h",
+    "at": "2026-05-08T12:31:03.744Z"
+  },
+  {
+    "patientName": "Sophie Lavoie",
+    "phone": "+15143330001",
+    "type": "24h",
+    "at": "2026-05-10T12:31:01.116Z"
+  }
+]

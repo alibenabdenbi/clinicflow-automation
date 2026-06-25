@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-06-15T11:06:36.083Z",
+  "totalAudits": 5,
+  "patterns": {
+    "bookingSystems": [
+      {
+        "label": "Other",
+        "count": 5,
+        "pct": "100%"
+      }
+    ],
+    "missedCallHandling": [
+      {
+        "label": "Voicemail only",
+        "count": 3,
+        "pct": "60%"
+      },
+      {
+        "label": "Automated text",
+        "count": 2,
+        "pct": "40%"
+      }
+    ],
+    "reminderAdoption": [
+      {
+        "label": "SMS reminders",
+        "count": 3,
+        "pct": "60%"
+      },
+      {
+        "label": "Automated reminders",
+        "count": 2,
+        "pct": "40%"
+      }
+    ],
+    "reactivationAdoption": [
+      {
+        "label": "Has automation",
+        "count": 5,
+        "pct": "100%"
+      }
+    ],
+    "googleBusinessProfile": [
+      {
+        "label": "Has GBP",
+        "count": 3,
+        "pct": "60%"
+      },
+      {
+        "label": "No GBP",
+        "count": 2,
+        "pct": "40%"
+      }
+    ]
+  },
+  "audits": [
+    {
+      "clinicName": "Museum Dental",
+      "date": null,
+      "bookingSystem": "Other",
+      "missedCallHandling": "Voicemail only",
+      "hasReminders": "Automated reminders",
+      "hasReactivation": "Has automation",
+      "hasGBP": "No GBP"
+    },
+    {
+      "clinicName": "Museum Dental",
+      "date": null,
+      "bookingSystem": "Other",
+      "missedCallHandling": "Voicemail only",
+      "hasReminders": "Automated reminders",
+      "hasReactivation": "Has automation",
+      "hasGBP": "No GBP"
+    },
+    {
+      "clinicName": "Dental Works 4 Kids",
+      "date": null,
+      "bookingSystem": "Other",
+      "missedCallHandling": "Automated text",
+      "hasReminders": "SMS reminders",
+      "hasReactivation": "Has automation",
+      "hasGBP": "Has GBP"
+    },
+    {
+      "clinicName": "Align Orthodontics",
+      "date": null,
+      "bookingSystem": "Other",
+      "missedCallHandling": "Automated text",
+      "hasReminders": "SMS reminders",
+      "hasReactivation": "Has automation",
+      "hasGBP": "Has GBP"
+    },
+    {
+      "clinicName": "Downsview Plaza Dental",
+      "date": null,
+      "bookingSystem": "Other",
+      "missedCallHandling": "Voicemail only",
+      "hasReminders": "SMS reminders",
+      "hasReactivation": "Has automation",
+      "hasGBP": "Has GBP"
+    }
+  ]
+}

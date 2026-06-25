@@ -1,0 +1,135 @@
+[
+  {
+    "id": "client_1775612433965",
+    "name": "Test Dental",
+    "city": "Toronto",
+    "email": "test@testdental.com",
+    "tier": "starter",
+    "startDate": "2026-04-08T01:40:33.964Z",
+    "status": "test",
+    "delivered": true,
+    "deliveredAt": "2026-04-08T02:19:17.634Z",
+    "notes": "",
+    "createdAt": "2026-04-08T01:40:33.965Z",
+    "checkin_day7_sent": "2026-04-16T13:00:00.306Z",
+    "testNote": "Placeholder record — no real email. Blocked from scheduler sends."
+  },
+  {
+    "id": "client_1775688485285",
+    "name": "Bayview Village Dental",
+    "city": "Toronto",
+    "email": "test@bayviewvillagedental.com",
+    "tier": "growth",
+    "startDate": "2026-04-08T22:48:05.285Z",
+    "status": "test",
+    "delivered": true,
+    "deliveredAt": "2026-04-08T23:22:06.635Z",
+    "notes": "",
+    "createdAt": "2026-04-08T22:48:05.285Z",
+    "checkin_day7_sent": "2026-04-16T13:00:00.711Z",
+    "testNote": "Placeholder record — no real email. Blocked from scheduler sends."
+  },
+  {
+    "id": "client_1775704610490",
+    "name": "Christie Park Dental",
+    "city": "Toronto",
+    "email": "test@christieparkdental.com",
+    "tier": "growth",
+    "startDate": "2026-04-09T03:16:50.490Z",
+    "status": "test",
+    "delivered": true,
+    "deliveredAt": "2026-04-09T03:35:30.137Z",
+    "notes": "",
+    "createdAt": "2026-04-09T03:16:50.490Z",
+    "checkin_day7_sent": "2026-04-16T13:00:01.172Z",
+    "testNote": "Placeholder record — no real email. Blocked from scheduler sends."
+  },
+  {
+    "id": "client_1775790997104",
+    "name": "Yonge Dental Care",
+    "city": "Toronto",
+    "email": "test@yongedentalcare.com",
+    "tier": "growth",
+    "startDate": "2026-04-10T03:16:37.103Z",
+    "status": "test",
+    "delivered": true,
+    "deliveredAt": "2026-04-10T03:16:37.105Z",
+    "notes": "",
+    "createdAt": "2026-04-10T03:16:37.104Z",
+    "testNote": "Placeholder record — no real email. Blocked from scheduler sends."
+  },
+  {
+    "id": "client_1777443074859",
+    "name": "Museum Dental",
+    "city": "Toronto",
+    "email": "mary@museumdental.ca",
+    "tier": "growth",
+    "stage": "lead",
+    "status": "lead",
+    "paymentReceived": false,
+    "csvReceived": false,
+    "delivered": false,
+    "deliveredAt": null,
+    "notes": "Mary answered audit questions. Audit response sent. Awaiting payment.",
+    "createdAt": "2026-04-22T00:00:00.000Z"
+  },
+  {
+    "clinicSlug": "test-clinic",
+    "clinicName": "Test Dental Clinic",
+    "contactName": "Mohamed",
+    "contactEmail": "m.aliben432@gmail.com",
+    "clinicPhone": "+15145618268",
+    "city": "Montreal",
+    "tier": "growth",
+    "status": "reporting",
+    "twilioNumber": "+14385440442",
+    "phoneSetup": "forwarding",
+    "services": {
+      "missedCall": true,
+      "reminders": true,
+      "reactivation": true
+    },
+    "isFree": false,
+    "freeSmsSentThisMonth": 0,
+    "freeSmsLimit": 50,
+    "brandingEnabled": false,
+    "referralCount": 0,
+    "patientsLoaded": 5,
+    "patientsCsvPath": "data/clients/test-clinic/patients.csv",
+    "goLiveDate": "2026-05-05T00:00:00.000Z",
+    "paymentDate": "2026-04-30T00:00:00.000Z",
+    "firstHalfPaid": true,
+    "secondHalfPaid": false,
+    "firstHalfAmount": 497,
+    "secondHalfAmount": 497,
+    "results": {
+      "missedCallsHandled": 2,
+      "appointmentsReminded": 2,
+      "patientsReactivated": 0,
+      "estimatedRevenueRecovered": 0
+    },
+    "onboardingStep": 4,
+    "portalPassword": "testclinic2026",
+    "portalSlug": "test-clinic",
+    "createdAt": "2026-04-30T00:00:00.000Z",
+    "updatedAt": "2026-06-03T14:00:01.986Z",
+    "stageHistory": [
+      {
+        "from": "lead",
+        "to": "payment_received",
+        "at": "2026-04-30T00:00:00.000Z"
+      },
+      {
+        "from": "payment_received",
+        "to": "onboarding",
+        "at": "2026-04-30T01:00:00.000Z"
+      },
+      {
+        "from": "onboarding",
+        "to": "active",
+        "at": "2026-05-05T00:00:00.000Z"
+      }
+    ],
+    "report_day30_sentAt": "2026-06-03T14:00:01.985Z"
+  }
+]

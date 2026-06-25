@@ -1,0 +1,9 @@
+{
+	"id": "uvf6EwCRv5ohuM4",
+	"json": "{\"id\":\"uvf6EwCRv5ohuM4\",\"url\":\"https://wordpress.org/plugins/search/newsletter/page/1/\",\"loadedUrl\":\"https://wordpress.org/plugins/search/newsletter/page/1/\",\"uniqueKey\":\"https://wordpress.org/plugins/search/newsletter/page/1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"search\",\"kw\":\"newsletter\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:55.105Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/search/newsletter/page/1",
+	"url": "https://wordpress.org/plugins/search/newsletter/page/1/"
+}

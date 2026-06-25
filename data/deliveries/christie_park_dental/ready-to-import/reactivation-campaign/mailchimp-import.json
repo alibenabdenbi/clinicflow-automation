@@ -1,0 +1,109 @@
+{
+  "_note": "Mailchimp Customer Journey reference file. Use the data below when building your automation in Mailchimp: Automations → Customer Journeys → Create Journey.",
+  "automation_name": "Patient Reactivation Campaign",
+  "trigger": "Patient inactive 12+ months — manual monthly batch",
+  "client": "Christie Park Dental",
+  "city": "Toronto",
+  "from_name": "Christie Park Dental",
+  "from_email": "contact@christieparkdental.com",
+  "total_emails": 5,
+  "sequence_duration_days": 56,
+  "emails": [
+    {
+      "step": 1,
+      "timing": {
+        "label": "Week 1 (day 7)",
+        "amount": 7,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 7 days after previous step"
+      },
+      "subject_line": "It's been a while, [PatientFirstName]",
+      "subject_char_count": 37,
+      "preview_text": "We noticed it's been some time since we've seen you at Christie Park Dental, and we wanted to check in.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWe noticed it's been some time since we've seen you at Christie Park Dental, and we wanted to check in.\n\nLife gets busy — we completely understand. But a professional cleaning every 6 months catches the small things before they become expensive ones, and we'd love to get you back on track.\n\nBook at [BookingLink] whenever you're ready, or call [ClinicPhone] and we'll take it from there.\n\nThe Christie Park Dental Team",
+      "body_word_count": 74,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[BookingLink]",
+        "[ClinicPhone]"
+      ]
+    },
+    {
+      "step": 2,
+      "timing": {
+        "label": "Week 2 (day 14)",
+        "amount": 14,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 14 days after previous step"
+      },
+      "subject_line": "What's new at Christie Park Dental",
+      "subject_char_count": 34,
+      "preview_text": "Just a quick update — in case it changes things for you.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nJust a quick update — in case it changes things for you.\n\nSince you were last in, [choose one: \"we've added same-day emergency appointments\" / \"we now direct bill to more insurance providers\" / \"we've updated our equipment for faster, more comfortable cleanings\"]. We're always looking for ways to make visits easier.\n\nIf you've been putting off coming in for any reason, let's talk. Call [ClinicPhone] or book directly at [BookingLink].\n\nThe Christie Park Dental Team",
+      "body_word_count": 78,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[choose one: \"we've added same-day emergency appointments\" / \"we now direct bill to more insurance providers\" / \"we've updated our equipment for faster, more comfortable cleanings\"]",
+        "[ClinicPhone]",
+        "[BookingLink]"
+      ]
+    },
+    {
+      "step": 3,
+      "timing": {
+        "label": "Week 4 (day 28)",
+        "amount": 28,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 28 days after previous step"
+      },
+      "subject_line": "Quick question, [PatientFirstName]",
+      "subject_char_count": 34,
+      "preview_text": "One quick question: when was the last time you had a professional cleaning?",
+      "body_plain_text": "Hi [PatientFirstName],\n\nOne quick question: when was the last time you had a professional cleaning?\n\nMost dental issues — early cavities, gum inflammation, enamel wear — take 12–18 months to become noticeable. A cleaning now catches what brushing misses and usually prevents a much more expensive fix later.\n\nWe have openings coming up. Grab one at [BookingLink] or call [ClinicPhone].\n\nThe Christie Park Dental Team",
+      "body_word_count": 65,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[BookingLink]",
+        "[ClinicPhone]"
+      ]
+    },
+    {
+      "step": 4,
+      "timing": {
+        "label": "Week 6 (day 42)",
+        "amount": 42,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 42 days after previous step"
+      },
+      "subject_line": "[PatientFirstName], we want to hold your spot",
+      "subject_char_count": 45,
+      "preview_text": "We try to keep preferred appointment times available for patients who've been with us — but when we haven't heard from someone for a while, those slots go to new patients on our waitlist.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWe try to keep preferred appointment times available for patients who've been with us — but when we haven't heard from someone for a while, those slots go to new patients on our waitlist.\n\nIf you'd like to keep your preferred time at Christie Park Dental, now's a good moment to book. [BookingLink] or [ClinicPhone].\n\nIf you've moved on to another dentist, no hard feelings — just reply and let us know, and we'll update your file.\n\nThe Christie Park Dental Team",
+      "body_word_count": 84,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[BookingLink]",
+        "[ClinicPhone]"
+      ]
+    },
+    {
+      "step": 5,
+      "timing": {
+        "label": "Week 8 (day 56)",
+        "amount": 56,
+        "unit": "days",
+        "mailchimp_delay_setting": "Wait 56 days after previous step"
+      },
+      "subject_line": "Our last email to you, [PatientFirstName]",
+      "subject_char_count": 41,
+      "preview_text": "We're going to stop here — we don't want to be another thing in your inbox.",
+      "body_plain_text": "Hi [PatientFirstName],\n\nWe're going to stop here — we don't want to be another thing in your inbox.\n\nIf you ever want to come back to Christie Park Dental, we'll be here. No awkward re-introductions needed — just book at [BookingLink] and we'll pick up where we left off.\n\nWe hope your smile has been treating you well.\n\nTake care,\nThe Christie Park Dental Team\n[ClinicPhone]",
+      "body_word_count": 66,
+      "placeholders_to_fill": [
+        "[PatientFirstName]",
+        "[BookingLink]",
+        "[ClinicPhone]"
+      ]
+    }
+  ]
+}

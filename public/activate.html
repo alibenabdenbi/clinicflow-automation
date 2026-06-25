@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Activate — ClinicFlow Internal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Syne+Mono&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0b0f17;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.1);--text:#e8eefc;--muted:#a7b0c5;--accent:#7c5cff;--green:#39d98a;--gold:#f6b04d;--red:#ff5c7a;--radius:12px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Syne',ui-sans-serif,system-ui,sans-serif;min-height:100vh;
+  background-image:radial-gradient(1000px 600px at 10% -5%,rgba(124,92,255,.1),transparent 55%);}
+/* Gate */
+#gate{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;}
+.gc{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:20px;padding:48px 40px;max-width:380px;width:100%;backdrop-filter:blur(20px);text-align:center;}
+.gc-logo{font-size:11px;color:var(--accent);font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px;}
+.gc h2{font-size:20px;font-weight:800;margin-bottom:6px;}
+.gc p{font-size:13px;color:var(--muted);margin-bottom:28px;}
+.gc input{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:8px;padding:12px 16px;color:var(--text);font-size:15px;font-family:inherit;outline:none;transition:border .2s;margin-bottom:14px;text-align:center;letter-spacing:6px;font-size:20px;}
+.gc input:focus{border-color:var(--accent);}
+.gc button{width:100%;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:13px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;}
+#gate-err{color:var(--red);font-size:13px;margin-top:10px;display:none;}
+/* App */
+#app{display:none;padding:24px;max-width:1100px;margin:0 auto;padding-bottom:80px;}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0 20px;border-bottom:1px solid var(--line);margin-bottom:32px;flex-wrap:wrap;gap:10px;}
+.tl{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;}
+.topbar-right{font-size:12px;color:var(--muted);}
+.section-label{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.section-label::after{content:'';flex:1;height:1px;background:var(--line);}
+/* Quick actions */
+.qa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:32px;}
+@media(max-width:700px){.qa-grid{grid-template-columns:1fr;}}
+.qa-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;}
+.qa-label{font-size:12px;color:var(--muted);margin-bottom:8px;}
+.qa-input{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:7px;padding:9px 12px;color:var(--text);font-size:13px;font-family:inherit;outline:none;margin-bottom:8px;}
+.qa-input:focus{border-color:var(--accent);}
+.qa-btn{background:rgba(124,92,255,.15);border:1px solid rgba(124,92,255,.3);color:var(--accent);border-radius:7px;padding:8px 14px;font-size:12px;font-weight:700;font-family:inherit;cursor:pointer;transition:all .15s;}
+.qa-btn:hover{background:rgba(124,92,255,.25);}
+.qa-result{font-size:11px;color:var(--green);font-family:'Syne Mono',monospace;margin-top:6px;word-break:break-all;}
+/* Client cards */
+.client-grid{display:flex;flex-direction:column;gap:12px;}
+.client-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+.client-header{padding:18px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;cursor:pointer;}
+.client-name{font-size:17px;font-weight:700;}
+.client-slug{font-size:12px;color:var(--muted);font-family:'Syne Mono',monospace;margin-top:2px;}
+.status-pill{padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;}
+.status-pending{background:rgba(246,176,77,.1);color:var(--gold);border:1px solid rgba(246,176,77,.2);}
+.status-active{background:rgba(57,217,138,.1);color:var(--green);border:1px solid rgba(57,217,138,.2);}
+.status-configured{background:rgba(124,92,255,.1);color:var(--accent);border:1px solid rgba(124,92,255,.2);}
+.client-body{display:none;border-top:1px solid var(--line);padding:18px 20px;}
+.client-body.open{display:block;}
+/* Checklist */
+.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:16px;}
+@media(max-width:600px){.checklist{grid-template-columns:1fr;}}
+.check-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);}
+.check-item.done{color:var(--green);}
+.check-item.done::before{content:'✓';font-weight:700;}
+.check-item.pending::before{content:'○';}
+/* Action buttons */
+.action-row{display:flex;gap:8px;flex-wrap:wrap;}
+.act-btn{padding:8px 14px;border-radius:8px;font-size:12px;font-weight:700;font-family:inherit;cursor:pointer;text-decoration:none;display:inline-block;border:none;}
+.act-view{background:rgba(255,255,255,.07);color:var(--text);}
+.act-portal{background:rgba(124,92,255,.15);color:var(--accent);}
+.act-welcome{background:rgba(57,217,138,.1);color:var(--green);}
+.act-activate{background:var(--green);color:#052e16;}
+.loading{color:var(--muted);font-size:14px;padding:40px;text-align:center;}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="gc">
+    <div class="gc-logo">ClinicFlow</div>
+    <h2>Activation Dashboard</h2>
+    <p>Mohamed only — internal command centre</p>
+    <input type="password" id="pin-inp" placeholder="••••" maxlength="4" autocomplete="off">
+    <button onclick="checkPin()">Unlock</button>
+    <div id="gate-err">Wrong PIN</div>
+  </div>
+</div>
+
+<div id="app">
+  <div class="topbar">
+    <div>
+      <div class="tl">ClinicFlow</div>
+      <div style="font-size:20px;font-weight:700;margin-top:4px">Client Activation Dashboard</div>
+    </div>
+    <div class="topbar-right">Internal — Mohamed only · <span id="ts"></span></div>
+  </div>
+
+  <div class="section-label">Quick Actions</div>
+  <div class="qa-grid">
+    <div class="qa-card">
+      <div class="qa-label">Generate welcome link</div>
+      <input class="qa-input" id="slug-input" placeholder="clinic-slug" type="text">
+      <button class="qa-btn" onclick="genLink()">Generate →</button>
+      <div class="qa-result" id="link-result"></div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-label">Open clinic brain</div>
+      <input class="qa-input" id="brain-slug" placeholder="clinic-slug" type="text">
+      <button class="qa-btn" onclick="openBrain()">View Brain →</button>
+    </div>
+    <div class="qa-card">
+      <div class="qa-label">Refresh client list</div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:8px">Reload all clinic data from Blobs</div>
+      <button class="qa-btn" onclick="loadClients()">↻ Refresh</button>
+    </div>
+  </div>
+
+  <div class="section-label">Pilot Program</div>
+  <div id="pilot-stats" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:32px">
+    <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-align:center">
+      <div style="font-size:28px;font-weight:800;color:var(--gold);font-family:'Syne Mono',monospace" id="pilot-offers">—</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Offers Sent</div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-align:center">
+      <div style="font-size:28px;font-weight:800;color:var(--accent);font-family:'Syne Mono',monospace" id="pilot-active">—</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Active Pilots</div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-align:center">
+      <div style="font-size:28px;font-weight:800;color:var(--green);font-family:'Syne Mono',monospace" id="pilot-converted">—</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Converted</div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-align:center">
+      <div style="font-size:28px;font-weight:800;color:var(--muted);font-family:'Syne Mono',monospace" id="pilot-cmd">—</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Activate CMD</div>
+    </div>
+  </div>
+
+<div class="section-label">Active Clients</div>
+  <div id="client-list"><div class="loading">Loading client data...</div></div>
+</div>
+
+<script>
+const PIN = '8268';
+const BASE = 'https://clinicflowautomation.com';
+
+function checkPin() {
+  if (document.getElementById('pin-inp').value === PIN) {
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    document.getElementById('ts').textContent = new Date().toLocaleString('en-CA');
+    loadClients();
+  } else {
+    document.getElementById('gate-err').style.display = 'block';
+    document.getElementById('pin-inp').value = '';
+    setTimeout(() => document.getElementById('gate-err').style.display = 'none', 2000);
+  }
+}
+document.getElementById('pin-inp').addEventListener('keypress', e => { if (e.key==='Enter') checkPin(); });
+
+function genLink() {
+  const slug = document.getElementById('slug-input').value.trim();
+  if (!slug) return;
+  const link = BASE + '/welcome?clinic=' + slug;
+  document.getElementById('link-result').textContent = link;
+  navigator.clipboard.writeText(link).catch(() => {});
+}
+
+function openBrain() {
+  const slug = document.getElementById('brain-slug').value.trim();
+  if (!slug) return;
+  window.open('/.netlify/functions/get-brain?clinic=' + slug, '_blank');
+}
+
+async function loadClients() {
+  const el = document.getElementById('client-list');
+  el.innerHTML = '<div class="loading">Loading...</div>';
+  try {
+    const res = await fetch('/.netlify/functions/list-clients');
+    const data = await res.json();
+    if (!data.ok || !data.clients?.length) {
+      el.innerHTML = '<div class="loading">No clients found yet.</div>';
+      return;
+    }
+    renderClients(data.clients);
+  } catch(err) {
+    el.innerHTML = '<div class="loading" style="color:var(--red)">Error loading clients: ' + err.message + '</div>';
+  }
+}
+
+
+  // Pilot stats
+  const offers    = clients.filter(c => c.pilotOfferSent).length;
+  const active    = clients.filter(c => c.status === 'pilot').length;
+  const converted = clients.filter(c => c.status === 'active').length;
+  const offerEl = document.getElementById('pilot-offers');
+  const actEl   = document.getElementById('pilot-active');
+  const convEl  = document.getElementById('pilot-converted');
+  const cmdEl   = document.getElementById('pilot-cmd');
+  if (offerEl) offerEl.textContent = offers;
+  if (actEl)   actEl.textContent = active;
+  if (convEl)  convEl.textContent = converted;
+  if (cmdEl)   { cmdEl.textContent = 'CLI'; cmdEl.title = 'node src/cli/activatePilot.js --clinic "Name" --email e@mail.com'; }
+
+function renderClients(clients) {
+  const el = document.getElementById('client-list');
+  el.innerHTML = '<div class="client-grid">' + clients.map(c => renderCard(c)).join('') + '</div>';
+}
+
+function renderCard(c) {
+  const slug   = c.clinicSlug || c.slug || '';
+  const name   = c.clinicName || slug;
+  const status = c.status || 'pending';
+  const statusClass = status === 'active' ? 'status-active' : status === 'approved' ? 'status-configured' : 'status-pending';
+  const statusLabel = status === 'active' ? '● Active' : status === 'approved' ? '⚡ Configured' : '⏳ Pending';
+
+  const checks = [
+    ['Intake submitted', !!c.submittedAt],
+    ['Brain approved', c.status === 'approved' || c.status === 'active'],
+    ['Number assigned', !!c.clinicflowNumber],
+    ['Forwarding confirmed', !!c.forwardingConfirmed],
+    ['Patient list loaded', !!c.patientListLoaded],
+    ['Test call done', !!c.testCallDone],
+    ['Go live', c.status === 'active'],
+  ];
+
+  const checkHtml = checks.map(([label, done]) =>
+    `<div class="check-item ${done?'done':'pending'}">${label}</div>`
+  ).join('');
+
+  const submittedDate = c.submittedAt ? new Date(c.submittedAt).toLocaleDateString('en-CA') : '—';
+  const welcomeLink = BASE + '/welcome?clinic=' + slug;
+  const portalLink  = BASE + '/portal?clinic=' + slug;
+
+  return `<div class="client-card">
+    <div class="client-header" onclick="this.nextElementSibling.classList.toggle('open')">
+      <div>
+        <div class="client-name">${name}</div>
+        <div class="client-slug">${slug} · submitted ${submittedDate}</div>
+      </div>
+      <span class="status-pill ${statusClass}">${statusLabel}</span>
+    </div>
+    <div class="client-body">
+      <div class="checklist">${checkHtml}</div>
+      <div class="action-row">
+        <a href="${BASE}/.netlify/functions/get-brain?clinic=${slug}" target="_blank" class="act-btn act-view">View Brain →</a>
+        <a href="${portalLink}" target="_blank" class="act-btn act-portal">Open Portal →</a>
+        <button class="act-btn act-welcome" onclick="copyWelcome('${welcomeLink}')">Copy Welcome Link</button>
+        ${c.status !== 'active' ? `<button class="act-btn act-activate" onclick="activate('${slug}','${name}')">Activate →</button>` : ''}
+      </div>
+    </div>
+  </div>`;
+}
+
+function copyWelcome(link) {
+  navigator.clipboard.writeText(link).then(() => alert('Copied: ' + link)).catch(() => prompt('Copy this:', link));
+}
+
+async function activate(slug, name) {
+  if (!confirm(`Activate ${name}?`)) return;
+  try {
+    const res = await fetch('/.netlify/functions/get-brain?clinic=' + slug + '&action=approve');
+    alert(res.ok ? `✓ ${name} marked approved.` : 'Error — check brain manually.');
+    loadClients();
+  } catch(e) { alert('Error: ' + e.message); }
+}
+</script>
+</body>
+</html>

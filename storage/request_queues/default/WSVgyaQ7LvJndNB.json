@@ -1,0 +1,9 @@
+{
+	"id": "WSVgyaQ7LvJndNB",
+	"json": "{\"id\":\"WSVgyaQ7LvJndNB\",\"url\":\"https://www.indiehackers.com/group/founders?page=2\",\"loadedUrl\":\"https://www.indiehackers.com/group/founders?page=2\",\"uniqueKey\":\"https://www.indiehackers.com/group/founders?page=2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:00:51.618Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.indiehackers.com/group/founders?page=2",
+	"url": "https://www.indiehackers.com/group/founders?page=2"
+}

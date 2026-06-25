@@ -1,0 +1,9 @@
+{
+	"id": "dawvKMwSqPiXBTu",
+	"json": "{\"id\":\"dawvKMwSqPiXBTu\",\"url\":\"https://www.indiehackers.com/post/stop-feeding-raw-scraped-data-to-your-llms-you-re-burning-api-credits-7c33ece3f3\",\"loadedUrl\":\"https://www.indiehackers.com/post/stop-feeding-raw-scraped-data-to-your-llms-you-re-burning-api-credits-7c33ece3f3\",\"uniqueKey\":\"https://www.indiehackers.com/post/stop-feeding-raw-scraped-data-to-your-llms-you-re-burning-api-credits-7c33ece3f3\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:01:59.691Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.indiehackers.com/post/stop-feeding-raw-scraped-data-to-your-llms-you-re-burning-api-credits-7c33ece3f3",
+	"url": "https://www.indiehackers.com/post/stop-feeding-raw-scraped-data-to-your-llms-you-re-burning-api-credits-7c33ece3f3"
+}

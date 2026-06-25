@@ -1,0 +1,32 @@
+{
+  "chosenTheme": "Other",
+  "problemStatement": "Problem signal: \"Steam Machine launches today\"",
+  "evidenceCount": 2,
+  "avgScore": 7.15,
+  "chosenAngle": {
+    "name": "Operator Pain Fix",
+    "what": "Micro-tool that removes a repeated manual workflow found in posts.",
+    "pricing": "$9–$49/mo"
+  },
+  "mvp": {
+    "productName": "Operator Mini Tool",
+    "promise": "Remove a repeated manual workflow.",
+    "v1Features": [
+      "Collect info",
+      "Generate output",
+      "Save history",
+      "Email templates"
+    ],
+    "notInV1": [
+      "Everything else"
+    ],
+    "pricing": [
+      "$9–$49/mo"
+    ]
+  },
+  "outreach": {
+    "target": [],
+    "whereToFind": [],
+    "messages": []
+  }
+}

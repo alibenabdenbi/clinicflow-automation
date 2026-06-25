@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClinicFlow — Built for King Street Dental</title>
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Syne',sans-serif;background:#0b0f17;color:#f1f5f9;min-height:100vh}
+.wrap{max-width:640px;margin:0 auto;padding:40px 20px 80px}
+.badge{display:inline-block;background:rgba(57,217,138,.1);color:#39d98a;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px;border:1px solid rgba(57,217,138,.2)}
+h1{font-size:clamp(24px,4vw,36px);font-weight:800;line-height:1.2;margin-bottom:16px}
+h1 span{color:#7c5cff}
+.sub{font-size:15px;color:#94a3b8;line-height:1.7;margin-bottom:32px}
+.clinic-card{background:#111827;border-radius:16px;padding:24px;margin-bottom:24px;border:1px solid rgba(255,255,255,.06)}
+.clinic-name{font-size:20px;font-weight:800;margin-bottom:10px}
+.clinic-meta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;font-size:13px;color:#94a3b8}
+.clinic-meta strong{color:#f1f5f9}
+.meta-item{font-size:13px;color:#94a3b8}
+.pain-signal{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.15);border-radius:10px;padding:14px;margin-bottom:16px;font-size:14px;color:#fca5a5;line-height:1.6}
+.pain-note{display:block;font-size:12px;color:#94a3b8;margin-top:6px}
+.calc{background:#0b0f17;border-radius:12px;padding:20px;border:1px solid rgba(255,255,255,.06)}
+.calc-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:14px}
+.calc-row:last-child{border:none;padding-top:12px;font-weight:700;font-size:16px}
+.lbl{color:#94a3b8}.val{color:#f1f5f9}.total-val{color:#f87171}
+.solution{background:rgba(57,217,138,.06);border:1px solid rgba(57,217,138,.15);border-radius:12px;padding:20px;margin-bottom:24px}
+.solution h3{font-size:16px;font-weight:700;color:#39d98a;margin-bottom:12px}
+.solution p{font-size:14px;color:#94a3b8;line-height:1.7}
+.btn-p{display:block;background:#7c5cff;color:#fff;padding:16px;border-radius:12px;font-size:16px;font-weight:700;text-decoration:none;margin-bottom:10px;text-align:center}
+.btn-s{display:block;background:rgba(255,255,255,.06);color:#f1f5f9;padding:14px;border-radius:12px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.1);margin-bottom:10px;text-align:center}
+.from{margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.06);font-size:14px;color:#64748b;line-height:1.7}
+.from strong{color:#f1f5f9}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">Built specifically for King Street Dental</div>
+  <h1>What ClinicFlow would do<br>for <span>King Street Dental</span></h1>
+  <p class="sub">Based on your clinic's actual data. Takes 2 minutes to read.</p>
+
+  <div class="clinic-card">
+    <div class="clinic-name">King Street Dental</div>
+    <div class="clinic-meta">
+      <span class="meta-item">&#x1F4CD; <strong>Kitchener</strong></span>
+      <span class="meta-item"><strong>4.9</strong> Google rating</span>
+      <span class="meta-item"><strong>882</strong> reviews</span>
+    </div>
+    
+    <div class="calc">
+      <div class="calc-row"><span class="lbl">Estimated daily calls</span><span class="val">~20</span></div>
+      <div class="calc-row"><span class="lbl">Missed call rate</span><span class="val">20%</span></div>
+      <div class="calc-row"><span class="lbl">Patients who don't call back</span><span class="val">70%</span></div>
+      <div class="calc-row"><span class="lbl">Average visit value</span><span class="val">$250</span></div>
+      <div class="calc-row"><span class="lbl">Monthly revenue at risk</span><span class="total-val">~$14,000</span></div>
+    </div>
+  </div>
+
+  <div class="solution">
+    <h3>What changes with ClinicFlow</h3>
+    <p>Every missed call gets a text in 60 seconds. The AI responds as your receptionist and books the appointment — before they call another clinic.</p>
+    <p style="margin-top:10px">Most clinics recover 60% of missed callers. For King Street Dental that's roughly <strong style="color:#39d98a">~$8,400/month</strong> recovered.</p>
+  </div>
+
+  <a href="/intake?clinic=king-street-dental" class="btn-p">Start free 30-day pilot &#x2192;</a>
+  <a href="https://calendly.com/m-aliben432/clinicflow-15-min-intro" class="btn-s" target="_blank">&#x1F4C5; Book 15 min with Mohamed</a>
+  <a href="/live" class="btn-s">See the system running live &#x2192;</a>
+
+  <div class="from">
+    <strong>From Mohamed</strong><br>
+    Built this page specifically for King Street Dental based on your clinic data.<br><br>
+    Questions? 438-544-0442 &middot; contact@clinicflowautomation.com
+  </div>
+</div>
+<script>
+(function(){
+  fetch('/api/track',{method:'POST',headers:{'Content-Type':'application/json'},
+  body:JSON.stringify({page:'/for/king-street-dental',ref:document.referrer,ts:Date.now()}),keepalive:true}).catch(function(){});
+})();
+</script>
+</body>
+</html>

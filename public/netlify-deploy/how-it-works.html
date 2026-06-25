@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>How It Works — ClinicFlow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0b0f17;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.1);--text:#e8eefc;--muted:#a7b0c5;--accent:#7c5cff;--green:#39d98a;--gold:#f6b04d;--radius:14px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Syne',ui-sans-serif,system-ui,sans-serif;min-height:100vh;
+  background-image:radial-gradient(900px 600px at 50% -10%,rgba(124,92,255,.1),transparent 55%);}
+/* Nav */
+.nav{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,.06);}
+.nav-logo{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;}
+.nav-cta{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:700;font-family:inherit;cursor:pointer;text-decoration:none;}
+/* Sections */
+.section{max-width:780px;margin:0 auto;padding:60px 24px;}
+/* Hero */
+.hero{text-align:center;padding:80px 24px 60px;}
+.hero h1{font-size:clamp(32px,5vw,54px);font-weight:800;line-height:1.1;margin-bottom:20px;}
+.hero h1 span{color:var(--green);}
+.hero p{font-size:16px;color:var(--muted);max-width:560px;margin:0 auto;line-height:1.7;}
+/* Flow */
+.flow{max-width:680px;margin:0 auto;padding:20px 24px 60px;}
+.flow-step{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.05);align-items:flex-start;}
+.flow-step:last-child{border:none;}
+.flow-icon{font-size:28px;flex-shrink:0;width:52px;height:52px;background:rgba(255,255,255,.06);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;}
+.flow-body{flex:1;}
+.flow-num{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;}
+.flow-title{font-size:20px;font-weight:700;margin-bottom:6px;}
+.flow-sub{font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:0;}
+/* SMS bubble demo */
+.sms-demo{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:16px;}
+.bubble-them{background:rgba(255,255,255,.08);border-radius:16px 16px 16px 4px;padding:12px 16px;font-size:14px;max-width:280px;line-height:1.5;margin-bottom:10px;}
+.bubble-us{background:rgba(124,92,255,.2);border-radius:16px 16px 4px 16px;padding:12px 16px;font-size:14px;max-width:280px;line-height:1.5;margin-left:auto;margin-bottom:10px;}
+.bubble-label{font-size:10px;color:var(--muted);margin-bottom:4px;}
+.bubble-label-right{font-size:10px;color:var(--muted);margin-bottom:4px;text-align:right;}
+/* Features */
+.features{max-width:780px;margin:0 auto;padding:0 24px 60px;}
+.features-title{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:24px;display:flex;align-items:center;gap:10px;}
+.features-title::after{content:'';flex:1;height:1px;background:var(--line);}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+@media(max-width:640px){.feat-grid{grid-template-columns:1fr;}}
+.feat-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
+.feat-icon{font-size:22px;margin-bottom:10px;}
+.feat-name{font-size:15px;font-weight:700;margin-bottom:6px;}
+.feat-desc{font-size:13px;color:var(--muted);line-height:1.6;}
+/* Setup */
+.setup{max-width:680px;margin:0 auto;padding:0 24px 60px;}
+.setup-items{display:flex;flex-direction:column;gap:12px;margin-top:20px;}
+.setup-item{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;}
+.setup-num{width:28px;height:28px;background:rgba(124,92,255,.15);border:1px solid rgba(124,92,255,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--accent);flex-shrink:0;}
+.setup-text{font-size:14px;color:var(--text);line-height:1.5;}
+.setup-note{font-size:13px;color:var(--muted);margin-top:16px;text-align:center;}
+/* Pricing */
+.pricing{max-width:480px;margin:0 auto;padding:0 24px 80px;text-align:center;}
+.price-card{background:rgba(124,92,255,.08);border:1px solid rgba(124,92,255,.25);border-radius:20px;padding:36px;}
+.price-name{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;}
+.price-amount{font-size:54px;font-weight:800;line-height:1;margin-bottom:4px;}
+.price-sub{font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.6;}
+.price-split{font-size:14px;color:var(--green);margin-bottom:4px;font-weight:600;}
+.price-note{font-size:12px;color:var(--muted);}
+.price-tag{display:inline-block;background:rgba(57,217,138,.1);border:1px solid rgba(57,217,138,.25);color:var(--green);border-radius:20px;padding:4px 14px;font-size:12px;font-weight:700;margin-bottom:20px;}
+/* CTA */
+.cta-section{text-align:center;padding:0 24px 80px;max-width:580px;margin:0 auto;}
+.cta-section h2{font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:12px;line-height:1.2;}
+.cta-section p{font-size:15px;color:var(--muted);margin-bottom:28px;}
+.cta-btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;border-radius:12px;padding:16px 36px;font-size:16px;font-weight:700;transition:opacity .2s;}
+.cta-btn:hover{opacity:.9;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-logo">ClinicFlow</div>
+  <a href="/intake" class="nav-cta">Get Started →</a>
+</div>
+
+<div class="hero">
+  <h1>When a patient calls and no one picks up —<br>they don't hang up and call someone else.<br>They get a text <span>within 60 seconds.</span></h1>
+  <p>Simple. Automatic. Your clinic never misses a patient again.</p>
+</div>
+
+<div class="flow">
+
+  <div class="flow-step">
+    <div class="flow-icon">📞</div>
+    <div class="flow-body">
+      <div class="flow-num">1</div>
+      <div class="flow-title">Patient calls your clinic</div>
+      <div class="flow-sub">During lunch, after hours, when you're with another patient, or when the front desk is tied up. This happens at every clinic.</div>
+    </div>
+  </div>
+
+  <div class="flow-step">
+    <div class="flow-icon">📵</div>
+    <div class="flow-body">
+      <div class="flow-num">2</div>
+      <div class="flow-title">No one answers</div>
+      <div class="flow-sub">Without ClinicFlow, this usually means a lost patient. They hang up and call the next clinic on Google. Most don't leave voicemail.</div>
+    </div>
+  </div>
+
+  <div class="flow-step">
+    <div class="flow-icon">💬</div>
+    <div class="flow-body">
+      <div class="flow-num">3</div>
+      <div class="flow-title">Automatic text sent in 60 seconds</div>
+      <div class="flow-sub">The patient receives a text immediately — before they call anyone else.</div>
+      <div class="sms-demo">
+        <div class="bubble-label">ClinicFlow → Patient</div>
+        <div class="bubble-us">Hi, you called Greenwoods Dental. We missed your call — reply here to book or ask a question.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flow-step">
+    <div class="flow-icon">🤝</div>
+    <div class="flow-body">
+      <div class="flow-num">4</div>
+      <div class="flow-title">Patient replies — system responds naturally</div>
+      <div class="flow-sub">Our system reads your clinic's full profile — hours, services, team, tone — and responds naturally. Patients think they're texting your receptionist.</div>
+      <div class="sms-demo">
+        <div class="bubble-label-right">Patient</div>
+        <div class="bubble-them">I need a cleaning, do you have Saturday?</div>
+        <div class="bubble-label">Greenwoods Dental (via ClinicFlow)</div>
+        <div class="bubble-us">Hi! Yes, we have Saturday mornings available. Would 10am or 11am work better?</div>
+        <div class="bubble-label-right">Patient</div>
+        <div class="bubble-them">10am works</div>
+        <div class="bubble-label">Greenwoods Dental</div>
+        <div class="bubble-us">Perfect — booked for Saturday at 10am. You'll get a reminder the day before. See you then! 🦷</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flow-step">
+    <div class="flow-icon">📅</div>
+    <div class="flow-body">
+      <div class="flow-num">5</div>
+      <div class="flow-title">Appointment appears in your calendar</div>
+      <div class="flow-sub">You see the booking. The patient gets a reminder 24h before. You never missed that call — you just weren't there to answer it.</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="features">
+  <div class="features-title">What else it does</div>
+  <div class="feat-grid">
+    <div class="feat-card">
+      <div class="feat-icon">🔔</div>
+      <div class="feat-name">Appointment reminders</div>
+      <div class="feat-desc">72h and 24h before every visit. Patients confirm by text. No-shows drop significantly.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔄</div>
+      <div class="feat-name">Inactive patient reactivation</div>
+      <div class="feat-desc">Patients you haven't seen in 6+ months get a personal check-in. Many book same day.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">📊</div>
+      <div class="feat-name">Weekly digest</div>
+      <div class="feat-desc">Every Monday: recovered calls, bookings, conversations — in plain language.</div>
+    </div>
+  </div>
+</div>
+
+<div class="setup">
+  <div class="features-title">How it's set up</div>
+  <p style="font-size:15px;color:var(--muted);margin-bottom:20px;">We handle everything. You provide three things:</p>
+  <div class="setup-items">
+    <div class="setup-item"><div class="setup-num">1</div><div class="setup-text">Your clinic information — a 10-minute setup form covering hours, services, team, and tone.</div></div>
+    <div class="setup-item"><div class="setup-num">2</div><div class="setup-text">Your patient list — a simple CSV export from your practice management software.</div></div>
+    <div class="setup-item"><div class="setup-num">3</div><div class="setup-text">One phone setting — a 2-minute call forwarding change. We walk you through it.</div></div>
+  </div>
+  <div class="setup-note">Setup takes 5 days. After that it runs itself.</div>
+</div>
+
+<div class="pricing">
+  <div class="price-card">
+    <div class="price-name">Growth Package</div>
+    <div class="price-amount">$997</div>
+    <div class="price-sub">One-time setup. No monthly fees. Ever.</div>
+    <div class="price-tag">No subscription</div>
+    <div class="price-split">$500 now — $497 after you see results</div>
+    <div class="price-note">You pay the second half only after the system is live and working.</div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <h2>Ready to stop losing patients to voicemail?</h2>
+  <p>Takes 10 minutes to get started. Setup complete in 5 days.</p>
+  <a href="/intake" class="cta-btn">Get Started →</a>
+</div>
+
+
+<script>
+(function(){
+  fetch('/api/track',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      page:window.location.pathname,
+      ref:document.referrer,
+      utm_source:new URLSearchParams(window.location.search).get('utm_source'),
+      utm_campaign:new URLSearchParams(window.location.search).get('utm_campaign'),
+      ts:Date.now()
+    }),
+    keepalive:true
+  }).catch(()=>{});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "sendDate": "2026-05-29",
+  "associations": [
+    {
+      "name": "Canadian Dental Hygienists Association",
+      "email": "info@cdha.ca",
+      "members": 28000
+    },
+    {
+      "name": "Alberta Dental Association",
+      "email": "info@adaa.ca",
+      "members": 4200
+    },
+    {
+      "name": "British Columbia Dental Association",
+      "email": "info@bcdental.org",
+      "members": 3800
+    }
+  ]
+}

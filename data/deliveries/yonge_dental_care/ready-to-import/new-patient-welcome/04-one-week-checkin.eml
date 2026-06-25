@@ -1,0 +1,106 @@
+MIME-Version: 1.0
+Date: Fri, 10 Apr 2026 03:16:37 GMT
+From: "Yonge Dental Care" <contact@yongedentalcare.com>
+To: [PatientFirstName] <patient@example.com>
+Subject: How was everything, [PatientFirstName]?
+X-CF-Sequence: New Patient Welcome
+X-CF-Email-Number: 4
+X-CF-Send-Timing: 7 days after trigger
+Content-Type: multipart/alternative; boundary="_cfbound_mnsc3yp4_uqxb54"
+
+--_cfbound_mnsc3yp4_uqxb54
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Hi [PatientFirstName],
+
+We hope everything felt good after your appointment last week.
+
+Two small things:
+
+**1. If you have 60 seconds:** It would mean a lot if you shared your experience on Google. It helps other people in Toronto find a dentist they can trust, and it genuinely helps our practice.
+→ [ReviewLink]
+
+**2. Your next visit:** Most patients come back every 6 months for a cleaning. We can pre-book your spot now so you don't have to think about it later — call [ClinicPhone] or book at [BookingLink].
+
+Thanks again for choosing Yonge Dental Care.
+
+The Yonge Dental Care Team
+
+--_cfbound_mnsc3yp4_uqxb54
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>How was everything, [PatientFirstName]?</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f2f2;">
+
+<table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+  style="background-color:#f2f2f2;padding:28px 0;">
+<tr><td align="center">
+
+<table role="presentation" cellpadding="0" cellspacing="0" width="600"
+  style="max-width:600px;width:100%;background:#ffffff;border-radius:4px;overflow:hidden;">
+
+  <!-- Header bar -->
+  <tr>
+    <td style="background-color:#2c3e50;padding:18px 32px;">
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;
+         color:#ffffff;letter-spacing:0.4px;">Yonge Dental Care</p>
+    </td>
+  </tr>
+
+  <!-- Body -->
+  <tr>
+    <td style="padding:32px 32px 20px 32px;font-family:Arial,Helvetica,sans-serif;
+       font-size:15px;line-height:1.65;color:#333333;">
+      <p style="margin:0 0 14px 0;">Hi <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[PatientFirstName]</span>,</p>
+      <p style="margin:0 0 14px 0;">We hope everything felt good after your appointment last week.</p>
+      <p style="margin:0 0 14px 0;">Two small things:</p>
+      <p style="margin:0 0 14px 0;"><strong>1. If you have 60 seconds:</strong> It would mean a lot if you shared your experience on Google. It helps other people in Toronto find a dentist they can trust, and it genuinely helps our practice.</p>
+      <p style="margin:0 0 14px 0;">→ <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[ReviewLink]</span></p>
+      <p style="margin:0 0 14px 0;"><strong>2. Your next visit:</strong> Most patients come back every 6 months for a cleaning. We can pre-book your spot now so you don't have to think about it later — call <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[ClinicPhone]</span> or book at <span style="background:#fff3cd;color:#b7570a;font-weight:bold;padding:1px 4px;border-radius:2px;font-size:13px;">[BookingLink]</span>.</p>
+      <p style="margin:0 0 14px 0;">Thanks again for choosing Yonge Dental Care.</p>
+      <p style="margin:0 0 14px 0;">The Yonge Dental Care Team</p>
+    </td>
+  </tr>
+
+  <!-- Footer -->
+  <tr>
+    <td style="background-color:#f9f9f9;padding:16px 32px;border-top:1px solid #e8e8e8;">
+      <p style="margin:0 0 4px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#aaaaaa;">
+        Yonge Dental Care&nbsp;&middot;&nbsp;Toronto
+      </p>
+      <p style="margin:0 0 4px 0;font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#cccccc;">
+        <em>To stop receiving messages, reply with &ldquo;unsubscribe&rdquo;.</em>
+      </p>
+      <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#dddddd;">
+        This automation complies with PIPEDA (Canadian privacy law). Patient data is never stored or shared.
+      </p>
+    </td>
+  </tr>
+
+</table>
+
+<!-- Developer reference -->
+<!--
+  Sequence : New Patient Welcome
+  Email    : 4 of sequence
+  Subject  : How was everything, [PatientFirstName]?
+  Timing   : 7 days after trigger
+  Generated: ClinicFlow delivery engine
+-->
+
+</td></tr>
+</table>
+
+</body>
+</html>
+
+--_cfbound_mnsc3yp4_uqxb54--

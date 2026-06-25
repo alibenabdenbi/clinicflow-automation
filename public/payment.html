@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Pay — ClinicFlow Automation</title>
+  <meta name="description" content="Simple payment instructions for ClinicFlow Automation. Interac, Wave invoice, or Stripe — no monthly fees." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-light: #eff6ff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --green: #059669;
+      --green-light: #d1fae5;
+      --radius: 10px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7fafd;
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .nav-logo { font-weight: 900; font-size: 18px; color: var(--blue); text-decoration: none; }
+    .nav-back  { font-size: 14px; color: var(--muted); text-decoration: none; }
+    .nav-back:hover { color: var(--blue); }
+
+    .page-wrap {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .page-tag {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+    }
+    h1 { font-size: 28px; font-weight: 900; margin-bottom: 10px; }
+    .page-sub { font-size: 16px; color: var(--muted); max-width: 480px; margin: 0 auto; }
+
+    /* ── Tier selector ── */
+    .tier-selector {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .tier-btn {
+      flex: 1;
+      min-width: 130px;
+      padding: 12px 10px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: #fff;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      transition: all .15s;
+      color: var(--text);
+    }
+    .tier-btn .price { display: block; font-size: 18px; font-weight: 900; margin-top: 4px; }
+    .tier-btn:hover { border-color: var(--blue); }
+    .tier-btn.active { border-color: var(--blue); background: var(--blue-light); color: var(--blue); }
+
+    /* ── Payment methods ── */
+    .methods { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+
+    .method-card {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+    }
+    .method-card.recommended { border-color: var(--green); }
+
+    .method-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .method-icon { font-size: 22px; }
+    .method-title { font-size: 16px; font-weight: 800; }
+    .method-badge {
+      margin-left: auto;
+      background: var(--green-light);
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+
+    .method-steps { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .method-steps li {
+      font-size: 14px;
+      color: var(--text);
+      padding-left: 20px;
+      position: relative;
+    }
+    .method-steps li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--blue);
+      font-weight: 700;
+    }
+    .method-note {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .copy-field {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--blue-light);
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 10px 0;
+      font-family: monospace;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--blue-dark);
+    }
+    .copy-btn {
+      margin-left: auto;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .copy-btn:hover { background: var(--blue-dark); }
+
+    .cta-email {
+      display: block;
+      background: var(--blue);
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      border-radius: var(--radius);
+      font-weight: 800;
+      font-size: 16px;
+      text-decoration: none;
+      margin-bottom: 14px;
+      transition: background .15s;
+    }
+    .cta-email:hover { background: var(--blue-dark); }
+
+    .guarantee-box {
+      background: var(--green-light);
+      border: 1.5px solid #a7f3d0;
+      border-radius: 12px;
+      padding: 18px 20px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-top: 32px;
+    }
+    .guarantee-box .icon { font-size: 22px; flex-shrink: 0; }
+    .guarantee-box strong { display: block; font-size: 15px; margin-bottom: 4px; color: #065f46; }
+    .guarantee-box p { font-size: 14px; color: #047857; }
+
+    .tier-summary {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 28px;
+    }
+    .tier-summary h3 { font-size: 15px; font-weight: 800; margin-bottom: 10px; }
+    .tier-summary ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .tier-summary li { font-size: 13px; color: var(--muted); display: flex; align-items: flex-start; gap: 6px; }
+    .tier-summary li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+    @media (max-width: 480px) {
+      .tier-btn { min-width: 100px; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">ClinicFlow</a>
+  <a class="nav-back" href="/">← Back to site</a>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="page-header">
+    <div class="page-tag">Secure · Canadian · No subscription</div>
+    <h1>How to pay</h1>
+    <p class="page-sub">Choose your tier and payment method below. No payment until you're ready.</p>
+  </div>
+
+  <!-- Tier selector -->
+  <div class="tier-selector">
+    <button class="tier-btn" id="btn-starter" onclick="selectTier('starter')">
+      Starter
+      <span class="price">$397</span>
+      <span style="font-size:11px;font-weight:500;color:var(--muted);display:block;margin-top:2px;">$200 + $197</span>
+    </button>
+    <button class="tier-btn active" id="btn-growth" onclick="selectTier('growth')">
+      Growth
+      <span class="price">$997</span>
+      <span style="font-size:11px;font-weight:500;color:var(--muted);display:block;margin-top:2px;">$500 + $497</span>
+    </button>
+    <button class="tier-btn" id="btn-full" onclick="selectTier('full')">
+      Full
+      <span class="price">$2,497</span>
+      <span style="font-size:11px;font-weight:500;color:var(--muted);display:block;margin-top:2px;">$1,250 + $1,247</span>
+    </button>
+  </div>
+
+  <!-- Tier summary -->
+  <div class="tier-summary" id="tier-summary">
+    <!-- filled by JS -->
+  </div>
+
+  <!-- Payment methods -->
+  <div class="methods">
+
+    <!-- Method 1: Interac -->
+    <div class="method-card recommended">
+      <div class="method-header">
+        <div class="method-icon">🏦</div>
+        <div class="method-title">Interac e-Transfer</div>
+        <div class="method-badge">Recommended</div>
+      </div>
+
+      <div style="background:#f0fdf4;border:1px solid #a7f3d0;border-radius:8px;padding:14px 16px;margin-bottom:16px;">
+        <div style="font-size:13px;font-weight:800;color:#065f46;margin-bottom:10px;text-transform:uppercase;letter-spacing:.4px;">How split payment works</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;">
+            <span style="background:#059669;color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0;font-size:11px;">1</span>
+            <span>Send the <strong>first half</strong> via Interac — <strong id="first-half-amount">$500</strong></span>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;">
+            <span style="background:#059669;color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0;font-size:11px;">2</span>
+            <span>I build everything within <strong>48 hours</strong></span>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;">
+            <span style="background:#059669;color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0;font-size:11px;">3</span>
+            <span>You confirm everything is running correctly</span>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;">
+            <span style="background:#059669;color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0;font-size:11px;">4</span>
+            <span>Send the <strong>second half</strong> — <strong id="second-half-amount">$497</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <ul class="method-steps">
+        <li>Open your online banking app or website</li>
+        <li>Send the first half via Interac e-Transfer to:</li>
+      </ul>
+      <div class="copy-field">
+        m.aliben432@gmail.com
+        <button class="copy-btn" onclick="copyText('m.aliben432@gmail.com', this)">Copy</button>
+      </div>
+      <ul class="method-steps">
+        <li>In the <strong>message field</strong>, include: <em id="interac-ref">Your Clinic — Growth (first half)</em></li>
+      </ul>
+      <div class="method-note">No fees. Instant confirmation. Auto-deposit enabled — no security question needed. You only pay the second half after you've confirmed it's working.</div>
+    </div>
+
+    <!-- Method 2: Invoice -->
+    <div class="method-card">
+      <div class="method-header">
+        <div class="method-icon">📄</div>
+        <div class="method-title">Wave Invoice (credit card or bank transfer)</div>
+      </div>
+      <ul class="method-steps">
+        <li>Reply to your outreach email and ask for a Wave invoice</li>
+        <li>I'll send you a formal invoice within the hour</li>
+        <li>Pay by credit card or bank transfer — no account needed</li>
+      </ul>
+      <div class="method-note">2.9% + $0.30 for credit card · 1% (max $10) for bank transfer. Funds arrive in 1–2 business days.</div>
+    </div>
+
+    <!-- Method 3: Stripe -->
+    <div class="method-card">
+      <div class="method-header">
+        <div class="method-icon">💳</div>
+        <div class="method-title">Stripe (direct card link)</div>
+      </div>
+      <ul class="method-steps">
+        <li>Reply to your outreach email with "Stripe" and I'll send the direct card link</li>
+        <li>Pay in under a minute — works on any device</li>
+      </ul>
+      <div class="method-note">2.9% + $0.30 processing fee. Instant confirmation by email.</div>
+    </div>
+
+  </div>
+
+  <!-- Email CTA -->
+  <a class="cta-email" id="email-cta"
+     href="mailto:contact@clinicflowautomation.com?subject=ClinicFlow%20Growth%20%E2%80%94%20Payment">
+    Email us to confirm your order →
+  </a>
+
+  <!-- Calculator nudge -->
+  <p style="text-align:center;font-size:13px;color:#64748b;margin-bottom:20px;">Not sure of your numbers? <a href="/calculator.html" style="color:#1a6bbd;font-weight:600;">Calculate your missed call revenue loss →</a></p>
+
+  <!-- Guarantee -->
+  <div class="guarantee-box">
+    <div class="icon">🛡️</div>
+    <div>
+      <strong>30-day guarantee</strong>
+      <p>If anything isn't running correctly within 30 days of setup, I fix it at no charge. If you're still not satisfied — full refund, no questions asked.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const TIERS = {
+    starter: {
+      name: "Starter",
+      price: 397,
+      firstHalf: 200,
+      secondHalf: 197,
+      subject: "ClinicFlow%20Starter%20%E2%80%94%20First%20Half%20Payment",
+      features: [
+        "Missed call recovery sequence (3 emails, fires within 2 min)",
+        "Appointment reminders — 72h + 24h email and SMS",
+        "Monthly newsletter template",
+        "Patient tracking spreadsheet + Google Sheets guide",
+        "Setup guide + 30-day support",
+      ],
+    },
+    growth: {
+      name: "Growth",
+      price: 997,
+      firstHalf: 500,
+      secondHalf: 497,
+      subject: "ClinicFlow%20Growth%20%E2%80%94%20First%20Half%20Payment",
+      features: [
+        "Everything in Starter",
+        "New patient welcome sequence (4 emails)",
+        "Patient reactivation campaign (5 emails)",
+        "Automated Google review request sequence",
+        "Results projection calculator",
+      ],
+    },
+    full: {
+      name: "Full",
+      price: 2497,
+      firstHalf: 1250,
+      secondHalf: 1247,
+      subject: "ClinicFlow%20Full%20%E2%80%94%20First%20Half%20Payment",
+      features: [
+        "Everything in Growth",
+        "Custom branded email templates",
+        "90-day patient journey map",
+        "Staff training guide",
+        "Done-for-you Mailchimp setup included",
+        "Priority support — same-day response",
+      ],
+    },
+  };
+
+  let currentTier = "growth";
+
+  function selectTier(tier) {
+    currentTier = tier;
+    document.querySelectorAll(".tier-btn").forEach(b => b.classList.remove("active"));
+    document.getElementById(`btn-${tier}`).classList.add("active");
+
+    const t = TIERS[tier];
+
+    // Update split payment amounts
+    document.getElementById("first-half-amount").textContent = `$${t.firstHalf.toLocaleString()}`;
+    document.getElementById("second-half-amount").textContent = `$${t.secondHalf.toLocaleString()}`;
+
+    // Update Interac ref
+    document.getElementById("interac-ref").textContent = `Your Clinic — ${t.name} (first half)`;
+
+    // Update email CTA
+    document.getElementById("email-cta").href =
+      `mailto:contact@clinicflowautomation.com?subject=${t.subject}`;
+
+    // Update tier summary
+    const featuresHTML = t.features.map(f => `<li>${f}</li>`).join("");
+    document.getElementById("tier-summary").innerHTML = `
+      <h3>${t.name} — $${t.price.toLocaleString()} CAD total ($${t.firstHalf} now · $${t.secondHalf} after delivery)</h3>
+      <ul>${featuresHTML}</ul>
+    `;
+  }
+
+  function copyText(text, btn) {
+    navigator.clipboard.writeText(text).then(() => {
+      const orig = btn.textContent;
+      btn.textContent = "Copied!";
+      setTimeout(() => { btn.textContent = orig; }, 1500);
+    });
+  }
+
+  // Initialize
+  selectTier("growth");
+</script>
+</body>
+</html>

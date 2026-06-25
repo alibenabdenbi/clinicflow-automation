@@ -1,0 +1,11 @@
+{
+  "priority": "WARM",
+  "emoji": "📱",
+  "action": "SMS Clinique PhysioMotionPlus",
+  "why": "Day 33 in sequence — SMS gets highest response rate at this stage",
+  "script": "\"Hi — Mohamed from ClinicFlow. Sent you a couple of emails about auto missed-call text-back for Clinique PhysioMotionPlus. Want to see what your patients would experience? Text anything to +1 (575) 573-5822 — 60 seconds. Or book a call: https://calendly.com/m-aliben432/clinicflow-15-min-intro\"",
+  "phone": "+14506672485",
+  "email": "contact@physiomotionplus.com",
+  "clinicName": "Clinique PhysioMotionPlus",
+  "generatedAt": "2026-06-23T11:15:02.927Z"
+}

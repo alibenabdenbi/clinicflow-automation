@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Setup Guide — Yonge Dental Care</title>
+<style>
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{margin:0;padding:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;color:#2d3748;background:#ffffff;line-height:1.6}
+    h1,h2,h3,h4{margin:0;font-weight:700;line-height:1.25}
+    p{margin:0 0 1em}
+    a{color:#0d7377}
+    @media print{
+      .no-print{display:none!important}
+      body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    }
+    @media(max-width:640px){
+      .container{padding-left:16px!important;padding-right:16px!important}
+    }
+  
+
+    body{background:#f7f9fc}
+    .container{max-width:720px;margin:0 auto;padding:40px 32px}
+    .progress-wrap{background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:24px 28px;margin-bottom:24px}
+    .progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+    .progress-label{font-size:12px;color:#718096;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+    .progress-count{font-size:12px;color:#a0aec0}
+    .dots{display:flex;gap:6px;flex-wrap:wrap}
+    .dot{width:32px;height:32px;border-radius:50%;background:#f7f9fc;border:2px solid #e2e8f0;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#718096;cursor:pointer;transition:all 0.2s;flex-shrink:0}
+    .dot.active{background:#1e3a5f;border-color:#1e3a5f;color:#fff}
+    .dot.done{background:#38a169;border-color:#38a169;color:#fff}
+    .dot.done::after{content:'✓';font-size:14px}
+    .dot.done span{display:none}
+    .panel{background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:32px;animation:fadeIn 0.2s}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    .step-meta{display:flex;gap:8px;margin-bottom:12px}
+    .meta-badge{font-size:11px;letter-spacing:1px;text-transform:uppercase;background:#e8f2fa;color:#1e3a5f;padding:4px 10px;border-radius:100px;font-weight:600}
+    .step-title{font-size:22px;color:#1e3a5f;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #e2e8f0}
+    .screenshot-note{background:#f7f9fc;border-left:3px solid #0d7377;padding:12px 16px;margin-bottom:24px;border-radius:0 4px 4px 0}
+    .ss-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#0d7377;font-weight:700;margin-bottom:4px}
+    .ss-text{font-size:13px;color:#2d3748;line-height:1.5}
+    .step-list{margin:0 0 20px;padding-left:20px;display:grid;gap:10px}
+    .step-list li{font-size:14px;line-height:1.6;color:#2d3748;padding-left:4px}
+    .step-list li a{color:#0d7377;font-weight:600}
+    .tip-box{background:#fff8e6;border-left:3px solid #f6ad55;padding:12px 16px;margin-bottom:28px;border-radius:0 4px 4px 0;font-size:13px;color:#2d3748}
+    .tip-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#b7570a;font-weight:700;margin-bottom:4px}
+    .nav-btns{display:flex;justify-content:space-between;align-items:center}
+    .btn-complete{background:#1e3a5f;color:#fff;border:none;padding:12px 28px;border-radius:4px;font-size:14px;font-weight:700;cursor:pointer}
+    .btn-complete:hover{background:#132847}
+    .btn-back{background:none;border:1px solid #e2e8f0;color:#718096;padding:12px 20px;border-radius:4px;font-size:14px;cursor:pointer}
+    #done-screen{display:none;text-align:center;background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:60px 32px}
+    .done-check{width:72px;height:72px;background:#38a169;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;color:#fff;margin:0 auto 24px}
+    .consultant-card{display:flex;align-items:center;gap:16px;background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:18px 22px;margin-bottom:20px}
+    .consultant-avatar{width:44px;height:44px;border-radius:50%;background:#1e3a5f;color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;flex-shrink:0}
+    .consultant-name{font-size:14px;font-weight:700;color:#2d3748;margin-bottom:2px}
+    .consultant-detail{font-size:12px;color:#718096;margin-bottom:4px}
+    .consultant-email{font-size:12px;color:#0d7377;font-weight:600;text-decoration:none}
+    .pct-bar-wrap{margin-top:14px;background:#f7f9fc;border-radius:100px;height:6px;overflow:hidden}
+    .pct-bar{height:6px;background:#38a169;border-radius:100px;transition:width 0.3s;width:0%}
+    .stuck-wrap{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding:10px 14px;background:#f7f9fc;border-radius:6px;border:1px solid #e2e8f0}
+    .stuck-label{font-size:12px;color:#718096;flex:1}
+    .stuck-btn{font-size:12px;font-weight:700;color:#1e3a5f;background:#ffffff;border:1px solid #e2e8f0;padding:6px 14px;border-radius:4px;text-decoration:none;white-space:nowrap}
+    .stuck-btn:hover{background:#e8f2fa}
+    .checkin-timeline{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left;margin-bottom:28px}
+    .checkin-card{background:#f7f9fc;border-radius:6px;padding:16px 18px;border:1px solid #e2e8f0}
+    .checkin-day{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#0d7377;font-weight:700;margin-bottom:6px}
+    .checkin-text{font-size:13px;color:#2d3748;line-height:1.5}
+  
+</style>
+</head>
+<body>
+<header style="background:#1e3a5f;padding:14px 0;position:sticky;top:0;z-index:100" class="no-print">
+  <div class="container" style="max-width:960px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between">
+    <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5);font-weight:600">CLINICFLOW</span>
+    <span style="font-size:13px;color:rgba(255,255,255,0.75)">Yonge Dental Care</span>
+  </div>
+</header>
+<div class="container">
+
+  <div style="margin-bottom:20px">
+    <h1 style="font-size:26px;color:#1e3a5f;margin-bottom:6px">Setup Guide</h1>
+    <p style="color:#718096;margin:0">Follow these steps to go live. Progress is saved automatically.</p>
+  </div>
+
+  <div class="consultant-card">
+    <div class="consultant-avatar">M</div>
+    <div>
+      <div class="consultant-name">Mohamed — ClinicFlow Automation</div>
+      <div class="consultant-detail">Your dedicated consultant &middot; Responds within 4 hours on weekdays</div>
+      <a href="mailto:contact@clinicflowautomation.com" class="consultant-email">contact@clinicflowautomation.com</a>
+    </div>
+  </div>
+
+  <div class="progress-wrap">
+    <div class="progress-header">
+      <span class="progress-label">Your Progress</span>
+      <span class="progress-count" id="prog-label">0 of 8 complete</span>
+    </div>
+    <div class="dots"><div class="dot" id="dot-1" data-n="1">1</div><div class="dot" id="dot-2" data-n="2">2</div><div class="dot" id="dot-3" data-n="3">3</div><div class="dot" id="dot-4" data-n="4">4</div><div class="dot" id="dot-5" data-n="5">5</div><div class="dot" id="dot-6" data-n="6">6</div><div class="dot" id="dot-7" data-n="7">7</div><div class="dot" id="dot-8" data-n="8">8</div></div>
+    <div class="pct-bar-wrap"><div class="pct-bar" id="pct-bar"></div></div>
+  </div>
+
+  
+<div id="panel-1" class="panel" style="display:none">
+  <div class="step-meta">
+    <span class="meta-badge">5 min</span>
+    <span class="meta-badge">Office Manager</span>
+  </div>
+  <h2 class="step-title">Create Your Mailchimp Account</h2>
+  <div class="screenshot-note">
+    <div class="ss-label">WHERE TO CLICK</div>
+    <div class="ss-text">mailchimp.com homepage → large blue 'Sign Up Free' button, top right</div>
+  </div>
+  <ol class="step-list">
+    <li>Go to <strong>mailchimp.com</strong> and click <em>Sign Up Free</em></li><li>Use your clinic email as the account email</li><li>Enter <strong>Yonge Dental Care</strong> as your organization name</li><li>Select the <strong>Free plan</strong> — supports 500 contacts and 1,000 emails/month</li><li>Check your inbox and click the verification link</li>
+  </ol>
+  <div class="tip-box">
+    <div class="tip-label">TIP</div>
+    <div>No credit card required. The free plan is enough to start all your automations.</div>
+  </div>
+  <div class="stuck-wrap">
+    <span class="stuck-label">Stuck on this step?</span>
+    <a href="mailto:contact@clinicflowautomation.com?subject=Setup%20question%3A%20Step%201%20%E2%80%94%20Create%20Your%20Mailchimp%20Account&body=Hi%20Mohamed%2C%0A%0AI'm%20on%20Step%201%20of%20the%20setup%20guide%20(Create%20Your%20Mailchimp%20Account)%20and%20I'm%20stuck%3A%0A%0A%5Bdescribe%20what's%20happening%5D%0A%0AClinic%3A%20Yonge%20Dental%20Care%0A" class="stuck-btn">Email Mohamed</a>
+  </div>
+  <div class="nav-btns">
+    <span></span>
+    <button class="btn-complete" onclick="complete(1)">Mark as Complete &#8594;</button>
+  </div>
+</div>
+<div id="panel-2" class="panel" style="display:none">
+  <div class="step-meta">
+    <span class="meta-badge">10 min</span>
+    <span class="meta-badge">Office Manager</span>
+  </div>
+  <h2 class="step-title">Import Your Patient List</h2>
+  <div class="screenshot-note">
+    <div class="ss-label">WHERE TO CLICK</div>
+    <div class="ss-text">Mailchimp → Audience (left sidebar) → Add contacts → Import contacts → Upload a CSV</div>
+  </div>
+  <ol class="step-list">
+    <li>Export your patient list from your practice management software (ask your vendor if unsure how)</li><li>Your export should include: <strong>First Name, Last Name, Email, Last Visit Date</strong></li><li>In Mailchimp: click <strong>Audience</strong> &rarr; <strong>Add contacts</strong> &rarr; <strong>Import contacts</strong></li><li>Upload your CSV file and map the columns when prompted</li><li>Click <strong>Import</strong> — Mailchimp will confirm how many contacts were added</li>
+  </ol>
+  <div class="tip-box">
+    <div class="tip-label">TIP</div>
+    <div>Re-import monthly to keep your list current. Mailchimp handles duplicates automatically.</div>
+  </div>
+  <div class="stuck-wrap">
+    <span class="stuck-label">Stuck on this step?</span>
+    <a href="mailto:contact@clinicflowautomation.com?subject=Setup%20question%3A%20Step%202%20%E2%80%94%20Import%20Your%20Patient%20List&body=Hi%20Mohamed%2C%0A%0AI'm%20on%20Step%202%20of%20the%20setup%20guide%20(Import%20Your%20Patient%20List)%20and%20I'm%20stuck%3A%0A%0A%5Bdescribe%20what's%20happening%5D%0A%0AClinic%3A%20Yonge%20Dental%20Care%0A" class="stuck-btn">Email Mohamed</a>
+  </div>
+  <div class="nav-btns">
+    <button class="btn-back" onclick="goTo(1)">&#8592; Back</button>
+    <button class="btn-complete" onclick="complete(2)">Mark as Complete &#8594;</button>
+  </div>
+</div>
+<div id="panel-3" class="panel" style="display:none">
+  <div class="step-meta">
+    <span class="meta-badge">30 min</span>
+    <span class="meta-badge">Office Manager</span>
+  </div>
+  <h2 class="step-title">Set Up Missed Call Recovery</h2>
+  <div class="screenshot-note">
+    <div class="ss-label">WHERE TO CLICK</div>
+    <div class="ss-text">Mailchimp → Automations → Create → Classic Automations → Welcome new subscribers</div>
+  </div>
+  <ol class="step-list">
+    <li>In Mailchimp: <strong>Automations &rarr; Create &rarr; Classic Automations</strong></li><li>Rename it: <strong>Missed Call Recovery &mdash; Yonge Dental Care</strong></li><li>Click <em>Edit trigger</em> &rarr; change to <strong>API / Zapier</strong></li><li>Add <strong>Email 1</strong>: delay = Immediately &rarr; paste from <a href='missed-call-followup.html'>missed-call-followup.html</a>, Email 1</li><li>Add <strong>Email 2</strong>: delay = 2 hours &rarr; paste Email 2 content</li><li>Add <strong>Email 3</strong>: delay = 1 day &rarr; paste Email 3 content</li><li>Click <strong>Next &rarr; Start Sending</strong></li>
+  </ol>
+  <div class="tip-box">
+    <div class="tip-label">TIP</div>
+    <div>Open missed-call-followup.html in a second tab — each email has a Copy button.</div>
+  </div>
+  <div class="stuck-wrap">
+    <span class="stuck-label">Stuck on this step?</span>
+    <a href="mailto:contact@clinicflowautomation.com?subject=Setup%20question%3A%20Step%203%20%E2%80%94%20Set%20Up%20Missed%20Call%20Recovery&body=Hi%20Mohamed%2C%0A%0AI'm%20on%20Step%203%20of%20the%20setup%20guide%20(Set%20Up%20Missed%20Call%20Recovery)%20and%20I'm%20stuck%3A%0A%0A%5Bdescribe%20what's%20happening%5D%0A%0AClinic%3A%20Yonge%20Dental%20Care%0A" class="stuck-btn">Email Mohamed</a>
+  </div>
+  <div class="nav-btns">
+    <button class="btn-back" onclick="goTo(2)">&#8592; Back</button>
+    <button class="btn-complete" onclick="complete(3)">Mark as Complete &#8594;</button>
+  </div>
+</div>
+<div id="panel-4" class="panel" style="display:none">
+  <div class="step-meta">
+    <span class="meta-badge">20 min</span>
+    <span class="meta-badge">Office Manager</span>
+  </div>
+  <h2 class="step-title">Set Up Appointment Reminders</h2>
+  <div class="screenshot-note">
+    <div class="ss-label">WHERE TO CLICK</div>
+    <div class="ss-text">Mailchimp → Automations → Create → Classic Automation → Date-based</div>
+  </div>
+  <ol class="step-list">
+    <li>In Mailchimp: <strong>Automations &rarr; Create &rarr; Classic Automation &rarr; Date-based</strong></li><li>Name it: <strong>Appointment Reminders</strong></li><li>Set trigger to your appointment date field</li><li>Add Email at <strong>72 hours before</strong> &rarr; paste from <a href='appointment-reminder.html'>appointment-reminder.html</a></li><li>Add Email at <strong>24 hours before</strong> &rarr; paste 24h content</li><li>For SMS: use SimpleTexting or EZTexting ($25–40/month) with the SMS templates provided</li>
+  </ol>
+  <div class="tip-box">
+    <div class="tip-label">TIP</div>
+    <div>SMS reminders have 98% open rates vs 20% for email. Worth the $25/month for high-value patients.</div>
+  </div>
+  <div class="stuck-wrap">
+    <span class="stuck-label">Stuck on this step?</span>
+    <a href="mailto:contact@clinicflowautomation.com?subject=Setup%20question%3A%20Step%204%20%E2%80%94%20Set%20Up%20Appointment%20Reminders&body=Hi%20Mohamed%2C%0A%0AI'm%20on%20Step%204%20of%20the%20setup%20guide%20(Set%20Up%20Appointment%20Reminders)%20and%20I'm%20stuck%3A%0A%0A%5Bdescribe%20what's%20happening%5D%0A%0AClinic%3A%20Yonge%20Dental%20Care%0A" class="stuck-btn">Email Mohamed</a>
+  </div>
+  <div class="nav-btns">
+    <button class="btn-back" onclick="goTo(3)">&#8592; Back</button>
+    <button class="btn-complete" onclick="complete(4)">Mark as Complete &#8594;</button>
+  </div>
+</div>
+<div id="panel-5" class="panel" style="display:none">
+  <div class="step-meta">
+    <span class="meta-badge">30 min</span>
+    <span class="meta-badge">Office Manager</span>
+  </div>
+  <h2 class="step-title">Set Up New Patient Welcome</h2>
+  <div class="screenshot-note">
+    <div class="ss-label">WHERE TO CLICK</div>
+    <div class="ss-text">Mailchimp → Audience → Tags → Create tag 'New Patient' → Automations → trigger: tag added</div>
+  </div>
+  <ol class="step-list">
+    <li>Create a <strong>New Patient</strong> tag in your Mailchimp Audience</li><li>In Mailchimp: <strong>Automations &rarr; Create &rarr; Classic Automation</strong></li><li>Trigger: <strong>Tag added to contact</strong> &rarr; select 'New Patient'</li><li>Add 4 emails from <a href='new-patient-welcome.html'>new-patient-welcome.html</a>:</li><li>&nbsp;&nbsp;Email 1: Immediately &nbsp;| &nbsp;Email 2: 1 day &nbsp;| &nbsp;Email 3: 2 days &nbsp;| &nbsp;Email 4: 8 days</li><li>Replace <strong>[ReviewLink]</strong> in Email 4 with your Google Business Profile review URL</li>
+  </ol>
+  <div class="tip-box">
+    <div class="tip-label">TIP</div>
+    <div>Get your Google Review link: search your clinic on Google Maps → your listing → 'Write a review' → copy the URL.</div>
+  </div>
+  <div class="stuck-wrap">
+    <span class="stuck-label">Stuck on this step?</span>
+    <a href="mailto:contact@clinicflowautomation.com?subject=Setup%20question%3A%20Step%205%20%E2%80%94%20Set%20Up%20New%20Patient%20Welcome&body=Hi%20Mohamed%2C%0A%0AI'm%20on%20Step%205%20of%20the%20setup%20guide%20(Set%20Up%20New%20Patient%20Welcome)%20and%20I'm%20stuck%3A%0A%0A%5Bdescribe%20what's%20happening%5D%0A%0AClinic%3A%20Yonge%20Dental%20Care%0A" class="stuck-btn">Email Mohamed</a>
+  </div>
+  <div class="nav-btns">
+    <button class="btn-back" onclick="goTo(4)">&#8592; Back</button>
+    <button class="btn-complete" onclick="complete(5)">Mark as Complete &#8594;</button>
+  </div>
+</div>
+<div id="panel-6" class="panel" style="display:none">
+  <div class="step-meta">
+    <span class="meta-badge">30 min setup · runs monthly</span>
+    <span class="meta-badge">Office Manager</span>
+  </div>
+  <h2 class="step-title">Set Up Reactivation Campaign</h2>
+  <div class="screenshot-note">
+    <div class="ss-label">WHERE TO CLICK</div>
+    <div class="ss-text">Mailchimp → Audience → Import contacts → tag as 'Reactivation-[Month]' → Automations → tag trigger</div>
+  </div>
+  <ol class="step-list">
+    <li>Export inactive patients from your PMS (last visit &gt; 12 months ago)</li><li>Import them into Mailchimp and tag as <strong>Reactivation-[Month]</strong></li><li>In Mailchimp: <strong>Automations &rarr; Create</strong> → trigger: tag added</li><li>Add 5 emails from <a href='reactivation-campaign.html'>reactivation-campaign.html</a>:</li><li>&nbsp;&nbsp;Email 1: Immediately | Email 2: 14 days | Email 3: 28 days | Email 4: 42 days | Email 5: 56 days</li><li>Repeat this monthly with a fresh export of inactive patients</li>
+  </ol>
+  <div class="tip-box">
+    <div class="tip-label">TIP</div>
+    <div>Focus the first batch on patients inactive 12–18 months. They have the highest rebook rate (15–25%).</div>
+  </div>
+  <div class="stuck-wrap">
+    <span class="stuck-label">Stuck on this step?</span>
+    <a href="mailto:contact@clinicflowautomation.com?subject=Setup%20question%3A%20Step%206%20%E2%80%94%20Set%20Up%20Reactivation%20Campaign&body=Hi%20Mohamed%2C%0A%0AI'm%20on%20Step%206%20of%20the%20setup%20guide%20(Set%20Up%20Reactivation%20Campaign)%20and%20I'm%20stuck%3A%0A%0A%5Bdescribe%20what's%20happening%5D%0A%0AClinic%3A%20Yonge%20Dental%20Care%0A" class="stuck-btn">Email Mohamed</a>
+  </div>
+  <div class="nav-btns">
+    <button class="btn-back" onclick="goTo(5)">&#8592; Back</button>
+    <button class="btn-complete" onclick="complete(6)">Mark as Complete &#8594;</button>
+  </div>
+</div>
+<div id="panel-7" class="panel" style="display:none">
+  <div class="step-meta">
+    <span class="meta-badge">15 min</span>
+    <span class="meta-badge">Office Manager</span>
+  </div>
+  <h2 class="step-title">Set Up Review Requests</h2>
+  <div class="screenshot-note">
+    <div class="ss-label">WHERE TO CLICK</div>
+    <div class="ss-text">Mailchimp → Automations → Create → Date-based → appointment completion date field</div>
+  </div>
+  <ol class="step-list">
+    <li>In Mailchimp: <strong>Automations &rarr; Create &rarr; Date-based</strong></li><li>Trigger: <strong>2 days after</strong> appointment completion date</li><li>Add Email 1 from <a href='review-request.html'>review-request.html</a> (Primary Message)</li><li>Add Email 2: 5 days after Email 1 (Follow-Up)</li><li>Replace <strong>[ReviewLink]</strong> with your Google Business Profile review URL</li><li>Test the link in a private browser window — it should open the review box directly</li>
+  </ol>
+  <div class="tip-box">
+    <div class="tip-label">TIP</div>
+    <div>A steady stream of reviews is one of the highest-ROI activities for a dental clinic. This runs on autopilot.</div>
+  </div>
+  <div class="stuck-wrap">
+    <span class="stuck-label">Stuck on this step?</span>
+    <a href="mailto:contact@clinicflowautomation.com?subject=Setup%20question%3A%20Step%207%20%E2%80%94%20Set%20Up%20Review%20Requests&body=Hi%20Mohamed%2C%0A%0AI'm%20on%20Step%207%20of%20the%20setup%20guide%20(Set%20Up%20Review%20Requests)%20and%20I'm%20stuck%3A%0A%0A%5Bdescribe%20what's%20happening%5D%0A%0AClinic%3A%20Yonge%20Dental%20Care%0A" class="stuck-btn">Email Mohamed</a>
+  </div>
+  <div class="nav-btns">
+    <button class="btn-back" onclick="goTo(6)">&#8592; Back</button>
+    <button class="btn-complete" onclick="complete(7)">Mark as Complete &#8594;</button>
+  </div>
+</div>
+<div id="panel-8" class="panel" style="display:none">
+  <div class="step-meta">
+    <span class="meta-badge">30 min</span>
+    <span class="meta-badge">Practice Owner + Front Desk</span>
+  </div>
+  <h2 class="step-title">Train Your Team &amp;amp; Go Live</h2>
+  <div class="screenshot-note">
+    <div class="ss-label">WHERE TO CLICK</div>
+    <div class="ss-text">No software needed — team meeting + tracking spreadsheet setup</div>
+  </div>
+  <ol class="step-list">
+    <li>Review <strong>setup-summary.md</strong> with your front desk — explain what's automated</li><li>Key message: patient replies come to your <em>regular inbox</em>, not a separate system</li><li>Set up your tracking spreadsheet from <a href='tracking-spreadsheet.md'>tracking-spreadsheet.md</a></li><li>Send yourself a test message from each automation to confirm it's firing</li><li>Tag your first new patient in Mailchimp to trigger the welcome sequence</li><li>Email contact@clinicflowautomation.com: <em>"All live — Yonge Dental Care"</em></li>
+  </ol>
+  <div class="tip-box">
+    <div class="tip-label">TIP</div>
+    <div>Once live, your monthly task is 20 min: update tracking sheet + send the reactivation patient list. Everything else runs automatically.</div>
+  </div>
+  <div class="stuck-wrap">
+    <span class="stuck-label">Stuck on this step?</span>
+    <a href="mailto:contact@clinicflowautomation.com?subject=Setup%20question%3A%20Step%208%20%E2%80%94%20Train%20Your%20Team%20%26amp%3B%20Go%20Live&body=Hi%20Mohamed%2C%0A%0AI'm%20on%20Step%208%20of%20the%20setup%20guide%20(Train%20Your%20Team%20%26amp%3B%20Go%20Live)%20and%20I'm%20stuck%3A%0A%0A%5Bdescribe%20what's%20happening%5D%0A%0AClinic%3A%20Yonge%20Dental%20Care%0A" class="stuck-btn">Email Mohamed</a>
+  </div>
+  <div class="nav-btns">
+    <button class="btn-back" onclick="goTo(7)">&#8592; Back</button>
+    <button class="btn-complete" onclick="complete(8)">Mark as Complete &#8594;</button>
+  </div>
+</div>
+
+  <div id="done-screen">
+    <div class="done-check">&#10003;</div>
+    <h2 style="font-size:26px;color:#1e3a5f;margin-bottom:12px">Your automations are live.</h2>
+    <p style="color:#718096;max-width:480px;margin:0 auto 28px">Mohamed has been notified that you've completed setup. Expect a check-in email within 24 hours.</p>
+
+    <div style="max-width:480px;margin:0 auto 28px">
+      <div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#a0aec0;margin-bottom:12px;text-align:left">WHAT HAPPENS NEXT</div>
+      <div class="checkin-timeline">
+        <div class="checkin-card">
+          <div class="checkin-day">Day 7</div>
+          <div class="checkin-text">Mohamed sends a week-1 check-in email with 3 specific questions about how the automations are running.</div>
+        </div>
+        <div class="checkin-card">
+          <div class="checkin-day">Day 30</div>
+          <div class="checkin-text">Monthly results check-in — review what's working, adjust any sequences, and plan the next steps for your clinic.</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="delivery-index.html" style="color:#0d7377;font-size:14px">&larr; Back to all files</a>
+  </div>
+
+</div>
+<script>
+const KEY = "cf_yonge_dental_care";
+const TOTAL = 8;
+
+function save(n, done) { localStorage.setItem(KEY + "_" + n, done ? "1" : ""); }
+function isDone(n) { return !!localStorage.getItem(KEY + "_" + n); }
+
+function updateDots() {
+  let done = 0;
+  for (let i = 1; i <= TOTAL; i++) {
+    const d = document.getElementById("dot-" + i);
+    if (!d) continue;
+    d.className = "dot";
+    if (isDone(i)) { d.className = "dot done"; d.innerHTML = ""; done++; }
+  }
+  const prog = document.getElementById("prog-label");
+  if (prog) prog.textContent = done + " of " + TOTAL + " complete";
+  const bar = document.getElementById("pct-bar");
+  if (bar) bar.style.width = Math.round((done / TOTAL) * 100) + "%";
+}
+
+function goTo(n) {
+  document.querySelectorAll(".panel").forEach(p => p.style.display = "none");
+  document.getElementById("done-screen").style.display = "none";
+  const panel = document.getElementById("panel-" + n);
+  if (panel) { panel.style.display = "block"; }
+  document.querySelectorAll(".dot").forEach(d => d.classList.remove("active"));
+  const dot = document.getElementById("dot-" + n);
+  if (dot) dot.classList.add("active");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function notifySetupComplete() {
+  try {
+    fetch("/api/setup-complete", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ clinicName: "Yonge Dental Care", completedAt: new Date().toISOString() }),
+    }).catch(() => {}); // fire and forget — don't block UI on network error
+  } catch(e) {}
+}
+
+function complete(n) {
+  save(n, true);
+  updateDots();
+  const next = n + 1;
+  if (next > TOTAL) {
+    notifySetupComplete();
+    document.querySelectorAll(".panel").forEach(p => p.style.display = "none");
+    document.getElementById("done-screen").style.display = "block";
+    document.querySelectorAll(".dot").forEach(d => d.classList.remove("active"));
+  } else {
+    goTo(next);
+  }
+}
+
+function init() {
+  updateDots();
+  // Find first incomplete step
+  for (let i = 1; i <= TOTAL; i++) {
+    if (!isDone(i)) { goTo(i); return; }
+  }
+  // All done
+  document.getElementById("done-screen").style.display = "block";
+}
+
+document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>

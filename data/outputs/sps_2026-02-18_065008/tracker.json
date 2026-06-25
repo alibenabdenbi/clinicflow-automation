@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-02-18T11:50:08.954Z",
+  "projectName": "Client project",
+  "clientName": "Acme",
+  "freelancerName": "Mohamed",
+  "timeline": "7–14 days (estimate)",
+  "budgetMentioned": null,
+  "status": "Proposed",
+  "deliverables": [
+    "Discovery call + requirements summary",
+    "Scope document + timeline",
+    "Deliverable #1",
+    "Deliverable #2"
+  ],
+  "milestones": [
+    {
+      "name": "Milestone 1 — Kickoff + first deliverables",
+      "percent": 40,
+      "includes": [
+        "Discovery call + requirements summary",
+        "Scope document + timeline"
+      ],
+      "due": "Day 0–4 (within 7–14 days (estimate))"
+    },
+    {
+      "name": "Milestone 2 — Core build",
+      "percent": 30,
+      "includes": [
+        "Deliverable #1",
+        "Deliverable #2"
+      ],
+      "due": "Midpoint (within 7–14 days (estimate))"
+    },
+    {
+      "name": "Milestone 3 — Final + handoff",
+      "percent": 30,
+      "includes": [
+        "Final fixes + handoff"
+      ],
+      "due": "Final day (within 7–14 days (estimate))"
+    }
+  ],
+  "nextActions": [
+    "Send Scope of Work for approval",
+    "Send Deposit / Milestone 1 invoice",
+    "Collect client assets/access"
+  ]
+}

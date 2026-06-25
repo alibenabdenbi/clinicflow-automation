@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Automatisation des cliniques dentaires — ClinicFlow</title>
+<meta name="description" content="ClinicFlow envoie automatiquement un texto aux patients qui appellent sans obtenir de réponse — en moins de 60 secondes. Configuration unique, aucun frais mensuel.">
+<meta name="keywords" content="automatisation clinique dentaire Quebec, logiciel clinique dentaire Canada, appels manqués clinique dentaire, communication patients dentaire Quebec">
+<link rel="canonical" href="https://clinicflowautomation.com/fr">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Syne',sans-serif;background:#0b0f17;color:#f1f5f9;min-height:100vh}
+nav{padding:20px;display:flex;justify-content:space-between;align-items:center;max-width:1000px;margin:0 auto}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}
+.logo{font-size:16px;font-weight:700;color:#fff!important}
+.lang{background:rgba(124,92,255,.15);color:#7c5cff;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:700;border:1px solid rgba(124,92,255,.2)}
+section{padding:80px 20px 60px;text-align:center;max-width:800px;margin:0 auto}
+.pulse{display:inline-flex;align-items:center;gap:8px;background:rgba(57,217,138,.08);border:1px solid rgba(57,217,138,.2);padding:6px 16px;border-radius:20px;margin-bottom:32px}
+.dot{width:8px;height:8px;border-radius:50%;background:#39d98a;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.pulse span{font-size:12px;font-weight:700;color:#39d98a;letter-spacing:1px;text-transform:uppercase}
+h1{font-size:clamp(32px,6vw,60px);font-weight:800;line-height:1.1;margin-bottom:24px}
+h1 .red{color:#f87171}
+h1 .dim{color:#94a3b8;font-size:.65em;font-weight:600}
+.sub{font-size:18px;color:#94a3b8;line-height:1.8;margin-bottom:16px;max-width:560px;margin-left:auto;margin-right:auto}
+.bold{font-size:20px;font-weight:700;color:#f1f5f9;margin-bottom:40px}
+.bold span{color:#f87171}
+.fix-box{background:rgba(57,217,138,.08);border:1px solid rgba(57,217,138,.2);border-radius:20px;padding:28px 36px;max-width:600px;margin:0 auto 40px}
+.fix-box p{font-size:22px;font-weight:700;color:#f1f5f9;line-height:1.5;margin-bottom:8px}
+.fix-box span{font-size:15px;color:#94a3b8}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:48px}
+.btn-p{background:#7c5cff;color:#fff;padding:16px 28px;border-radius:12px;font-size:16px;font-weight:700;text-decoration:none}
+.btn-s{background:rgba(255,255,255,.06);color:#f1f5f9;padding:16px 28px;border-radius:12px;font-size:16px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.1)}
+.nums{display:flex;gap:32px;flex-wrap:wrap;justify-content:center;margin-bottom:60px}
+.num-item{text-align:center}
+.num-big{font-size:28px;font-weight:800;color:#f1f5f9}
+.num-lbl{font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.wrap{max-width:800px;margin:0 auto;padding:0 20px 80px}
+.how{margin-bottom:60px}
+.how h2{font-size:28px;font-weight:800;margin-bottom:32px;text-align:center}
+.step{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.step-num{width:36px;height:36px;border-radius:50%;background:rgba(124,92,255,.15);color:#7c5cff;font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.step-text strong{display:block;color:#f1f5f9;margin-bottom:4px;font-size:16px}
+.step-text span{font-size:14px;color:#94a3b8;line-height:1.6}
+.pricing{background:#111827;border-radius:20px;padding:36px;text-align:center;margin-bottom:48px;border:1px solid rgba(124,92,255,.2)}
+.price-big{font-size:52px;font-weight:800;color:#f1f5f9;line-height:1}
+.price-sub{font-size:15px;color:#94a3b8;margin:8px 0 24px}
+.split{display:flex;gap:12px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
+.half{flex:1;min-width:140px;padding:14px;background:rgba(255,255,255,.05);border-radius:12px;border:1px solid rgba(255,255,255,.08);text-align:center}
+.half-amt{font-size:22px;font-weight:800}
+.half-when{font-size:12px;color:#94a3b8;margin-top:4px}
+.half-when.green{color:#39d98a}
+.guarantee{font-size:13px;color:#94a3b8}
+.guarantee span{color:#39d98a;font-weight:600}
+.final{background:linear-gradient(135deg,rgba(124,92,255,.1),rgba(57,217,138,.05));border:1px solid rgba(124,92,255,.2);border-radius:20px;padding:40px;text-align:center}
+.final h2{font-size:28px;font-weight:800;margin-bottom:12px}
+.final p{font-size:15px;color:#94a3b8;margin-bottom:24px;line-height:1.7}
+.contact{background:#111827;border-radius:16px;padding:24px;display:flex;gap:16px;align-items:center;margin-top:32px;border:1px solid rgba(255,255,255,.06)}
+.avatar{width:52px;height:52px;border-radius:50%;background:#7c5cff;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.contact-name{font-size:16px;font-weight:700;margin-bottom:4px}
+.contact-title{font-size:13px;color:#94a3b8;margin-bottom:10px}
+.contact-btns{display:flex;gap:8px;flex-wrap:wrap}
+.contact-btn{background:rgba(255,255,255,.06);color:#f1f5f9;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.08)}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">ClinicFlow</a>
+  <div style="display:flex;gap:16px;align-items:center">
+    <a href="/pricing">Tarifs</a>
+    <a href="/demo">Démo</a>
+    <a href="/" class="lang">EN</a>
+  </div>
+</nav>
+
+<section>
+  <div class="pulse"><div class="dot"></div><span>Système actif — Cliniques canadiennes</span></div>
+
+  <h1>Un patient vient d'appeler<br><span class="red">votre clinique.</span><br><span class="dim">Personne n'a répondu.</span></h1>
+
+  <p class="sub">Il n'a pas laissé de message vocal.<br>Il a cherché la prochaine clinique sur Google et a pris rendez-vous là-bas.</p>
+
+  <p class="bold">Ça arrive <span>15 à 30 fois</span> par jour dans la clinique dentaire moyenne.</p>
+
+  <div class="fix-box">
+    <p>Avec ClinicFlow — ils reçoivent un texto<br>en moins de <span style="color:#39d98a">60 secondes.</span></p>
+    <span>La plupart répondent. La plupart prennent rendez-vous. Vous n'avez jamais su que l'appel avait été manqué.</span>
+  </div>
+
+  <div class="ctas">
+    <a href="/intake?lang=fr" class="btn-p">Démarrer le pilote gratuit 30 jours →</a>
+    <a href="https://calendly.com/m-aliben432/clinicflow-15-min-intro" class="btn-s" target="_blank">📅 Réserver 15 minutes</a>
+  </div>
+
+  <div class="nums">
+    <div class="num-item"><div class="num-big">60s</div><div class="num-lbl">Réponse automatique</div></div>
+    <div class="num-item"><div class="num-big">5 jours</div><div class="num-lbl">Configuration complète</div></div>
+    <div class="num-item"><div class="num-big">0$</div><div class="num-lbl">Frais mensuels</div></div>
+    <div class="num-item"><div class="num-big">30 jours</div><div class="num-lbl">Pilote gratuit</div></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="how">
+    <h2>Comment ça fonctionne</h2>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text"><strong>Un patient appelle — personne ne répond</strong><span>Pendant le dîner, après les heures, ou quand la réception est occupée avec un autre patient.</span></div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text"><strong>Texto automatique envoyé en 60 secondes</strong><span>« Bonjour, vous avez appelé [Clinique] et nous avons manqué votre appel. Répondez ici pour prendre rendez-vous ou poser une question. »</span></div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text"><strong>Le patient répond — le système répond naturellement</strong><span>Notre système lit le profil complet de votre clinique — horaires, services, ton — et répond naturellement. Les patients pensent texter votre réceptionniste.</span></div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-text"><strong>Rendez-vous réservé — apparaît dans votre calendrier</strong><span>Vous voyez la réservation. Le patient reçoit un rappel. Vous n'avez jamais su que l'appel avait été manqué.</span></div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-text"><strong>Fonctionne seul à partir de maintenant</strong><span>Aucun travail supplémentaire. Chaque appel manqué est géré automatiquement, 24h/7j.</span></div>
+    </div>
+  </div>
+
+  <div class="pricing">
+    <div style="font-size:13px;font-weight:700;color:#7c5cff;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px">Forfait Croissance</div>
+    <div class="price-big">997$</div>
+    <div class="price-sub">Configuration unique · Aucun frais mensuel · Jamais.</div>
+    <div class="split">
+      <div class="half"><div class="half-amt">500$</div><div class="half-when">Dû aujourd'hui pour commencer</div></div>
+      <div class="half"><div class="half-amt">497$</div><div class="half-when green">Après les résultats ✓</div></div>
+    </div>
+    <div class="guarantee"><span>Garantie 30 jours</span> — si ça ne fonctionne pas, vous ne payez rien de plus.</div>
+  </div>
+
+  <div class="final">
+    <h2>Prêt à arrêter de perdre des patients?</h2>
+    <p>Une place de pilote gratuit disponible cette semaine.<br>Configuration complète sans frais. Vous ne payez que si ça fonctionne.</p>
+    <a href="/intake?lang=fr" class="btn-p" style="display:inline-block;margin-bottom:12px">Démarrer le pilote gratuit →</a><br>
+    <a href="https://calendly.com/m-aliben432/clinicflow-15-min-intro" class="btn-s" style="display:inline-block;margin-bottom:12px" target="_blank">📅 Réserver 15 minutes d'abord</a><br>
+    <a href="/demo" class="btn-s" style="display:inline-block">Essayer la démo →</a>
+  </div>
+
+  <div class="contact" style="margin-top:32px">
+    <div class="avatar">👋</div>
+    <div>
+      <div class="contact-name">Ali Benabdenbi</div>
+      <div class="contact-title">Fondateur, ClinicFlow Automation · Montréal, QC</div>
+      <div class="contact-btns">
+        <a href="tel:4385440442" class="contact-btn">📞 438-544-0442</a>
+        <a href="mailto:contact@clinicflowautomation.com" class="contact-btn">✉ Courriel</a>
+        <a href="/live" class="contact-btn">🔴 Système en direct</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  fetch('/api/track',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({page:'/fr',ref:document.referrer,utm_source:new URLSearchParams(location.search).get('utm_source'),ts:Date.now()}),
+    keepalive:true
+  }).catch(()=>{});
+})();
+</script>
+</body>
+</html>

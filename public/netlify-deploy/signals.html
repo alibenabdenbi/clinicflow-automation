@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Signal Tracker — ClinicFlow</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0b0f17;color:#f1f5f9;min-height:100vh}
+#pin-screen{position:fixed;inset:0;background:#0b0f17;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:999;padding:20px}
+#app{display:none;padding:20px;max-width:900px;margin:0 auto;padding-bottom:60px}
+.pin-input{font-size:24px;letter-spacing:8px;padding:14px 20px;border:2px solid rgba(255,255,255,.15);border-radius:12px;background:rgba(255,255,255,.07);color:#fff;text-align:center;width:200px;margin-bottom:14px;outline:none;transition:border-color .2s}
+.pin-input:focus{border-color:#7c5cff}
+.pin-btn{background:#7c5cff;color:#fff;border:none;padding:14px 0;border-radius:10px;font-size:16px;font-weight:700;width:200px;cursor:pointer}
+.pin-err{color:#f87171;margin-top:10px;font-size:14px;display:none}
+.top-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #1e293b;flex-wrap:wrap;gap:10px}
+.section-title{font-size:12px;font-weight:700;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin:24px 0 12px}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:8px}
+@media(max-width:600px){.stat-grid{grid-template-columns:repeat(2,1fr)}}
+.stat-card{background:#111827;border-radius:12px;padding:16px;text-align:center;border:1px solid #1e293b}
+.stat-num{font-size:32px;font-weight:800;margin-bottom:4px}
+.stat-lbl{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:.5px}
+.funnel{display:flex;margin-bottom:8px;background:#111827;border-radius:12px;overflow:hidden;border:1px solid #1e293b}
+.funnel-step{flex:1;min-width:70px;padding:14px 8px;text-align:center;border-right:1px solid #1e293b}
+.funnel-step:last-child{border:none}
+.funnel-num{font-size:22px;font-weight:800;color:#f1f5f9}
+.funnel-lbl{font-size:10px;color:#64748b;text-transform:uppercase;margin-top:3px}
+.funnel-rate{font-size:11px;color:#4a5568;margin-top:2px}
+.lead-card{background:#111827;border-radius:12px;padding:18px;margin-bottom:12px;border:1px solid #1e293b;border-left-width:4px}
+.conf-badge{padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700}
+table{width:100%;border-collapse:collapse;background:#111827;border-radius:12px;overflow:hidden;border:1px solid #1e293b}
+th{padding:10px 12px;text-align:left;font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid #1e293b}
+td{padding:10px 12px;font-size:13px;color:#94a3b8;border-bottom:1px solid #0f172a}
+tr:last-child td{border:none}
+.refresh-btn{background:#1e293b;color:#94a3b8;border:none;padding:8px 14px;border-radius:8px;font-size:12px;cursor:pointer}
+.pulse{animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.action-btn{background:#7c5cff;color:#fff;border:none;padding:8px 14px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block;margin-right:8px}
+.done-tag{background:#14532d;color:#4ade80;padding:8px 14px;border-radius:8px;font-size:12px;font-weight:600;display:inline-block}
+.empty-state{color:#64748b;padding:20px;text-align:center;background:#111827;border-radius:12px;font-size:14px}
+</style>
+</head>
+<body>
+
+<div id="pin-screen">
+  <div style="font-size:11px;letter-spacing:4px;color:#4a5568;margin-bottom:8px">CLINICFLOW</div>
+  <div style="font-size:22px;font-weight:700;color:#fff;margin-bottom:4px">Signal Tracker</div>
+  <div style="font-size:13px;color:#64748b;margin-bottom:28px">Internal — Mohamed only</div>
+  <input class="pin-input" type="password" id="pin-inp" placeholder="PIN" maxlength="4" autocomplete="off" inputmode="numeric">
+  <button class="pin-btn" onclick="checkPin()">Unlock</button>
+  <div class="pin-err" id="pin-err">Wrong PIN</div>
+</div>
+
+<div id="app">
+  <div class="top-bar">
+    <div>
+      <div style="font-size:11px;letter-spacing:3px;color:#4a5568">CLINICFLOW</div>
+      <div style="font-size:22px;font-weight:700">Signal Tracker</div>
+      <div style="font-size:12px;color:#64748b" id="last-updated">Loading live data...</div>
+    </div>
+    <button class="refresh-btn" onclick="loadSignals()">↻ Refresh</button>
+  </div>
+
+  <div class="section-title">Today's Pulse</div>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-num pulse" style="color:#4ade80" id="stat-strong">—</div><div class="stat-lbl">🔥 Strong</div></div>
+    <div class="stat-card"><div class="stat-num pulse" style="color:#fbbf24" id="stat-medium">—</div><div class="stat-lbl">⚡ Medium</div></div>
+    <div class="stat-card"><div class="stat-num pulse" style="color:#60a5fa" id="stat-mobile">—</div><div class="stat-lbl">📱 Mobile</div></div>
+    <div class="stat-card"><div class="stat-num pulse" style="color:#a78bfa" id="stat-humans">—</div><div class="stat-lbl">👤 Real Humans</div></div>
+    <div class="stat-card"><div class="stat-num" style="color:#f97316">0</div><div class="stat-lbl">📸 Screenshots</div></div>
+    <div class="stat-card"><div class="stat-num" style="color:#0077b5">1</div><div class="stat-lbl">LinkedIn Posts</div></div>
+  </div>
+
+  <div class="section-title">Pipeline Funnel</div>
+  <div class="funnel">
+    <div class="funnel-step"><div class="funnel-num">3 609</div><div class="funnel-lbl">Mapped</div></div>
+    <div class="funnel-step"><div class="funnel-num">251</div><div class="funnel-lbl">Contacted</div><div class="funnel-rate">7%</div></div>
+    <div class="funnel-step"><div class="funnel-num" id="funnel-opened">—</div><div class="funnel-lbl">Opened</div></div>
+    <div class="funnel-step"><div class="funnel-num">2</div><div class="funnel-lbl">Personal</div></div>
+    <div class="funnel-step"><div class="funnel-num" style="color:#4ade80">0</div><div class="funnel-lbl">Closed</div></div>
+  </div>
+
+  <div class="section-title">🔥 Hot Leads — Act On These</div>
+  <div id="hot-leads"><div class="empty-state pulse">Loading live signals from Blobs...</div></div>
+
+  <div class="section-title" style="margin-top:28px">🧠 Intent Visitors — Actively Evaluating</div>
+  <div id="intent-section">
+    <div style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#64748b;border:1px solid #1e293b">Loading intent data...</div>
+  </div>
+
+  <div class="section-title">All Signals Today</div>
+  <div id="all-signals"><div class="empty-state pulse">Loading...</div></div>
+
+  <div class="section-title">LinkedIn</div>
+  <div style="background:#111827;border-radius:12px;padding:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;border:1px solid #1e293b">
+    <div>
+      <div style="font-size:13px;color:#94a3b8;margin-bottom:4px">Posts logged</div>
+      <div style="font-size:32px;font-weight:800;color:#0077b5">1 day</div>
+    </div>
+    <a href="https://www.linkedin.com/feed/?shareActive=true" target="_blank"
+       style="background:#0077b5;color:#fff;padding:10px 16px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none">Post Today →</a>
+  </div>
+
+  <div class="section-title" style="margin-top:28px">🖱️ Link Clicks Today</div>
+  <div id="clicks-section" style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#64748b;border:1px solid #1e293b">Loading clicks...</div>
+
+  <div class="section-title" style="margin-top:32px">🌐 Website Visitors Today</div>
+  <div id="visitors-section">
+    <div style="background:#111827;border-radius:12px;padding:20px;font-size:13px;color:#64748b;border:1px solid #1e293b">Loading visitor data...</div>
+  </div>
+
+  
+  <div class="section-title" style="margin-top:32px">LinkedIn Targets - Connect Today</div>
+  <div id="linkedin-targets">
+    <div style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#64748b">
+      Loading targets...
+    </div>
+  </div>
+  <script>
+  async function loadLinkedIn() {
+    try {
+      const res = await fetch('/api/linkedin-targets');
+      const data = await res.json();
+      if (!data.ok || !data.targets?.length) {
+        document.getElementById('linkedin-targets').innerHTML =
+          '<div style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#64748b">Run npm run priority to generate targets</div>';
+        return;
+      }
+      const rows = data.targets.slice(0,3).map(t =>
+        '<div style="background:#111827;border-radius:10px;padding:14px;margin-bottom:8px;border:1px solid rgba(255,255,255,.06)">' +
+        '<div style="font-size:14px;font-weight:700;color:#f1f5f9;margin-bottom:4px">' + t.clinicName + '</div>' +
+        '<div style="font-size:12px;color:#64748b;margin-bottom:8px">' + t.city + ' . ' + t.rating + 'star</div>' +
+        '<a href="https://www.linkedin.com/search/results/people/?keywords=' + encodeURIComponent(t.clinicName + ' dentist') + '" ' +
+           'target="_blank" ' +
+           'style="display:inline-block;background:rgba(10,102,194,.15);color:#5b9bd5;border:1px solid rgba(10,102,194,.3);padding:6px 14px;border-radius:6px;font-size:12px;font-weight:600;text-decoration:none">' +
+          'Search LinkedIn' +
+        '</a></div>'
+      ).join('');
+      document.getElementById('linkedin-targets').innerHTML = rows;
+    } catch(e) {}
+  }
+  setTimeout(loadLinkedIn, 2500);
+  </script>
+  <div class="section-title" style="margin-top:32px">🎯 Conversion Priority — Call These First</div>
+  <div id="priority-section">
+    <div style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#64748b;border:1px solid #1e293b">Loading priority list...</div>
+  </div>
+
+  <div class="section-title">System Status</div>
+  <div style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#94a3b8;line-height:2.2;border:1px solid #1e293b">
+    <div>📧 Ready to send: <span style="color:#f1f5f9;font-weight:600">350 clinics</span></div>
+    <div>📸 Screenshots sent: <span style="color:#f1f5f9;font-weight:600">0</span></div>
+    <div>🏥 Bounced: <span style="color:#f87171;font-weight:600">20</span></div>
+    <div>🌐 Live page: <a href="/live" style="color:#7c5cff">clinicflowautomation.com/live</a></div>
+    <div>📊 Next batch: Verified sends only — website-scraped addresses</div>
+    <div>🔄 Signals: <span style="color:#4ade80;font-weight:600">Live — Netlify Blobs, updates on every open</span></div>
+  </div>
+</div>
+
+<script>
+function timeAgo(iso) {
+  const diff = Date.now() - new Date(iso).getTime();
+  const m = Math.floor(diff / 60000);
+  if (m < 1) return 'just now';
+  if (m < 60) return m + 'm ago';
+  const h = Math.floor(m / 60);
+  if (h < 24) return h + 'h ago';
+  return Math.floor(h / 24) + 'd ago';
+}
+
+async function loadClicks() {
+  try {
+    const res  = await fetch('/api/clicks');
+    const data = await res.json();
+    const el   = document.getElementById('clicks-section');
+    if (!data.ok || !data.clicks?.length) {
+      el.textContent = 'No link clicks tracked today yet.';
+      return;
+    }
+    const typeLabel = { calendly: '📅 Calendly', live: '🔴 Live', demo: '📱 Demo', proposal: '📋 Proposal', pricing: '💰 Pricing' };
+    el.innerHTML = `
+      <table style="width:100%;border-collapse:collapse">
+        <thead><tr>
+          <th style="text-align:left;font-size:11px;color:#4a5568;padding:6px 8px;text-transform:uppercase">Clinic</th>
+          <th style="text-align:left;font-size:11px;color:#4a5568;padding:6px 8px;text-transform:uppercase">Link</th>
+          <th style="text-align:left;font-size:11px;color:#4a5568;padding:6px 8px;text-transform:uppercase">When</th>
+        </tr></thead>
+        <tbody>${data.clicks.map(c => `
+          <tr style="border-top:1px solid #0f172a">
+            <td style="padding:8px;color:#f1f5f9;font-size:13px">${c.clinic}</td>
+            <td style="padding:8px;font-size:13px">${typeLabel[c.type] || c.type}</td>
+            <td style="padding:8px;color:#64748b;font-size:12px">${timeAgo(c.clickedAt)}</td>
+          </tr>`).join('')}
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#4a5568;margin-top:8px">${data.total} click${data.total !== 1 ? 's' : ''} · ${data.calendlyClicks} Calendly · Calendly/Proposal clicks fire SMS</div>
+    `;
+  } catch(e) {
+    document.getElementById('clicks-section').textContent = 'Click data unavailable.';
+  }
+}
+setTimeout(loadClicks, 1500);
+
+const PIN = '8268';
+const C = {
+  STRONG: { bg:'#14532d', text:'#4ade80', border:'#16a34a', label:'🔥 STRONG' },
+  MEDIUM: { bg:'#78350f', text:'#fcd34d', border:'#d97706', label:'⚡ MEDIUM' },
+  WEAK:   { bg:'#1e3a5f', text:'#93c5fd', border:'#2563eb', label:'👁 WEAK'   },
+  BOT:    { bg:'#1a1f2e', text:'#4a5568', border:'#374151', label:'🤖 BOT'    },
+};
+
+function checkPin() {
+  if (document.getElementById('pin-inp').value === PIN) {
+    document.getElementById('pin-screen').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    sessionStorage.setItem('cf_sig','1');
+    loadSignals();
+    setInterval(loadSignals, 5 * 60 * 1000);
+  } else {
+    document.getElementById('pin-err').style.display = 'block';
+    document.getElementById('pin-inp').value = '';
+    setTimeout(() => document.getElementById('pin-err').style.display = 'none', 2000);
+  }
+}
+document.getElementById('pin-inp').addEventListener('keypress', e => { if (e.key==='Enter') checkPin(); });
+if (sessionStorage.getItem('cf_sig')==='1') {
+  document.getElementById('pin-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  loadSignals();
+  setInterval(loadSignals, 5*60*1000);
+}
+
+async function loadSignals() {
+  try {
+    const res  = await fetch('/.netlify/functions/get-signals');
+    const data = await res.json();
+    if (!data.ok) { showFallback('API error: ' + data.error); return; }
+    renderSignals(data);
+  } catch(err) {
+    showFallback('Could not reach API — check Netlify deploy');
+  }
+}
+
+function renderSignals(data) {
+  document.getElementById('last-updated').textContent =
+    'Live — updated ' + new Date(data.lastUpdated).toLocaleTimeString('en-CA');
+
+  ['strong','medium','mobile','humans'].forEach((k,i) => {
+    const vals = [data.summary.strong, data.summary.medium, data.summary.mobileOpens, data.summary.realHumans];
+    const el = document.getElementById('stat-'+k);
+    if (el) { el.textContent = vals[i]; el.classList.remove('pulse'); }
+  });
+  const fo = document.getElementById('funnel-opened');
+  if (fo) fo.textContent = data.summary.realHumans;
+
+  // Hot leads
+  const hotEl = document.getElementById('hot-leads');
+  if (!data.hotLeads.length) {
+    hotEl.innerHTML = '<div class="empty-state">No hot leads yet today — opens appear here instantly</div>';
+  } else {
+    hotEl.innerHTML = data.hotLeads.map(lead => {
+      const conf = C[lead.confidence] || C.BOT;
+      const subj = encodeURIComponent('Re: ' + lead.clinicName);
+      const body = encodeURIComponent('Hi,\n\nJust following up — noticed you had seen my previous note.\n\nWhen a patient calls ' + lead.clinicName + ' and no one picks up, they get an automatic text within 60 seconds. Most reply. Most book.\n\nSee it: clinicflowautomation.com/live\n\nHappy to walk through it.\n\n— Mohamed\n438-544-0442');
+      return `<div class="lead-card" style="border-left-color:${conf.border}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+          <div>
+            <div style="font-size:18px;font-weight:700;color:#f1f5f9">${lead.clinicName}</div>
+            <div style="font-size:13px;color:#94a3b8;margin-top:3px">${lead.hasMobile?'📱 Mobile':'💻 Desktop'} · ${lead.variant} · ${lead.openCount} open${lead.openCount>1?'s':''} · ${ago(lead.lastOpenedAt)}</div>
+          </div>
+          <span class="conf-badge" style="background:${conf.bg};color:${conf.text}">${conf.label}</span>
+        </div>
+        <div style="background:#0f172a;border-radius:8px;padding:10px;font-size:13px;color:#cbd5e1;margin-bottom:12px">${action(lead)}</div>
+        <a href="mailto:?subject=${subj}&body=${body}" class="action-btn">Send Personal Email →</a>
+      </div>`;
+    }).join('');
+  }
+
+  // All signals table
+  const allEl = document.getElementById('all-signals');
+  if (!data.allSignals.length) {
+    allEl.innerHTML = '<div class="empty-state">No opens tracked today yet</div>';
+  } else {
+    allEl.innerHTML = '<table><thead><tr><th>Clinic</th><th>Variant</th><th>Device</th><th>Opens</th><th>Confidence</th><th>Time</th></tr></thead><tbody>' +
+      data.allSignals.map(s => {
+        const conf = C[s.confidence] || C.BOT;
+        return `<tr>
+          <td style="color:#f1f5f9">${s.clinicName}</td>
+          <td>${s.variant}</td>
+          <td>${s.hasMobile?'📱':'💻'}</td>
+          <td>${s.openCount}×</td>
+          <td><span class="conf-badge" style="background:${conf.bg};color:${conf.text}">${conf.label}</span></td>
+          <td>${ago(s.lastOpenedAt)}</td>
+        </tr>`;
+      }).join('') + '</tbody></table>';
+  }
+}
+
+function showFallback(msg) {
+  document.getElementById('last-updated').textContent = msg || 'Offline — using cached data';
+  document.getElementById('hot-leads').innerHTML =
+    '<div class="empty-state">Fallowfield Dental (Ottawa) 🔥 STRONG — personal email sent<br>Beddington Dental (Calgary) 🔥 STRONG — personal email sent</div>';
+  document.getElementById('all-signals').innerHTML = '<div class="empty-state">API offline</div>';
+}
+
+function ago(iso) {
+  if (!iso) return '—';
+  const m = Math.floor((Date.now() - new Date(iso)) / 60000);
+  if (m < 1)  return 'just now';
+  if (m < 60) return m + 'm ago';
+  if (m < 1440) return Math.floor(m/60) + 'h ago';
+  return Math.floor(m/1440) + 'd ago';
+}
+
+function action(lead) {
+  if (lead.confidence === 'STRONG') return '⚡ Send personal email NOW — opened on mobile';
+  if (lead.confidence === 'MEDIUM' && lead.hasMobile) return '📱 Send personal email today — human on phone';
+  if (lead.confidence === 'MEDIUM') return '💻 Follow up — opened multiple times';
+  return '👁 Monitor — single desktop open';
+}
+
+async function loadIntentVisits() {
+  const el = document.getElementById('intent-section');
+  try {
+    const res  = await fetch('/api/intent-visits');
+    const data = await res.json();
+
+    if (!data.ok || !data.visits?.length) {
+      el.innerHTML = '<div class="empty-state">No high-intent visits yet — fires when someone hits /calculator, /report-card, or /report</div>';
+      return;
+    }
+
+    const pageLabel = { '/calculator': '🧮 Calculator', '/report-card': '📊 Report Card', '/report': '📋 Report' };
+    const rows = data.visits.map(v => {
+      const city = v.city ? `${v.city}${v.region ? ', ' + v.region : ''}` : '—';
+      const page = pageLabel[v.page] || v.page;
+      const minsAgo = Math.round((Date.now() - v.ts) / 60000);
+      const when = minsAgo < 60 ? minsAgo + 'm ago' : Math.round(minsAgo/60) + 'h ago';
+      return `<tr style="border-bottom:1px solid #0f172a">
+        <td style="padding:10px 12px;color:#f1f5f9;font-size:13px">${page}</td>
+        <td style="padding:10px 12px;color:#a78bfa;font-size:13px">${city}</td>
+        <td style="padding:10px 12px;color:#64748b;font-size:12px">${when}</td>
+      </tr>`;
+    }).join('');
+
+    el.innerHTML = `
+      <div style="background:#111827;border-radius:12px;overflow:hidden;border:1px solid #7c3aed;margin-bottom:8px">
+        <div style="padding:10px 14px;background:#1e0a3c;border-bottom:1px solid #7c3aed;font-size:12px;color:#a78bfa;font-weight:600">
+          ${data.total} visitor${data.total !== 1 ? 's' : ''} actively evaluated your product
+        </div>
+        <table style="width:100%;border-collapse:collapse">
+          <thead><tr style="border-bottom:1px solid #1e293b">
+            <th style="padding:10px 12px;text-align:left;font-size:11px;color:#64748b;text-transform:uppercase">Page</th>
+            <th style="padding:10px 12px;text-align:left;font-size:11px;color:#64748b;text-transform:uppercase">City</th>
+            <th style="padding:10px 12px;text-align:left;font-size:11px;color:#64748b;text-transform:uppercase">When</th>
+          </tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <div style="font-size:11px;color:#4a5568">Cross-reference city against prospect list in morning brief · ipapi.co geo lookup</div>
+    `;
+  } catch (e) {
+    el.innerHTML = '<div class="empty-state">Intent visits API not reachable.</div>';
+  }
+}
+setTimeout(loadIntentVisits, 1200);
+
+async function loadVisitors() {
+  try {
+    const res = await fetch('/api/analytics');
+    const data = await res.json();
+    const el = document.getElementById('visitors-section');
+    if (!data.ok || !data.pages || data.totalViews === 0) {
+      el.innerHTML = '<div style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#64748b;border:1px solid #1e293b">No visits tracked yet today.</div>';
+      return;
+    }
+
+    const typeLabel = { direct: '🔗 Direct', google: '🔍 Google', facebook: '📘 Facebook', instagram: '📸 Instagram', linkedin: '💼 LinkedIn' };
+    const pageRows = Object.entries(data.pages)
+      .sort((a, b) => b[1] - a[1])
+      .map(([page, count]) => {
+        const isHot = count >= 3;
+        const isMed = count === 2;
+        return `<tr style="border-bottom:1px solid #0f172a">
+          <td style="padding:10px 12px;color:${isHot ? '#39d98a' : isMed ? '#f97316' : '#f1f5f9'};font-size:13px">${page}</td>
+          <td style="padding:10px 12px;font-size:13px;text-align:right">${isHot ? '🔥 ' : ''}${count} view${count > 1 ? 's' : ''}</td>
+        </tr>`;
+      }).join('');
+
+    const sourceChips = Object.entries(data.sources || {})
+      .sort((a, b) => b[1] - a[1])
+      .map(([src, count]) => `<span style="background:#1e293b;padding:4px 10px;border-radius:6px;font-size:12px;color:#94a3b8;margin:2px 2px 2px 0;display:inline-block">${typeLabel[src] || src}: ${count}</span>`)
+      .join('');
+
+    el.innerHTML = `
+      <div style="background:#111827;border-radius:12px;overflow:hidden;margin-bottom:12px;border:1px solid #1e293b">
+        <div style="padding:12px 16px;border-bottom:1px solid #0f172a;display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:13px;font-weight:600;color:#f1f5f9">${data.totalViews} total visit${data.totalViews !== 1 ? 's' : ''} today</span>
+          <span style="font-size:12px;color:#64748b">Top: ${data.topPage}</span>
+        </div>
+        <table style="width:100%;border-collapse:collapse">
+          <thead><tr style="border-bottom:1px solid #1e293b">
+            <th style="padding:10px 12px;text-align:left;font-size:11px;color:#64748b;text-transform:uppercase">Page</th>
+            <th style="padding:10px 12px;text-align:right;font-size:11px;color:#64748b;text-transform:uppercase">Views</th>
+          </tr></thead>
+          <tbody>${pageRows}</tbody>
+        </table>
+      </div>
+      ${sourceChips ? `<div style="margin-bottom:8px">${sourceChips}</div>` : ''}
+      <div style="font-size:12px;color:#4a5568">Updates every 60s · No cookies</div>
+    `;
+    setTimeout(loadVisitors, 60000);
+  } catch (e) {
+    document.getElementById('visitors-section').innerHTML =
+      '<div style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#64748b;border:1px solid #1e293b">Analytics API not reachable.</div>';
+  }
+}
+setTimeout(loadVisitors, 1500);
+
+async function loadPriority() {
+  try {
+    const res  = await fetch('/data/conversion-priority.json');
+    const data = await res.json();
+    const el   = document.getElementById('priority-section');
+    if (!data.ok || !data.prospects?.length) {
+      el.innerHTML = '<div style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#64748b;border:1px solid #1e293b">No priority data yet — run the scoring script.</div>';
+      return;
+    }
+    const rows = data.prospects.slice(0, 10).map((p, i) => `
+      <tr style="border-bottom:1px solid #0f172a">
+        <td style="padding:10px 12px;color:#f1f5f9;font-size:13px;font-weight:600">${i+1}. ${p.clinicName}</td>
+        <td style="padding:10px 12px;color:#64748b;font-size:12px">${p.city || ''}</td>
+        <td style="padding:10px 12px;font-size:12px;color:#94a3b8">${(p.reasons || []).slice(0,2).join(' · ')}</td>
+        <td style="padding:10px 12px;text-align:right">
+          ${p.phone ? `<a href="tel:${p.phone}" style="color:#39d98a;font-size:12px;text-decoration:none">📞</a>` : ''}
+        </td>
+      </tr>`).join('');
+    el.innerHTML = `
+      <table style="width:100%;border-collapse:collapse;background:#111827;border-radius:12px;overflow:hidden;border:1px solid #1e293b">
+        <thead><tr style="border-bottom:1px solid #1e293b">
+          <th style="padding:10px 12px;text-align:left;font-size:11px;color:#64748b;text-transform:uppercase">Clinic</th>
+          <th style="padding:10px 12px;text-align:left;font-size:11px;color:#64748b;text-transform:uppercase">City</th>
+          <th style="padding:10px 12px;text-align:left;font-size:11px;color:#64748b;text-transform:uppercase">Why hot</th>
+          <th style="padding:10px 12px;text-align:right;font-size:11px;color:#64748b;text-transform:uppercase">Call</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <div style="font-size:12px;color:#4a5568;margin-top:8px">Top 10 of ${data.prospects.length} · Ranked by signals + pain + touches</div>
+    `;
+  } catch(e) {
+    document.getElementById('priority-section').innerHTML =
+      '<div style="background:#111827;border-radius:12px;padding:16px;font-size:13px;color:#64748b;border:1px solid #1e293b">Priority API not reachable.</div>';
+  }
+}
+setTimeout(loadPriority, 2000);
+</script>
+
+<script>
+(function(){
+  fetch('/api/track',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      page:window.location.pathname,
+      ref:document.referrer,
+      utm_source:new URLSearchParams(window.location.search).get('utm_source'),
+      utm_campaign:new URLSearchParams(window.location.search).get('utm_campaign'),
+      ts:Date.now()
+    }),
+    keepalive:true
+  }).catch(()=>{});
+})();
+</script>
+</body>
+</html>

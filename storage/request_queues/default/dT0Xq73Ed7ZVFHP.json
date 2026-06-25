@@ -1,0 +1,9 @@
+{
+	"id": "dT0Xq73Ed7ZVFHP",
+	"json": "{\"id\":\"dT0Xq73Ed7ZVFHP\",\"url\":\"https://wordpress.org/plugins/wordpress-popup/reviews/\",\"loadedUrl\":\"https://wordpress.org/plugins/wordpress-popup/\",\"uniqueKey\":\"https://wordpress.org/plugins/wordpress-popup/reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"reviews\",\"kw\":\"lead generation\",\"pluginUrl\":\"https://wordpress.org/plugins/wordpress-popup/\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:57.902Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/wordpress-popup/reviews",
+	"url": "https://wordpress.org/plugins/wordpress-popup/reviews/"
+}

@@ -1,0 +1,88 @@
+ORE-Engine — Daily Report
+Date: 2026-04-19
+Generated: 2026-04-20T03:01:49.552Z
+────────────────────────────────────────────────────
+
+DISCOVERY & CRM
+  Total CRM leads: 77                     
+  New leads today: 0                      
+  Tier A: 26                              
+  Tier B: 51                              
+  Tier C: 0                               
+  Confirmed / accepted: 1                 
+  Offer acceptance rate: 1% (1/77 confirmed)
+  Top theme today: Other                  
+  High-score signals (>=9): 0             
+  Validated offer packs: 0                
+
+EMAIL OUTREACH
+  Total clinics in queue: 1013            
+  Emails pending (todo): 300              
+  Initial emails sent (all time): 74      
+  Emails sent today: 15                   
+  Emails sent yesterday: 10               
+  Total sent all time (SMTP): 248         
+    → Initial sends (all time): 183       
+    → Follow-ups (all time): 65           
+  Clinics with no email: 603              
+  Open rate proxy: 58% (43/74 proceeded to FU1)
+
+FOLLOW-UPS (3-stage)
+  FU1 due now: 22                         
+  FU1 due in next 7 days: 9               
+  FU2 due now: 2                          
+  FU1 sent (total): 43                    
+  FU2 sent (total): 40                    
+  FU3 sent (total): 0                     
+  Sequences complete: 0                   
+
+ACTION REQUIRED
+  1 reply(s) need a response:
+  • undefined                           → NEEDS_REVIEW
+
+HOT PROSPECTS (emailed in last 7 days, no reply yet)
+  24 clinic(s) worth following up:
+  • Chapnick Dental                        2d ago  sent
+  • Credit River Dental Centre             2d ago  sent
+  • Barrhaven Denture Clinic, Service for  2d ago  sent
+  • Centre Dentaire Limbour                2d ago  sent
+  • BK Dental                              5d ago  sent
+  ... and 19 more
+
+READY TO CLOSE (replied AUDIT_YES — send them the 3 questions)
+  None yet
+
+WINS THIS WEEK
+  No payments recorded this week
+
+DELIVERABILITY TREND (last 7 days)
+  2026-04-13  new: 8 fu:10 total: 18  ██████████████████
+  2026-04-14  new:10 fu:10 total: 20  ████████████████████
+  2026-04-15  new: 0 fu: 0 total:  0  
+  2026-04-16  new: 5 fu:10 total: 15  ███████████████
+  2026-04-17  new: 5 fu:10 total: 15  ███████████████
+  2026-04-18  new:10 fu:10 total: 20  ████████████████████
+  2026-04-19  new:15 fu:15 total: 30  ████████████████████
+
+BEST PERFORMING SUBJECT LINES (by FU1 proceed rate)
+  Not enough data yet
+
+VARIANT PERFORMANCE
+  No variant data yet (variantLabel field added going forward)
+
+VOICE OUTREACH
+  Voicemail drops today: 0                
+  Twilio calls made today: 0              
+  Callbacks received today: 0             
+  Total voice touches (all time): 0       
+  Total callbacks (all time): 0           
+
+SYSTEM HEALTH
+  Last health check: HEALTHY              
+  Scheduler errors today: 0               
+
+WARNINGS
+  ⚠ WARNING: No new CRM leads discovered today — check if main pipeline ran
+
+────────────────────────────────────────────────────
+End of report

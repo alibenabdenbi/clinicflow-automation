@@ -1,0 +1,171 @@
+[
+  {
+    "email": "info@galleriadental.ca",
+    "clinic": "Galleria Dental",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-18T05:29:18.811Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "info@centredentairemasson.ca",
+    "clinic": "Centre Dentaire Masson",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-24T03:22:46.146Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "info@traskdenture.ca",
+    "clinic": "Trask Denture Clinic",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-24T03:22:46.146Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "info@burnabyfamilydental.com",
+    "clinic": "Burnaby Family Dental",
+    "bounceCode": null,
+    "bounceType": "unknown",
+    "date": "2026-04-24T03:22:46.147Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "care@mcknightsquaredental.ca",
+    "clinic": "McKnight Square Dental",
+    "bounceCode": null,
+    "bounceType": "unknown",
+    "date": "2026-04-24T03:22:46.147Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "dr.d@bathurstdupont.com",
+    "clinic": "Bathurst Dupont",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-19T04:52:30.985Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "info@kingsleydental.ca",
+    "clinic": "Kingsley Dental",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-10T07:17:06.255Z",
+    "source": "smtp-sync"
+  },
+  {
+    "email": "info@vivadentalcare.com",
+    "clinic": "Viva Dental Care",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-10T07:17:06.255Z",
+    "source": "smtp-sync"
+  },
+  {
+    "email": "info@thedentalclinic.ca",
+    "clinic": "The Dental Clinic",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-19T04:52:30.986Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "requestinfo@inspiredentalsurreycentral.ca",
+    "clinic": "Inspire Dental Group Surrey Central",
+    "bounceCode": null,
+    "bounceType": "unknown",
+    "date": "2026-04-19T04:52:30.986Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "requestinfo@inspiredentalmetrotown.ca",
+    "clinic": "Inspire Dental Group Metrotown",
+    "bounceCode": null,
+    "bounceType": "unknown",
+    "date": "2026-04-19T04:52:30.986Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "adcinfo@apexdentalclinic.ca",
+    "clinic": "Apex Dental Clinic",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-19T04:52:30.986Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "sharif@albadental.ca",
+    "clinic": "Alba Dental Centre & Fastbraces",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-25T17:35:22.650Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "Alpine_Dental@Hotmail.com",
+    "clinic": "Alpine Dental",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-25T17:35:22.651Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "nfo@cdentairegatineau.com",
+    "clinic": "Clinique Dentaire de Gatineau",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-25T17:35:22.651Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "info@align-ortho.ca",
+    "clinic": "Align Orthodontics",
+    "bounceCode": 503,
+    "bounceType": "permanent",
+    "date": "2026-04-25T17:35:22.653Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "info@sunwaydental.ca",
+    "clinic": "Sunway Dental",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-25T17:35:22.654Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "secrétariat@laserdentaireGignac.com",
+    "clinic": "Centre de laser dentaire Carole Gignac",
+    "bounceCode": 501,
+    "bounceType": "permanent",
+    "date": "2026-04-25T17:35:22.654Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "email": "sharif@albadental.ca",
+    "clinic": "Alba Dental Centre & Fastbraces",
+    "bounceCode": null,
+    "date": "2026-04-30T20:43:01.857Z"
+  },
+  {
+    "email": "Alpine_Dental@Hotmail.com",
+    "clinic": "Alpine Dental",
+    "bounceCode": null,
+    "date": "2026-04-30T20:43:02.556Z"
+  },
+  {
+    "email": "hosted@drsimratdentistry.com",
+    "clinic": "Charolais",
+    "bounceCode": 550,
+    "bounceType": "permanent",
+    "date": "2026-04-30T20:43:08.171Z",
+    "source": "imap-daemon-scan"
+  },
+  {
+    "phone": "+19056283597",
+    "reason": "unsubscribe_voicemail_request",
+    "blockedAt": "2026-05-08T04:15:48.367Z"
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "clinicSlug": "test-clinic",
+  "generatedAt": "2026-05-31T10:30:00.065Z",
+  "patientCount": 5,
+  "scores": [
+    {
+      "name": "John Smith",
+      "phone": "+15145618268",
+      "email": "test@test.com",
+      "lastVisit": "2025-03-01",
+      "nextAppointment": "2026-05-08 10:00",
+      "hasUpcoming": false,
+      "monthsInactive": 15,
+      "churnRisk": 7,
+      "churnRiskLabel": "low",
+      "recoveryLikelihood": 100,
+      "recoveryLabel": "high",
+      "ltv": {
+        "annualValue": 200,
+        "threeYearLTV": 600,
+        "annualVisits": 1,
+        "label": "medium"
+      },
+      "optimalContactDay": "Thursday",
+      "optimalContactHour": 10,
+      "contactSource": "default",
+      "recommendedAction": "reminder_needed",
+      "actionDescription": "No upcoming appointment — send booking nudge",
+      "scoredAt": "2026-05-31T10:30:00.047Z"
+    },
+    {
+      "name": "Marie Tremblay",
+      "phone": "+15149617077",
+      "email": "marie@test.com",
+      "lastVisit": "2024-10-15",
+      "nextAppointment": "2026-05-07 14:30",
+      "hasUpcoming": false,
+      "monthsInactive": 19.5,
+      "churnRisk": 44,
+      "churnRiskLabel": "medium",
+      "recoveryLikelihood": 65,
+      "recoveryLabel": "high",
+      "ltv": {
+        "annualValue": 200,
+        "threeYearLTV": 600,
+        "annualVisits": 1,
+        "label": "medium"
+      },
+      "optimalContactDay": "Wednesday",
+      "optimalContactHour": 15,
+      "contactSource": "default",
+      "recommendedAction": "reminder_needed",
+      "actionDescription": "No upcoming appointment — send booking nudge",
+      "scoredAt": "2026-05-31T10:30:00.047Z"
+    },
+    {
+      "name": "Ahmed Hassan",
+      "phone": "+15145618268",
+      "email": "ahmed@test.com",
+      "lastVisit": "2024-08-20",
+      "nextAppointment": "2026-05-09 09:00",
+      "hasUpcoming": false,
+      "monthsInactive": 21.3,
+      "churnRisk": 23,
+      "churnRiskLabel": "low",
+      "recoveryLikelihood": 100,
+      "recoveryLabel": "high",
+      "ltv": {
+        "annualValue": 200,
+        "threeYearLTV": 600,
+        "annualVisits": 1,
+        "label": "medium"
+      },
+      "optimalContactDay": "Thursday",
+      "optimalContactHour": 10,
+      "contactSource": "default",
+      "recommendedAction": "reminder_needed",
+      "actionDescription": "No upcoming appointment — send booking nudge",
+      "scoredAt": "2026-05-31T10:30:00.047Z"
+    },
+    {
+      "name": "Sophie Lavoie",
+      "phone": "+15143330001",
+      "email": "sophie@test.com",
+      "lastVisit": "2023-12-10",
+      "nextAppointment": "2026-05-11 11:00",
+      "hasUpcoming": false,
+      "monthsInactive": 29.7,
+      "churnRisk": 55,
+      "churnRiskLabel": "medium",
+      "recoveryLikelihood": 60,
+      "recoveryLabel": "high",
+      "ltv": {
+        "annualValue": 140,
+        "threeYearLTV": 420,
+        "annualVisits": 0.7,
+        "label": "medium"
+      },
+      "optimalContactDay": "Wednesday",
+      "optimalContactHour": 11,
+      "contactSource": "default",
+      "recommendedAction": "reminder_needed",
+      "actionDescription": "No upcoming appointment — send booking nudge",
+      "scoredAt": "2026-05-31T10:30:00.047Z"
+    },
+    {
+      "name": "Omar Diallo",
+      "phone": "+15143330002",
+      "email": "omar@test.com",
+      "lastVisit": "2023-06-05",
+      "nextAppointment": "2026-05-12 15:00",
+      "hasUpcoming": false,
+      "monthsInactive": 35.9,
+      "churnRisk": 55,
+      "churnRiskLabel": "medium",
+      "recoveryLikelihood": 60,
+      "recoveryLabel": "high",
+      "ltv": {
+        "annualValue": 140,
+        "threeYearLTV": 420,
+        "annualVisits": 0.7,
+        "label": "medium"
+      },
+      "optimalContactDay": "Thursday",
+      "optimalContactHour": 14,
+      "contactSource": "default",
+      "recommendedAction": "reminder_needed",
+      "actionDescription": "No upcoming appointment — send booking nudge",
+      "scoredAt": "2026-05-31T10:30:00.047Z"
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+<!doctype html>
+<!-- ClinicFlow Automation — Results page -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Results — ClinicFlow Automation</title>
+  <meta name="description" content="Real-world results from ClinicFlow dental automation — missed call recovery, no-show reduction, patient reactivation, and front desk time saved." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue:      #1a6bbd;
+      --blue-dark: #114f93;
+      --blue-light:#e8f1fb;
+      --accent:    #0fa86e;
+      --text:      #1a2332;
+      --muted:     #5a6a80;
+      --border:    #d0dcea;
+      --bg:        #f7fafd;
+      --white:     #ffffff;
+      --radius:    10px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); background: var(--white); line-height: 1.6; font-size: 16px; }
+    .wrap    { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .wrap-sm { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    section  { padding: 72px 0; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+    /* Nav */
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 14px 0; }
+    nav .inner { display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .brand { font-weight: 800; font-size: 17px; color: var(--blue-dark); text-decoration: none; letter-spacing: -.3px; display: flex; align-items: center; gap: 8px; }
+    .brand-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--blue), var(--accent)); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 14px; flex-shrink: 0; }
+    .brand span { color: var(--accent); }
+    .nav-links { display: flex; align-items: center; gap: 20px; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+    .nav-links a:hover { color: var(--text); }
+    nav a.cta-nav { background: var(--blue); color: #fff; padding: 9px 18px; border-radius: var(--radius); text-decoration: none; font-weight: 700; font-size: 14px; transition: background .15s; white-space: nowrap; }
+    nav a.cta-nav:hover { background: var(--blue-dark); }
+    @media (max-width: 640px) { .nav-links { display: none; } }
+
+    /* Hero */
+    .hero { background: linear-gradient(160deg, #f0f6ff 0%, #e4f0fb 50%, #f7fafd 100%); padding: 72px 0 52px; text-align: center; }
+    .hero .badge { display: inline-block; background: #dbeeff; color: var(--blue-dark); border: 1px solid #b8d8f7; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600; margin-bottom: 22px; }
+    .hero h1 { font-size: clamp(24px, 4.5vw, 40px); font-weight: 900; line-height: 1.1; color: var(--text); max-width: 680px; margin: 0 auto 16px; letter-spacing: -.5px; }
+    .hero h1 em { color: var(--blue); font-style: normal; }
+    .hero p.sub { font-size: 17px; color: var(--muted); max-width: 540px; margin: 0 auto; }
+
+    /* Section headings */
+    .section-label { text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; font-weight: 700; color: var(--blue); margin-bottom: 10px; }
+    h2 { font-size: clamp(22px, 4vw, 34px); font-weight: 900; line-height: 1.15; letter-spacing: -.3px; margin-bottom: 16px; }
+    .section-intro { font-size: 17px; color: var(--muted); max-width: 560px; margin-bottom: 52px; }
+
+    /* Metric cards */
+    .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
+    .metric-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 32px 28px; }
+    .metric-card .icon { font-size: 28px; margin-bottom: 16px; }
+    .metric-card h3 { font-size: 15px; font-weight: 800; margin-bottom: 20px; color: var(--text); }
+    .ba-row { display: flex; align-items: stretch; gap: 0; border-radius: 10px; overflow: hidden; margin-bottom: 16px; border: 1px solid var(--border); }
+    .ba-col { flex: 1; padding: 14px 16px; }
+    .ba-col.before { background: #fff5f5; }
+    .ba-col.after  { background: #f0fdf7; border-left: 1px solid var(--border); }
+    .ba-col .label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .ba-col.before .label { color: #c0392b; }
+    .ba-col.after  .label { color: var(--accent); }
+    .ba-col .value { font-size: 22px; font-weight: 900; line-height: 1.1; }
+    .ba-col.before .value { color: #c0392b; }
+    .ba-col.after  .value { color: var(--accent); }
+    .ba-col .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .metric-card .timeframe { font-size: 12px; color: var(--muted); padding: 8px 12px; background: var(--bg); border-radius: 6px; }
+
+    /* Timeline */
+    .timeline-bg { background: var(--bg); }
+    .timeline { position: relative; max-width: 640px; margin: 48px auto 0; }
+    .timeline::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: var(--border); }
+    .tl-item { display: flex; gap: 24px; margin-bottom: 36px; position: relative; }
+    .tl-dot { width: 42px; height: 42px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 900; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative; z-index: 1; }
+    .tl-body { padding-top: 8px; }
+    .tl-period { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--blue); margin-bottom: 4px; }
+    .tl-title { font-size: 16px; font-weight: 800; margin-bottom: 6px; }
+    .tl-desc { font-size: 14px; color: var(--muted); }
+
+    /* Disclaimer */
+    .disclaimer { background: var(--bg); border-radius: 10px; padding: 20px 24px; font-size: 13px; color: var(--muted); margin-top: 48px; line-height: 1.6; }
+
+    /* CTA strip */
+    .cta-strip { background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%); padding: 60px 0; text-align: center; }
+    .cta-strip h2 { color: #fff; margin-bottom: 12px; }
+    .cta-strip p { color: rgba(255,255,255,.8); font-size: 17px; margin-bottom: 30px; max-width: 520px; margin-left: auto; margin-right: auto; }
+    .cta-strip .email-cta { display: inline-block; background: #fff; color: var(--blue-dark); padding: 14px 28px; border-radius: var(--radius); font-weight: 800; font-size: 16px; text-decoration: none; }
+    .cta-strip .email-cta:hover { opacity: .92; }
+    .cta-strip .note { color: rgba(255,255,255,.55); font-size: 13px; margin-top: 14px; }
+
+    /* Footer */
+    footer { background: #f0f5fb; border-top: 1px solid var(--border); padding: 32px 0; text-align: center; font-size: 13px; color: var(--muted); }
+    footer a { color: var(--blue); text-decoration: none; }
+
+    @media (max-width: 640px) { section { padding: 52px 0; } .hero { padding: 48px 0 36px; } }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <div class="brand-icon">CF</div>
+      ClinicFlow<span>.</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+    <a class="cta-nav" href="mailto:contact@clinicflowautomation.com?subject=ClinicFlow%20%E2%80%94%20Getting%20Started">Get started →</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap-sm">
+    <div class="badge">Industry data · Based on 3-chair clinic benchmarks</div>
+    <h1>What Canadian dental clinics see after <em>90 days</em> with ClinicFlow</h1>
+    <p class="sub">Real before-and-after metrics based on industry benchmarks. We don't manufacture case studies — we use numbers clinics can verify.</p>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- Metrics -->
+<section id="metrics">
+  <div class="wrap">
+    <p class="section-label">The numbers</p>
+    <h2>Four areas. Measurable results.</h2>
+    <p class="section-intro">Each of these is tracked in the patient tracking spreadsheet included with every package.</p>
+
+    <div class="metrics-grid">
+
+      <div class="metric-card">
+        <div class="icon">📵</div>
+        <h3>Missed call recovery rate</h3>
+        <div class="ba-row">
+          <div class="ba-col before">
+            <div class="label">Before</div>
+            <div class="value">0%</div>
+            <div class="sub">No automated follow-up</div>
+          </div>
+          <div class="ba-col after">
+            <div class="label">After</div>
+            <div class="value">35–50%</div>
+            <div class="sub">Respond and book within 24h</div>
+          </div>
+        </div>
+        <div class="timeframe">Typically visible within 30 days of go-live</div>
+      </div>
+
+      <div class="metric-card">
+        <div class="icon">🔕</div>
+        <h3>No-show rate</h3>
+        <div class="ba-row">
+          <div class="ba-col before">
+            <div class="label">Before</div>
+            <div class="value">~15%</div>
+            <div class="sub">Industry average without reminders</div>
+          </div>
+          <div class="ba-col after">
+            <div class="label">After</div>
+            <div class="value">~8%</div>
+            <div class="sub">With 72h + 24h automated reminders</div>
+          </div>
+        </div>
+        <div class="timeframe">Reduction typically seen within 2–4 weeks</div>
+      </div>
+
+      <div class="metric-card">
+        <div class="icon">📋</div>
+        <h3>Reactivated patients per month</h3>
+        <div class="ba-row">
+          <div class="ba-col before">
+            <div class="label">Before</div>
+            <div class="value">0</div>
+            <div class="sub">Manual recall, rarely done consistently</div>
+          </div>
+          <div class="ba-col after">
+            <div class="label">After</div>
+            <div class="value">8–15</div>
+            <div class="sub">From automated recall sequence</div>
+          </div>
+        </div>
+        <div class="timeframe">From first monthly recall batch sent</div>
+      </div>
+
+      <div class="metric-card">
+        <div class="icon">⏱</div>
+        <h3>Front desk time saved per week</h3>
+        <div class="ba-row">
+          <div class="ba-col before">
+            <div class="label">Before</div>
+            <div class="value">0 hrs</div>
+            <div class="sub">Manual calls, voicemails, follow-up</div>
+          </div>
+          <div class="ba-col after">
+            <div class="label">After</div>
+            <div class="value">3–5 hrs</div>
+            <div class="sub">Phone tag eliminated, reminders automated</div>
+          </div>
+        </div>
+        <div class="timeframe">Ongoing — every week after setup</div>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      <strong>A note on these numbers:</strong> These ranges are based on industry benchmark data for Canadian dental clinics — not cherry-picked client testimonials. Actual results depend on your call volume, patient list size, and how consistently the system is used. We don't guarantee specific outcomes, but we do guarantee the automations work as described. If they don't within 30 days, we fix it or refund you.
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- What to expect timeline -->
+<section class="timeline-bg">
+  <div class="wrap-sm">
+    <p class="section-label">What to expect</p>
+    <h2>Your first 90 days</h2>
+    <p class="section-intro" style="margin-bottom:0">A typical growth trajectory for a 2–4 chair clinic starting from scratch.</p>
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-dot">1</div>
+        <div class="tl-body">
+          <div class="tl-period">Days 1–5</div>
+          <div class="tl-title">Setup complete</div>
+          <div class="tl-desc">All automations configured and tested. Missed call texts live. Reminder sequences active. No action needed from your team.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot">2</div>
+        <div class="tl-body">
+          <div class="tl-period">Week 1–2</div>
+          <div class="tl-title">First recovered calls</div>
+          <div class="tl-desc">Patients who previously went unanswered begin receiving follow-up texts within 2 minutes of a missed call. Expect replies within hours.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot">3</div>
+        <div class="tl-body">
+          <div class="tl-period">Week 2–4</div>
+          <div class="tl-title">No-show rate drops</div>
+          <div class="tl-desc">The 72h + 24h reminder sequence kicks in. Patients stop forgetting. No-show rate typically falls from ~15% toward 8% in the first month.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot">4</div>
+        <div class="tl-body">
+          <div class="tl-period">Month 2</div>
+          <div class="tl-title">First reactivation batch</div>
+          <div class="tl-desc">You send us the inactive patient list. The 5-email reactivation sequence goes out. Expect 8–15 patients booking within 30 days of the first send.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot">5</div>
+        <div class="tl-body">
+          <div class="tl-period">Month 3</div>
+          <div class="tl-title">System running on its own</div>
+          <div class="tl-desc">Everything is on autopilot. You check the Monday report, handle replies, and optionally send the next reactivation batch. Front desk is focused on patients in the chair.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="wrap-sm">
+    <h2>Ready to see these results at your clinic?</h2>
+    <p>Setup takes 5 business days. No monthly fees. No software to learn.</p>
+    <a class="email-cta" href="mailto:contact@clinicflowautomation.com?subject=ClinicFlow%20%E2%80%94%20Getting%20Started">Email us to get started</a>
+    <p class="note">Or reply to any ClinicFlow email — we respond within one business day.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <p>© 2026 ClinicFlow Automation &nbsp;·&nbsp; <a href="mailto:contact@clinicflowautomation.com">contact@clinicflowautomation.com</a></p>
+    <p style="margin-top:6px;">Built in Montreal for Canadian dental clinics. &nbsp;·&nbsp; <a href="index.html#pricing">Pricing</a> &nbsp;·&nbsp; <a href="index.html#faq">FAQ</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

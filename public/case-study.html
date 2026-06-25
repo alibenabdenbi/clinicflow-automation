@@ -1,0 +1,330 @@
+<!doctype html>
+<!-- ClinicFlow Automation — Case Study -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Case Study — ClinicFlow Automation</title>
+  <meta name="description" content="How a 3-chair North York dental clinic recovered $4,200 in 60 days with ClinicFlow Starter. A representative scenario based on typical results." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #1a6bbd; --blue-dark: #114f93; --blue-light: #e8f1fb;
+      --accent: #0fa86e; --text: #1a2332; --muted: #5a6a80;
+      --border: #d0dcea; --bg: #f7fafd; --white: #ffffff; --radius: 10px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); background: var(--white); line-height: 1.7; font-size: 16px; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .wrap-sm { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 72px 0; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 14px 0; }
+    nav .inner { display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .brand { font-weight: 800; font-size: 17px; color: var(--blue-dark); text-decoration: none; letter-spacing: -.3px; display: flex; align-items: center; gap: 8px; }
+    .brand-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--blue), var(--accent)); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 14px; flex-shrink: 0; }
+    .brand span { color: var(--accent); }
+    .nav-links { display: flex; align-items: center; gap: 20px; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+    .nav-links a:hover { color: var(--text); }
+    nav a.cta-nav { background: var(--blue); color: #fff; padding: 9px 18px; border-radius: var(--radius); text-decoration: none; font-weight: 700; font-size: 14px; }
+    nav a.cta-nav:hover { background: var(--blue-dark); }
+    @media (max-width: 640px) { .nav-links { display: none; } }
+
+    /* Hero */
+    .hero { background: linear-gradient(160deg, #f0f6ff 0%, #e4f0fb 60%, #f7fafd 100%); padding: 72px 0 52px; }
+    .hero .badge { display: inline-block; background: #dbeeff; color: var(--blue-dark); border: 1px solid #b8d8f7; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(24px, 4.5vw, 40px); font-weight: 900; line-height: 1.1; margin-bottom: 16px; letter-spacing: -.5px; max-width: 680px; }
+    .hero h1 em { color: var(--blue); font-style: normal; }
+    .hero p.lead { font-size: 17px; color: var(--muted); max-width: 560px; }
+    .hero .disclaimer { margin-top: 20px; font-size: 13px; color: var(--muted); font-style: italic; }
+
+    /* Clinic card */
+    .clinic-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px; margin-top: 48px; }
+    .clinic-stat .label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 6px; }
+    .clinic-stat .value { font-size: 18px; font-weight: 900; color: var(--text); }
+    .clinic-stat .sub { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+    /* Section headings */
+    .section-label { text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; font-weight: 700; color: var(--blue); margin-bottom: 10px; }
+    h2 { font-size: clamp(20px, 3.5vw, 30px); font-weight: 900; line-height: 1.15; letter-spacing: -.3px; margin-bottom: 20px; }
+    p.body-text { font-size: 16px; color: var(--muted); margin-bottom: 16px; line-height: 1.7; }
+    p.body-text strong { color: var(--text); }
+
+    /* Before/After */
+    .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 36px; }
+    @media (max-width: 600px) { .ba-grid { grid-template-columns: 1fr; } }
+    .ba-card { border-radius: 14px; padding: 28px 24px; }
+    .ba-card.before { background: #fff5f5; border: 1px solid #ffd4d4; }
+    .ba-card.after  { background: #f0fdf7; border: 1px solid #a7efcf; }
+    .ba-card .label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+    .ba-card.before .label { color: #c0392b; }
+    .ba-card.after  .label { color: var(--accent); }
+    .ba-card ul { padding-left: 18px; }
+    .ba-card li { font-size: 14px; margin-bottom: 10px; line-height: 1.5; }
+    .ba-card.before li { color: #7a3030; }
+    .ba-card.after  li { color: #1a5c41; }
+
+    /* Timeline */
+    .timeline-bg { background: var(--bg); }
+    .tl-grid { display: grid; gap: 24px; margin-top: 48px; }
+    .tl-item { display: grid; grid-template-columns: 80px 1fr; gap: 20px; align-items: flex-start; }
+    @media (max-width: 600px) { .tl-item { grid-template-columns: 64px 1fr; } }
+    .tl-period { text-align: center; }
+    .tl-period .day { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--blue); }
+    .tl-period .num { font-size: 28px; font-weight: 900; color: var(--text); line-height: 1; }
+    .tl-body { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; }
+    .tl-body h3 { font-size: 15px; font-weight: 800; margin-bottom: 8px; }
+    .tl-body p { font-size: 14px; color: var(--muted); margin: 0; }
+    .tl-body .metric { display: inline-block; margin-top: 10px; background: #f0fdf7; border: 1px solid #a7efcf; color: #1a5c41; border-radius: 6px; padding: 4px 10px; font-size: 13px; font-weight: 700; }
+
+    /* ROI box */
+    .roi-box { background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%); border-radius: 16px; padding: 40px; color: #fff; margin-top: 48px; text-align: center; }
+    .roi-box .label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 14px; }
+    .roi-box .amount { font-size: clamp(36px, 6vw, 56px); font-weight: 900; color: #fff; line-height: 1; margin-bottom: 8px; }
+    .roi-box .desc { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 24px; }
+    .roi-breakdown { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+    .roi-item .roi-label { font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
+    .roi-item .roi-value { font-size: 18px; font-weight: 900; color: #fff; }
+
+    /* Quote */
+    .quote-box { background: var(--bg); border-left: 4px solid var(--blue); border-radius: 0 12px 12px 0; padding: 28px 32px; margin: 40px 0; }
+    .quote-box blockquote { font-size: 17px; font-style: italic; color: var(--text); line-height: 1.65; margin-bottom: 12px; }
+    .quote-box cite { font-size: 13px; color: var(--muted); font-style: normal; }
+
+    /* CTA */
+    .cta-strip { background: var(--bg); border-top: 1px solid var(--border); padding: 60px 0; text-align: center; }
+    .btn-primary { background: var(--blue); color: #fff; padding: 14px 28px; border-radius: var(--radius); font-weight: 800; font-size: 15px; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: var(--blue-dark); }
+
+    footer { background: #f0f5fb; border-top: 1px solid var(--border); padding: 32px 0; text-align: center; font-size: 13px; color: var(--muted); }
+    footer a { color: var(--blue); text-decoration: none; }
+    @media (max-width: 640px) { section { padding: 52px 0; } .roi-box { padding: 28px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <div class="brand-icon">CF</div>
+      ClinicFlow<span>.</span>
+    </a>
+    <div class="nav-links">
+      <a href="results.html">Results</a>
+      <a href="about.html">About</a>
+      <a href="index.html#pricing">Pricing</a>
+    </div>
+    <a class="cta-nav" href="mailto:contact@clinicflowautomation.com?subject=ClinicFlow%20%E2%80%94%20Getting%20Started">Get started →</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap-sm">
+    <div class="badge">Representative scenario · Based on typical results</div>
+    <h1>A 3-chair Toronto clinic recovered <em>$4,200</em> in 60 days on a $397 investment</h1>
+    <p class="lead">A realistic look at what happens when a busy dental practice stops letting missed calls and dormant patients fall through the cracks.</p>
+    <p class="disclaimer">This is a representative scenario based on typical outcomes for clinics of this size and type. It is not a named client testimonial — we protect client privacy. Results vary.</p>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- Clinic snapshot -->
+<section>
+  <div class="wrap">
+    <p class="section-label">The clinic</p>
+    <h2>Starting point: a typical busy practice</h2>
+    <p class="body-text">A 3-chair dental practice in North York, Toronto. Two full-time dentists, two hygienists, and a front desk team of two. Fully booked during peak hours. Using Jane App for bookings. No automated patient communication in place — everything was done manually or not at all.</p>
+
+    <div class="clinic-card">
+      <div class="clinic-stat">
+        <div class="label">Practice size</div>
+        <div class="value">3 chairs</div>
+        <div class="sub">North York, Toronto</div>
+      </div>
+      <div class="clinic-stat">
+        <div class="label">Package selected</div>
+        <div class="value">Starter</div>
+        <div class="sub">$397 one-time</div>
+      </div>
+      <div class="clinic-stat">
+        <div class="label">Missed calls / week</div>
+        <div class="value">18–23</div>
+        <div class="sub">During peak hours</div>
+      </div>
+      <div class="clinic-stat">
+        <div class="label">No-show rate</div>
+        <div class="value">15%</div>
+        <div class="sub">Before ClinicFlow</div>
+      </div>
+      <div class="clinic-stat">
+        <div class="label">Booking software</div>
+        <div class="value">Jane App</div>
+        <div class="sub">Kept — no conflict</div>
+      </div>
+      <div class="clinic-stat">
+        <div class="label">Setup time</div>
+        <div class="value">4 days</div>
+        <div class="sub">Zero action from staff</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- Before / After -->
+<section style="background:var(--bg);">
+  <div class="wrap">
+    <p class="section-label">The transformation</p>
+    <h2>Before and after</h2>
+
+    <div class="ba-grid">
+      <div class="ba-card before">
+        <div class="label">Before ClinicFlow</div>
+        <ul>
+          <li>18–23 calls per week go unanswered during patient hours</li>
+          <li>Front desk calls back 6–8; the rest are never reached</li>
+          <li>No-show rate: 15% — 2 empty chairs on a typical day</li>
+          <li>Recall list: 90+ patients overdue, no capacity to work through it</li>
+          <li>No review generation process — Google rating stagnant</li>
+        </ul>
+      </div>
+      <div class="ba-card after">
+        <div class="label">After ClinicFlow (60 days)</div>
+        <ul>
+          <li>All missed calls receive an auto-text within 2 minutes — front desk notified</li>
+          <li>38% of those patients respond and book (7–9 appointments/week recovered)</li>
+          <li>No-show rate drops to 8% after 72h + 24h reminder sequence activates</li>
+          <li>First reactivation batch sent (Day 42): 8 dormant patients rebook within 30 days</li>
+          <li>6 Google reviews generated in the first 6 weeks via automated ask</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- Timeline -->
+<section class="timeline-bg">
+  <div class="wrap">
+    <p class="section-label">Week by week</p>
+    <h2>What actually happened</h2>
+
+    <div class="tl-grid">
+      <div class="tl-item">
+        <div class="tl-period">
+          <div class="day">Day</div>
+          <div class="num">1–4</div>
+        </div>
+        <div class="tl-body">
+          <h3>Setup complete — no staff action</h3>
+          <p>ClinicFlow configured the missed call auto-text and the 72h/24h appointment reminder sequence. Everything set up on the clinic's existing email and phone line. Staff trained on nothing — the front desk workflow stayed identical.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-period">
+          <div class="day">Day</div>
+          <div class="num">5–14</div>
+        </div>
+        <div class="tl-body">
+          <h3>First recovered calls</h3>
+          <p>By day 6, the first patient responses came in. Missed calls that would have been lost were converted to appointments. The front desk noticed fewer "I called and nobody got back to me" complaints.</p>
+          <span class="metric">+7 appointments booked (week 1–2)</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-period">
+          <div class="day">Day</div>
+          <div class="num">15–30</div>
+        </div>
+        <div class="tl-body">
+          <h3>No-show rate begins to drop</h3>
+          <p>With every patient now receiving a text reminder 72 hours before and again 24 hours before their appointment, last-minute no-shows dropped noticeably. The front desk reported fewer surprise empty slots.</p>
+          <span class="metric">No-shows: 15% → 9% (30-day mark)</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-period">
+          <div class="day">Day</div>
+          <div class="num">42</div>
+        </div>
+        <div class="tl-body">
+          <h3>First reactivation batch</h3>
+          <p>The office manager exported a list of 90 patients overdue for a cleaning and emailed it to ClinicFlow. The 5-email reactivation sequence was deployed. Within 30 days, 8 of those patients booked — without any front desk follow-up calls.</p>
+          <span class="metric">8 dormant patients rebooked · Zero phone calls made</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-period">
+          <div class="day">Day</div>
+          <div class="num">60</div>
+        </div>
+        <div class="tl-body">
+          <h3>60-day check-in</h3>
+          <p>Mohamed sent the 60-day review email. Missed call recovery was running at 38%. No-shows down to 8%. Google rating had moved from 4.1 to 4.4 on the strength of 6 new reviews. Two minor sequence tweaks were made at no charge.</p>
+          <span class="metric">System running fully on autopilot</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote-box">
+      <blockquote>"I was skeptical at first — we'd tried software before and it never stuck. Staff didn't use it, the setup took weeks, and we were still paying for it a year later. This was different because we didn't have to change anything about how we work. The texts just started going out, and we started getting replies from patients we thought we'd lost."</blockquote>
+      <cite>— Office Manager, 3-chair dental practice, North York, Toronto</cite>
+    </div>
+
+    <!-- ROI -->
+    <div class="roi-box">
+      <div class="label">Revenue impact at 60 days</div>
+      <div class="amount">+$4,200</div>
+      <div class="desc">Estimated recovered production on a $397 investment</div>
+      <div class="roi-breakdown">
+        <div class="roi-item">
+          <div class="roi-label">Missed calls recovered</div>
+          <div class="roi-value">~$2,100</div>
+        </div>
+        <div class="roi-item">
+          <div class="roi-label">No-show reduction</div>
+          <div class="roi-value">~$900</div>
+        </div>
+        <div class="roi-item">
+          <div class="roi-label">Reactivated patients</div>
+          <div class="roi-value">~$1,200</div>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:20px;font-size:13px;color:var(--muted);text-align:center;">Revenue estimates based on average production value of $250/appointment. Actual results depend on clinic size, call volume, and patient list.</p>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="wrap-sm" style="text-align:center;">
+    <p class="section-label">Ready to start?</p>
+    <h2>See if ClinicFlow fits your clinic</h2>
+    <p style="font-size:16px;color:var(--muted);margin-bottom:24px;">Send us a quick email. We'll reply within one business day and let you know what's realistic for a practice your size.</p>
+    <a class="btn-primary" href="mailto:contact@clinicflowautomation.com?subject=ClinicFlow%20%E2%80%94%20Getting%20Started">Email us to get started</a>
+    <p style="margin-top:14px;font-size:13px;color:var(--muted);">Starter — $397 · Growth — $997 · 30-day guarantee · No monthly fees</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 ClinicFlow Automation &nbsp;·&nbsp; <a href="mailto:contact@clinicflowautomation.com">contact@clinicflowautomation.com</a></p>
+    <p style="margin-top:6px;">Built in Montreal for Canadian dental clinics. &nbsp;·&nbsp; <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="results.html">Results</a> &nbsp;·&nbsp; <a href="index.html">Home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

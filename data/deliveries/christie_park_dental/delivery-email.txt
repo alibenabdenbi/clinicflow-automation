@@ -1,0 +1,35 @@
+To: test@christieparkdental.com
+Subject: Your ClinicFlow Growth package is ready — Christie Park Dental
+
+Hi,
+
+Your ClinicFlow Growth setup is complete. Everything is attached to this email.
+
+Here's what's included:
+
+  • missed-call-followup.md
+  • appointment-reminder.md
+  • monthly-newsletter.md
+  • tracking-spreadsheet.md
+  • reactivation-campaign.md
+  • new-patient-welcome.md
+  • review-request.md
+  • setup-summary.md
+  • setup-guide.md
+
+Where to start:
+1. Open setup-summary.md — it explains every automation, how each one triggers, and what your team needs to do (very little).
+2. If you have front desk staff, share staff-training-guide.md with them so they know what's automated and how to handle patient replies.
+3. Set up the tracking spreadsheet this week — it takes 5 minutes and gives you a clear picture within 30 days.
+4. Send your inactive patient list to start the first reactivation batch — instructions are in reactivation-campaign.md.
+
+A few things worth noting:
+- All automations are live as of today. You don't need to do anything to activate them.
+- Patient replies to automated messages land in your regular inbox — treat them like normal emails.
+- If anything looks wrong or needs adjusting, email me directly. I respond within 4 business hours.
+
+I'll check in with you at the 60-day mark to review results.
+
+Mohamed
+contact@clinicflowautomation.com
+clinicflowautomation.com

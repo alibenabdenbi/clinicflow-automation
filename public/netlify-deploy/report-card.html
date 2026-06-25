@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Clinic Communication Report Card — ClinicFlow</title>
+<meta name="description" content="Get your free clinic communication report card. See how your patient communication compares to other Canadian clinics in your city. Takes 30 seconds.">
+<link rel="canonical" href="https://clinicflowautomation.com/report-card">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Syne+Mono&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Syne',sans-serif;background:#0b0f17;color:#f1f5f9;min-height:100vh}
+nav{padding:20px;display:flex;justify-content:space-between;align-items:center;max-width:900px;margin:0 auto}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}
+.logo{font-size:16px;font-weight:700;color:#fff!important}
+.hero{padding:60px 20px 40px;text-align:center;max-width:700px;margin:0 auto}
+.badge{display:inline-block;background:rgba(57,217,138,.1);color:#39d98a;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;border:1px solid rgba(57,217,138,.2)}
+h1{font-size:clamp(28px,5vw,48px);font-weight:800;line-height:1.15;margin-bottom:16px}
+h1 span{color:#39d98a}
+.sub{font-size:16px;color:#94a3b8;line-height:1.7;margin-bottom:40px}
+.wrap{max-width:600px;margin:0 auto;padding:0 20px 80px}
+.search-card{background:#111827;border-radius:20px;padding:32px;margin-bottom:24px;border:1px solid rgba(255,255,255,.06)}
+.search-label{font-size:14px;font-weight:600;color:#94a3b8;margin-bottom:10px;display:block}
+.search-input{width:100%;background:#0b0f17;border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px 16px;font-size:16px;color:#f1f5f9;font-family:'Syne',sans-serif;outline:none;margin-bottom:16px;transition:border-color .2s}
+.search-input:focus{border-color:rgba(124,92,255,.5)}
+.search-btn{width:100%;background:#7c5cff;color:#fff;border:none;border-radius:12px;padding:16px;font-size:16px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif;transition:opacity .2s}
+.search-btn:hover{opacity:.9}
+.search-btn:disabled{opacity:.5;cursor:not-allowed}
+#results{display:none}
+.grade-card{background:#111827;border-radius:20px;padding:32px;text-align:center;margin-bottom:20px;border:1px solid rgba(255,255,255,.06)}
+.grade-letter{font-family:'Syne Mono',monospace;font-size:80px;font-weight:700;line-height:1;margin-bottom:8px}
+.grade-A{color:#39d98a}.grade-B{color:#86efac}.grade-C{color:#fbbf24}.grade-D{color:#f97316}.grade-F{color:#f87171}
+.grade-label{font-size:16px;color:#94a3b8;margin-bottom:12px}
+.clinic-name-result{font-size:22px;font-weight:800;margin-bottom:12px}
+.grade-desc{font-size:14px;color:#94a3b8;line-height:1.7;max-width:400px;margin:0 auto}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.metric{background:#111827;border-radius:14px;padding:16px;text-align:center;border:1px solid rgba(255,255,255,.06)}
+.metric-val{font-size:22px;font-weight:800;margin-bottom:4px}
+.metric-lbl{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:1px}
+.findings{margin-bottom:20px}
+.finding{display:flex;gap:12px;align-items:flex-start;padding:14px;background:#111827;border-radius:12px;margin-bottom:8px;font-size:14px;line-height:1.6;border:1px solid rgba(255,255,255,.04)}
+.finding.bad{border-left:3px solid #f87171}
+.finding.good{border-left:3px solid #39d98a}
+.finding-icon{flex-shrink:0}
+.finding-text{color:#94a3b8}
+.cta-result{background:linear-gradient(135deg,rgba(124,92,255,.1),rgba(57,217,138,.05));border:1px solid rgba(124,92,255,.2);border-radius:16px;padding:28px;text-align:center}
+.cta-result h3{font-size:20px;font-weight:800;margin-bottom:8px}
+.cta-result p{font-size:14px;color:#94a3b8;margin-bottom:20px;line-height:1.7}
+.btn-p{display:block;background:#7c5cff;color:#fff;padding:14px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;margin-bottom:8px;text-align:center}
+.btn-s{display:block;background:rgba(255,255,255,.06);color:#f1f5f9;padding:12px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.08);text-align:center}
+.loading{text-align:center;padding:40px;display:none}
+.spinner{width:40px;height:40px;border:3px solid rgba(124,92,255,.2);border-top-color:#7c5cff;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 16px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.rc-cap{margin-top:16px;background:rgba(57,217,138,.05);border:1px solid rgba(57,217,138,.15);border-radius:14px;padding:20px;text-align:center}
+.rc-cap-title{font-size:15px;font-weight:700;margin-bottom:6px}
+.rc-cap-sub{font-size:13px;color:#94a3b8;margin-bottom:14px;line-height:1.6}
+.rc-row{display:flex;gap:8px;max-width:400px;margin:0 auto}
+.rc-input{flex:1;background:#0b0f17;border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:10px 14px;font-size:14px;color:#f1f5f9;font-family:'Syne',sans-serif;outline:none}
+.rc-input:focus{border-color:rgba(57,217,138,.4)}
+.rc-btn{background:#39d98a;color:#0b0f17;border:none;border-radius:8px;padding:10px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif;white-space:nowrap}
+.rc-btn:hover{background:#2fc97a}
+.rc-btn:disabled{opacity:.6;cursor:not-allowed}
+.rc-status{font-size:12px;color:#64748b;margin-top:8px;min-height:16px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">ClinicFlow</a>
+  <div style="display:flex;gap:20px">
+    <a href="/calculator">Calculator</a>
+    <a href="/report">Research</a>
+    <a href="/demo">Demo</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="badge">Free Tool</div>
+  <h1>Your Clinic<br><span>Communication Grade</span></h1>
+  <p class="sub">See how your patient communication compares to other Canadian clinics in your city. Free. Instant. No signup required.</p>
+</div>
+
+<div class="wrap">
+  <div class="search-card">
+    <label class="search-label">Clinic name</label>
+    <input type="text" class="search-input" id="clinic-input" placeholder="e.g. Yonge Dental Care" autocomplete="off">
+    <label class="search-label">City</label>
+    <input type="text" class="search-input" id="city-input" placeholder="e.g. Toronto, Montreal, Vancouver" autocomplete="off">
+    <button class="search-btn" onclick="generateReport()" id="search-btn">Generate my report card →</button>
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    <div style="color:#64748b;font-size:14px">Analyzing your clinic's communication data...</div>
+  </div>
+
+  <div id="results">
+    <div class="grade-card">
+      <div class="grade-letter grade-C" id="grade-letter">C</div>
+      <div class="grade-label" id="grade-label">Fair</div>
+      <div class="clinic-name-result" id="result-clinic-name"></div>
+      <div class="grade-desc" id="grade-desc"></div>
+    </div>
+    <div class="metrics">
+      <div class="metric"><div class="metric-val" id="m-rating">—</div><div class="metric-lbl">Google Rating</div></div>
+      <div class="metric"><div class="metric-val" id="m-rank">—</div><div class="metric-lbl">City Rank</div></div>
+      <div class="metric"><div class="metric-val" id="m-gap">—</div><div class="metric-lbl">vs City Avg</div></div>
+    </div>
+    <div class="findings" id="findings"></div>
+    <div class="cta-result" id="cta-result"></div>
+  </div>
+</div>
+
+<script>
+async function generateReport() {
+  const clinicName = document.getElementById('clinic-input').value.trim();
+  const city = document.getElementById('city-input').value.trim();
+  if (!clinicName || !city) { alert('Please enter your clinic name and city.'); return; }
+
+  const btn = document.getElementById('search-btn');
+  btn.disabled = true;
+  btn.textContent = 'Analyzing...';
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('results').style.display = 'none';
+
+  fetch('/api/track', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ page: '/report-card', clinic: clinicName, city, ref: document.referrer, ts: Date.now(), type: 'report-card-search' }),
+    keepalive: true,
+  }).catch(() => {});
+
+  try {
+    const res = await fetch('/api/grade-clinic', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ clinicName, city }),
+    });
+    const report = await res.json();
+
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+
+    const gradeEl = document.getElementById('grade-letter');
+    gradeEl.textContent = report.grade;
+    gradeEl.className = 'grade-letter grade-' + report.grade;
+    document.getElementById('grade-label').textContent = report.gradeLabel;
+    document.getElementById('result-clinic-name').textContent = clinicName;
+    document.getElementById('grade-desc').textContent = report.gradeDesc;
+    document.getElementById('m-rating').textContent = report.rating + '★';
+    document.getElementById('m-rank').textContent = report.cityRank;
+    const gap = parseFloat(report.ratingGap);
+    const gapEl = document.getElementById('m-gap');
+    gapEl.textContent = report.ratingGap;
+    gapEl.style.color = gap >= 0 ? '#39d98a' : '#f87171';
+
+    document.getElementById('findings').innerHTML = (report.findings || []).map(f =>
+      '<div class="finding ' + f.type + '"><span class="finding-icon">' + (f.type === 'good' ? '&#10003;' : '&#9888;') + '</span><span class="finding-text">' + f.text + '</span></div>'
+    ).join('');
+
+    const ctaHtml = report.grade === 'A'
+      ? '<h3>You\'re ahead of most clinics in ' + city + '</h3><p>Your communication is strong. ClinicFlow can maintain it automatically so your team can focus on patients.</p><p style="font-size:13px;color:#64748b;margin-top:8px">No new software. No training. One call forwarding setting on your existing phone &#8212; takes 2 minutes.</p><a href="/demo" class="btn-p">See how ClinicFlow works →</a><a href="https://calendly.com/m-aliben432/clinicflow-15-min-intro" class="btn-s" target="_blank">&#x1F4C5; Book 15-min call</a>'
+      : '<h3>' + report.ctaHeadline + '</h3><p>' + report.ctaBody + '</p><p style="font-size:13px;color:#64748b;margin-top:8px">No new software. No training. One call forwarding setting on your existing phone &#8212; takes 2 minutes.</p><a href="/intake" class="btn-p">Start free 30-day pilot →</a><a href="https://calendly.com/m-aliben432/clinicflow-15-min-intro" class="btn-s" target="_blank">&#x1F4C5; Book 15 min with Ali</a>';
+    document.getElementById('cta-result').innerHTML = ctaHtml;
+
+    // Store grade data for capture form (avoids injecting user values into onclick)
+    window._rcData = { grade: report.grade, clinic: clinicName, city: city };
+
+    var captureHtml = '<div class="rc-cap">' +
+      '<div class="rc-cap-title">Get your full grade report by email</div>' +
+      '<div class="rc-cap-sub">Includes your score breakdown, comparison to ' + city + ' clinics, and a custom improvement plan.</div>' +
+      '<div class="rc-row">' +
+      '<input class="rc-input" type="email" id="rc-email" placeholder="your@clinic.com" autocomplete="email">' +
+      '<button class="rc-btn" id="rc-btn" onclick="captureGradeLead()">Email my report &#8594;</button>' +
+      '</div>' +
+      '<div class="rc-status" id="rc-status"></div>' +
+      '</div>';
+    document.getElementById('cta-result').insertAdjacentHTML('beforeend', captureHtml);
+
+    fetch('/api/track', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ page: '/report-card/result', clinic: clinicName, city, grade: report.grade, ts: Date.now(), type: 'report-card-result' }),
+      keepalive: true,
+    }).catch(() => {});
+
+  } catch(e) {
+    document.getElementById('loading').style.display = 'none';
+    alert('Something went wrong. Please try again.');
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Generate my report card →';
+}
+
+document.addEventListener('keypress', e => { if (e.key === 'Enter') generateReport(); });
+
+async function captureGradeLead() {
+  var email  = document.getElementById('rc-email').value.trim();
+  var status = document.getElementById('rc-status');
+  var btn    = document.getElementById('rc-btn');
+  var data   = window._rcData || {};
+
+  if (!email || !email.includes('@')) {
+    status.textContent = 'Please enter a valid email address';
+    status.style.color = '#f87171';
+    return;
+  }
+
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  try {
+    await fetch('/api/report-lead', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        name: 'there',
+        clinic: data.clinic || '',
+        email: email,
+        source: 'report-card',
+        grade: data.grade || '',
+        city: data.city || '',
+      }),
+    });
+    btn.textContent = '&#10003; Sent!';
+    status.textContent = 'Full grade report is on its way to your inbox.';
+    status.style.color = '#39d98a';
+    fetch('/api/track', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ page: '/report-card/capture', email: email, clinic: data.clinic, grade: data.grade, ts: Date.now() }),
+      keepalive: true,
+    }).catch(function(){});
+  } catch(e) {
+    btn.textContent = 'Email my report →';
+    btn.disabled = false;
+    status.textContent = 'Something went wrong — try again';
+    status.style.color = '#f87171';
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+{
+  "clinicSlug": "test-clinic",
+  "clinicName": "Test Dental Clinic",
+  "contactName": "Mohamed",
+  "contactEmail": "m.aliben432@gmail.com",
+  "clinicPhone": "+15145618268",
+  "city": "Montreal",
+  "tier": "growth",
+  "status": "active",
+  "twilioNumber": "+14385440442",
+  "phoneSetup": "forwarding",
+  "services": {
+    "missedCall": true,
+    "reminders": true,
+    "reactivation": true
+  },
+  "isFree": false,
+  "freeSmsSentThisMonth": 0,
+  "freeSmsLimit": 50,
+  "brandingEnabled": false,
+  "referralCount": 0,
+  "patientsLoaded": 5,
+  "patientsCsvPath": "data/clients/test-clinic/patients.csv",
+  "goLiveDate": "2026-05-05T00:00:00.000Z",
+  "paymentDate": "2026-04-30T00:00:00.000Z",
+  "firstHalfPaid": true,
+  "secondHalfPaid": false,
+  "firstHalfAmount": 497,
+  "secondHalfAmount": 497,
+  "results": {
+    "missedCallsHandled": 1,
+    "appointmentsReminded": 1,
+    "patientsReactivated": 0,
+    "estimatedRevenueRecovered": 400
+  },
+  "onboardingStep": 4,
+  "portalPassword": "testclinic2026",
+  "portalSlug": "test-clinic",
+  "createdAt": "2026-04-30T00:00:00.000Z",
+  "updatedAt": "2026-06-02T15:00:00.350Z",
+  "stageHistory": [
+    {
+      "from": "lead",
+      "to": "payment_received",
+      "at": "2026-04-30T00:00:00.000Z"
+    },
+    {
+      "from": "payment_received",
+      "to": "onboarding",
+      "at": "2026-04-30T01:00:00.000Z"
+    },
+    {
+      "from": "onboarding",
+      "to": "active",
+      "at": "2026-05-05T00:00:00.000Z"
+    }
+  ],
+  "recovery": {
+    "total": 1,
+    "wave1Sent": 1,
+    "wave2Sent": 0,
+    "wave3Sent": 0,
+    "replied": 1,
+    "recovered": 1,
+    "optedOut": 0,
+    "exhausted": 0,
+    "waiting": 0,
+    "replyRate": 100,
+    "recoveryRate": 100
+  },
+  "recentActivity": [
+    {
+      "type": "weekly_digest_sent",
+      "patientName": null,
+      "callerNumber": null,
+      "message": "Good morning — quiet week on the ClinicFlow side, with just one patient interaction logged and no mi",
+      "time": "2026-06-01T11:00:10.964Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": null
+    },
+    {
+      "type": "weekly_digest_sent",
+      "patientName": null,
+      "callerNumber": null,
+      "message": "Good morning. Quiet week on the board — only two patient interactions came through, but I caught a c",
+      "time": "2026-05-25T11:00:08.328Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": null
+    },
+    {
+      "type": "opportunity_detected",
+      "patientName": "Omar Diallo",
+      "callerNumber": "+15143330002",
+      "message": "Hi Omar, we noticed you had to cancel recently. Whenever you're ready, we'd love to get you back in ",
+      "time": "2026-05-24T10:00:01.296Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": null
+    },
+    {
+      "type": "weekly_digest_sent",
+      "patientName": null,
+      "callerNumber": null,
+      "message": "Good morning — quiet week on our end, just one patient interaction came through and nothing else mov",
+      "time": "2026-05-18T11:00:11.868Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": null
+    },
+    {
+      "type": "weekly_digest_sent",
+      "patientName": null,
+      "callerNumber": null,
+      "message": "Good morning! This week I handled 18 patient interactions for Test Dental Clinic. I caught 1 missed ",
+      "time": "2026-05-11T11:00:15.487Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": null
+    },
+    {
+      "type": "appointment_reminder_24h",
+      "patientName": "Sophie Lavoie",
+      "callerNumber": "+15143330001",
+      "message": "24h appointment reminder sent",
+      "time": "2026-05-10T12:31:01.134Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": null
+    },
+    {
+      "type": "patient_replied",
+      "patientName": null,
+      "callerNumber": "+15143330002",
+      "message": "Actually I need to cancel",
+      "time": "2026-05-09T16:43:16.721Z",
+      "outcome": "received",
+      "direction": "inbound",
+      "sentiment": "neutral",
+      "intent": "CANCEL"
+    },
+    {
+      "type": "clinic_brain_answer",
+      "patientName": null,
+      "callerNumber": "+15143330002",
+      "message": "Hi! Happy to book your appointment at Test Dental Clinic (subject to confirmation)!\n\nReply 1, 2, or ",
+      "time": "2026-05-09T16:43:16.718Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": "BOOK_APPOINTMENT"
+    },
+    {
+      "type": "opportunity_detected",
+      "patientName": null,
+      "callerNumber": "+15143330002",
+      "message": "Hi! Happy to book your appointment at Test Dental Clinic (subject to confirmation)!\n\nReply 1, 2, or ",
+      "time": "2026-05-09T16:43:16.542Z",
+      "outcome": "slots_offered",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": "BOOK_APPOINTMENT"
+    },
+    {
+      "type": "patient_replied",
+      "patientName": null,
+      "callerNumber": "+15143330002",
+      "message": "book an exam appointment",
+      "time": "2026-05-09T16:43:16.518Z",
+      "outcome": "received",
+      "direction": "inbound",
+      "sentiment": "neutral",
+      "intent": "BOOK_APPOINTMENT"
+    },
+    {
+      "type": "clinic_brain_answer",
+      "patientName": null,
+      "callerNumber": "+15143330001",
+      "message": "Perfect! You're booked for Monday, May 11 at 9:30 a.m. at Test Dental Clinic. We'll send you a remin",
+      "time": "2026-05-09T16:43:16.514Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": "BOOK_APPOINTMENT"
+    },
+    {
+      "type": "patient_booked",
+      "patientName": null,
+      "callerNumber": "+15143330001",
+      "message": "Booking confirmed: Monday, May 11 at 9:30 a.m. | Cleaning & Exam",
+      "time": "2026-05-09T16:43:16.295Z",
+      "outcome": "booked",
+      "direction": "system",
+      "sentiment": null,
+      "intent": null
+    },
+    {
+      "type": "patient_replied",
+      "patientName": null,
+      "callerNumber": "+15143330001",
+      "message": "Option 2 works for me",
+      "time": "2026-05-09T16:43:16.289Z",
+      "outcome": "received",
+      "direction": "inbound",
+      "sentiment": "neutral",
+      "intent": "OTHER"
+    },
+    {
+      "type": "clinic_brain_answer",
+      "patientName": null,
+      "callerNumber": "+15143330001",
+      "message": "Hi! Happy to book your Cleaning & Exam at Test Dental Clinic (subject to confirmation)!\n\nReply 1, 2,",
+      "time": "2026-05-09T16:43:16.269Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": "BOOK_APPOINTMENT"
+    },
+    {
+      "type": "opportunity_detected",
+      "patientName": null,
+      "callerNumber": "+15143330001",
+      "message": "Hi! Happy to book your Cleaning & Exam at Test Dental Clinic (subject to confirmation)!\n\nReply 1, 2,",
+      "time": "2026-05-09T16:43:15.274Z",
+      "outcome": "slots_offered",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": "BOOK_APPOINTMENT"
+    },
+    {
+      "type": "patient_replied",
+      "patientName": null,
+      "callerNumber": "+15143330001",
+      "message": "I would like to book a cleaning appointment",
+      "time": "2026-05-09T16:43:15.231Z",
+      "outcome": "received",
+      "direction": "inbound",
+      "sentiment": "neutral",
+      "intent": "BOOK_APPOINTMENT"
+    },
+    {
+      "type": "escalation",
+      "patientName": null,
+      "callerNumber": "+15149617077",
+      "message": "Escalated: emergency | Patient said: \"I have severe tooth pain and my face is swelling up\"",
+      "time": "2026-05-09T03:04:26.693Z",
+      "outcome": "escalated",
+      "direction": "system",
+      "sentiment": "urgent",
+      "intent": null
+    },
+    {
+      "type": "patient_replied",
+      "patientName": null,
+      "callerNumber": "+15149617077",
+      "message": "I have severe tooth pain and my face is swelling up",
+      "time": "2026-05-09T03:04:26.298Z",
+      "outcome": "received",
+      "direction": "inbound",
+      "sentiment": "emergency",
+      "intent": "EMERGENCY"
+    },
+    {
+      "type": "clinic_brain_answer",
+      "patientName": null,
+      "callerNumber": "+15149617077",
+      "message": "Totally understandable — many of our patients feel the same, and we'll take great care of you. Dr. C",
+      "time": "2026-05-09T03:04:24.788Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": "neutral",
+      "intent": "OTHER"
+    },
+    {
+      "type": "patient_replied",
+      "patientName": null,
+      "callerNumber": "+15149617077",
+      "message": "I'm really nervous about my appointment, I haven't been to the dentist in 3 years",
+      "time": "2026-05-09T03:04:21.152Z",
+      "outcome": "received",
+      "direction": "inbound",
+      "sentiment": "neutral",
+      "intent": "OTHER"
+    },
+    {
+      "type": "clinic_brain_answer",
+      "patientName": null,
+      "callerNumber": "+15149617077",
+      "message": "We're closed today, but we'll be open tomorrow from 10:00am to 2:00pm. Happy to help you book — just",
+      "time": "2026-05-09T03:04:19.624Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": "neutral",
+      "intent": "ASK_HOURS"
+    },
+    {
+      "type": "patient_replied",
+      "patientName": null,
+      "callerNumber": "+15149617077",
+      "message": "What time do you close today?",
+      "time": "2026-05-09T03:04:16.107Z",
+      "outcome": "received",
+      "direction": "inbound",
+      "sentiment": "urgent",
+      "intent": "ASK_HOURS"
+    },
+    {
+      "type": "clinic_brain_answer",
+      "patientName": "John Smith",
+      "callerNumber": "+15145618268",
+      "message": "Test event from Phase 1 integration test",
+      "time": "2026-05-09T03:03:40.581Z",
+      "outcome": "sent",
+      "direction": "outbound",
+      "sentiment": null,
+      "intent": null
+    }
+  ],
+  "heatmap": {
+    "0": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "1": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "2": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "3": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "4": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "5": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    },
+    "6": {
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0
+    }
+  },
+  "patientsAtRisk": [],
+  "comparison": {
+    "thisMonth": {
+      "calls": 0,
+      "recovered": 0,
+      "recoveryRate": 0,
+      "revenue": 0
+    },
+    "lastMonth": {
+      "calls": 1,
+      "recovered": 1,
+      "recoveryRate": 100,
+      "revenue": 200
+    }
+  },
+  "intelligence": {
+    "summary": "Revenue forecast for 2026-05: $200 (conservative) to $1,600 (optimistic). 2 patients are on track with no action needed. High-value patient to prioritize: Marie (estimated $600 in 3-year value).",
+    "forecastConservative": 200,
+    "forecastExpected": 1200,
+    "forecastOptimistic": 1600,
+    "urgentPatients": 0,
+    "atRiskLTV": 0
+  },
+  "brain": {
+    "type": "dental",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "services": 5,
+    "hasFaqs": true
+  },
+  "referral": {
+    "count": 0,
+    "clicks": 0,
+    "signups": 0
+  }
+}

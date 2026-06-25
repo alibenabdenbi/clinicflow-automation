@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta property="og:title" content="Test Dental Clinic — ClinicFlow Results · June 2026"/>
+<meta property="og:description" content="Test Dental Clinic recovered $200 in patient revenue using ClinicFlow Automation."/>
+<title>Test Dental Clinic — ClinicFlow Results · June 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Syne+Mono&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0b0f17;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.1);
+  --text:#e8eefc;--muted:#a7b0c5;--accent:#7c5cff;--accent2:#39d98a;--gold:#f6b04d;--bad:#ff5c7a;--radius:12px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Syne',ui-sans-serif,system-ui,sans-serif;min-height:100vh;
+  background-image:radial-gradient(900px 600px at 50% -5%,rgba(124,92,255,.12),transparent 55%);}
+.wrap{max-width:780px;margin:0 auto;padding:40px 24px 80px;}
+/* Header */
+.rpt-header{text-align:center;padding:48px 0 40px;border-bottom:1px solid var(--line);margin-bottom:48px;}
+.rpt-logo{font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;}
+.rpt-clinic{font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:6px;}
+.rpt-period{font-size:14px;color:var(--muted);}
+/* Stats */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:48px;}
+@media(max-width:600px){.stat-row{grid-template-columns:repeat(2,1fr);}}
+.sc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center;}
+.sc-val{font-family:'Syne Mono',monospace;font-size:36px;font-weight:400;line-height:1;margin-bottom:6px;}
+.sc-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;}
+.c-gold{color:var(--gold);}
+.c-green{color:var(--accent2);}
+.c-purple{color:var(--accent);}
+.c-blue{color:#60a5fa;}
+/* Quote */
+.quote-block{
+  background:linear-gradient(135deg,rgba(246,176,77,.08),rgba(57,217,138,.04));
+  border:1px solid rgba(246,176,77,.25);border-radius:16px;
+  padding:36px;text-align:center;margin-bottom:48px;
+}
+.quote-text{font-size:clamp(16px,2.5vw,20px);font-weight:700;line-height:1.4;margin-bottom:12px;}
+.quote-text em{font-style:normal;color:var(--gold);}
+.quote-attr{font-size:13px;color:var(--muted);}
+/* Timeline */
+.timeline-section{margin-bottom:48px;}
+.tl-title{font-size:16px;font-weight:700;margin-bottom:20px;}
+.tl-item{display:flex;gap:16px;margin-bottom:16px;align-items:flex-start;}
+.tl-dot{width:10px;height:10px;border-radius:50%;background:var(--accent2);flex-shrink:0;margin-top:4px;}
+.tl-dot.waiting{background:var(--gold);}
+.tl-body{flex:1;}
+.tl-event{font-size:14px;font-weight:600;}
+.tl-detail{font-size:12px;color:var(--muted);margin-top:3px;}
+.tl-badge{display:inline-block;background:rgba(57,217,138,.12);color:var(--accent2);
+  font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;text-transform:uppercase;margin-left:8px;}
+/* Interactions */
+.interactions{margin-bottom:48px;}
+.int-title{font-size:16px;font-weight:700;margin-bottom:16px;}
+.int-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;margin-bottom:12px;}
+.int-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;}
+.int-icon{font-size:16px;flex-shrink:0;}
+.int-text{font-size:13px;color:var(--muted);}
+.int-text strong{color:var(--text);}
+.int-reply{background:rgba(57,217,138,.06);border:1px solid rgba(57,217,138,.15);
+  border-radius:8px;padding:10px 14px;font-size:13px;color:var(--accent2);margin-top:4px;}
+/* Share */
+.share-section{background:rgba(124,92,255,.08);border:1px solid rgba(124,92,255,.2);
+  border-radius:var(--radius);padding:28px;margin-bottom:48px;text-align:center;}
+.share-title{font-size:16px;font-weight:700;margin-bottom:8px;}
+.share-sub{font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.6;}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.share-btn{padding:10px 20px;border-radius:8px;font-size:13px;font-weight:700;
+  cursor:pointer;border:none;font-family:inherit;transition:all .2s;}
+.btn-copy{background:var(--accent);color:#fff;}
+.btn-copy:hover{opacity:.85;}
+.btn-email{background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--line);}
+.btn-email:hover{background:rgba(255,255,255,.1);}
+/* Review */
+.review-section{border:1px solid var(--line);border-radius:var(--radius);padding:24px;
+  text-align:center;margin-bottom:48px;}
+.review-section p{font-size:14px;color:var(--muted);margin-bottom:16px;line-height:1.6;}
+.review-btn{display:inline-block;background:rgba(246,176,77,.1);color:var(--gold);
+  border:1px solid rgba(246,176,77,.25);border-radius:8px;padding:10px 20px;
+  font-size:13px;font-weight:700;text-decoration:none;transition:all .2s;}
+.review-btn:hover{background:rgba(246,176,77,.18);}
+/* CTA */
+.bottom-cta{
+  text-align:center;padding:48px 0 0;border-top:1px solid var(--line);
+}
+.bottom-cta h2{font-size:clamp(20px,3vw,28px);font-weight:800;margin-bottom:10px;}
+.bottom-cta p{font-size:14px;color:var(--muted);margin-bottom:24px;}
+.bottom-cta a{display:inline-block;background:var(--accent);color:#fff;padding:14px 32px;
+  border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;transition:all .2s;}
+.bottom-cta a:hover{background:#6d4fe8;transform:translateY(-2px);}
+.powered{text-align:center;font-size:11px;color:var(--muted);margin-top:32px;}
+.powered a{color:var(--accent);text-decoration:none;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+.stat-row .sc{animation:fadeUp .4s ease both;}
+.sc:nth-child(1){animation-delay:.05s;}.sc:nth-child(2){animation-delay:.1s;}
+.sc:nth-child(3){animation-delay:.15s;}.sc:nth-child(4){animation-delay:.2s;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="rpt-header">
+  <div class="rpt-logo">ClinicFlow Automation</div>
+  <div class="rpt-clinic">Test Dental Clinic</div>
+  <div class="rpt-period">June 2026 Results Report</div>
+</div>
+
+<div class="stat-row">
+  <div class="sc"><div class="sc-val c-purple">1</div><div class="sc-lbl">Calls handled</div></div>
+  <div class="sc"><div class="sc-val c-green">1</div><div class="sc-lbl">Patients recovered</div></div>
+  <div class="sc"><div class="sc-val c-gold">$200</div><div class="sc-lbl">Revenue recovered</div></div>
+  <div class="sc"><div class="sc-val c-blue">100%</div><div class="sc-lbl">Reply rate</div></div>
+</div>
+
+<div class="quote-block">
+  <div class="quote-text">"Test Dental Clinic recovered <em>$200</em> in patient revenue this month — automatically, with zero staff time."</div>
+  <div class="quote-attr">ClinicFlow Automation · June 2026 results</div>
+</div>
+
+
+<div class="interactions">
+  <div class="int-title">Sample patient interactions this month</div>
+  
+  <div class="int-item">
+    <div class="int-row">
+      <div class="int-icon">📱</div>
+      <div class="int-text"><strong>John S.</strong> called Fri, May 8 at 2:18 a.m.</div>
+    </div>
+    <div class="int-row">
+      <div class="int-icon">⚡</div>
+      <div class="int-text">Automatic follow-up SMS sent in <strong>0s</strong></div>
+    </div>
+    <div class="int-reply">"Yes I would like to book an appointment"</div>
+    <div style="font-size:12px;color:var(--accent2);margin-top:8px;font-weight:700;">✓ Appointment booked</div>
+  </div>
+</div>
+
+<div class="share-section">
+  <div class="share-title">Share your results</div>
+  <div class="share-sub">Send this report to a colleague — if their clinic isn't using ClinicFlow, they're missing calls.</div>
+  <div class="share-btns">
+    <button class="share-btn btn-copy" onclick="copyLink()">📋 Copy report link</button>
+    <button class="share-btn btn-email" onclick="emailReport()">✉ Email to colleague</button>
+  </div>
+</div>
+
+<div class="review-section">
+  <p>Did ClinicFlow work for you? A Google review helps other Canadian dentists find us.</p>
+  <a class="review-btn" href="https://g.page/r/clinicflowautomation/review" target="_blank">⭐ Leave a Google review →</a>
+</div>
+
+<div class="bottom-cta">
+  <h2>Get ClinicFlow for your clinic</h2>
+  <p>Setup in 5 days. Pay the second half only after you see results. No monthly fees.</p>
+  <a href="https://clinicflowautomation.com/pricing">See pricing →</a>
+</div>
+
+<div class="powered">Powered by <a href="https://clinicflowautomation.com">ClinicFlow Automation</a> · Montreal, QC</div>
+
+</div>
+<script>
+const REPORT_URL = 'https://clinicflowautomation.com/results/test-clinic';
+function copyLink() {
+  navigator.clipboard.writeText(REPORT_URL).then(() => {
+    const btn = document.querySelector('.btn-copy');
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => { btn.textContent = '📋 Copy report link'; }, 2000);
+  });
+}
+function emailReport() {
+  const subj = encodeURIComponent('Test Dental Clinic — ClinicFlow Results · June 2026');
+  const body = encodeURIComponent('I thought you might find this interesting — our dental clinic has been using ClinicFlow to automatically follow up on every missed call. Here are our results this month:\n\n' + REPORT_URL + '\n\nHappy to talk more if you want details.');
+  window.location.href = 'mailto:?subject=' + subj + '&body=' + body;
+}
+</script>
+</body>
+</html>

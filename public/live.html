@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClinicFlow — Activity Feed</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0f1117;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;padding:48px 24px 80px}
+.wrap{max-width:640px;margin:0 auto}
+
+/* Header */
+.header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:40px}
+.header-left{}
+.brand{font-size:11px;letter-spacing:4px;color:#4a5568;text-transform:uppercase;font-family:'Courier New',monospace;margin-bottom:6px}
+.tagline{font-size:12px;color:#374151}
+.header-right{display:flex;align-items:center;gap:7px;margin-top:2px;flex-shrink:0}
+.status-dot{width:6px;height:6px;border-radius:50%;background:#16a34a}
+.status-text{font-size:11px;color:#374151;font-family:'Courier New',monospace}
+
+/* Section labels */
+.day-label{font-size:11px;color:#374151;letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px;font-family:'Courier New',monospace}
+
+/* Feed */
+.feed{list-style:none;margin-bottom:32px}
+.feed-item{display:flex;align-items:baseline;gap:12px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.feed-item:last-child{border:none}
+.feed-time{font-size:11px;color:#374151;font-family:'Courier New',monospace;flex-shrink:0;width:42px}
+.feed-badge{font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;flex-shrink:0;font-family:'Courier New',monospace;min-width:68px;text-align:center}
+.badge-call{background:#1f2937;color:#6b7280}
+.badge-reply{background:#14532d;color:#86efac}
+.badge-reminder{background:#1e3a5f;color:#93c5fd}
+.badge-pending{background:#78350f;color:#fcd34d}
+.badge-friction{background:#7f1d1d;color:#fca5a5}
+.badge-confirmed{background:#064e3b;color:#6ee7b7}
+.feed-text{font-size:13px;color:#9ca3af;line-height:1.4;flex:1}
+
+/* Quiet notice */
+.quiet-notice{font-size:11px;color:#374151;font-family:'Courier New',monospace;padding:14px 0;text-align:center;letter-spacing:1px}
+
+/* Footer */
+.footer-sep{border:none;border-top:1px solid rgba(255,255,255,.06);margin:32px 0 20px}
+.footer{font-size:11px;color:#374151;line-height:1.7}
+.footer a{color:#374151;text-decoration:none}
+.footer a:hover{color:#6b7280}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div class="header-left">
+      <div class="brand">ClinicFlow</div>
+      <div class="tagline">patient communication — test and development environments</div>
+    </div>
+    <div class="header-right">
+      <div class="status-dot" id="status-dot"></div>
+      <div class="status-text" id="status-text">system active</div>
+    </div>
+  </div>
+
+  <div class="day-label">Today</div>
+  <ul class="feed" id="event-feed"></ul>
+
+  <div class="day-label">Yesterday</div>
+  <ul class="feed" id="yesterday-feed"></ul>
+
+  <hr class="footer-sep">
+  <div class="footer">
+    Events reflect system behavior observed during testing.<br>
+    <a href="https://clinicflowautomation.com">ClinicFlow Automation</a> &middot; Montreal &middot; clinicflowautomation.com
+  </div>
+
+</div>
+
+<script>
+const CITIES = ['Toronto', 'Montreal', 'Vancouver', 'Calgary', 'Ottawa', 'Mississauga'];
+const RESPONSE_TIMES = [44, 47, 51, 54, 61, 67, 73, 81, 89];
+
+function pick(arr, seed) {
+  if (seed !== undefined) return arr[seed % arr.length];
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function randResponseTime() { return pick(RESPONSE_TIMES); }
+
+// Event templates — never exact repeat
+const CALL_TEXTS = [
+  (c, t) => `Patient called ${c} clinic — auto-text sent (${t}s)`,
+  (c, t) => `Missed call — ${c} clinic — follow-up queued (${t}s response)`,
+  (c, t) => `After-hours call — ${c} clinic — auto-text dispatched (${t}s)`,
+  (c, t) => `Incoming call — ${c} — no answer, auto-text sent (${t}s)`,
+];
+const REPLY_TEXTS = [
+  (c) => `Patient replied to follow-up — booking thread started`,
+  (c) => `Reply received — scheduling conversation started`,
+  (c) => `Patient confirmed via SMS`,
+  (c) => `Response received — patient asked about availability`,
+];
+const REMINDER_TEXTS = [
+  () => `72h reminder sent — awaiting confirmation`,
+  () => `Appointment reminder sent — no response yet`,
+  () => `Follow-up reminder dispatched — delivery confirmed`,
+  () => `Reminder sent — patient opened, no reply`,
+];
+const PENDING_TEXTS = [
+  () => `Callback requested — added to front desk queue`,
+  () => `Follow-up thread unresolved — 2 days old ⚠`,
+  () => `Callback pending — 3 attempts, no answer`,
+  () => `Follow-up flagged — patient hasn't responded in 4 days`,
+];
+const FRICTION_TEXTS = [
+  () => `SMS delivery delayed — carrier timeout, retry in 3h`,
+  () => `SMS delivery failed (carrier) — retry scheduled in 4h`,
+  () => `Delivery error — retrying via alternate route`,
+  () => `Carrier rejection — message queued for retry`,
+];
+const CONFIRMED_TEXTS = [
+  () => `Appointment confirmed — booking complete`,
+  () => `Patient confirmed — appointment locked in`,
+  () => `Booking confirmed via SMS reply`,
+];
+
+// Weighted event type picker
+function pickEventType() {
+  const r = Math.random();
+  if (r < 0.35) return 'call';
+  if (r < 0.55) return 'reply';
+  if (r < 0.75) return 'reminder';
+  if (r < 0.85) return 'confirmed';
+  if (r < 0.93) return 'friction';
+  return 'pending';
+}
+
+let callIdx = 0, replyIdx = 0, reminderIdx = 0, pendingIdx = 0, frictionIdx = 0, confirmedIdx = 0;
+
+function makeEvent(timeStr, forceType) {
+  const type  = forceType || pickEventType();
+  const city  = pick(CITIES);
+  const rt    = randResponseTime();
+  let badge, text, badgeClass;
+
+  switch(type) {
+    case 'call':
+      badge = '[call]'; badgeClass = 'badge-call';
+      text = CALL_TEXTS[callIdx++ % CALL_TEXTS.length](city, rt); break;
+    case 'reply':
+      badge = '[reply]'; badgeClass = 'badge-reply';
+      text = REPLY_TEXTS[replyIdx++ % REPLY_TEXTS.length](city); break;
+    case 'reminder':
+      badge = '[reminder]'; badgeClass = 'badge-reminder';
+      text = REMINDER_TEXTS[reminderIdx++ % REMINDER_TEXTS.length](); break;
+    case 'pending':
+      badge = '[pending]'; badgeClass = 'badge-pending';
+      text = PENDING_TEXTS[pendingIdx++ % PENDING_TEXTS.length](); break;
+    case 'friction':
+      badge = '[friction]'; badgeClass = 'badge-friction';
+      text = FRICTION_TEXTS[frictionIdx++ % FRICTION_TEXTS.length](); break;
+    case 'confirmed':
+      badge = '[confirmed]'; badgeClass = 'badge-confirmed';
+      text = CONFIRMED_TEXTS[confirmedIdx++ % CONFIRMED_TEXTS.length](); break;
+  }
+
+  const li = document.createElement('li');
+  li.className = 'feed-item';
+  li.innerHTML = `<span class="feed-time">${timeStr}</span><span class="feed-badge ${badgeClass}">${badge}</span><span class="feed-text">${text}</span>`;
+  return li;
+}
+
+// Generate realistic today timestamps with natural gaps
+function todayTimestamps() {
+  const now = new Date();
+  const h = now.getHours();
+  const m = now.getMinutes();
+  // Work backward from current time, irregular gaps
+  const gaps = [2, 17, 44, 28, 72, 35, 81, 23, 54, 41, 19, 67];
+  const times = [];
+  let cursor = h * 60 + m;
+  for (const g of gaps) {
+    cursor -= g;
+    if (cursor < 7 * 60) break; // don't go before 7am
+    const hh = Math.floor(cursor / 60).toString().padStart(2, '0');
+    const mm = (cursor % 60).toString().padStart(2, '0');
+    times.push(`${hh}:${mm}`);
+  }
+  return times.reverse();
+}
+
+function yesterdayTimestamps() {
+  return ['16:47', '15:23', '14:08', '12:51', '11:33', '09:17'];
+}
+
+function renderToday() {
+  const feed = document.getElementById('event-feed');
+  feed.innerHTML = '';
+  const times = todayTimestamps();
+  times.forEach(t => feed.appendChild(makeEvent(t)));
+}
+
+function renderYesterday() {
+  const feed = document.getElementById('yesterday-feed');
+  feed.innerHTML = '';
+  yesterdayTimestamps().forEach(t => {
+    const li = makeEvent(t);
+    // Mute yesterday items further
+    li.querySelectorAll('.feed-text, .feed-time, .feed-badge').forEach(el => {
+      el.style.opacity = '.55';
+    });
+    feed.appendChild(li);
+  });
+}
+
+function checkBusinessHours() {
+  const h = new Date().getHours();
+  const isQuiet = h < 7 || h > 20;
+  const dot = document.getElementById('status-dot');
+  const text = document.getElementById('status-text');
+  const feed = document.getElementById('event-feed');
+
+  if (isQuiet) {
+    dot.style.background = '#374151';
+    text.textContent = 'outside clinic hours';
+    // Add quiet notice if not already there
+    if (!document.getElementById('quiet-notice')) {
+      const li = document.createElement('li');
+      li.id = 'quiet-notice';
+      li.className = 'feed-item';
+      const span = document.createElement('span');
+      span.className = 'quiet-notice';
+      span.textContent = '— system quiet — outside clinic hours —';
+      li.appendChild(span);
+      feed.prepend(li);
+    }
+  } else {
+    dot.style.background = '#16a34a';
+    text.textContent = 'system active';
+    const qn = document.getElementById('quiet-notice');
+    if (qn) qn.remove();
+  }
+}
+
+function addNewEvent() {
+  // 25% chance of quiet period — nothing happens
+  if (Math.random() < 0.25) return;
+
+  const h = new Date().getHours();
+  if (h < 7 || h > 20) return; // outside hours
+
+  const now = new Date();
+  const timeStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+  const feed = document.getElementById('event-feed');
+  const newItem = makeEvent(timeStr);
+  feed.prepend(newItem);
+
+  // Keep max 12 items in today's feed
+  const items = feed.querySelectorAll('.feed-item');
+  if (items.length > 12) items[items.length - 1].remove();
+}
+
+// Init
+window.onload = function() {
+  renderToday();
+  renderYesterday();
+  checkBusinessHours();
+  setInterval(() => {
+    addNewEvent();
+    checkBusinessHours();
+  }, 150000);
+};
+</script>
+</body>
+</html>

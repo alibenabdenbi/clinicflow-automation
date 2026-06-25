@@ -1,0 +1,36 @@
+To: test@yongedentalcare.com
+Subject: Your ClinicFlow setup is ready — here's exactly where to start, Yonge Dental Care
+
+Hi,
+
+Your Growth package is ready. Before you open the files, I want to give you a proper orientation — not just a list of attachments.
+
+I put this together specifically for Yonge Dental Care in Toronto. I also looked at yongedentalcare.com before putting this together — the automations are set up to complement what you already have online.
+
+The automations I'd focus on first are your missed call recovery, your reactivation campaign, and the new patient welcome sequence. The reactivation campaign is where growth-tier clinics see the biggest ROI. One good batch to patients you haven't seen in 12+ months typically books 8–15 people. I've seen this single automation pay for the whole package in the first month. The new patient welcome sequence runs silently in the background and sets the tone for every new relationship.
+
+Here's your one action for today:
+
+Open the setup guide and start with Step 1 — Mailchimp account setup, 5 minutes. Don't try to configure everything at once. Get missed call recovery live first (Steps 1–3 in the guide), then tackle the reactivation campaign the following week. The sequences are ready to copy in — the setup guide links directly to each one.
+
+By day 7, you should have missed call recovery and appointment reminders live. If you're moving quickly, the new patient welcome can also be live by day 7 — it only takes 20 minutes to configure once Mailchimp is set up.
+
+By day 30, your reactivation campaign should have sent its first batch, you should have received at least 2–3 new Google reviews automatically, and your no-show rate should already be improving. The tracking spreadsheet will give you exact numbers.
+
+A few things worth knowing upfront:
+
+— Nothing fires until you finish the setup guide. There's no risk of patients receiving anything until you're ready.
+
+— Patient replies to automated messages land in your regular inbox. Your team doesn't need to check anything separately.
+
+— Everything is PIPEDA compliant. Every automated message includes an opt-out and your clinic's contact information.
+
+— The setup guide (setup-guide.html) tracks your progress step by step, and has a direct link to my email on every step if you get stuck.
+
+Reply to this email any time — I personally respond within 4 hours on weekdays.
+
+Mohamed
+ClinicFlow Automation
+contact@clinicflowautomation.com
+clinicflowautomation.com
+Montreal, QC

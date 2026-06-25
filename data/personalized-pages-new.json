@@ -1,0 +1,187 @@
+[
+  {
+    "slug": "toronto-physiotherapy",
+    "name": "Toronto Physiotherapy",
+    "email": "kpennell@torontophysiotherapy.ca"
+  },
+  {
+    "slug": "humber-bay-physio",
+    "name": "Humber Bay Physio",
+    "email": "mary@humberdental.com"
+  },
+  {
+    "slug": "mersal-dental-formally-centre-dentaire-dalhousie-dental-centre",
+    "name": "Mersal Dental Formally Centre Dentaire Dalhousie Dental Centre",
+    "email": "mersaldental@gmail.com"
+  },
+  {
+    "slug": "dr-arun-narang-associates-smile-by-design",
+    "name": "Dr Arun Narang & Associates Smile by Design",
+    "email": "info@smilebydesigndental.ca"
+  },
+  {
+    "slug": "vanmills-dental-the-office-of-dr-demarchi",
+    "name": "VanMills Dental - The Office of Dr.Demarchi",
+    "email": "demarchidental@bellnet.ca"
+  },
+  {
+    "slug": "century-city-dental",
+    "name": "Century City Dental",
+    "email": "drjbdental@gmail.com"
+  },
+  {
+    "slug": "trusted-brampton-dentists-family-cosmetic-dental-care-905",
+    "name": "Trusted Brampton Dentists | Family & Cosmetic Dental Care – 905",
+    "email": "smiles@905dental.ca"
+  },
+  {
+    "slug": "physio-sant-physioth-rapie-sportive-montr-al",
+    "name": "Physio Santé: Physiothérapie Sportive à Montréal",
+    "email": "cprs@physiosante.ca"
+  },
+  {
+    "slug": "city-dental-on-yonge",
+    "name": "City Dental on Yonge",
+    "email": "bay@citydentaltoronto.com"
+  },
+  {
+    "slug": "sedation-dentistry",
+    "name": "Sedation Dentistry",
+    "email": " smile@sedationdentalgroup.ca"
+  },
+  {
+    "slug": "astra-orthodontics",
+    "name": "Astra Orthodontics",
+    "email": "richmond@astraorthodontics.com"
+  },
+  {
+    "slug": "liberty-village",
+    "name": "Liberty Village",
+    "email": "appointments@libertyvillagedental.com"
+  },
+  {
+    "slug": "physio",
+    "name": "Physio",
+    "email": "jarry@physiobalance.ca"
+  },
+  {
+    "slug": "stadium-physiosteo",
+    "name": "Stadium PhysiOsteo",
+    "email": "cberry@StadiumPO.com"
+  },
+  {
+    "slug": "physiomobility",
+    "name": "Physiomobility",
+    "email": "choyle@physiomobility.com"
+  },
+  {
+    "slug": "argyle-associates",
+    "name": "Argyle Associates",
+    "email": "patientservices@argyleassociates.com"
+  },
+  {
+    "slug": "university-dental",
+    "name": "University Dental",
+    "email": "kwuniversitydental@gmail.com"
+  },
+  {
+    "slug": "allieddenture",
+    "name": "allieddenture",
+    "email": "east@allieddenture.com"
+  },
+  {
+    "slug": "urgent-care-physiotherapy-clinic-rehabilitation-center-physionow-ca",
+    "name": "Urgent Care Physiotherapy Clinic & Rehabilitation Center - Physionow.ca",
+    "email": "applewood@physionow.ca"
+  },
+  {
+    "slug": "physiotherapy-etobicoke-ortho-physio-physiotherapy",
+    "name": "Physiotherapy Etobicoke - Ortho-Physio Physiotherapy",
+    "email": "orthophysio@live.ca"
+  },
+  {
+    "slug": "etobicoke-dentist",
+    "name": "Etobicoke Dentist",
+    "email": "info@torontolakeshoredental.ca"
+  },
+  {
+    "slug": "queens-plate",
+    "name": "Queens Plate",
+    "email": "queensplatedental@gmail.com"
+  },
+  {
+    "slug": "parkview",
+    "name": "Parkview",
+    "email": "info@parkviewdentaltoronto.com"
+  },
+  {
+    "slug": "michou",
+    "name": "Michou",
+    "email": "INFO@SMILEDENTALTORONTO.CA"
+  },
+  {
+    "slug": "smile-squad",
+    "name": "Smile Squad",
+    "email": "info@smilesquad.ca"
+  },
+  {
+    "slug": "dental-clinics-and-family-dentists-near-you",
+    "name": "Dental Clinics and Family Dentists Near You",
+    "email": "info@waterviewdentaltoronto.com"
+  },
+  {
+    "slug": "dental-land-summerhill",
+    "name": "Dental Land Summerhill",
+    "email": "info@dentalland.ca"
+  },
+  {
+    "slug": "dentist-in-beaches-toronto-on",
+    "name": "Dentist in Beaches Toronto, ON",
+    "email": "info@torontobeachdental.com"
+  },
+  {
+    "slug": "bedford-park-dental",
+    "name": "Bedford Park Dental",
+    "email": "info@theparksdentistry.com"
+  },
+  {
+    "slug": "the-richmond-dental",
+    "name": "The Richmond Dental",
+    "email": "info@therichmonddentalcentre.com"
+  },
+  {
+    "slug": "heritage-house",
+    "name": "Heritage House",
+    "email": "smile@heritagehousedental.ca"
+  },
+  {
+    "slug": "jauhal",
+    "name": "Jauhal",
+    "email": "info@jauhaldental.com"
+  },
+  {
+    "slug": "smile-centre-skymark",
+    "name": "Smile Centre Skymark",
+    "email": "info@skymarksmilecentre.ca"
+  },
+  {
+    "slug": "winston-churchill",
+    "name": "Winston Churchill",
+    "email": "smile@wcdental.ca"
+  },
+  {
+    "slug": "dentist-in-overbrook-ottawa",
+    "name": "Dentist in Overbrook, Ottawa",
+    "email": "info@manorparkdental.ca"
+  },
+  {
+    "slug": "king-street-dental",
+    "name": "King Street Dental",
+    "email": "info@ksdc.ca"
+  },
+  {
+    "slug": "clinique-dentaire-centre-dentaire-masse-dentiste-qu-bec",
+    "name": "Clinique dentaire Centre dentaire Masse, dentiste à Québec",
+    "email": "info@drmasse.com"
+  }
+]

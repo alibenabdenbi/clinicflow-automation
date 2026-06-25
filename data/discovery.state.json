@@ -1,0 +1,25 @@
+{
+  "idx": 12,
+  "seenWebsites": [],
+  "lastRunAt": "2026-02-25T09:46:44.297Z",
+  "lastBatch": [
+    {
+      "city": "Brampton",
+      "province": "ON"
+    },
+    {
+      "city": "Hamilton",
+      "province": "ON"
+    },
+    {
+      "city": "Vancouver",
+      "province": "BC"
+    },
+    {
+      "city": "Surrey",
+      "province": "BC"
+    }
+  ],
+  "lastAdded": 0,
+  "lastTotalFound": 0
+}

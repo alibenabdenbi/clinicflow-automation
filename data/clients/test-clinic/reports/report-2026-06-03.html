@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Test Dental Clinic — ClinicFlow 30-Day Report</title>
+<style>
+  :root {
+    --bg:#0b0f17; --card:rgba(255,255,255,.06); --line:rgba(255,255,255,.12);
+    --text:#e8eefc; --muted:#a7b0c5; --accent:#7c5cff; --accent2:#39d98a;
+    --bad:#ff5c7a; --warn:#f6b04d;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body {
+    background:var(--bg); color:var(--text);
+    font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    padding:40px 20px; min-height:100vh;
+  }
+  .container { max-width:680px; margin:0 auto; }
+  .header { margin-bottom:32px; }
+  .logo { font-size:13px; color:var(--accent); font-weight:700; letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px; }
+  h1 { font-size:26px; font-weight:900; margin-bottom:4px; }
+  .period { color:var(--muted); font-size:13px; }
+  .stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:24px 0; }
+  .stat-card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px; }
+  .stat-value { font-size:36px; font-weight:900; color:var(--accent2); line-height:1; }
+  .stat-label { font-size:12px; color:var(--muted); margin-top:6px; text-transform:uppercase; letter-spacing:.06em; }
+  .stat-sub { font-size:11px; color:var(--muted); margin-top:4px; }
+  .revenue-card { background:linear-gradient(135deg,rgba(124,92,255,.2),rgba(57,217,138,.1)); border:1px solid var(--accent); border-radius:10px; padding:24px; text-align:center; margin:24px 0; }
+  .revenue-value { font-size:48px; font-weight:900; color:var(--accent2); }
+  .revenue-label { color:var(--muted); font-size:14px; margin-top:6px; }
+  .section { margin:28px 0; }
+  .section-title { font-size:12px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; margin-bottom:14px; border-bottom:1px solid var(--line); padding-bottom:8px; }
+  .comparison { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .col-before { background:rgba(255,92,122,.08); border:1px solid rgba(255,92,122,.2); border-radius:10px; padding:16px; }
+  .col-after  { background:rgba(57,217,138,.08); border:1px solid rgba(57,217,138,.2); border-radius:10px; padding:16px; }
+  .col-label  { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:10px; }
+  .col-before .col-label { color:var(--bad); }
+  .col-after  .col-label { color:var(--accent2); }
+  .col-item   { font-size:13px; color:var(--muted); margin:6px 0; }
+  .col-item span { color:var(--text); font-weight:600; }
+  .upgrade-box { background:rgba(124,92,255,.12); border:1px solid rgba(124,92,255,.3); border-radius:10px; padding:20px; margin:24px 0; }
+  .upgrade-title { font-size:15px; font-weight:700; color:var(--accent); margin-bottom:8px; }
+  .upgrade-box p  { font-size:13px; color:var(--muted); line-height:1.6; margin-bottom:14px; }
+  .cta { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:10px 20px; border-radius:6px; font-size:13px; font-weight:700; }
+  .footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); text-align:center; }
+  @media (max-width:480px) {
+    .stats-grid, .comparison { grid-template-columns:1fr; }
+    .revenue-value { font-size:36px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">ClinicFlow Automation</div>
+    <h1>Test Dental Clinic</h1>
+    <div class="period">30-Day Results Report · May 4, 2026 – June 3, 2026</div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-value">1</div>
+      <div class="stat-label">Missed Calls Recovered</div>
+      <div class="stat-sub">1 total missed calls · 100% received follow-up</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">3</div>
+      <div class="stat-label">Reminders Sent</div>
+      <div class="stat-sub">1 × 72h · 2 × 24h</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">0</div>
+      <div class="stat-label">Patients Reactivated</div>
+      <div class="stat-sub">Wave 1: 0 · Wave 2: 0 · Wave 3: 0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">35%</div>
+      <div class="stat-label">No-Show Reduction</div>
+      <div class="stat-sub">Estimated from reminder delivery rate</div>
+    </div>
+  </div>
+
+  <div class="revenue-card">
+    <div class="revenue-value">$200</div>
+    <div class="revenue-label">Estimated Revenue Recovered · $200 per reactivated patient</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Before vs After ClinicFlow</div>
+    <div class="comparison">
+      <div class="col-before">
+        <div class="col-label">Before</div>
+        <div class="col-item">Missed calls: <span>Unanswered</span></div>
+        <div class="col-item">Reminders: <span>Manual or none</span></div>
+        <div class="col-item">Inactive patients: <span>Lost revenue</span></div>
+        <div class="col-item">No-shows: <span>~12–15%</span></div>
+      </div>
+      <div class="col-after">
+        <div class="col-label">After</div>
+        <div class="col-item">Missed calls: <span>1 recovered</span></div>
+        <div class="col-item">Reminders: <span>3 sent automatically</span></div>
+        <div class="col-item">Inactive patients: <span>0 re-engaged</span></div>
+        <div class="col-item">No-shows: <span>Est. 35% lower</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="upgrade-box">
+        <div class="upgrade-title">Your system is performing well</div>
+        <p>Everything is running automatically. Your next 30-day report arrives on July 3, 2026.</p>
+        <a href="https://clinicflowautomation.com/portal?clinic=test-clinic" class="cta">View live portal →</a>
+      </div>
+
+  <div class="footer">
+    Report generated June 3, 2026 ·
+    <a href="https://clinicflowautomation.com/portal?clinic=test-clinic" style="color:var(--accent);text-decoration:none">View live portal</a> ·
+    Questions? Reply to this email or contact@clinicflowautomation.com
+  </div>
+</div>
+</body>
+</html>

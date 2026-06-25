@@ -1,0 +1,908 @@
+{
+  "generatedAt": "2026-06-15T11:06:20.334Z",
+  "market": "all",
+  "totalScanned": 100,
+  "reachable": 0,
+  "clinics": [
+    {
+      "clinicName": "Cosmetic & Family Dentist",
+      "city": "Vaughan",
+      "market": "dental",
+      "website": "http://dfdentistry.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:01.474Z"
+    },
+    {
+      "clinicName": "Bathurst-Steeles Dental",
+      "city": "Vaughan",
+      "market": "dental",
+      "website": "https://www.bathurst-steelesdental.com/?cc=book&utm_source=GMB_Listing&utm_medium=organic&utm_campaign=GMB",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:05.317Z"
+    },
+    {
+      "clinicName": "Altima",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://altimascotiaplazadental.com/?cc=book&utm_source=GMB_Listing&utm_medium=organic&utm_campaign=GMB",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:09.146Z"
+    },
+    {
+      "clinicName": "Clareo",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "https://clareo.ca/wakefield",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:12.974Z"
+    },
+    {
+      "clinicName": "Aqua",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "https://aquadentalottawa.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:16.803Z"
+    },
+    {
+      "clinicName": "Dr. Robert Segal, Family",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "https://drsegal.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:20.630Z"
+    },
+    {
+      "clinicName": "Clinique Dentaire Gagné & Rousselle",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "http://www.aylmerdentaire.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:24.459Z"
+    },
+    {
+      "clinicName": "Google Search",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "https://cliniquedentaireduversant.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:28.288Z"
+    },
+    {
+      "clinicName": "Desired Smiles Dental",
+      "city": "Hamilton",
+      "market": "dental",
+      "website": "https://www.dsdental.ca/burlington/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:32.114Z"
+    },
+    {
+      "clinicName": "Dentist in Hamilton Ontario | Accepting New Patients",
+      "city": "Hamilton",
+      "market": "dental",
+      "website": "https://bartondental.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:35.942Z"
+    },
+    {
+      "clinicName": "London Bridge Dental",
+      "city": "London",
+      "market": "dental",
+      "website": "https://londonbridgedental.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:39.771Z"
+    },
+    {
+      "clinicName": "Montreal West Dentistry",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "https://montrealwestdentistry.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:43.599Z"
+    },
+    {
+      "clinicName": "River District Dentistry",
+      "city": "Vancouver",
+      "market": "dental",
+      "website": "https://riverdistrictdentistry.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:47.427Z"
+    },
+    {
+      "clinicName": "Alpine Dental",
+      "city": "Burnaby",
+      "market": "dental",
+      "website": "https://www.moderndental.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:51.255Z"
+    },
+    {
+      "clinicName": "Nelson Dental Clinic",
+      "city": "Burnaby",
+      "market": "dental",
+      "website": "https://nelsondentalcentre.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:55.067Z"
+    },
+    {
+      "clinicName": "Lakeview Dental Clinic",
+      "city": "Burnaby",
+      "market": "dental",
+      "website": "https://lakeviewdentalburnaby.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:00:58.895Z"
+    },
+    {
+      "clinicName": "East Village Dental",
+      "city": "Calgary",
+      "market": "dental",
+      "website": "https://eastvillagedental.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:02.725Z"
+    },
+    {
+      "clinicName": "Inspiration Denture & Implant Solutions",
+      "city": "Calgary",
+      "market": "dental",
+      "website": "https://inspirationdenture.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:06.553Z"
+    },
+    {
+      "clinicName": "Woodbine Dental",
+      "city": "Calgary",
+      "market": "dental",
+      "website": "https://woodbinedental.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:10.380Z"
+    },
+    {
+      "clinicName": "North Edge Dental",
+      "city": "Edmonton",
+      "market": "dental",
+      "website": "https://northedgedental.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:14.194Z"
+    },
+    {
+      "clinicName": "Hamptons Dental Studio",
+      "city": "Edmonton",
+      "market": "dental",
+      "website": "https://www.hamptonsdental.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:18.023Z"
+    },
+    {
+      "clinicName": "Marketview Dental",
+      "city": "Winnipeg",
+      "market": "dental",
+      "website": "https://www.marketviewdental.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:21.846Z"
+    },
+    {
+      "clinicName": "306 Dental",
+      "city": "Regina",
+      "market": "dental",
+      "website": "https://reginadentist.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:25.663Z"
+    },
+    {
+      "clinicName": "Physiothérapie Solution Active Verdun",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "https://www.physiosa.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:29.490Z"
+    },
+    {
+      "clinicName": "Lawrence Avenue Dental",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "http://www.smilestoronto.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:33.320Z"
+    },
+    {
+      "clinicName": "Mason Denture Clinic",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://www.maison-dental.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:37.148Z"
+    },
+    {
+      "clinicName": "One Marine",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://onemarinedental.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:40.975Z"
+    },
+    {
+      "clinicName": "Summerville Dentistry | Mississauga | Dr. Amy Fan & Dr. Damian Yung, Family Dentists",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://summervilledentistry.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:44.782Z"
+    },
+    {
+      "clinicName": "King East Dental Toronto",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://kingeastdental.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:48.602Z"
+    },
+    {
+      "clinicName": "Downsview Plaza Dental",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "http://dpdo.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:52.428Z"
+    },
+    {
+      "clinicName": "Davisville Family",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://davisvillefamilydentistry.com/?utm_source=gmb&utm_medium=organic",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:01:56.258Z"
+    },
+    {
+      "clinicName": "Bathurst Dundas Dental Centre",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://bathurstdundasdentalcentre.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:00.084Z"
+    },
+    {
+      "clinicName": "Wellesley Dental Centre",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://www.cwdentalcentre.com/site/home?utm_source=G&utm_medium=LPM&utm_campaign=DentalCorp",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:03.912Z"
+    },
+    {
+      "clinicName": "Orthodontics On Bloor – Dr. Miroslava Brankovan",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://orthodonticsonbloor.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:07.740Z"
+    },
+    {
+      "clinicName": "Dentists on Bloor",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://www.dentistsonbloor.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:11.567Z"
+    },
+    {
+      "clinicName": "Galleria Dental",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://www.galleriadental.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:15.394Z"
+    },
+    {
+      "clinicName": "Dr. Muyal & Associates",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://www.muyaldentistry.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:19.205Z"
+    },
+    {
+      "clinicName": "Dental Centre on Bloor",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://bloordufferindental.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:23.022Z"
+    },
+    {
+      "clinicName": "Chapnick Dental",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://www.chapnickdental.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:26.850Z"
+    },
+    {
+      "clinicName": "OrthoSmiles",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://laskiorthosmiles.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:30.677Z"
+    },
+    {
+      "clinicName": "Eatonville Dental",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "http://eatonvilledental.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:34.505Z"
+    },
+    {
+      "clinicName": "Etobicoke Smiles",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://etobicokesmilesdental.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:38.334Z"
+    },
+    {
+      "clinicName": "Mississauga Smiles Dentistry",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://mississaugasmilesdentistry.com/?utm_source=GMB_Listing&utm_medium=organic&utm_campaign=Website_URL",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:42.160Z"
+    },
+    {
+      "clinicName": "Dentistry for Everyone",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://www.dentistryforeveryone.ca/?utm_campaign=gmb",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:45.976Z"
+    },
+    {
+      "clinicName": "Cracovia Dental",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://cracoviadental.com/?utm_campaign=gmb",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:49.802Z"
+    },
+    {
+      "clinicName": "Dundas East Dental",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "http://www.dundaseastdental.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:53.645Z"
+    },
+    {
+      "clinicName": "Elmwood Park Dental",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://dentalclinictoronto.dentist/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:02:57.474Z"
+    },
+    {
+      "clinicName": "Dr. Martin Frankel Cosmetic Dentist / SMILES by design",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://drmartyfrankel.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:01.301Z"
+    },
+    {
+      "clinicName": "Dr. Lisa Chong",
+      "city": "Toronto",
+      "market": "dental",
+      "website": "https://drlisachong.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:05.132Z"
+    },
+    {
+      "clinicName": "The website you are looking for is either under maintenance or has moved",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "http://gentletouchdentalhygiene.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:08.959Z"
+    },
+    {
+      "clinicName": "Port Credit Dental",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "https://portcreditdental.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:12.788Z"
+    },
+    {
+      "clinicName": "Credit River Dental Centre",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "https://www.creditriverdental.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:16.616Z"
+    },
+    {
+      "clinicName": "Appleday Dental",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "https://appledaydental.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:20.444Z"
+    },
+    {
+      "clinicName": "Park Haven Dental",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "https://parkhavendental.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:24.273Z"
+    },
+    {
+      "clinicName": "Trinity Dental Centre",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "http://www.trinitydental.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:28.116Z"
+    },
+    {
+      "clinicName": "Dr.T.Shah & Associates",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "http://www.drtshah.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:31.943Z"
+    },
+    {
+      "clinicName": "Dr. Pinto & Associates",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "https://www.drpinto.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:35.773Z"
+    },
+    {
+      "clinicName": "Heritage Orthodontics",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "http://www.heritageorthodontics.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:39.610Z"
+    },
+    {
+      "clinicName": "Brampton Mississauga Streetsville Cosmetic Dentist",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "http://dentistryinstreetsville.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:43.428Z"
+    },
+    {
+      "clinicName": "Britannia Dental Care",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "https://www.britanniadentalcare.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:47.243Z"
+    },
+    {
+      "clinicName": "Dentistry on Britannia",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "https://www.dentistryonbritannia.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:51.070Z"
+    },
+    {
+      "clinicName": "Dentistry by Dr. Sferlazza",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "https://www.winningsmiletor.com/?cc=book&utm_source=GMB_Listing&utm_medium=organic&utm_campaign=GMB",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:54.897Z"
+    },
+    {
+      "clinicName": "Kennedy Dental Care Brampton",
+      "city": "Mississauga",
+      "market": "dental",
+      "website": "https://www.kennedydentalcarebrampton.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:03:58.726Z"
+    },
+    {
+      "clinicName": "iSmile Dental Centre",
+      "city": "Brampton",
+      "market": "dental",
+      "website": "https://ismiledentalcentre.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:02.569Z"
+    },
+    {
+      "clinicName": "North Bramalea Dental",
+      "city": "Brampton",
+      "market": "dental",
+      "website": "https://www.northbramaleadental.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:06.384Z"
+    },
+    {
+      "clinicName": "Barrhaven Bright Smile",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "https://www.barrhavenbrightsmiledental.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:10.211Z"
+    },
+    {
+      "clinicName": "Barrhaven Denture Clinic, Service for...",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "http://barrhavendenture.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:14.037Z"
+    },
+    {
+      "clinicName": "Centre Dentaire Limbour",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "https://www.limbour.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:17.862Z"
+    },
+    {
+      "clinicName": "Robinson",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "http://www.robinsondental.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:21.680Z"
+    },
+    {
+      "clinicName": "Barrhaven Dental Studio",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "https://www.barrhavendentalstudio.ca/?utm_source=google&utm_medium=gbp&utm_campaign=google_business",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:25.506Z"
+    },
+    {
+      "clinicName": "Vimy Bridge Dental",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "http://vimydental.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:29.334Z"
+    },
+    {
+      "clinicName": "Abeautifulsmile.ca – Dr. Salloum – Ot...",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "http://www.abeautifulsmile.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:33.147Z"
+    },
+    {
+      "clinicName": "Welcome to Liu Dental Centres",
+      "city": "Ottawa",
+      "market": "dental",
+      "website": "https://www.liudental.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:36.976Z"
+    },
+    {
+      "clinicName": "Lakefront Family Dental",
+      "city": "Hamilton",
+      "market": "dental",
+      "website": "https://lakefrontfamilydental.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:40.804Z"
+    },
+    {
+      "clinicName": "Dr. Kwong Lo",
+      "city": "Hamilton",
+      "market": "dental",
+      "website": "http://www.drkwonglo.com/locations.html",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:44.630Z"
+    },
+    {
+      "clinicName": "Elm Hill Dentistry - Dr. Mark Iacovino",
+      "city": "Hamilton",
+      "market": "dental",
+      "website": "https://www.elmhilldentistry.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:48.476Z"
+    },
+    {
+      "clinicName": "Jacobs & Associates Dental Office",
+      "city": "Hamilton",
+      "market": "dental",
+      "website": "https://www.jacobsdental.ca/?utm_source=google&utm_medium=local&utm_campaign=gbp",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:52.303Z"
+    },
+    {
+      "clinicName": "Ottawa South Dental",
+      "city": "Kitchener",
+      "market": "dental",
+      "website": "http://www.ottawasouthdental.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:56.148Z"
+    },
+    {
+      "clinicName": "Progressive Dental Studio Inc",
+      "city": "Kitchener",
+      "market": "dental",
+      "website": "http://progressivedental.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:04:59.974Z"
+    },
+    {
+      "clinicName": "Applewood Dental Centre",
+      "city": "Kitchener",
+      "market": "dental",
+      "website": "http://www.applewooddentistry.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:03.802Z"
+    },
+    {
+      "clinicName": "Welcome to The Village Dental Centre - Your Trusted Dentist in Waterloo",
+      "city": "Kitchener",
+      "market": "dental",
+      "website": "http://www.yoursmilecentre.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:07.631Z"
+    },
+    {
+      "clinicName": "KW Perio",
+      "city": "Kitchener",
+      "market": "dental",
+      "website": "http://kwperio.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:11.445Z"
+    },
+    {
+      "clinicName": "Emergency Dental Service",
+      "city": "Kitchener",
+      "market": "dental",
+      "website": "https://www.kitchenerdentistfairway.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:15.273Z"
+    },
+    {
+      "clinicName": "The Working",
+      "city": "Kitchener",
+      "market": "dental",
+      "website": "https://www.theworkingcentre.org",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:19.102Z"
+    },
+    {
+      "clinicName": "Dr. Liana Cardieri Family & Cosmetic Dentistry",
+      "city": "Kitchener",
+      "market": "dental",
+      "website": "http://www.cardieridental.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:22.928Z"
+    },
+    {
+      "clinicName": "Alba Dental Centre & Fastbraces",
+      "city": "London",
+      "market": "dental",
+      "website": "https://www.albadental.ca",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:26.758Z"
+    },
+    {
+      "clinicName": "Clinique de denturologie Josée Bouthillier",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "http://www.411sante.com/dentier/montreal/hochelaga-maisonneuve-1/denturologiste-hochelaga-maisonneuve.htm",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:30.585Z"
+    },
+    {
+      "clinicName": "Accueil - La Dentisterie LA",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "http://www.cliniquedentairelacite.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:34.412Z"
+    },
+    {
+      "clinicName": "Centre Dentaire Mawlawi",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "http://www.centredentairemawlawi.ca/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:38.242Z"
+    },
+    {
+      "clinicName": "Centre Dentaire Dr Louise Magnan",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "http://www.mag-dent.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:42.070Z"
+    },
+    {
+      "clinicName": "Centredentairesd",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "https://www.centredentairesd.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:45.898Z"
+    },
+    {
+      "clinicName": "Sourires Exquis",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "https://souriresexquis.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:49.725Z"
+    },
+    {
+      "clinicName": "Clinique Dentaire des Écores",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "https://clinique2345.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:53.553Z"
+    },
+    {
+      "clinicName": "Clinique Implantologie Dentaire Implants Dentaire",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "https://www.cliniqueimplants.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:05:57.382Z"
+    },
+    {
+      "clinicName": "Clinique Dentaire St",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "http://www.lessoinsdentaires.com/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:06:01.211Z"
+    },
+    {
+      "clinicName": "Dentist Brossard",
+      "city": "Montreal",
+      "market": "dental",
+      "website": "https://brossarddentistes.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:06:05.022Z"
+    },
+    {
+      "clinicName": "Dentistes REMA",
+      "city": "Longueuil",
+      "market": "dental",
+      "website": "https://dentistesrema.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:06:08.850Z"
+    },
+    {
+      "clinicName": "MTL MF Dental",
+      "city": "Longueuil",
+      "market": "dental",
+      "website": "https://mtlmf.com",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:06:12.677Z"
+    },
+    {
+      "clinicName": "Clinique dentaire Karine Bouchard",
+      "city": "Quebec City",
+      "market": "dental",
+      "website": "https://www.mesdents.net",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:06:16.505Z"
+    },
+    {
+      "clinicName": "Clinique Dentaire Sylvie Clermont",
+      "city": "Quebec City",
+      "market": "dental",
+      "website": "https://clareo.ca/clinique/clareo-reseau-dentaire-levis/",
+      "status": "unreachable",
+      "opportunityScore": null,
+      "scannedAt": "2026-06-15T11:06:20.334Z"
+    }
+  ]
+}

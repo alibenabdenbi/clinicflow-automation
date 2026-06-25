@@ -1,0 +1,154 @@
+ClinicFlow — No-Website Clinic Credibility Report
+Generated: 2026-04-11T02:03:37.380Z
+════════════════════════════════════════════════════════════
+
+SUMMARY
+  Total records processed:  971
+  Ready (contactable):      258
+  Review (borderline):      713
+  Skip (low quality):       0
+  With email address:       34
+  Google Maps verified:     0
+  Emails discovered:        0
+
+SCORING CRITERIA
+  +1  Has clinic name
+  +1  Has phone number
+  +1  Has street address
+  +1  Has GPS coordinates
+  +1  Has email address
+  Ready  = score ≥ 3 AND valid Canadian phone
+  Review = score ≥ 2
+  Skip   = score < 2
+
+PHONE VALIDATION BREAKDOWN
+  Valid Canadian phones:     258
+  Likely landline:           248
+  Invalid / missing:         713
+
+SCORE DISTRIBUTION
+  Score 5: 5 records
+  Score 4: 171 records
+  Score 3: 342 records
+  Score 2: 453 records
+  Score 1: 0 records
+  Score 0: 0 records
+
+════════════════════════════════════════════════════════════
+TOP 10 MOST CREDIBLE NO-WEBSITE CLINICS — READY TO CONTACT
+════════════════════════════════════════════════════════════
+
+1. Jo Saher Dentistry
+   City:         Toronto, ON
+   Score:        5/5  [name, phone, address, coordinates, email]
+   Phone:        (416) 231-8022  (likely landline)
+   Address:      5098 Dundas Street West
+   Email:        5098dundas@gmail.com
+   Google Maps:  not checked
+   Website found:none
+   Status:       todo
+
+2. West Humber Dentistry
+   City:         Toronto, ON
+   Score:        5/5  [name, phone, address, coordinates, email]
+   Phone:        (416) 742-0234  (likely landline)
+   Address:      1701 Martin Grove Road
+   Email:        info@westhumberdentistry.com
+   Google Maps:  not checked
+   Website found:none
+   Status:       sent
+
+3. Evergreen Endo Group
+   City:         Vancouver, BC
+   Score:        5/5  [name, phone, address, coordinates, email]
+   Phone:        (604) 873-0717  (likely landline)
+   Address:      686 East 19th Avenue
+   Email:        eastvan@endo-group.com
+   Google Maps:  not checked
+   Website found:none
+   Status:       sent
+
+4. Y&F Dental
+   City:         Toronto, ON
+   Score:        4/5  [name, phone, coordinates, email]
+   Phone:        (416) 364-2444  (likely landline)
+   Address:      —
+   Email:        info@yongefrontdental.com
+   Google Maps:  not checked
+   Website found:none
+   Status:       sent
+
+5. The Dentist
+   City:         Vancouver, BC
+   Score:        4/5  [name, phone, coordinates, email]
+   Phone:        (604) 321-1786  (likely landline)
+   Address:      —
+   Email:        thedentistondoundary@gmail.com
+   Google Maps:  not checked
+   Website found:none
+   Status:       todo
+
+6. Phoenix Denture Clinic
+   City:         Toronto, ON
+   Score:        5/5  [name, phone, address, coordinates, email]
+   Phone:        (647) 999-9991  (likely mobile)
+   Address:      3273 Bloor Street West
+   Email:        phoenixdenture@gmail.com
+   Google Maps:  not checked
+   Website found:none
+   Status:       todo
+
+7. Forest Manor Dental
+   City:         Toronto, ON
+   Score:        5/5  [name, phone, address, coordinates, email]
+   Phone:        (647) 350-6683  (likely mobile)
+   Address:      70 Forest Manor Road
+   Email:        info@forestmanordental.com
+   Google Maps:  not checked
+   Website found:none
+   Status:       sent
+
+8. Dr. Norman Mack
+   City:         Toronto, ON
+   Score:        4/5  [name, phone, address, coordinates]
+   Phone:        (416) 425-5144  (likely landline)
+   Address:      1353 Woodbine Avenue
+   Email:        none found
+   Google Maps:  not checked
+   Website found:none
+   Status:       todo
+
+9. Lawrence Freedman
+   City:         Toronto, ON
+   Score:        4/5  [name, phone, address, coordinates]
+   Phone:        (416) 536-8863  (likely landline)
+   Address:      415 Bloor Street West
+   Email:        none found
+   Google Maps:  not checked
+   Website found:none
+   Status:       todo
+
+10. Harbourfront Dental
+   City:         Toronto, ON
+   Score:        4/5  [name, phone, address, coordinates]
+   Phone:        (416) 260-2001  (likely landline)
+   Address:      10 Lower Spadina Avenue
+   Email:        none found
+   Google Maps:  not checked
+   Website found:none
+   Status:       todo
+
+════════════════════════════════════════════════════════════
+READY CLINICS WITH EMAIL (immediately contactable)
+════════════════════════════════════════════════════════════
+
+  Jo Saher Dentistry                       Toronto         5098dundas@gmail.com
+  West Humber Dentistry                    Toronto         info@westhumberdentistry.com
+  Phoenix Denture Clinic                   Toronto         phoenixdenture@gmail.com
+  Forest Manor Dental                      Toronto         info@forestmanordental.com
+  Y&F Dental                               Toronto         info@yongefrontdental.com
+  The Dentist                              Vancouver       thedentistondoundary@gmail.com
+  Evergreen Endo Group                     Vancouver       eastvan@endo-group.com
+
+════════════════════════════════════════════════════════════
+End of report — 2026-04-11T02:03:37.380Z

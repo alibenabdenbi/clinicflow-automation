@@ -1,0 +1,41 @@
+{
+  "startedAt": "2026-05-10T07:21:03.375Z",
+  "jobs": [
+    {
+      "job": 1,
+      "name": "AI Openers",
+      "generated": 53,
+      "failed": 0,
+      "completedAt": "2026-05-10T07:25:40.367Z"
+    },
+    {
+      "job": 2,
+      "name": "Email Scraping",
+      "salonFound": 12,
+      "physioFound": 0,
+      "completedAt": "2026-05-10T07:44:36.136Z"
+    },
+    {
+      "job": 3,
+      "name": "LinkedIn Messages",
+      "newlyGenerated": 1,
+      "totalWithMessages": 981,
+      "completedAt": "2026-05-10T15:35:45.144Z"
+    },
+    {
+      "job": 4,
+      "name": "Morning Report",
+      "completedAt": "2026-05-10T15:36:22.337Z"
+    }
+  ],
+  "summary": {
+    "aiOpenersGenerated": 73,
+    "emailsScraped": 11,
+    "linkedinMessages": 981,
+    "dentalReady": 53,
+    "salonReady": 27,
+    "physioReady": 4,
+    "totalReady": 84
+  },
+  "completedAt": "2026-05-10T15:36:22.337Z"
+}

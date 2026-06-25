@@ -1,0 +1,9 @@
+{
+	"id": "vZSSNnqS0Nfk9L4",
+	"json": "{\"id\":\"vZSSNnqS0Nfk9L4\",\"url\":\"https://wordpress.org/plugins/search/email%20marketing/page/1/\",\"loadedUrl\":\"https://wordpress.org/plugins/search/email%20marketing/page/1/\",\"uniqueKey\":\"https://wordpress.org/plugins/search/email%20marketing/page/1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"search\",\"kw\":\"email marketing\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:55.775Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/search/email%20marketing/page/1",
+	"url": "https://wordpress.org/plugins/search/email%20marketing/page/1/"
+}

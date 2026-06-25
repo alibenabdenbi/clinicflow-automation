@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-06-15T11:06:42.275Z",
+  "clinicFlowDifferentiators": [
+    {
+      "gap": "Split payment / pay-after-delivery model",
+      "description": "ClinicFlow charges second half only after client sees it working. Competitors require full payment upfront or monthly subscriptions."
+    },
+    {
+      "gap": "One-time setup fee vs. monthly subscription",
+      "description": "Competitors charge $150–$500/month indefinitely. ClinicFlow is one-time."
+    },
+    {
+      "gap": "Done-for-you implementation",
+      "description": "Competitor tools are self-serve — clinics must configure everything. ClinicFlow builds it for them."
+    },
+    {
+      "gap": "No training required",
+      "description": "Dentrix/Eaglesoft require staff training days. ClinicFlow requires zero changes to clinic workflow."
+    },
+    {
+      "gap": "Works alongside any PMS",
+      "description": "Competitor tools often require switching or deep integration. ClinicFlow overlays any existing system."
+    },
+    {
+      "gap": "Canadian-focused PIPEDA compliance",
+      "description": "US-based tools may not meet Canadian privacy requirements out of the box."
+    },
+    {
+      "gap": "Direct patient list reactivation",
+      "description": "Most tools automate future patients only. ClinicFlow sends to the existing inactive patient list."
+    }
+  ],
+  "competitors": [
+    {
+      "name": "MaxAssist",
+      "url": "https://www.maxassist.com",
+      "pricingFound": [],
+      "featuresDetected": [],
+      "isMonthlyBilling": false,
+      "hasMissedCallRecovery": false,
+      "hasReactivation": false,
+      "hasSplitPayment": false,
+      "hasDoneForYou": false,
+      "weaknesses": [
+        "No missed call recovery feature",
+        "No split payment / pay-after-delivery",
+        "Self-serve only — no done-for-you setup"
+      ],
+      "gapSignalsFound": [],
+      "scrapedAt": "2026-06-15T11:06:36.239Z",
+      "reachable": false
+    },
+    {
+      "name": "Jane App",
+      "url": "https://jane.app",
+      "pricingFound": [],
+      "featuresDetected": [],
+      "isMonthlyBilling": false,
+      "hasMissedCallRecovery": false,
+      "hasReactivation": false,
+      "hasSplitPayment": false,
+      "hasDoneForYou": false,
+      "weaknesses": [
+        "No missed call recovery feature",
+        "No split payment / pay-after-delivery",
+        "Self-serve only — no done-for-you setup"
+      ],
+      "gapSignalsFound": [],
+      "scrapedAt": "2026-06-15T11:06:38.245Z",
+      "reachable": false
+    },
+    {
+      "name": "Dentrix",
+      "url": "https://www.dentrix.com",
+      "pricingFound": [],
+      "featuresDetected": [],
+      "isMonthlyBilling": false,
+      "hasMissedCallRecovery": false,
+      "hasReactivation": false,
+      "hasSplitPayment": false,
+      "hasDoneForYou": false,
+      "weaknesses": [
+        "No missed call recovery feature",
+        "No split payment / pay-after-delivery",
+        "Self-serve only — no done-for-you setup"
+      ],
+      "gapSignalsFound": [],
+      "scrapedAt": "2026-06-15T11:06:40.263Z",
+      "reachable": false
+    }
+  ],
+  "summary": {
+    "allRequireMonthlyFees": false,
+    "noneHaveSplitPayment": true,
+    "noneAreDoneForYou": true,
+    "commonWeaknesses": [
+      "No missed call recovery feature",
+      "No split payment / pay-after-delivery",
+      "Self-serve only — no done-for-you setup"
+    ]
+  }
+}

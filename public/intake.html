@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ClinicFlow — Clinic Setup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0b0f17;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.1);--text:#e8eefc;--muted:#a7b0c5;--accent:#7c5cff;--accent2:#39d98a;--gold:#f6b04d;--radius:12px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Syne',ui-sans-serif,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:40px 16px 80px;
+  background-image:radial-gradient(900px 600px at 50% -10%,rgba(124,92,255,.12),transparent 55%);}
+/* Progress */
+.progress-bar{width:100%;max-width:640px;margin-bottom:40px;}
+.progress-track{height:4px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden;}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;transition:width .4s ease;}
+.progress-label{font-size:12px;color:var(--muted);margin-top:8px;text-align:right;}
+/* Step */
+.step{max-width:640px;width:100%;display:none;animation:fadeUp .35s ease both;}
+.step.active{display:block;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.step-eyebrow{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;}
+.step h2{font-size:clamp(22px,4vw,32px);font-weight:800;line-height:1.1;margin-bottom:8px;}
+.step p{font-size:14px;color:var(--muted);margin-bottom:32px;line-height:1.6;}
+/* Inputs */
+.input{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:10px;padding:14px 18px;color:var(--text);font-size:16px;font-family:inherit;outline:none;transition:border .2s;margin-bottom:12px;}
+.input:focus{border-color:var(--accent);}
+.input-label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;display:block;}
+.input-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:480px){.input-row{grid-template-columns:1fr;}}
+/* Option cards */
+.option-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px;}
+@media(max-width:480px){.option-grid{grid-template-columns:1fr;}}
+.option-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 18px;cursor:pointer;transition:all .2s;position:relative;}
+.option-card:hover{border-color:var(--accent);background:rgba(124,92,255,.08);}
+.option-card.selected{border-color:var(--accent);background:rgba(124,92,255,.12);}
+.option-card.selected::after{content:'✓';position:absolute;top:12px;right:14px;color:var(--accent);font-size:16px;font-weight:700;}
+.option-icon{font-size:24px;margin-bottom:8px;}
+.option-label{font-size:14px;font-weight:700;}
+.option-sub{font-size:12px;color:var(--muted);margin-top:3px;}
+/* Hours grid */
+.hours-grid{display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:32px;}
+.hours-row{display:grid;grid-template-columns:90px 1fr 1fr 80px;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;}
+.hours-day{font-size:13px;font-weight:700;}
+.hours-time{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:6px;padding:6px 10px;color:var(--text);font-size:13px;font-family:inherit;outline:none;transition:border .2s;width:100%;}
+.hours-time:focus{border-color:var(--accent);}
+.hours-closed{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);cursor:pointer;user-select:none;}
+.hours-closed input{accent-color:var(--accent);}
+/* Dynamic lists */
+.add-btn{background:rgba(124,92,255,.1);border:1px solid rgba(124,92,255,.3);color:var(--accent);border-radius:8px;padding:10px 18px;font-size:13px;font-weight:700;font-family:inherit;cursor:pointer;transition:all .2s;margin-bottom:20px;}
+.add-btn:hover{background:rgba(124,92,255,.18);}
+.item-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:10px;position:relative;}
+.remove-btn{position:absolute;top:12px;right:12px;background:rgba(255,92,122,.1);border:1px solid rgba(255,92,122,.2);color:#ff5c7a;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:700;font-family:inherit;cursor:pointer;}
+/* Checkboxes */
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:32px;}
+@media(max-width:480px){.check-grid{grid-template-columns:1fr;}}
+.check-item{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;cursor:pointer;transition:all .2s;}
+.check-item:hover{border-color:var(--accent);}
+.check-item input{accent-color:var(--accent);width:16px;height:16px;}
+.check-item label{font-size:13px;cursor:pointer;}
+/* Textarea */
+textarea.input{min-height:100px;resize:vertical;}
+/* Nav */
+.nav-row{display:flex;gap:12px;margin-top:8px;}
+.btn-next{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:14px 32px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;transition:all .2s;}
+.btn-next:hover{opacity:.9;transform:translateY(-1px);}
+.btn-back{background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:14px 24px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;transition:all .2s;}
+.btn-back:hover{background:rgba(255,255,255,.1);}
+/* Step badge */
+.step-badge{display:inline-block;background:rgba(57,217,138,.1);color:#39d98a;border:1px solid rgba(57,217,138,.2);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px;}
+/* Success */
+.success{display:none;text-align:center;}
+.success.active{display:block;}
+.success-icon{font-size:48px;margin-bottom:16px;}
+.success h2{font-size:28px;font-weight:800;margin-bottom:8px;}
+.success p{font-size:15px;color:var(--muted);line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="progress-bar">
+  <div class="progress-track"><div class="progress-fill" id="prog" style="width:10%"></div></div>
+  <div class="progress-label" id="prog-label">Step 1 of 10</div>
+</div>
+
+<!-- Step 1: Clinic name -->
+<div class="step active" id="s1">
+  <div class="step-eyebrow">Setup — Step 1 of 10</div>
+  <h2>What's your clinic's name?</h2>
+  <p>This is how we'll address your patients in every message.</p>
+  <input class="input" id="clinicName" type="text" placeholder="e.g. Greenwoods Dental" autocomplete="organization"/>
+  <div class="nav-row"><button class="btn-next" onclick="next(1)">Continue →</button></div>
+</div>
+
+<!-- Step 2: Type -->
+<div class="step" id="s2">
+  <div class="step-eyebrow">Setup — Step 2 of 10</div>
+  <h2>What type of clinic?</h2>
+  <p>This shapes how we write your patient messages.</p>
+  <div class="option-grid">
+    <div class="option-card" onclick="selectType(this,'dental')"><div class="option-icon">🦷</div><div class="option-label">Dental</div><div class="option-sub">General or specialist dentistry</div></div>
+    <div class="option-card" onclick="selectType(this,'physio')"><div class="option-icon">🏃</div><div class="option-label">Physiotherapy</div><div class="option-sub">PT, sports rehab, massage</div></div>
+    <div class="option-card" onclick="selectType(this,'salon')"><div class="option-icon">✂️</div><div class="option-label">Salon / Spa</div><div class="option-sub">Hair, nails, aesthetics, med spa</div></div>
+    <div class="option-card" onclick="selectType(this,'other')"><div class="option-icon">🏥</div><div class="option-label">Other</div><div class="option-sub">Optometry, chiro, medical, etc.</div></div>
+  </div>
+  <div class="nav-row"><button class="btn-back" onclick="go(1)">← Back</button><button class="btn-next" onclick="next(2)">Continue →</button></div>
+</div>
+
+<!-- Step 3: Hours -->
+<div class="step" id="s3">
+  <div class="step-eyebrow">Setup — Step 3 of 10</div>
+  <h2>What are your hours?</h2>
+  <p>We use this to tell patients when you're available.</p>
+  <div class="hours-grid" id="hours-grid"></div>
+  <div class="nav-row"><button class="btn-back" onclick="go(2)">← Back</button><button class="btn-next" onclick="next(3)">Continue →</button></div>
+</div>
+
+<!-- Step 4: Team -->
+<div class="step" id="s4">
+  <div class="step-eyebrow">Setup — Step 4 of 10</div>
+  <h2>Who's on your team?</h2>
+  <p>Add your practitioners so Claude can mention them by name if a patient asks.</p>
+  <div id="team-list"></div>
+  <button class="add-btn" onclick="addTeamMember()">+ Add team member</button>
+  <div class="nav-row"><button class="btn-back" onclick="go(3)">← Back</button><button class="btn-next" onclick="next(4)">Continue →</button></div>
+</div>
+
+<!-- Step 5: Services -->
+<div class="step" id="s5">
+  <div class="step-eyebrow">Setup — Step 5 of 10</div>
+  <h2>What services do you offer?</h2>
+  <p>Patients often ask about availability and pricing — add your most common services.</p>
+  <div id="services-list"></div>
+  <button class="add-btn" onclick="addService()">+ Add service</button>
+  <div class="nav-row"><button class="btn-back" onclick="go(4)">← Back</button><button class="btn-next" onclick="next(5)">Continue →</button></div>
+</div>
+
+<!-- Step 6: Insurance -->
+<div class="step" id="s6">
+  <div class="step-eyebrow">Setup — Step 6 of 10</div>
+  <h2>Do you accept insurance?</h2>
+  <div class="option-grid" style="grid-template-columns:1fr 1fr;margin-bottom:20px;">
+    <div class="option-card" onclick="selectInsurance(this,true)"><div class="option-icon">✅</div><div class="option-label">Yes</div><div class="option-sub">We bill insurance</div></div>
+    <div class="option-card" onclick="selectInsurance(this,false)"><div class="option-icon">❌</div><div class="option-label">No</div><div class="option-sub">Payment at time of service</div></div>
+  </div>
+  <div id="insurance-details" style="display:none">
+    <label class="input-label">Which providers?</label>
+    <input class="input" id="insuranceProviders" type="text" placeholder="Sun Life, Manulife, Blue Cross..."/>
+    <label class="check-item" style="margin-bottom:12px;display:flex;"><input type="checkbox" id="directBilling"/><span style="margin-left:8px">We offer direct billing</span></label>
+  </div>
+  <div class="nav-row"><button class="btn-back" onclick="go(5)">← Back</button><button class="btn-next" onclick="next(6)">Continue →</button></div>
+</div>
+
+<!-- Step 7: Personality -->
+<div class="step" id="s7">
+  <div class="step-eyebrow">Setup — Step 7 of 10</div>
+  <h2>What's your clinic's personality?</h2>
+  <p>This shapes the tone of every patient message.</p>
+  <div class="option-grid">
+    <div class="option-card" onclick="selectTone(this,'warm and friendly')"><div class="option-icon">😊</div><div class="option-label">Warm & friendly</div><div class="option-sub">Like a trusted friend</div></div>
+    <div class="option-card" onclick="selectTone(this,'professional and efficient')"><div class="option-icon">💼</div><div class="option-label">Professional</div><div class="option-sub">Clear, concise, on-point</div></div>
+    <div class="option-card" onclick="selectTone(this,'family-focused and caring')"><div class="option-icon">👨‍👩‍👧</div><div class="option-label">Family-focused</div><div class="option-sub">Warm for all ages</div></div>
+    <div class="option-card" onclick="selectTone(this,'luxury and premium')"><div class="option-icon">✨</div><div class="option-label">Luxury & premium</div><div class="option-sub">Elevated, refined</div></div>
+  </div>
+  <div class="nav-row"><button class="btn-back" onclick="go(6)">← Back</button><button class="btn-next" onclick="next(7)">Continue →</button></div>
+</div>
+
+<!-- Step 8: Languages -->
+<div class="step" id="s8">
+  <div class="step-eyebrow">Setup — Step 8 of 10</div>
+  <h2>Any languages spoken besides English?</h2>
+  <p>Claude will note this in the clinic knowledge base.</p>
+  <div class="check-grid">
+    <label class="check-item"><input type="checkbox" value="French"/><span>French</span></label>
+    <label class="check-item"><input type="checkbox" value="Spanish"/><span>Spanish</span></label>
+    <label class="check-item"><input type="checkbox" value="Mandarin"/><span>Mandarin</span></label>
+    <label class="check-item"><input type="checkbox" value="Cantonese"/><span>Cantonese</span></label>
+    <label class="check-item"><input type="checkbox" value="Arabic"/><span>Arabic</span></label>
+    <label class="check-item"><input type="checkbox" value="Portuguese"/><span>Portuguese</span></label>
+    <label class="check-item"><input type="checkbox" value="Italian"/><span>Italian</span></label>
+    <label class="check-item"><input type="checkbox" value="Hindi"/><span>Hindi</span></label>
+  </div>
+  <input class="input" id="otherLanguage" type="text" placeholder="Other language..."/>
+  <div class="nav-row"><button class="btn-back" onclick="go(7)">← Back</button><button class="btn-next" onclick="next(8)">Continue →</button></div>
+</div>
+
+<!-- Step 9: Location & Parking -->
+<div class="step" id="s9">
+  <div class="step-eyebrow">Setup — Step 9 of 10</div>
+  <h2>Where are you located?</h2>
+  <label class="input-label">Clinic address</label>
+  <input class="input" id="address" type="text" placeholder="123 Main St, Montreal, QC"/>
+  <label class="input-label">Parking</label>
+  <input class="input" id="parking" type="text" placeholder="e.g. Free parking behind the building on Oak St"/>
+  <label class="input-label">Accessibility</label>
+  <input class="input" id="accessibility" type="text" placeholder="e.g. Wheelchair accessible, elevator on-site"/>
+  <div class="nav-row"><button class="btn-back" onclick="go(8)">← Back</button><button class="btn-next" onclick="next(9)">Continue →</button></div>
+</div>
+
+<!-- Step 10: Custom FAQs -->
+<div class="step" id="s10">
+  <div class="step-eyebrow">Setup — Step 10 of 10</div>
+  <h2>Anything patients commonly ask?</h2>
+  <p>Add questions and answers your patients ask most. Claude will use these to respond correctly every time.</p>
+  <div id="faq-list"></div>
+  <button class="add-btn" onclick="addFaq()">+ Add FAQ</button>
+  <label class="input-label" style="margin-top:16px">Any additional instructions for Claude?</label>
+  <textarea class="input" id="customInstructions" placeholder="e.g. Always mention we offer free parking. Never promise a specific doctor."></textarea>
+  <div class="nav-row"><button class="btn-back" onclick="go(9)">&#8592; Back</button><button class="btn-next" onclick="goToReferral()">Continue &#8594;</button></div>
+</div>
+
+<!-- Step 11: Referral (optional) -->
+<div class="step" id="s11">
+  <div class="step-badge">Optional &#8212; but worth $200</div>
+  <h2>Know another clinic owner?</h2>
+  <p>If you refer a clinic that signs up, you get $200 off your next invoice. No limit on referrals. Zero cost until they actually convert.</p>
+  <label class="input-label">Their clinic name</label>
+  <input class="input" id="ref-clinic" type="text" placeholder="e.g. Yonge Dental Care"/>
+  <label class="input-label">Their email</label>
+  <input class="input" id="ref-email" type="email" placeholder="owner@theirclinic.com"/>
+  <label class="input-label">Their phone (optional)</label>
+  <input class="input" id="ref-phone" type="tel" placeholder="+1 416 555 0100"/>
+  <div class="nav-row">
+    <button class="btn-back" onclick="go(10)">&#8592; Back</button>
+    <button class="btn-back" onclick="skipReferral()">Skip for now</button>
+    <button class="btn-next" onclick="submitReferral()">Submit referral &#8594;</button>
+  </div>
+</div>
+
+<!-- Success -->
+<div class="success" id="success">
+  <div class="success-icon">🎉</div>
+  <h2>Setup complete!</h2>
+  <p>Mohamed has received your clinic information and will activate your system within 24 hours.<br><br>You'll receive a confirmation email when everything is live.</p>
+</div>
+
+<script>
+let state = { step: 1, clinicType: '', insuranceAccepted: null, clinicTone: '' };
+const TOTAL = 11;
+
+function updateProgress(step) {
+  const pct = Math.round((step / TOTAL) * 100);
+  document.getElementById('prog').style.width = pct + '%';
+  const label = step === 11
+    ? 'Step 11 of 11 — Optional'
+    : `Step ${step} of 10`;
+  document.getElementById('prog-label').textContent = label;
+}
+
+function go(step) {
+  document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+  const el = document.getElementById('s'+step);
+  if (el) el.classList.add('active');
+  state.step = step;
+  updateProgress(step);
+  if (step === 3) buildHoursGrid();
+}
+
+function next(from) {
+  // Validation
+  if (from === 1 && !document.getElementById('clinicName').value.trim()) {
+    alert('Please enter your clinic name.'); return;
+  }
+  if (from === 2 && !state.clinicType) {
+    alert('Please select a clinic type.'); return;
+  }
+  go(from + 1);
+}
+
+function selectType(el, type) {
+  document.querySelectorAll('#s2 .option-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  state.clinicType = type;
+}
+
+function selectInsurance(el, val) {
+  document.querySelectorAll('#s6 .option-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  state.insuranceAccepted = val;
+  document.getElementById('insurance-details').style.display = val ? 'block' : 'none';
+}
+
+function selectTone(el, tone) {
+  document.querySelectorAll('#s7 .option-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  state.clinicTone = tone;
+}
+
+// Hours grid
+const DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+function buildHoursGrid() {
+  if (document.getElementById('hours-grid').children.length > 0) return;
+  DAYS.forEach((day, i) => {
+    const closed = day === 'Sunday';
+    const row = document.createElement('div');
+    row.className = 'hours-row';
+    row.innerHTML = `<div class="hours-day">${day}</div>
+      <input class="hours-time" type="time" id="open_${i}" value="${closed ? '' : (day==='Saturday'?'10:00':'09:00')}" ${closed?'disabled':''}>
+      <input class="hours-time" type="time" id="close_${i}" value="${closed ? '' : (day==='Saturday'?'14:00':'17:00')}" ${closed?'disabled':''}>
+      <label class="hours-closed"><input type="checkbox" id="closed_${i}" ${closed?'checked':''} onchange="toggleClosed(${i})"><span>Closed</span></label>`;
+    document.getElementById('hours-grid').appendChild(row);
+  });
+}
+function toggleClosed(i) {
+  const cb = document.getElementById('closed_'+i);
+  document.getElementById('open_'+i).disabled = cb.checked;
+  document.getElementById('close_'+i).disabled = cb.checked;
+}
+
+// Team
+function addTeamMember() {
+  const id = Date.now();
+  const div = document.createElement('div');
+  div.className = 'item-card'; div.id = 'team_'+id;
+  div.innerHTML = `<button class="remove-btn" onclick="document.getElementById('team_${id}').remove()">Remove</button>
+    <div class="input-row">
+      <div><label class="input-label">Name</label><input class="input" placeholder="Dr. Sarah Chen" data-field="name"/></div>
+      <div><label class="input-label">Role</label><input class="input" placeholder="Dentist" data-field="role"/></div>
+    </div>
+    <label class="input-label">Specialties (comma separated)</label>
+    <input class="input" placeholder="Invisalign, anxious patients" data-field="specialties"/>`;
+  document.getElementById('team-list').appendChild(div);
+}
+
+// Services
+function addService() {
+  const id = Date.now();
+  const div = document.createElement('div');
+  div.className = 'item-card'; div.id = 'svc_'+id;
+  div.innerHTML = `<button class="remove-btn" onclick="document.getElementById('svc_${id}').remove()">Remove</button>
+    <div class="input-row">
+      <div><label class="input-label">Service name</label><input class="input" placeholder="Cleaning & Exam" data-field="name"/></div>
+      <div><label class="input-label">Duration (min)</label><input class="input" type="number" placeholder="60" data-field="duration"/></div>
+    </div>
+    <div class="input-row">
+      <div><label class="input-label">Price ($)</label><input class="input" type="number" placeholder="180" data-field="price"/></div>
+      <div><label class="input-label">Description</label><input class="input" placeholder="Full cleaning with X-rays" data-field="description"/></div>
+    </div>`;
+  document.getElementById('services-list').appendChild(div);
+}
+
+// FAQs
+function addFaq() {
+  const id = Date.now();
+  const div = document.createElement('div');
+  div.className = 'item-card'; div.id = 'faq_'+id;
+  div.innerHTML = `<button class="remove-btn" onclick="document.getElementById('faq_${id}').remove()">Remove</button>
+    <label class="input-label">Question</label>
+    <input class="input" placeholder="Do you accept walk-ins?" data-field="question"/>
+    <label class="input-label">Answer</label>
+    <input class="input" placeholder="We reserve same-day slots for emergencies..." data-field="answer"/>`;
+  document.getElementById('faq-list').appendChild(div);
+}
+
+// Collect all form data
+function collectData() {
+  const hours = {};
+  DAYS.forEach((day, i) => {
+    const closed = document.getElementById('closed_'+i)?.checked;
+    hours[day.toLowerCase()] = closed
+      ? { closed: true }
+      : { open: document.getElementById('open_'+i)?.value || '09:00', close: document.getElementById('close_'+i)?.value || '17:00', closed: false };
+  });
+
+  const team = [...document.querySelectorAll('[id^=team_]')].map(el => ({
+    name: el.querySelector('[data-field=name]')?.value || '',
+    role: el.querySelector('[data-field=role]')?.value || '',
+    specialties: (el.querySelector('[data-field=specialties]')?.value || '').split(',').map(s=>s.trim()).filter(Boolean),
+  })).filter(t => t.name);
+
+  const services = [...document.querySelectorAll('[id^=svc_]')].map(el => ({
+    name: el.querySelector('[data-field=name]')?.value || '',
+    duration: parseInt(el.querySelector('[data-field=duration]')?.value) || null,
+    price: parseInt(el.querySelector('[data-field=price]')?.value) || null,
+    description: el.querySelector('[data-field=description]')?.value || '',
+  })).filter(s => s.name);
+
+  const faqs = [...document.querySelectorAll('[id^=faq_]')].map(el => ({
+    question: el.querySelector('[data-field=question]')?.value || '',
+    answer: el.querySelector('[data-field=answer]')?.value || '',
+  })).filter(f => f.question);
+
+  const languages = ['English', ...[...document.querySelectorAll('#s8 input[type=checkbox]:checked')].map(c=>c.value)];
+  const other = document.getElementById('otherLanguage')?.value.trim();
+  if (other) languages.push(other);
+
+  return {
+    clinicName: document.getElementById('clinicName')?.value.trim() || '',
+    type: state.clinicType || 'dental',
+    hours,
+    team,
+    services,
+    insurance: {
+      accepted: state.insuranceAccepted ?? false,
+      providers: (document.getElementById('insuranceProviders')?.value || '').split(',').map(s=>s.trim()).filter(Boolean),
+      directBilling: document.getElementById('directBilling')?.checked ?? false,
+    },
+    tone: { style: state.clinicTone || 'warm and professional' },
+    languages,
+    contact: {
+      address: document.getElementById('address')?.value.trim() || '',
+    },
+    parking: document.getElementById('parking')?.value.trim() || '',
+    accessibility: document.getElementById('accessibility')?.value.trim() || '',
+    faqs,
+    customInstructions: document.getElementById('customInstructions')?.value.trim() || '',
+  };
+}
+
+async function submit() {
+  const data = collectData();
+  try {
+    const res = await fetch('/.netlify/functions/intake-submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    let responseData = {};
+    try { responseData = await res.json(); } catch {}
+    if (responseData.ok && responseData.slug) {
+      window.location.href = '/welcome?clinic=' + responseData.slug;
+      return;
+    }
+    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+    document.getElementById('progress-bar') && (document.querySelector('.progress-bar').style.display = 'none');
+    document.querySelector('.progress-bar').style.display = 'none';
+    document.getElementById('success').classList.add('active');
+  } catch (e) {
+    alert('Submission failed. Please email your setup directly to contact@clinicflowautomation.com');
+  }
+}
+
+// ── Referral step ─────────────────────────────────────────────────────────────
+
+function goToReferral() {
+  window._intakeClinic = document.getElementById('clinicName')?.value.trim() || '';
+  go(11);
+}
+
+function skipReferral() {
+  submit();
+}
+
+async function submitReferral() {
+  const clinic = document.getElementById('ref-clinic').value.trim();
+  const email  = document.getElementById('ref-email').value.trim();
+  const phone  = document.getElementById('ref-phone').value.trim();
+  if (email && email.includes('@')) {
+    await fetch('/api/referral-track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        referredClinic: clinic,
+        referredEmail:  email,
+        referredPhone:  phone,
+        referrerClinic: window._intakeClinic || '',
+        source:         'intake-step-11',
+        ts:             Date.now(),
+      }),
+      keepalive: true,
+    }).catch(() => {});
+  }
+  submit();
+}
+
+// Init
+updateProgress(1);
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+ORE-Engine — Daily Report
+Date: 2026-04-21
+Generated: 2026-04-22T01:11:20.676Z
+────────────────────────────────────────────────────
+
+DISCOVERY & CRM
+  Total CRM leads: 78                     
+  New leads today: 1                      
+  Tier A: 26                              
+  Tier B: 52                              
+  Tier C: 0                               
+  Confirmed / accepted: 1                 
+  Offer acceptance rate: 1% (1/78 confirmed)
+  Top theme today: AI & Tech News         
+  High-score signals (>=9): 0             
+  Validated offer packs: 0                
+
+EMAIL OUTREACH
+  Total clinics in queue: 1010            
+  Emails pending (todo): 266              
+  Initial emails sent (all time): 102     
+  Emails sent today: 20                   
+  Emails sent yesterday: 30               
+  Total sent all time (SMTP): 298         
+    → Initial sends (all time): 228       
+    → Follow-ups (all time): 70           
+  Clinics with no email: 602              
+  Open rate proxy: 44% (45/102 proceeded to FU1)
+
+FOLLOW-UPS (3-stage)
+  FU1 due now: 27                         
+  FU1 due in next 7 days: 30              
+  FU2 due now: 2                          
+  FU1 sent (total): 45                    
+  FU2 sent (total): 39                    
+  FU3 sent (total): 0                     
+  Sequences complete: 0                   
+
+ACTION REQUIRED
+  1 reply(s) need a response:
+  • undefined                           → NEEDS_REVIEW
+
+HOT PROSPECTS (emailed in last 7 days, no reply yet)
+  39 clinic(s) worth following up:
+  • London Bridge Dental                   0d ago  sent
+  • Montreal West Dentistry                0d ago  sent
+  • River District Dentistry               0d ago  sent
+  • Alpine Dental                          0d ago  sent
+  • Nelson Dental Clinic                   0d ago  sent
+  ... and 34 more
+
+READY TO CLOSE (replied AUDIT_YES — send them the 3 questions)
+  None yet
+
+WINS THIS WEEK
+  No payments recorded this week
+
+DELIVERABILITY TREND (last 7 days)
+  2026-04-15  new: 0 fu: 0 total:  0  
+  2026-04-16  new: 5 fu:10 total: 15  ███████████████
+  2026-04-17  new: 5 fu:10 total: 15  ███████████████
+  2026-04-18  new:10 fu:10 total: 20  ████████████████████
+  2026-04-19  new:15 fu:15 total: 30  ████████████████████
+  2026-04-20  new:30 fu: 0 total: 30  ████████████████████
+  2026-04-21  new:15 fu: 5 total: 20  ████████████████████
+
+BEST PERFORMING SUBJECT LINES (by FU1 proceed rate)
+  Not enough data yet
+
+VARIANT PERFORMANCE
+  Variant  Sent   →FU1      Reply rate
+  ──────────────────────────────────────
+  A        5      0 (0%)    0%
+  B        6      0 (0%)    0%
+  C        1      0 (0%)    0%
+  D        2      0 (0%)    0%
+  F        3      0 (0%)    0%
+  G        3      0 (0%)    0%
+
+VOICE OUTREACH
+  Voicemail drops today: 0                
+  Twilio calls made today: 2              
+  Callbacks received today: 0             
+  Total voice touches (all time): 2       
+  Total callbacks (all time): 0           
+
+SYSTEM HEALTH
+  Last health check: HEALTHY              
+  Scheduler errors today: 0               
+
+────────────────────────────────────────────────────
+End of report

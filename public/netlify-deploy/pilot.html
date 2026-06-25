@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Setup — ClinicFlow Automation</title>
+  <meta name="description" content="Free patient communication setup for Canadian dental clinics. Missed call follow-up, appointment reminders, and patient reactivation — no cost, no contracts." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-light: #eff6ff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --green: #16a34a;
+      --radius: 10px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7fafd;
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Nav ── */
+    nav {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .nav-logo { font-weight: 900; font-size: 18px; color: var(--blue); text-decoration: none; }
+    .nav-back { font-size: 14px; color: var(--muted); text-decoration: none; }
+    .nav-back:hover { color: var(--blue); }
+
+    /* ── Page shell ── */
+    .page-wrap {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 48px 16px 64px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 24px rgba(0,0,0,.07);
+      width: 100%;
+      max-width: 600px;
+      padding: 48px 44px;
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 32px 20px; }
+    }
+
+    /* ── Badge ── */
+    .badge {
+      display: inline-block;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    /* ── Hero ── */
+    h1 {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .subheader {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    /* ── Checklist ── */
+    .checklist {
+      list-style: none;
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .check {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .check svg { width: 11px; height: 11px; }
+
+    .section-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-bottom: 12px;
+      margin-top: 28px;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    /* ── Form ── */
+    .form-row { margin-bottom: 16px; }
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .optional { font-weight: 400; color: var(--muted); }
+    input, select {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 15px;
+      color: var(--text);
+      background: #fff;
+      font-family: inherit;
+      outline: none;
+      transition: border-color .15s;
+      appearance: none;
+    }
+    input:focus, select:focus { border-color: var(--blue); }
+    input::placeholder { color: #9ca3af; }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      padding: 15px;
+      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background .15s, transform .1s;
+      font-family: inherit;
+    }
+    .btn-submit:hover { background: var(--blue-dark); }
+    .btn-submit:active { transform: scale(.98); }
+    .btn-submit:disabled { opacity: .6; cursor: not-allowed; }
+
+    /* ── Guarantee ── */
+    .guarantee {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+
+    /* ── States ── */
+    #success-msg {
+      display: none;
+      text-align: center;
+      padding: 32px 0 8px;
+    }
+    #success-msg .success-icon {
+      width: 56px;
+      height: 56px;
+      background: #dcfce7;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    #success-msg h2 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+    #success-msg p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+    #error-msg {
+      display: none;
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #b91c1c;
+      margin-top: 12px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 24px;
+      border-top: 1px solid var(--border);
+      background: #fff;
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--blue); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">ClinicFlow</a>
+  <a class="nav-back" href="/">← Back to home</a>
+</nav>
+
+<div class="page-wrap">
+  <div class="card">
+
+    <div id="form-section">
+      <span class="badge">Limited spots — Free Setup</span>
+      <h1>Free Setup — No Risk</h1>
+      <p class="subheader">I'll set up your entire patient communication system at no cost. You only pay if you see results.</p>
+
+      <ul class="checklist">
+        <li>
+          <span class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><strong>Missed call follow-up</strong> — automatic text to every caller who doesn't reach you</span>
+        </li>
+        <li>
+          <span class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><strong>Appointment reminders</strong> — SMS at 72h and 24h before each visit</span>
+        </li>
+        <li>
+          <span class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><strong>Patient reactivation</strong> — outreach to patients inactive 12+ months</span>
+        </li>
+      </ul>
+
+      <p class="section-label">What I need from you:</p>
+      <ul class="checklist">
+        <li>
+          <span class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span>Your patient list (CSV export from your practice software)</span>
+        </li>
+        <li>
+          <span class="check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span>15 minutes to walk me through your current setup</span>
+        </li>
+      </ul>
+
+      <hr class="divider" />
+
+      <form id="pilot-form" novalidate>
+        <div class="form-row">
+          <label for="clinicName">Clinic name</label>
+          <input id="clinicName" name="clinicName" type="text" placeholder="e.g. Rideau Valley Dental" required />
+        </div>
+        <div class="form-row">
+          <label for="yourName">Your name</label>
+          <input id="yourName" name="yourName" type="text" placeholder="e.g. Dr. Sarah Chen" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@yourclinic.ca" required />
+        </div>
+        <div class="form-row">
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" placeholder="e.g. Halifax" required />
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone <span class="optional">(optional)</span></label>
+          <input id="phone" name="phone" type="tel" placeholder="e.g. 416-555-0100" />
+        </div>
+        <div class="form-row">
+          <label for="challenge">Biggest challenge right now</label>
+          <select id="challenge" name="challenge" required>
+            <option value="" disabled selected>Select one…</option>
+            <option value="Missed calls going unanswered">Missed calls going unanswered</option>
+            <option value="Patients not showing up">Patients not showing up</option>
+            <option value="Inactive patients not coming back">Inactive patients not coming back</option>
+            <option value="All of the above">All of the above</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submit-btn">Yes, I Want the Free Setup</button>
+        <div id="error-msg"></div>
+      </form>
+
+      <p class="guarantee">No contracts. No monthly fees. If you don't see results in 30 days, you owe nothing.</p>
+    </div>
+
+    <div id="success-msg">
+      <div class="success-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2>You're in — I'll be in touch within 24 hours.</h2>
+      <p>Check your inbox for a confirmation. In the meantime, feel free to reply to any email from Mohamed at ClinicFlow if you have questions.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  Mohamed &middot; ClinicFlow Automation &middot;
+  <a href="mailto:contact@clinicflowautomation.com">contact@clinicflowautomation.com</a>
+  &middot; 438-544-0442
+</footer>
+
+<script>
+  document.getElementById('pilot-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const errEl = document.getElementById('error-msg');
+    errEl.style.display = 'none';
+
+    const payload = {
+      clinicName: document.getElementById('clinicName').value.trim(),
+      yourName:   document.getElementById('yourName').value.trim(),
+      email:      document.getElementById('email').value.trim(),
+      city:       document.getElementById('city').value.trim(),
+      phone:      document.getElementById('phone').value.trim(),
+      challenge:  document.getElementById('challenge').value,
+    };
+
+    if (!payload.clinicName || !payload.yourName || !payload.email || !payload.city || !payload.challenge) {
+      errEl.textContent = 'Please fill in all required fields.';
+      errEl.style.display = 'block';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    try {
+      const res = await fetch('/.netlify/functions/pilot-apply', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Something went wrong');
+      document.getElementById('form-section').style.display = 'none';
+      document.getElementById('success-msg').style.display = 'block';
+    } catch (err) {
+      errEl.textContent = err.message || 'Something went wrong — please email contact@clinicflowautomation.com directly.';
+      errEl.style.display = 'block';
+      btn.disabled = false;
+      btn.textContent = 'Yes, I Want the Free Setup';
+    }
+  });
+</script>
+
+</body>
+</html>

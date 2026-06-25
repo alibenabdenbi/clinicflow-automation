@@ -1,0 +1,392 @@
+{
+  "generatedAt": "2026-06-25T10:45:19.468Z",
+  "source": "google_places",
+  "totalAnalysed": 30,
+  "clinicsWithPainSignals": 1,
+  "topComplaints": [
+    {
+      "keyword": "poor communication",
+      "count": 1
+    }
+  ],
+  "highPainClinics": [
+    {
+      "clinicName": "Dentist in Hamilton Ontario | Accepting New Patients",
+      "city": "Hamilton",
+      "painScore": 1,
+      "keywords": [
+        "poor communication"
+      ],
+      "quotes": [
+        "Poor Communication\nThis clinic pushes for every service possible."
+      ],
+      "googleRating": 4.6
+    }
+  ],
+  "all": [
+    {
+      "clinicName": "Cosmetic & Family Dentist",
+      "city": "Vaughan",
+      "website": "http://dfdentistry.ca/",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 169,
+      "scrapedAt": "2026-06-25T10:44:59.423Z"
+    },
+    {
+      "clinicName": "Bathurst-Steeles Dental",
+      "city": "Vaughan",
+      "website": "https://www.bathurst-steelesdental.com/?cc=book&utm_source=GMB_Listing&utm_medium=organic&utm_campaign=GMB",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.8,
+      "googleReviewCount": 511,
+      "scrapedAt": "2026-06-25T10:45:00.116Z"
+    },
+    {
+      "clinicName": "Altima",
+      "city": "Toronto",
+      "website": "https://altimascotiaplazadental.com/?cc=book&utm_source=GMB_Listing&utm_medium=organic&utm_campaign=GMB",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.7,
+      "googleReviewCount": 373,
+      "scrapedAt": "2026-06-25T10:45:00.807Z"
+    },
+    {
+      "clinicName": "Clareo",
+      "city": "Ottawa",
+      "website": "https://clareo.ca/wakefield",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.5,
+      "googleReviewCount": 162,
+      "scrapedAt": "2026-06-25T10:45:01.456Z"
+    },
+    {
+      "clinicName": "Aqua",
+      "city": "Ottawa",
+      "website": "https://aquadentalottawa.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 405,
+      "scrapedAt": "2026-06-25T10:45:02.109Z"
+    },
+    {
+      "clinicName": "Dr. Robert Segal, Family",
+      "city": "Ottawa",
+      "website": "https://drsegal.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.4,
+      "googleReviewCount": 9,
+      "scrapedAt": "2026-06-25T10:45:02.810Z"
+    },
+    {
+      "clinicName": "Clinique Dentaire Gagné & Rousselle",
+      "city": "Ottawa",
+      "website": "http://www.aylmerdentaire.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.7,
+      "googleReviewCount": 27,
+      "scrapedAt": "2026-06-25T10:45:03.517Z"
+    },
+    {
+      "clinicName": "Google Search",
+      "city": "Ottawa",
+      "website": "https://cliniquedentaireduversant.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 630,
+      "scrapedAt": "2026-06-25T10:45:04.243Z"
+    },
+    {
+      "clinicName": "Desired Smiles Dental",
+      "city": "Hamilton",
+      "website": "https://www.dsdental.ca/burlington/",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 254,
+      "scrapedAt": "2026-06-25T10:45:04.900Z"
+    },
+    {
+      "clinicName": "Dentist in Hamilton Ontario | Accepting New Patients",
+      "city": "Hamilton",
+      "website": "https://bartondental.ca/",
+      "reviewPainScore": 1,
+      "reviewPainKeywords": [
+        "poor communication"
+      ],
+      "reviewPainQuotes": [
+        "Poor Communication\nThis clinic pushes for every service possible."
+      ],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.6,
+      "googleReviewCount": 1021,
+      "scrapedAt": "2026-06-25T10:45:05.747Z"
+    },
+    {
+      "clinicName": "London Bridge Dental",
+      "city": "London",
+      "website": "https://londonbridgedental.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 5,
+      "googleReviewCount": 65,
+      "scrapedAt": "2026-06-25T10:45:06.421Z"
+    },
+    {
+      "clinicName": "Montreal West Dentistry",
+      "city": "Montreal",
+      "website": "https://montrealwestdentistry.com",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.8,
+      "googleReviewCount": 100,
+      "scrapedAt": "2026-06-25T10:45:07.238Z"
+    },
+    {
+      "clinicName": "River District Dentistry",
+      "city": "Vancouver",
+      "website": "https://riverdistrictdentistry.com",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 643,
+      "scrapedAt": "2026-06-25T10:45:07.885Z"
+    },
+    {
+      "clinicName": "Alpine Dental",
+      "city": "Burnaby",
+      "website": "https://www.moderndental.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 3.7,
+      "googleReviewCount": 18,
+      "scrapedAt": "2026-06-25T10:45:08.531Z"
+    },
+    {
+      "clinicName": "Nelson Dental Clinic",
+      "city": "Burnaby",
+      "website": "https://nelsondentalcentre.com",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 5,
+      "googleReviewCount": 148,
+      "scrapedAt": "2026-06-25T10:45:09.184Z"
+    },
+    {
+      "clinicName": "Lakeview Dental Clinic",
+      "city": "Burnaby",
+      "website": "https://lakeviewdentalburnaby.com",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.7,
+      "googleReviewCount": 47,
+      "scrapedAt": "2026-06-25T10:45:09.840Z"
+    },
+    {
+      "clinicName": "East Village Dental",
+      "city": "Calgary",
+      "website": "https://eastvillagedental.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.8,
+      "googleReviewCount": 935,
+      "scrapedAt": "2026-06-25T10:45:10.496Z"
+    },
+    {
+      "clinicName": "Inspiration Denture & Implant Solutions",
+      "city": "Calgary",
+      "website": "https://inspirationdenture.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 5,
+      "googleReviewCount": 10,
+      "scrapedAt": "2026-06-25T10:45:11.259Z"
+    },
+    {
+      "clinicName": "Woodbine Dental",
+      "city": "Calgary",
+      "website": "https://woodbinedental.com",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 5,
+      "googleReviewCount": 18,
+      "scrapedAt": "2026-06-25T10:45:11.913Z"
+    },
+    {
+      "clinicName": "North Edge Dental",
+      "city": "Edmonton",
+      "website": "https://northedgedental.com",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.8,
+      "googleReviewCount": 330,
+      "scrapedAt": "2026-06-25T10:45:12.596Z"
+    },
+    {
+      "clinicName": "Hamptons Dental Studio",
+      "city": "Edmonton",
+      "website": "https://www.hamptonsdental.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 485,
+      "scrapedAt": "2026-06-25T10:45:13.226Z"
+    },
+    {
+      "clinicName": "Marketview Dental",
+      "city": "Winnipeg",
+      "website": "https://www.marketviewdental.com",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.4,
+      "googleReviewCount": 25,
+      "scrapedAt": "2026-06-25T10:45:13.854Z"
+    },
+    {
+      "clinicName": "306 Dental",
+      "city": "Regina",
+      "website": "https://reginadentist.com",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 534,
+      "scrapedAt": "2026-06-25T10:45:14.508Z"
+    },
+    {
+      "clinicName": "Physiothérapie Solution Active Verdun",
+      "city": "Montreal",
+      "website": "https://www.physiosa.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.8,
+      "googleReviewCount": 325,
+      "scrapedAt": "2026-06-25T10:45:15.172Z"
+    },
+    {
+      "clinicName": "Lawrence Avenue Dental",
+      "city": "Toronto",
+      "website": "http://www.smilestoronto.com/",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 166,
+      "scrapedAt": "2026-06-25T10:45:15.806Z"
+    },
+    {
+      "clinicName": "Mason Denture Clinic",
+      "city": "Toronto",
+      "website": "https://www.maison-dental.ca/",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 3.2,
+      "googleReviewCount": 13,
+      "scrapedAt": "2026-06-25T10:45:16.578Z"
+    },
+    {
+      "clinicName": "One Marine",
+      "city": "Toronto",
+      "website": "https://onemarinedental.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 476,
+      "scrapedAt": "2026-06-25T10:45:17.227Z"
+    },
+    {
+      "clinicName": "Summerville Dentistry | Mississauga | Dr. Amy Fan & Dr. Damian Yung, Family Dentists",
+      "city": "Toronto",
+      "website": "https://summervilledentistry.ca",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.9,
+      "googleReviewCount": 41,
+      "scrapedAt": "2026-06-25T10:45:17.895Z"
+    },
+    {
+      "clinicName": "King East Dental Toronto",
+      "city": "Toronto",
+      "website": "https://kingeastdental.com/",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.7,
+      "googleReviewCount": 87,
+      "scrapedAt": "2026-06-25T10:45:18.700Z"
+    },
+    {
+      "clinicName": "Downsview Plaza Dental",
+      "city": "Toronto",
+      "website": "http://dpdo.ca/",
+      "reviewPainScore": 0,
+      "reviewPainKeywords": [],
+      "reviewPainQuotes": [],
+      "reviewPainSource": "google_places",
+      "googleRating": 4.6,
+      "googleReviewCount": 40,
+      "scrapedAt": "2026-06-25T10:45:19.424Z"
+    }
+  ]
+}

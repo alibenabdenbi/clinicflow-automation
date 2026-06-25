@@ -1,0 +1,92 @@
+[
+  {
+    "theme": "Other",
+    "problemStatement": "Problem signal: \"Steam Machine launches today\"",
+    "evidenceCount": 2,
+    "avgScore": 7.15,
+    "maxScore": 8.94,
+    "examples": [
+      {
+        "title": "Steam Machine launches today",
+        "url": "https://store.steampowered.com/news/group/45479024/view/685257114654870245",
+        "source": "hackernews",
+        "score": 8.94
+      },
+      {
+        "title": "Will It Mythos?",
+        "url": "https://swelljoe.com/post/will-it-mythos/",
+        "source": "hackernews",
+        "score": 5.37
+      }
+    ],
+    "idealBuyers": [
+      "Small business owners",
+      "Founders",
+      "Operators"
+    ],
+    "bestChannels": [
+      "Reddit",
+      "Indie communities",
+      "Cold email"
+    ],
+    "productAngles": [
+      {
+        "name": "Operator Pain Fix",
+        "what": "Micro-tool that removes a repeated manual workflow found in posts.",
+        "pricing": "$9–$49/mo"
+      },
+      {
+        "name": "Done-for-you Setup + Automation",
+        "what": "Service first: you automate their workflow with templates and scripts.",
+        "pricing": "$500–$5,000 setup + $99–$499/mo"
+      },
+      {
+        "name": "Niche Report + Playbook",
+        "what": "Weekly actionable report for a niche + templates and scripts.",
+        "pricing": "$19–$99/mo"
+      }
+    ]
+  },
+  {
+    "theme": "AI & Tech News",
+    "problemStatement": "Problem signal: \"Moebius: 0.2B image inpainting model with 10B-level performance\"",
+    "evidenceCount": 1,
+    "avgScore": 5.75,
+    "maxScore": 5.75,
+    "examples": [
+      {
+        "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+        "url": "https://hustvl.github.io/Moebius/",
+        "source": "hackernews",
+        "score": 5.75
+      }
+    ],
+    "idealBuyers": [
+      "Small business owners",
+      "Founders",
+      "Operators"
+    ],
+    "bestChannels": [
+      "Reddit",
+      "Indie communities",
+      "Cold email"
+    ],
+    "productAngles": [
+      {
+        "name": "Operator Pain Fix",
+        "what": "Micro-tool that removes a repeated manual workflow found in posts.",
+        "pricing": "$9–$49/mo"
+      },
+      {
+        "name": "Done-for-you Setup + Automation",
+        "what": "Service first: you automate their workflow with templates and scripts.",
+        "pricing": "$500–$5,000 setup + $99–$499/mo"
+      },
+      {
+        "name": "Niche Report + Playbook",
+        "what": "Weekly actionable report for a niche + templates and scripts.",
+        "pricing": "$19–$99/mo"
+      }
+    ]
+  }
+]

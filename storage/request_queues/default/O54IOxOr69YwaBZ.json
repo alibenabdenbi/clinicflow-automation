@@ -1,0 +1,9 @@
+{
+	"id": "O54IOxOr69YwaBZ",
+	"json": "{\"id\":\"O54IOxOr69YwaBZ\",\"url\":\"https://wordpress.org/plugins/email-subscribers/reviews/\",\"loadedUrl\":\"https://wordpress.org/plugins/email-subscribers/\",\"uniqueKey\":\"https://wordpress.org/plugins/email-subscribers/reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"reviews\",\"kw\":\"newsletter\",\"pluginUrl\":\"https://wordpress.org/plugins/email-subscribers/\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:59.237Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/email-subscribers/reviews",
+	"url": "https://wordpress.org/plugins/email-subscribers/reviews/"
+}

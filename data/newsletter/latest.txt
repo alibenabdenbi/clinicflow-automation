@@ -1,0 +1,35 @@
+ClinicFlow Weekly — May 26, 2026
+
+---
+
+Something I noticed after the Victoria Day weekend.
+
+We track callback patterns across 4,314 Canadian clinics. After long weekends, missed call rates spike — not during the weekend itself, but on the Tuesday morning after.
+
+The pattern is consistent: patients who couldn't reach their clinic on Friday call again Tuesday. If they still can't get through, most don't try a third time.
+
+The clinics that recover long-weekend call volume fastest are the ones that have some form of automatic acknowledgment in place — even something as simple as a text that says "we saw your call, we'll be in touch." Not a booking system. Just a signal that someone is there.
+
+---
+
+One data point from this week's research:
+
+Clinics with patient communication complaints in their Google reviews average 0.26 stars lower than clinics without. In Toronto's market — where we've mapped 480 clinics — that gap means the difference between appearing in the top three Google Maps results and not appearing at all.
+
+0.26 stars. One patient complaint about a missed call. Compounded over hundreds of reviews.
+
+---
+
+Genuine question for this week:
+
+After a long weekend, do you know how many calls came in Friday afternoon and Tuesday morning that went unanswered? Not approximately — actually?
+
+Most clinic owners I've spoken with estimate it's low. The call logs usually tell a different story.
+
+---
+
+— Mohamed
+ClinicFlow Automation · Montreal, QC
+438-544-0442
+
+clinicflowautomation.com/report — full research report, free

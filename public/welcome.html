@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Welcome to ClinicFlow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0b0f17;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.1);--text:#e8eefc;--muted:#a7b0c5;--accent:#7c5cff;--green:#39d98a;--gold:#f6b04d;--red:#ff5c7a;--radius:14px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Syne',ui-sans-serif,system-ui,sans-serif;min-height:100vh;padding:40px 20px 80px;
+  background-image:radial-gradient(900px 600px at 50% -10%,rgba(124,92,255,.1),transparent 55%);}
+.wrap{max-width:680px;margin:0 auto;}
+.logo{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;margin-bottom:32px;}
+.hero{margin-bottom:40px;}
+.hero-eyebrow{font-size:13px;color:var(--green);font-weight:700;margin-bottom:10px;}
+.hero h1{font-size:clamp(28px,5vw,42px);font-weight:800;line-height:1.1;margin-bottom:12px;}
+.hero p{font-size:15px;color:var(--muted);line-height:1.65;}
+.section{margin-bottom:40px;}
+.section-title{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.section-title::after{content:'';flex:1;height:1px;background:var(--line);}
+/* Progress steps */
+.steps{display:flex;flex-direction:column;gap:0;}
+.step-row{display:flex;align-items:flex-start;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+.step-row:last-child{border:none;}
+.step-icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.step-icon.done{background:rgba(57,217,138,.15);color:var(--green);border:1px solid rgba(57,217,138,.3);}
+.step-icon.pending{background:rgba(246,176,77,.1);color:var(--gold);border:1px solid rgba(246,176,77,.2);}
+.step-icon.upcoming{background:rgba(255,255,255,.05);color:var(--muted);border:1px solid var(--line);}
+.step-body{}
+.step-label{font-size:15px;font-weight:700;margin-bottom:3px;}
+.step-sub{font-size:13px;color:var(--muted);}
+/* Forwarding box */
+.forward-box{background:rgba(124,92,255,.08);border:1px solid rgba(124,92,255,.25);border-radius:var(--radius);padding:28px;}
+.forward-number{font-size:28px;font-weight:800;color:var(--accent);letter-spacing:2px;margin:12px 0;font-family:'Syne',sans-serif;}
+.forward-number.placeholder{color:var(--muted);font-size:22px;}
+/* Carrier tabs */
+.tab-row{display:flex;gap:6px;flex-wrap:wrap;margin:20px 0 16px;}
+.tab{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:8px;padding:7px 14px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;color:var(--muted);}
+.tab.active{background:rgba(124,92,255,.15);border-color:rgba(124,92,255,.4);color:var(--text);}
+.carrier-instructions{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:18px;font-size:14px;color:var(--text);line-height:1.7;}
+.carrier-instructions code{background:rgba(255,255,255,.08);padding:3px 8px;border-radius:5px;font-family:'Courier New',monospace;font-size:13px;color:var(--accent);}
+/* Confirm button */
+.confirm-btn{width:100%;background:var(--green);color:#052e16;border:none;border-radius:10px;padding:16px;font-size:16px;font-weight:800;font-family:inherit;cursor:pointer;margin-top:20px;transition:opacity .2s;}
+.confirm-btn:hover{opacity:.9;}
+.confirm-btn:disabled{opacity:.5;cursor:default;}
+.confirm-done{display:none;text-align:center;padding:16px;background:rgba(57,217,138,.1);border:1px solid rgba(57,217,138,.25);border-radius:10px;color:var(--green);font-weight:700;margin-top:20px;}
+/* Timeline */
+.timeline{display:flex;flex-direction:column;gap:0;}
+.tl-row{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+.tl-row:last-child{border:none;}
+.tl-day{font-size:12px;font-weight:700;color:var(--accent);min-width:70px;flex-shrink:0;padding-top:3px;}
+.tl-text{font-size:14px;color:var(--muted);line-height:1.5;}
+/* Contact */
+.contact-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+.contact-name{font-size:18px;font-weight:700;margin-bottom:4px;}
+.contact-sub{font-size:13px;color:var(--muted);margin-bottom:16px;}
+.contact-links{display:flex;gap:10px;flex-wrap:wrap;}
+.contact-link{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:8px;padding:10px 16px;font-size:14px;font-weight:600;text-decoration:none;color:var(--text);transition:all .15s;}
+.contact-link:hover{border-color:var(--accent);background:rgba(124,92,255,.08);}
+.contact-note{font-size:12px;color:var(--muted);margin-top:12px;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.fade{animation:fadeUp .4s ease both;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">ClinicFlow Automation</div>
+
+  <div class="hero fade">
+    <div class="hero-eyebrow" id="welcome-eyebrow">Welcome</div>
+    <h1 id="hero-headline">Welcome to ClinicFlow</h1>
+    <p>Your system is being configured. Here's what happens next — and one quick action we need from you.</p>
+  </div>
+
+  <div class="section fade" style="animation-delay:.1s">
+    <div class="section-title">Setup Progress</div>
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-icon done">✓</div>
+        <div class="step-body">
+          <div class="step-label">Clinic information received</div>
+          <div class="step-sub">Your setup form has been submitted and is being reviewed.</div>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-icon pending">⏳</div>
+        <div class="step-body">
+          <div class="step-label">System configuration</div>
+          <div class="step-sub">Mohamed is configuring your messaging profile. Usually done within 24 hours.</div>
+        </div>
+      </div>
+      <div class="step-row" id="forwarding-step">
+        <div class="step-icon pending">📞</div>
+        <div class="step-body">
+          <div class="step-label">Phone forwarding setup — <span style="color:var(--gold)">your action needed</span></div>
+          <div class="step-sub">Forward your missed calls to your ClinicFlow number. Instructions below.</div>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-icon upcoming">○</div>
+        <div class="step-body">
+          <div class="step-label" style="color:var(--muted)">Go live</div>
+          <div class="step-sub">First missed call gets an automatic text. You'll see it happen.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section fade" style="animation-delay:.2s">
+    <div class="section-title">One thing we need from you</div>
+    <div class="forward-box">
+      <div style="font-size:14px;color:var(--muted);margin-bottom:4px;">Your dedicated ClinicFlow number:</div>
+      <div class="forward-number" id="clinic-number">Assigning your number...</div>
+      <div style="font-size:13px;color:var(--muted);">Forward missed calls from your clinic phone to this number.</div>
+
+      <div class="tab-row">
+        <div class="tab active" onclick="setCarrier('rogers')">Rogers</div>
+        <div class="tab" onclick="setCarrier('bell')">Bell</div>
+        <div class="tab" onclick="setCarrier('telus')">Telus</div>
+        <div class="tab" onclick="setCarrier('shaw')">Shaw / Freedom</div>
+        <div class="tab" onclick="setCarrier('other')">Other</div>
+      </div>
+
+      <div class="carrier-instructions" id="carrier-text">
+        From your clinic phone, dial:<br><br>
+        <code id="carrier-code">*90 + [ClinicFlow number] + #</code><br><br>
+        You'll hear a confirmation tone. That's it — forwarding is active for unanswered calls.
+      </div>
+
+      <button class="confirm-btn" id="confirm-btn" onclick="confirmForwarding()">
+        I've set up call forwarding →
+      </button>
+      <div class="confirm-done" id="confirm-done">
+        ✓ Mohamed has been notified. You're all set on forwarding.
+      </div>
+    </div>
+  </div>
+
+  <div class="section fade" style="animation-delay:.3s">
+    <div class="section-title">What happens next</div>
+    <div class="timeline">
+      <div class="tl-row"><div class="tl-day">Day 1–2</div><div class="tl-text">System configuration complete — messaging profile built from your clinic information.</div></div>
+      <div class="tl-row"><div class="tl-day">Day 3</div><div class="tl-text">Mohamed calls you for a quick test — you'll miss-call your own number and watch the auto-text arrive.</div></div>
+      <div class="tl-row"><div class="tl-day">Day 4–5</div><div class="tl-text">Your patient list is loaded. Appointment reminders are configured for your schedule.</div></div>
+      <div class="tl-row"><div class="tl-day">Day 5</div><div class="tl-text" style="color:var(--green);font-weight:600">Go live — first missed call gets an automatic text within 60 seconds.</div></div>
+    </div>
+  </div>
+
+  <div class="section fade" style="animation-delay:.4s">
+    <div class="section-title">Your direct contact</div>
+    <div class="contact-box">
+      <div class="contact-name">Mohamed</div>
+      <div class="contact-sub">ClinicFlow Automation — available 7 days</div>
+      <div class="contact-links">
+        <a class="contact-link" href="tel:+14385440442">📞 438-544-0442</a>
+        <a class="contact-link" href="https://calendly.com/m-aliben432/clinicflow-15-min-intro" target="_blank">📅 Book a call</a>
+        <a class="contact-link" href="mailto:contact@clinicflowautomation.com">✉ contact@clinicflowautomation.com</a>
+      </div>
+      <div class="contact-note">Average response time: under 2 hours</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const CARRIERS = {
+  rogers: {
+    text: `From your clinic phone, dial:<br><br><code id="carrier-code">*90</code> + your ClinicFlow number + <code>#</code><br><br>Example: <code>*90 + 14385440000#</code><br><br>You'll hear a confirmation tone. Forwarding is now active for unanswered calls.`,
+  },
+  bell: {
+    text: `From your clinic phone, dial:<br><br><code id="carrier-code">*92</code> + your ClinicFlow number + <code>#</code><br><br>Example: <code>*92 + 14385440000#</code><br><br>A confirmation message confirms it's active.`,
+  },
+  telus: {
+    text: `On your clinic phone, go to:<br><br><strong>Settings → Phone → Call Forwarding → When Unanswered</strong><br><br>Enter your ClinicFlow number and save. Alternatively dial: <code>**61*+1XXXXXXXXXX#</code> replacing XXXXXXXXXX with your ClinicFlow number.`,
+  },
+  shaw: {
+    text: `On your clinic phone or account portal:<br><br><strong>Settings → Call Forwarding → When Unanswered</strong><br><br>Enter your ClinicFlow number. This applies to calls you don't pick up within ~4 rings.`,
+  },
+  other: {
+    text: `Call your carrier's business support line and say:<br><br><em>"I need to set up conditional call forwarding — when unanswered — to forward to this number: [your ClinicFlow number]"</em><br><br>They'll walk you through it in under 5 minutes. If you have trouble, call Mohamed directly: <strong>438-544-0442</strong>.`,
+  },
+};
+
+let clinicSlug = '';
+let clinicName = '';
+let clinicNumber = 'Not yet assigned';
+
+function setCarrier(key) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('carrier-text').innerHTML = CARRIERS[key].text;
+}
+
+function confirmForwarding() {
+  const btn = document.getElementById('confirm-btn');
+  btn.disabled = true;
+  btn.textContent = 'Confirming...';
+
+  fetch('/.netlify/functions/confirm-forwarding', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ clinic: clinicSlug, clinicName }),
+  })
+  .then(r => r.json())
+  .then(() => {
+    btn.style.display = 'none';
+    document.getElementById('confirm-done').style.display = 'block';
+    const stepIcon = document.querySelector('#forwarding-step .step-icon');
+    stepIcon.className = 'step-icon done';
+    stepIcon.textContent = '✓';
+  })
+  .catch(() => {
+    btn.disabled = false;
+    btn.textContent = "I've set up call forwarding →";
+    alert("Couldn't send automatically. Please text Mohamed at 438-544-0442 to confirm.");
+  });
+}
+
+async function init() {
+  const params = new URLSearchParams(window.location.search);
+  clinicSlug = params.get('clinic') || '';
+
+  if (!clinicSlug) return;
+
+  try {
+    const res = await fetch('/.netlify/functions/get-brain?clinic=' + clinicSlug);
+    const brain = await res.json();
+    if (!brain || brain.error) return;
+
+    clinicName = brain.clinicName || '';
+    if (clinicName) {
+      document.getElementById('welcome-eyebrow').textContent = 'Welcome to ClinicFlow';
+      document.getElementById('hero-headline').textContent = 'Welcome, ' + clinicName;
+      document.title = 'Welcome — ' + clinicName;
+    }
+
+    const num = brain.clinicflowNumber || brain.twilioNumber || null;
+    const numEl = document.getElementById('clinic-number');
+    if (num) {
+      numEl.textContent = num;
+      numEl.className = 'forward-number';
+      clinicNumber = num;
+    } else {
+      numEl.textContent = 'Being assigned — Mohamed will send it shortly';
+      numEl.className = 'forward-number placeholder';
+    }
+
+    if (brain.forwardingConfirmed) {
+      document.getElementById('confirm-btn').style.display = 'none';
+      document.getElementById('confirm-done').style.display = 'block';
+    }
+  } catch {}
+}
+
+init();
+</script>
+</body>
+</html>

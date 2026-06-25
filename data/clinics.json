@@ -1,0 +1,45 @@
+{
+  "f36f22bf0a5c": {
+    "id": "f36f22bf0a5c",
+    "clinicName": "terst",
+    "website": "https://test.com",
+    "city": "test",
+    "province": "test",
+    "timezone": "America/Toronto",
+    "contactEmail": "test@test.com",
+    "bookingLink": "https://test.com",
+    "phoneNumber": "",
+    "reviewLink": "test",
+    "tone": "formal",
+    "modules": {
+      "forms": true,
+      "missedCalls": true,
+      "reviews": false
+    },
+    "goal": "faster response",
+    "status": "active",
+    "createdAt": "2026-03-02T11:08:38.051Z",
+    "activatedAt": "2026-03-02T11:09:33.340Z",
+    "templates": {
+      "outreach": {
+        "subject": "terst — quick question",
+        "text": "Hello terst team,\n\nQuick question — who handles new patient inquiry follow-ups at terst?\n\nI install a simple follow-up engine for forms + missed calls so more inquiries turn into booked appointments:\n• instant confirmation (under 60 seconds)\n• a short follow-up sequence (day 1 / day 3)\n• optional review requests after visits (24h + 72h)\n\nIf you’re open to it, I can send a one-page plan based on your website — tailored and concrete.\n\nShould I send it?\n\nSincerely,\nMohamed\nClinicFlow Automation"
+      },
+      "asyncReplyIfInterested": {
+        "subject": "Re: terst — perfect (we can do this async)",
+        "text": "Hello terst team,\n\nPerfect — we can do this fully async (no call needed).\n\nReply with ONE letter and I’ll tailor the exact setup + messages to match your intake:\nA) Website forms\nB) Missed calls\nC) Both + review requests\n\nOptional (helps me tailor fast): send your booking link.\n\nSincerely,\nMohamed\nClinicFlow Automation"
+      },
+      "followupDay1": {
+        "subject": "Re: terst — quick follow-up",
+        "text": "Hello terst team,\n\nQuick follow-up — want me to send the one-page plan?\n\nReply A / B / C:\nA) Forms\nB) Missed calls\nC) Both + reviews\n\nSincerely,\nMohamed\nClinicFlow Automation"
+      },
+      "followupDay3": {
+        "subject": "Re: terst — should I close this?",
+        "text": "Hello terst team,\n\nLast note from me — if this isn’t a priority right now, no worries.\n\nIf you want the one-page plan, reply A / B / C:\nA) Forms\nB) Missed calls\nC) Both + reviews\n\nSincerely,\nMohamed\nClinicFlow Automation"
+      }
+    },
+    "planPath": "D:\\Poject-ORE-EMGINE\\data\\plans\\clinic.f36f22bf0a5c.md",
+    "planHtmlPath": "D:\\Poject-ORE-EMGINE\\data\\plans\\clinic.f36f22bf0a5c.html",
+    "packSentAt": "2026-03-02T12:42:23.372Z"
+  }
+}

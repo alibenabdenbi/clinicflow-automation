@@ -1,0 +1,9 @@
+{
+	"id": "LlQOY8mq4RGT0gG",
+	"json": "{\"id\":\"LlQOY8mq4RGT0gG\",\"url\":\"https://wordpress.org/plugins/mxchat-basic/reviews/\",\"loadedUrl\":\"https://wordpress.org/plugins/mxchat-basic/\",\"uniqueKey\":\"https://wordpress.org/plugins/mxchat-basic/reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"kind\":\"reviews\",\"kw\":\"chatbot\",\"pluginUrl\":\"https://wordpress.org/plugins/mxchat-basic/\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-23T12:02:56.135Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wordpress.org/plugins/mxchat-basic/reviews",
+	"url": "https://wordpress.org/plugins/mxchat-basic/reviews/"
+}

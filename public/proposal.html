@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClinicFlow Proposal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Syne',sans-serif;background:#0b0f17;color:#f1f5f9;min-height:100vh;
+  background-image:radial-gradient(800px 500px at 50% -10%,rgba(124,92,255,.08),transparent 55%)}
+.hero{padding:60px 20px 40px;text-align:center;max-width:700px;margin:0 auto}
+.badge{display:inline-block;background:rgba(124,92,255,.15);color:#7c5cff;padding:6px 16px;border-radius:20px;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;border:1px solid rgba(124,92,255,.3)}
+.hero h1{font-size:clamp(28px,5vw,48px);font-weight:800;line-height:1.15;margin-bottom:16px}
+.hero h1 span{color:#39d98a}
+.hero p{font-size:16px;color:#94a3b8;line-height:1.7;max-width:540px;margin:0 auto}
+.clinic-name{color:#7c5cff;font-weight:700}
+.wrap{max-width:700px;margin:0 auto;padding:0 20px 80px}
+.section{margin-bottom:48px}
+.section-label{font-size:11px;font-weight:700;color:#4a5568;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.section-label::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.06)}
+.deliverable{display:flex;gap:16px;align-items:flex-start;padding:20px;background:rgba(255,255,255,.04);border-radius:14px;margin-bottom:10px;border:1px solid rgba(255,255,255,.06)}
+.deliverable-icon{font-size:22px;flex-shrink:0;width:44px;height:44px;background:rgba(124,92,255,.1);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.deliverable-title{font-size:16px;font-weight:700;margin-bottom:4px}
+.deliverable-desc{font-size:14px;color:#94a3b8;line-height:1.6}
+.timeline{position:relative;padding-left:28px}
+.timeline::before{content:'';position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:rgba(124,92,255,.2)}
+.tday{position:relative;margin-bottom:24px}
+.tday::before{content:'';position:absolute;left:-24px;top:6px;width:10px;height:10px;border-radius:50%;background:#4a5568;border:2px solid #0b0f17}
+.tday.now::before{background:#7c5cff}
+.tday.live::before{background:#39d98a}
+.tday-label{font-size:12px;font-weight:700;color:#7c5cff;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.tday.now .tday-label{color:#a78bfa}
+.tday.live .tday-label{color:#39d98a}
+.tday-text{font-size:14px;color:#94a3b8;line-height:1.6}
+.pricing-card{background:linear-gradient(135deg,rgba(124,92,255,.1),rgba(57,217,138,.05));border:1px solid rgba(124,92,255,.3);border-radius:20px;padding:36px;text-align:center;margin-bottom:12px}
+.price-main{font-size:56px;font-weight:800;color:#f1f5f9;line-height:1}
+.price-sub{font-size:16px;color:#94a3b8;margin:10px 0 24px}
+.price-split{display:flex;gap:12px;justify-content:center;margin-bottom:24px;flex-wrap:wrap}
+.price-half{flex:1;min-width:140px;padding:16px;background:rgba(255,255,255,.05);border-radius:12px;border:1px solid rgba(255,255,255,.08)}
+.price-half-amount{font-size:24px;font-weight:800;color:#f1f5f9}
+.price-half-when{font-size:12px;color:#94a3b8;margin-top:4px}
+.price-half-when.green{color:#39d98a;font-weight:600}
+.guarantee{font-size:14px;color:#94a3b8}
+.guarantee b{color:#39d98a}
+.cta-block{text-align:center}
+.btn-primary{display:block;background:#7c5cff;color:#fff;padding:18px 40px;border-radius:12px;font-size:18px;font-weight:700;text-decoration:none;cursor:pointer;border:none;width:100%;max-width:440px;margin:0 auto 12px;transition:opacity .2s;font-family:'Syne',sans-serif}
+.btn-primary:active{opacity:.85}
+.btn-secondary{display:block;background:transparent;color:#94a3b8;padding:14px 40px;border-radius:12px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.1);width:100%;max-width:440px;margin:0 auto;transition:all .15s;text-align:center}
+.btn-secondary:hover{border-color:rgba(255,255,255,.2);color:#f1f5f9}
+.cta-note{font-size:13px;color:#4a5568;margin-top:16px;line-height:1.6;text-align:center}
+.faq-item{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.faq-item:last-child{border:none}
+.faq-q{font-size:15px;font-weight:700;margin-bottom:8px}
+.faq-a{font-size:14px;color:#94a3b8;line-height:1.7}
+.founder-card{background:rgba(255,255,255,.04);border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;border:1px solid rgba(255,255,255,.06)}
+.founder-avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#7c5cff,#39d98a);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.founder-name{font-size:16px;font-weight:700;margin-bottom:4px}
+.founder-title{font-size:13px;color:#94a3b8;margin-bottom:12px}
+.founder-contact{display:flex;gap:8px;flex-wrap:wrap}
+.contact-btn{background:rgba(255,255,255,.06);color:#f1f5f9;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.08);transition:all .15s}
+.contact-btn:hover{background:rgba(255,255,255,.1)}
+#loading{text-align:center;padding:120px 20px;color:#64748b}
+#content{display:none}
+.confirm-box{display:none;background:rgba(57,217,138,.1);border:1px solid rgba(57,217,138,.3);border-radius:12px;padding:20px;text-align:center;margin-top:16px}
+.confirm-box h3{color:#39d98a;font-size:18px;font-weight:700;margin-bottom:8px}
+.confirm-box p{color:#94a3b8;font-size:14px}
+</style>
+</head>
+<body>
+
+<div id="loading">
+  <div style="font-size:36px;margin-bottom:16px">⚡</div>
+  <div style="font-size:16px;font-weight:600">Loading your proposal...</div>
+</div>
+
+<div id="content">
+  <div class="hero">
+    <div class="badge">Prepared for <span id="clinic-name-badge">your clinic</span></div>
+    <div id="spots-widget" style="display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);padding:6px 16px;border-radius:20px;margin-bottom:16px">
+    <span style="width:8px;height:8px;border-radius:50%;background:#f87171;display:inline-block;animation:pulse 1.5s infinite"></span>
+    <span id="spots-text" style="font-size:13px;font-weight:700;color:#f87171;letter-spacing:1px;text-transform:uppercase">Loading spots...</span>
+  </div>
+    <h1>Your <span>ClinicFlow</span><br>Setup</h1>
+    <p>Everything we configure for <strong class="clinic-name" id="clinic-name-hero">your clinic</strong> — and exactly what happens next.</p>
+  </div>
+
+  <div class="wrap">
+
+    <div class="section">
+      <div class="section-label">What we build for you</div>
+      <div class="deliverable">
+        <div class="deliverable-icon">📞</div>
+        <div><div class="deliverable-title">Missed-call auto-text</div>
+        <div class="deliverable-desc">Every patient who calls and gets no answer receives an automatic text within 60 seconds. Written to sound like your clinic. Runs 24/7.</div></div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-icon">🤖</div>
+        <div><div class="deliverable-title">AI receptionist for SMS replies</div>
+        <div class="deliverable-desc">When patients reply, our system responds naturally — answers questions about hours, services, and booking. Personalized to your clinic's voice. Most patients think they're texting your front desk.</div></div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-icon">📅</div>
+        <div><div class="deliverable-title">Appointment reminders</div>
+        <div class="deliverable-desc">72h and 24h before every visit. Patients confirm by text. No-shows drop significantly. Fully automatic from your patient list.</div></div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-icon">🔄</div>
+        <div><div class="deliverable-title">Inactive patient reactivation</div>
+        <div class="deliverable-desc">Patients you haven't seen in 6+ months get a personal check-in. Many book same day. Runs automatically — no work from you.</div></div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-icon">📊</div>
+        <div><div class="deliverable-title">Weekly digest</div>
+        <div class="deliverable-desc">Every Monday: recovered calls, bookings, patient conversations. Plain language. 2 minutes to read. You always know what's working.</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">5-day setup timeline</div>
+      <div class="timeline">
+        <div class="tday now">
+          <div class="tday-label">Day 1 — Today</div>
+          <div class="tday-text">You confirm. We begin configuring your clinic profile — hours, services, team, tone of voice.</div>
+        </div>
+        <div class="tday">
+          <div class="tday-label">Day 2</div>
+          <div class="tday-text">We assign your dedicated ClinicFlow number. You enable one call forwarding setting on your existing phone. Takes 2 minutes — we walk you through it.</div>
+        </div>
+        <div class="tday">
+          <div class="tday-label">Day 3</div>
+          <div class="tday-text">Test call together. Mohamed calls your clinic, you don't pick up, and you watch the auto-text arrive in real time. You'll see it work.</div>
+        </div>
+        <div class="tday">
+          <div class="tday-label">Day 4</div>
+          <div class="tday-text">Patient list loaded. Appointment reminders configured. System connected to your schedule.</div>
+        </div>
+        <div class="tday live">
+          <div class="tday-label">Day 5 — Go live</div>
+          <div class="tday-text">First real missed call gets an automatic text. From this point it runs itself, 24 hours a day.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Investment</div>
+      <div class="pricing-card">
+        <div class="price-main">$997</div>
+        <div class="price-sub">One-time setup. No monthly fees. Ever.</div>
+        <div class="price-split">
+          <div class="price-half">
+            <div class="price-half-amount">$500</div>
+            <div class="price-half-when">Due today to begin</div>
+          </div>
+          <div class="price-half">
+            <div class="price-half-amount">$497</div>
+            <div class="price-half-when green">After you see results ✓</div>
+          </div>
+        </div>
+        <div style="background:rgba(57,217,138,.05);border:1px solid rgba(57,217,138,.15);border-radius:14px;padding:20px;margin-top:12px;margin-bottom:12px">
+      <div style="font-size:12px;font-weight:700;color:#39d98a;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Want ongoing optimization?</div>
+      <div style="font-size:14px;color:#94a3b8;line-height:1.6">After your Growth setup, upgrade to <strong style="color:#f1f5f9">Premium at $297/month</strong> — monthly AI tuning, optimization calls, and priority support. Clinics on Premium average 40% better recovery rates after 3 months.</div>
+    </div>
+    <div class="guarantee"><b>30-day guarantee</b> — if it doesn't recover patients, you pay nothing more.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Ready to start?</div>
+      <div class="cta-block">
+        <button class="btn-primary" id="start-btn" onclick="handleStart()">I'm in — let's start →</button>
+        <a href="https://calendly.com/m-aliben432/clinicflow-15-min-intro" target="_blank" class="btn-secondary" style="background:rgba(57,217,138,.1);color:#39d98a;border-color:rgba(57,217,138,.3);margin-bottom:10px">📅 Book a 15-min call first →</a>
+        <a href="tel:4385440442" class="btn-secondary">📞 Call Mohamed first — 438-544-0442</a>
+        <div class="cta-note">Clicking "I'm in" notifies Mohamed immediately. He'll call you within the hour to collect payment and begin setup.</div>
+        <div class="confirm-box" id="confirm-box">
+          <h3>✓ Mohamed has been notified</h3>
+          <p>Expect a call within the hour. Setup begins today.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Common questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need to change my phone system?</div>
+        <div class="faq-a">No. You enable one conditional call forwarding setting — the same type used for voicemail. Takes 2 minutes. We walk you through it step by step.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if patients realize it's automated?</div>
+        <div class="faq-a">In practice they don't — responses are personalized to your clinic's voice. But even if they do, an automatic reply in 60 seconds is far better than voicemail or silence.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What software do you integrate with?</div>
+        <div class="faq-a">Any practice management software — Dentrix, Dolphin, Jane, or a simple spreadsheet. We just need a patient list export. Most clinics do this in under 5 minutes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens after 30 days?</div>
+        <div class="faq-a">The system keeps running with no additional charges. No subscription. No monthly fees. You've already paid the one-time setup — it runs indefinitely.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if I want to stop?</div>
+        <div class="faq-a">Cancel the forwarding setting on your phone and the system stops. No contracts, no cancellation fees. Though clinics that see recovered patients rarely want to stop.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Direct contact</div>
+      <div class="founder-card">
+        <div class="founder-avatar">👋</div>
+        <div>
+          <div class="founder-name">Mohamed Ali Benabdenbi</div>
+          <div class="founder-title">Founder, ClinicFlow Automation · Montreal, QC</div>
+          <div class="founder-contact">
+            <a href="tel:4385440442" class="contact-btn">📞 438-544-0442</a>
+            <a href="mailto:contact@clinicflowautomation.com" class="contact-btn">✉ Email</a>
+            <a href="https://clinicflowautomation.com/live" class="contact-btn">🔴 Live system</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const clinicSlug = params.get('clinic') || params.get('c') || '';
+const clinicName = clinicSlug
+  ? decodeURIComponent(clinicSlug.replace(/-/g, ' ')).replace(/\b\w/g, c => c.toUpperCase())
+  : 'Your Clinic';
+
+document.getElementById('clinic-name-badge').textContent = clinicName;
+document.getElementById('clinic-name-hero').textContent = clinicName;
+document.title = 'ClinicFlow Proposal — ' + clinicName;
+
+document.getElementById('loading').style.display = 'none';
+document.getElementById('content').style.display = 'block';
+
+function handleStart() {
+  const modal = document.getElementById('payment-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    const slug = new URLSearchParams(window.location.search).get('clinic') || '';
+    const name = slug ? decodeURIComponent(slug.replace(/-/g,' ')).replace(/w/g,c=>c.toUpperCase()) : '';
+    const msgEl = document.getElementById('etransfer-msg');
+    if (msgEl && name) msgEl.textContent = 'ClinicFlow setup — ' + name;
+  }
+  const btn = document.getElementById('start-btn');
+  btn.disabled = true;
+  btn.textContent = 'Notifying Mohamed...';
+
+  fetch('/api/pilot-spots', { method: 'POST' }).catch(() => {});
+  fetch('/.netlify/functions/proposal-accept', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ clinicName, clinicSlug, acceptedAt: new Date().toISOString(), source: 'proposal-page' }),
+  }).catch(() => {});
+
+  setTimeout(() => {
+    btn.textContent = '✓ Mohamed notified — expect a call soon';
+    btn.style.background = '#39d98a';
+    btn.style.color = '#0b0f17';
+    document.getElementById('confirm-box').style.display = 'block';
+    document.querySelector('.founder-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 800);
+}
+</script>
+
+<div id="payment-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:999;align-items:center;justify-content:center;padding:20px">
+  <div style="background:#111827;border-radius:20px;padding:32px;max-width:480px;width:100%;border:1px solid rgba(124,92,255,.3)">
+    <div style="font-size:28px;text-align:center;margin-bottom:16px">🎉</div>
+    <h2 style="font-size:22px;font-weight:800;text-align:center;margin-bottom:8px;font-family:Syne,sans-serif">You're confirmed!</h2>
+    <p style="color:#94a3b8;text-align:center;font-size:14px;margin-bottom:28px;line-height:1.6">
+      Mohamed has been notified and will reach out within 2 hours.<br>
+      To begin setup, send the $500 deposit via Interac e-Transfer:
+    </p>
+    <div style="background:#0b0f17;border-radius:14px;padding:20px;margin-bottom:20px;border:1px solid rgba(255,255,255,.08)">
+      <div style="margin-bottom:16px">
+        <div style="font-size:11px;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Send to</div>
+        <div style="font-size:20px;font-weight:700;color:#f1f5f9">m.aliben432@gmail.com</div>
+      </div>
+      <div style="margin-bottom:16px">
+        <div style="font-size:11px;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Amount</div>
+        <div style="font-size:24px;font-weight:800;color:#39d98a">$500.00 CAD</div>
+      </div>
+      <div style="margin-bottom:16px">
+        <div style="font-size:11px;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Message</div>
+        <div style="font-size:15px;font-weight:600;color:#f1f5f9" id="etransfer-msg">ClinicFlow setup</div>
+      </div>
+      <div>
+        <div style="font-size:11px;color:#4a5568;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Security answer (if required)</div>
+        <div style="font-size:15px;font-weight:600;color:#f1f5f9">clinicflow</div>
+      </div>
+    </div>
+    <div style="background:rgba(57,217,138,.08);border:1px solid rgba(57,217,138,.2);border-radius:10px;padding:14px;margin-bottom:20px">
+      <p style="font-size:13px;color:#39d98a;line-height:1.8;margin:0">
+        ✓ Setup begins immediately after payment confirmed<br>
+        ✓ Balance of $497 only due after 30-day results<br>
+        ✓ Full refund if system doesn't deliver results
+      </p>
+    </div>
+    <div style="text-align:center;margin-bottom:16px">
+      <a href="tel:4385440442" style="display:inline-block;background:#7c5cff;color:#fff;padding:12px 28px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;font-family:Syne,sans-serif">
+        📞 Call Mohamed to confirm — 438-544-0442
+      </a>
+    </div>
+    <p style="font-size:12px;color:#4a5568;text-align:center;line-height:1.6">
+      Prefer email? contact@clinicflowautomation.com<br>
+      Mohamed will confirm receipt and send your setup link within 2 hours.
+    </p>
+  </div>
+</div>
+
+<script>
+(function(){
+  fetch('/api/track',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
+      page:window.location.pathname,
+      ref:document.referrer,
+      utm_source:new URLSearchParams(window.location.search).get('utm_source'),
+      utm_campaign:new URLSearchParams(window.location.search).get('utm_campaign'),
+      ts:Date.now()
+    }),
+    keepalive:true
+  }).catch(()=>{});
+})();
+</script>
+<script>
+  fetch('/api/pilot-spots')
+    .then(r => r.json())
+    .then(data => {
+      const el = document.getElementById('spots-text');
+      if (!el) return;
+      if (data.spots === 0) {
+        el.textContent = 'ALL SPOTS FILLED THIS MONTH';
+        el.style.color = '#64748b';
+      } else if (data.spots === 1) {
+        el.textContent = '1 PILOT SPOT REMAINING';
+      } else {
+        el.textContent = data.spots + ' PILOT SPOTS REMAINING';
+      }
+    })
+    .catch(() => { const w = document.getElementById('spots-widget'); if (w) w.style.display = 'none'; });
+  </script>
+</body>
+</html>

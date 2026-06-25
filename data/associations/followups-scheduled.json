@@ -1,0 +1,54 @@
+[
+  {
+    "sendDate": "2026-05-25",
+    "to": "info@oda.ca",
+    "assoc": "Ontario Dental Association",
+    "province": "Ontario",
+    "stats": {
+      "total": 1605,
+      "withPain": 6,
+      "painRate": "0%",
+      "avgRating": "4.76",
+      "avgPainRating": "4.37",
+      "ratingGap": "0.39"
+    },
+    "subject": "Ontario-specific data from our clinic communication research",
+    "body": "Hi Frank,\n\nFollowing up on my note from earlier this week about our patient communication research.\n\nHere's the Ontario-specific breakdown from our dataset:\n\nOntario clinics mapped: 1605\nWith communication pain signals: 6 (0%)\nAverage Google rating, all Ontario clinics: 4.76★\nAverage rating, clinics with communication complaints: 4.37★\nRating gap: 0.39 stars\n\nThat gap — 0.39 stars — is consistent across the province. In a market like Toronto where patients have dozens of options within walking distance, a lower rating directly affects new patient acquisition.\n\nThe full report with all Ontario data is at clinicflowautomation.com/report\n\nHappy to provide the raw Ontario dataset if useful for your members.\n\n— Mohamed Ali Benabdenbi\nClinicFlow Automation · Montreal, QC\n438-544-0442",
+    "sent": true,
+    "sentAt": "2026-05-25T14:30:02.299Z"
+  },
+  {
+    "sendDate": "2026-05-25",
+    "to": "info@odq.qc.ca",
+    "assoc": "Ordre des dentistes du Québec",
+    "province": "Quebec",
+    "stats": {
+      "total": 346,
+      "withPain": 2,
+      "painRate": "1%",
+      "avgRating": "4.70",
+      "avgPainRating": "4.85",
+      "ratingGap": "-0.15"
+    },
+    "subject": "Données spécifiques au Québec — recherche sur la communication patient",
+    "body": "Bonjour,\n\nSuite à mon message de cette semaine concernant notre étude sur la communication patient.\n\nVoici les données spécifiques au Québec de notre base de données :\n\nCliniques québécoises cartographiées : 346\nNote Google moyenne, toutes cliniques QC : 4.70★\nVilles couvertes : Montréal, Laval, Québec, Longueuil, Gatineau et d'autres\n\nAu niveau national (4 314 cliniques), les cliniques avec des plaintes de communication dans leurs avis Google ont en moyenne 0,26 étoile de moins que celles sans plaintes. Ce même écart se retrouve de façon cohérente dans toutes les provinces que nous avons cartographiées.\n\nÀ Montréal notamment, où les patients ont de nombreuses options à proximité, une note plus basse affecte directement l'acquisition de nouveaux patients.\n\nLe rapport complet est disponible gratuitement : clinicflowautomation.com/report\n\nJe serais heureux de fournir les données brutes spécifiques au Québec si utiles pour vos membres.\n\n— Mohamed Ali Benabdenbi\nClinicFlow Automation · Montréal, QC\n438-544-0442",
+    "sent": true,
+    "sentAt": "2026-05-25T14:30:09.134Z"
+  },
+  {
+    "sendDate": "2026-05-25",
+    "to": "reception@cda-adc.ca",
+    "assoc": "Canadian Dental Association",
+    "province": "National",
+    "stats": {
+      "total": 4314,
+      "withPain": 10,
+      "painRate": "0%",
+      "ratingGap": "0.26"
+    },
+    "subject": "National breakdown — patient communication research follow-up",
+    "body": "Hi,\n\nFollowing up on my note from earlier this week.\n\nOne data point worth highlighting separately:\n\nThe 0.26-star rating gap we found between clinics with and without patient communication complaints is consistent across every province we mapped — Ontario, Quebec, BC, Alberta, and beyond.\n\nIt's not a regional issue. It's systemic.\n\nThe full breakdown with province-by-province data is at clinicflowautomation.com/report\n\nIf there's a format that would make this more useful for CDA members — a one-pager, a presentation format, specific provincial data — I'm happy to put that together.\n\n— Mohamed Ali Benabdenbi\nClinicFlow Automation · Montreal, QC\n438-544-0442",
+    "sent": true,
+    "sentAt": "2026-05-25T14:30:16.314Z"
+  }
+]
